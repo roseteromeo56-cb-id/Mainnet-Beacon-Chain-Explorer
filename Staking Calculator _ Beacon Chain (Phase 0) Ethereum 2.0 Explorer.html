@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://beaconscan.com/staking-calculator -->
+<html lang="en" data-bybit-channel-name="Ylv3WsQzYUkSUm_aDmHaC"><script type="text/javascript" async="" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/js"></script><script type="text/javascript" async="" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/js(1)"></script><script async="" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/js(2)"></script><script async="false" src="chrome-extension://cpmkedoipcpimgecpmgpldfpohjplkpp/window-provider.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Staking Calculator | Beacon Chain (Phase 0) Ethereum 2.0 Explorer
+</title><meta name="description" content="The ETH 2.0 staking calculator calculates your expected earnings in dollars with your staking condition. ">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/lqumhNFCq-YMCUi4qLBOhkHkIWs.js.download"></script><script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/Y_oTxkfNlOGSIjKJoaJhg6JuDLw.js.download"></script><link rel="shortcut icon" href="https://beaconscan.com/favicon.ico"><meta name="format-detection" content="telephone=no">
+
+<link href="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/css" rel="stylesheet">
+
+<link href="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/fontawesome-all.min.css" type="text/css" rel="stylesheet">
+<link href="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/datatables.min.css" type="text/css" rel="stylesheet">
+
+<link href="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/theme.min.css" type="text/css" rel="stylesheet">
+<link href="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/vendor.min.css" type="text/css" rel="stylesheet">
+<link href="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/custom.css" type="text/css" rel="stylesheet">
+<style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default;
+        }
+        .ui-auto-position-top {
+            position: fixed;
+        }
+    </style>
+<style type="text/css">body { padding-top: 41.6px; }</style>
+<meta property="og:title" content="Staking Calculator | Beacon Chain (Phase 0) Ethereum 2.0 Explorer"> <meta property="og:type" content="website"> <meta property="og:image" content="https://beaconscan.com/src/img/logo/beaconscan-logo.png"> <meta property="og:image:alt" content="Visit Beaconscan.com"> <meta property="og:description" content="The ETH 2.0 staking calculator calculates your expected earnings in dollars with your staking condition. "> <meta property="og:url" content="https://beaconscan.com//staking-calculator"> <meta property="og:site_name" content="Etherscan Beacon Chain (Phase 0) Ethereum 2.0 Explorer"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@etherscan"> <meta name="twitter:title" content="Staking Calculator | Beacon Chain (Phase 0) Ethereum 2.0 Explorer"> <meta property="twitter:description" content="The ETH 2.0 staking calculator calculates your expected earnings in dollars with your staking condition. "> <meta property="twitter:image" content="https://beaconscan.com/src/img/logo/beaconscan-logo.png">
+
+
+<title>ETH2.0 Staking Calculator</title>
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+<body id="body">
+
+<header id="header" class="header scrolled">
+
+<div id="topbar" class="bg-dark py-1 fixed-top">
+<div class="container">
+<div class="row justify-content-between align-items-center">
+<div class="col-auto d-none d-md-block">
+<div class="small text-nowrap text-white">
+<a href="https://beaconscan.com/" class="text-white"><i class="fas fa-home mr-1"></i></a> | <img class="ml-1 avatar-xss mt-n1 mr-1" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/prysm.svg" alt="Mainnet"> Mainnet <span class="mx-1">|</span> <span class="text-muted">Last Epoch <a href="https://beaconscan.com/epoch/266498" class="text-white">266498</a> at Slot <a href="https://beaconscan.com/slot/8527961" class="text-white">8527961</a></span>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<form class="input-group input-group-sm input-group-merge input-group-dark" action="https://beaconscan.com/search" method="get" autocomplete="off" spellcheck="false">
+<input type="search" name="q" class="form-control search-type-reset searchautocomplete ui-autocomplete-input list-autocomplete" placeholder="Search by Epoch / Slot / PublicKey" aria-label="Search by Epoch Number / Slot Number / Public Key" aria-describedby="Search" autocomplete="off">
+<div class="input-group-append">
+<span class="input-group-text">
+<i class="far fa-search"></i>
+</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div id="mainbar" class="header-section">
+<div id="logoAndNav" class="container">
+
+<nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+
+<a class="navbar-brand" href="https://beaconscan.com/" aria-label="Beacon"> <img id="logo-header" width="160" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/beaconscan-logo.svg" alt="Beaconscan Logo"></a>
+
+
+<button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBarWithDropdown" data-toggle="collapse" data-target="#navBarWithDropdown">
+<span class="navbar-toggler-default">
+<svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+<path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"></path>
+</svg>
+</span>
+<span class="navbar-toggler-toggled">
+<svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+<path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"></path>
+</svg>
+</span>
+</button>
+
+
+<div id="navBarWithDropdown" class="collapse navbar-collapse">
+<ul class="navbar-nav"> <li id="li_home" runat="server" class="navbar-nav-item d-block d-sm-none"> <a class="nav-link" href="https://beaconscan.com/">Home</a> </li> <li class="hs-has-sub-menu navbar-nav-item  "> <a id="dropdownBlockChain" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="subDropdownBlockChain">BlockChain</a> <div id="subDropdownBlockChain" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="dropdownBlockChain" style="min-width: 230px; animation-duration: 300ms;"> <a href="https://beaconscan.com/epochs" title="View All Epochs" class="dropdown-item"><i class="fal fa-clock mr-2"></i>Epochs</a><div class="dropdown-divider"></div> <a href="https://beaconscan.com/slots" class="dropdown-item"><i class="fad fa-th mr-2"></i>All Blocks</a><a href="https://beaconscan.com/slots-scheduled" class="dropdown-item"><i class="fal fa-square mr-2"></i>Scheduled Blocks</a><a href="https://beaconscan.com/slots-forked" class="dropdown-item"><i class="fas fa-code-branch mr-2"></i>Forked Blocks (Reorgs)</a><a href="https://beaconscan.com/slots-skipped" class="dropdown-item"><i class="fas fa-box-up fa-rotate-90 mr-2"></i>Skipped Blocks</a></div> </li> <li class="hs-has-sub-menu navbar-nav-item "> <a id="dropdownValidators" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="subDropdownValidators">Validators</a> <div id="subDropdownValidators" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="dropdownValidators" style="min-width: 230px; animation-duration: 300ms;"> <a href="https://beaconscan.com/validators-leaderboard" class="dropdown-item"><i class="far fa-trophy fa-fw mr-2"></i>LeaderBoard</a><a href="https://beaconscan.com/validators" class="dropdown-item"><i class="far fa-user fa-fw mr-2"></i>All Validators</a><div class="dropdown-divider"></div> <a href="https://beaconscan.com/slots-slashed" class="dropdown-item"><i class="fas fa-user-slash mr-1"></i> Validators Slashed</a><div class="dropdown-divider"></div> <a href="https://beaconscan.com/eth1deposits" title="Deposits Sent to the Eth1 Contract" class="dropdown-item"><i class="fal fa-inbox-out mr-2"></i>Eth 1 Deposits</a><a href="https://beaconscan.com/eth2deposits" title="Deposits Processed by the Beacon Chain node" class="dropdown-item"><i class="fal fa-inbox-in mr-2"></i>Eth 2 Deposits</a></div></li> <li class="hs-has-sub-menu navbar-nav-item "> <a id="dropdownCharts" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="subDropdownCharts">Charts &amp; Stats</a> <div id="subDropdownCharts" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="dropdownCharts" style="min-width: 230px; animation-duration: 300ms;"> <a href="https://beaconscan.com/statistics" class="dropdown-item"><i class="far fa-chart-pie-alt fa-fw mr-2"></i>Charts</a><a href="https://beaconscan.com/chainfinalityhistory" class="dropdown-item"><i class="far fa-chart-area fa-fw mr-2"></i>Chain Liveness</a></div> </li> <li class="hs-has-sub-menu navbar-nav-item active"> <a id="dropdownMore" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="subDropdownMore">More</a> <div id="subDropdownMore" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="dropdownMore" style="min-width: 230px; animation-duration: 300ms;"> <a href="https://beaconscan.com/staking-calculator" class="dropdown-item"><i class="far fa-calculator fa-fw mr-2"></i>Staking Calculator</a><div class="dropdown-divider"></div> <a href="https://beaconscan.com/directory" class="dropdown-item"><i class="far fa-address-book fa-fw mr-2"></i>Directory</a></div> </li> <li class="header-nav-separator ml-n2"></li> <li class="navbar-nav-item"> <a href="https://beaconscan.com/login" class="dropdown-item"><i class="fad fa-user-circle align-middle mr-1"></i> Login</a></li> <li class="header-nav-separator"></li> <li class="hs-has-sub-menu navbar-nav-item my-n1"> <a id="dropdownExplorers" class="hs-mega-menu-invoker nav-link pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="subDropdownExplorers"> <span class="btn btn-xs btn-icon bg-soft-primary d-none d-lg-inline-flex align-items-center"> <img class="avatar-xss" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/ethereum.png" alt="Ethereum Logo"> </span> <span class="d-inline-block d-lg-none">Explorers</span> </a> <div id="subDropdownExplorers" class="hs-sub-menu dropdown-menu dropdown-menu-lg-right hs-sub-menu-desktop-lg animated" aria-labelledby="dropdownExplorers" style="min-width: 230px; animation-duration: 300ms;"> <a class="dropdown-item d-flex align-items-center disabled " href="https://beaconscan.com/"> <img class="avatar-xss mr-1" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/prysm.svg" alt="Prysm Logo"> Mainnet Explorer </a> <hr> <a class="dropdown-item d-flex align-items-center" href="https://etherscan.io/" target="_blank"> <img class="avatar-xss mr-1" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/ethereum.png" alt="Ethereum Logo"> ETH Mainnet Explorer <i class="far fa-external-link small ml-2"></i> </a> <a class="dropdown-item d-flex align-items-center" href="https://goerli.etherscan.io/" target="_blank"> <img class="avatar-xss mr-1" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/ethereum.png" alt="Ethereum Logo"> Goerli Testnet Explorer <i class="far fa-external-link small ml-2"></i> </a> </div> </li> </ul>
+</div>
+
+</nav>
+
+</div>
+</div>
+</header>
+
+<main id="content" role="main">
+<input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+<input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Datetime (UTC)">
+<input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+<input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+
+<section>
+<div class="container">
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col-md">
+<h1 class="page-header-title"><i class="fal fa-calculator"></i> ETH2.0 Calculator</h1>
+</div>
+<div class="col-md-auto">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb breadcrumb-no-gutter">
+<li class="breadcrumb-item"><a href="https://beaconscan.com/" title="Home Page">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Staking Calculator</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-4">
+</div>
+
+<p class="page-header-desc d-none d-md-block"><i class="fal fa-info-circle mr-1"></i>This mining calculator will display your expected earnings in Dollars. The calculations are based on the assumption that all conditions remain as they are below.</p>
+</div>
+</section>
+
+<form method="post" action="https://beaconscan.com/staking-calculator" id="form1" class="js-validate" novalidate="novalidate">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A0CB5F76">
+</div>
+
+<section class="space-bottom-2">
+<div class="container">
+
+<div class="card bg-light mb-5">
+<div class="card-body">
+<h5 class="card-title font-weight-bold mb-3">Staking Calculator</h5>
+<div class="row">
+<div class="col-sm-6 col-md-4 col-lg-3 form-group">
+<label class="input-label">Number of validators</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="fad fa-users"></i>
+</span>
+</div>
+<input name="ctl00$ContentPlaceHolder1$txtValidatorCount" type="text" value="1" maxlength="6" id="ContentPlaceHolder1_txtValidatorCount" title="Number of validators to run. Each validator requires a minimum stake of 32ETH." class="form-control" required="true" placeholder="8" oninput="updateTotalETH();" onkeydown="return isNumberKey(this, event, false);">
+</div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 form-group">
+<label class="input-label text-muted">Total ETH deposit</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="fab fa-ethereum"></i>
+</span>
+</div>
+<input type="text" class="form-control" id="totalETHDeposit" value="" tooltip="Number of ETH needed to be staked (ETH * number of validators)" disabled="">
+</div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 form-group">
+<label class="input-label">Estimated validators' uptime</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="fad fa-hourglass-start"></i>
+</span>
+</div>
+<input name="ctl00$ContentPlaceHolder1$txtEstimatedUptime" type="text" value="0.99" maxlength="4" id="ContentPlaceHolder1_txtEstimatedUptime" title="The estimated uptime of your validators. Keeping a healthy uptime decreases the chance of incurring penalties." class="form-control" required="true" placeholder="0.99" onkeydown="return isNumberKey(this, event, true);">
+</div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 form-group">
+<label class="input-label">Total network ETH staked</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="fab fa-ethereum"></i>
+</span>
+</div>
+<input name="ctl00$ContentPlaceHolder1$txtTotalStaked" type="text" value="30994095" maxlength="10" id="ContentPlaceHolder1_txtTotalStaked" title="Total amount of ETH staked in the beacon chain. More ETH staked = lesser ETH rewards per validator. Network requires a minimum of 524288 for Genesis." class="form-control" required="true" placeholder="524288" onkeydown="return isNumberKey(this, event, false);">
+</div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 form-group">
+<label class="input-label">ETH price</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="fad fa-dollar-sign"></i>
+</span>
+</div>
+<input name="ctl00$ContentPlaceHolder1$txtEthPrice" type="text" value="3342.63354953575" maxlength="10" id="ContentPlaceHolder1_txtEthPrice" title="Target price of ETH" class="form-control" required="true" placeholder="200.00" onkeydown="return isNumberKey(this, event, true);">
+</div>
+</div>
+<div class="col-md-6 form-group">
+<label class="input-label">Staking cost (USD/yearly)</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="fad fa-dollar-sign"></i>
+</span>
+</div>
+<input name="ctl00$ContentPlaceHolder1$txtStakingCost" type="text" value="500" maxlength="10" id="ContentPlaceHolder1_txtStakingCost" title="Staking costs per annum. Do consider hardware purchase/VPS hosting costs, electricity, maintenance/hardware replacement and other potential costs." class="form-control" required="true" placeholder="500" onkeydown="return isNumberKey(this, event, true);">
+</div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 form-group">
+<label class="input-label">Network uptime</label>
+<div class="input-group input-group-merge">
+<div class="input-group-prepend">
+<span class="input-group-text">
+<i class="far fa-percent"></i>
+</span>
+</div>
+<input name="ctl00$ContentPlaceHolder1$txtNetworkUptime" type="text" value="0.90" maxlength="10" id="ContentPlaceHolder1_txtNetworkUptime" title="Expected beacon chain network uptime. Network may halt when a large number of validators go offline at the same time. Use this to consider costs for unknown unknowns." class="form-control" required="true" placeholder="0.90" onkeydown="return isNumberKey(this, event, true);">
+</div>
+</div>
+</div>
+<div class="mt-3">
+<input type="submit" name="ctl00$ContentPlaceHolder1$btn" value="Calculate" id="ContentPlaceHolder1_btn" class="btn btn-block btn-primary" href="#" data-toggle="tooltip" style="white-space: normal" data-original-title="" title="">
+</div>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-lg-6 mb-4">
+
+<div class="card h-100">
+<div class="card-body px-0">
+<div class="d-flex align-items-center px-3 mb-3">
+<h2 class="card-title">Results</h2>
+</div>
+
+<div class="table-responsive">
+<table class="table text-nowrap mb-0">
+<thead class="thead-light">
+<tr class="small text-uppercase">
+<th scope="col" width="20">Interval</th>
+<th scope="col">Ether Earned</th>
+<th scope="col">Cost (USD)</th>
+<th scope="col">Profit (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left text-secondary">Daily</td>
+<td>0.00236110361735607 ($7.89)</td>
+<td>$1.37</td>
+<td><span class="text-success">$6.52</span></td>
+</tr>
+<tr>
+<td class="text-left  text-secondary">Weekly</td>
+<td>0.0165277253214925 ($55.25)</td>
+<td>$9.58</td>
+<td><span class="text-success">$45.67</span></td>
+</tr>
+<tr>
+<td class="text-left  text-secondary">Monthly</td>
+<td>0.071864517284197 ($240.22)</td>
+<td>$41.67</td>
+<td><span class="text-success">$198.55</span></td>
+</tr>
+<tr>
+<td class="text-left text-secondary">Yearly</td>
+<td>0.862374207410364 ($2,882.60)</td>
+<td>$500.00</td>
+<td><span class="text-success">$2,382.60</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="col-lg-6 mb-4"><div class="card h-100" style="min-height: 300px;"><div class="d-flex align-items-center px-3 mt-3"><h2 class="card-title">Staked Amount Growth</h2></div><div class="card-body position-relative"><div class="content-centered text-center p-5"></div><div id="stat-staking" class="darkmode-chart w-100 mb-n2" display:'block';="" style="height: 260px; overflow: hidden;" data-highcharts-chart="0"><div id="highcharts-5a0rloq-0" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 636px; height: 260px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="636" height="260" viewBox="0 0 636 260"><desc>Created with Highcharts 8.1.0</desc><defs><clippath id="highcharts-5a0rloq-1-"><rect x="0" y="0" width="576" height="213" fill="none"></rect></clippath><clippath id="highcharts-5a0rloq-9-"><rect x="0" y="0" width="576" height="213" fill="none"></rect></clippath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="636" height="260" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="50" y="10" width="576" height="213"></rect><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 70.5 10 L 70.5 223" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 181.5 10 L 181.5 223" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 297.5 10 L 297.5 223" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 409.5 10 L 409.5 223" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 524.5 10 L 524.5 223" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 50 223.5 L 626 223.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 50 180.5 L 626 180.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 50 138.5 L 626 138.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 50 95.5 L 626 95.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 50 53.5 L 626 53.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" data-z-index="1" class="highcharts-grid-line" d="M 50 9.5 L 626 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="50" y="10" width="576" height="213"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 70.5 223 L 70.5 233" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 181.5 223 L 181.5 233" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 297.5 223 L 297.5 233" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 409.5 223 L 409.5 233" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 524.5 223 L 524.5 233" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 50 223.5 L 626 223.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 50 10 L 50 223"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-spline-series" transform="translate(50,10) scale(1 1)" clip-path="url(#highcharts-5a0rloq-9-)"><path fill="none" d="M 5.7029702970297 170.3999999999994 C 5.7029702970297 170.3999999999994 75.03319743739188 153.49875582757912 121.2533488643 141.23092591119405 C 165.982527664532 129.35883244372505 188.347117064648 122.12015323229494 233.07629586488 110.05019154036421 C 279.296447291788 97.57789779203537 302.406523005242 92.34758105886534 348.62667443215 79.8752873105451 C 393.355853232382 67.80532561862273 415.720442632498 60.76451463168005 460.44962143273 48.69455293975767 C 506.66977285963804 36.22225919143743 576 18.519648709938565 576 18.519648709938565" class="highcharts-graph" data-z-index="1" stroke="#6984AA" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 5.7029702970297 170.3999999999994 C 5.7029702970297 170.3999999999994 75.03319743739188 153.49875582757912 121.2533488643 141.23092591119405 C 165.982527664532 129.35883244372505 188.347117064648 122.12015323229494 233.07629586488 110.05019154036421 C 279.296447291788 97.57789779203537 302.406523005242 92.34758105886534 348.62667443215 79.8752873105451 C 393.355853232382 67.80532561862273 415.720442632498 60.76451463168005 460.44962143273 48.69455293975767 C 506.66977285963804 36.22225919143743 576 18.519648709938565 576 18.519648709938565" visibility="visible" data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="21"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-tracker" transform="translate(50,10) scale(1 1)"></g></g><text x="318" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="318" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color:#666666;fill:#666666;" y="257"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"><text x="70.612696563774" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="242" opacity="1"><tspan>Apr '24</tspan></text><text x="182.43564356436" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="242" opacity="1"><tspan>May '24</tspan></text><text x="297.98602213162" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="242" opacity="1"><tspan>Jun '24</tspan></text><text x="409.80896913221" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="242" opacity="1"><tspan>Jul '24</tspan></text><text x="525.35934769948" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="242" opacity="1"><tspan>Aug '24</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"><text x="35" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="227" opacity="1">31.9</text><text x="35" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="184" opacity="1">32</text><text x="35" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="142" opacity="1">32.1</text><text x="35" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="99" opacity="1">32.2</text><text x="35" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="57" opacity="1">32.3</text><text x="35" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">32.4</text></g></svg></div></div></div></div></div>
+</div>
+
+<div id="stickyBlockEndPoint"></div>
+</div>
+</section>
+</form>
+</main>
+
+
+<footer class="sticky-footer bg-gray">  <div class="container small pt-4 pb-3"> <div class="d-flex justify-content-between align-items-center"> <div class="mr-3"> <a class="d-flex align-items-center mb-3 mb-md-0" target="_blank" href="https://ethereum.org/"> <img class="mr-2" width="13" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/ethereum.svg" alt="Ethereum Logo"> <span class="h5 font-weight-normal  mb-0">Powered by Ethereum</span> </a> </div> <div> <button id="darkModaBtn" type="button" class="btn btn-xs btn-icon btn-soft-dark"> <i id="darkModaBtnIcon" class="fa fa-moon"></i></button> </div> </div> <hr class=" my-3"> <div class="d-lg-flex justify-content-between text-secondary"> <p class="text-inherit mb-0">Beaconscan © 2022 (B) <span class="mx-1">|</span> Made with <span style="color:red;">❤</span> by <a class="text-secondary" href="https://etherscan.io/">Etherscan</a> </p> <div class="d-sm-flex"> <a class="text-inherit mr-3" href="https://twitter.com/etherscan" rel="nofollow" target="_blank"><i class="fab fa-twitter mr-1"></i>Twitter</a> <a class="text-inherit mr-3" href="https://etherscan.io/contactus" target="_blank"><i class="far fa-envelope mr-1"></i>Contact Us</a> <a class="text-inherit" href="https://beaconscan.com/terms"><i class="far fa-file-alt mr-1"></i>Terms</a> </div> </div> </div>  </footer>
+
+
+<a class="js-go-to go-to position-fixed animated fadeOutDown hs-go-to-prevent-event" href="javascript:;" style="right: 15px; bottom: -15px;" data-hs-go-to-options="{
+         &quot;offsetTop&quot;: 700,
+         &quot;position&quot;: {
+           &quot;init&quot;: {
+             &quot;right&quot;: 15
+           },
+           &quot;show&quot;: {
+             &quot;bottom&quot;: 15
+           },
+           &quot;hide&quot;: {
+             &quot;bottom&quot;: -15
+           }
+         }
+       }">
+<i class="fas fa-angle-up"></i>
+</a>
+
+
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/vendor.min.js.download"></script>
+<script>var _tooltip = jQuery.fn.tooltip;</script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/jquery-ui.min.js.download"></script>
+<script>jQuery.fn.tooltip = _tooltip;</script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/datatables.min.js.download"></script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/input.js.download"></script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/theme.min.js.download"></script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/commonjs.js.download"></script>
+
+<script>
+        var strGlobal = getCookie("beaconscan_toggle_age_date");
+        var basePath = '';
+        var networkId = basePath.replace(/\//g, '');
+        var sid = '370be73fd793903195f6bfd3ffb270ba';
+        $(document).on('ready', function () {
+
+            var header = new HSHeader($('#header')).init();
+            var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+           
+            $('.js-go-to').each(function () {
+                var goTo = new HSGoTo($(this)).init();
+            });
+
+           $('.js-clipboard').each(function() {
+              var clipboard = $.HSCore.components.HSClipboard.init(this);
+           });
+
+            showAgeOrDateTime();
+
+            $.ui.autocomplete.prototype._resizeMenu = function () {
+                var ul = this.menu.element;
+                ul.outerWidth(this.element.outerWidth());
+            }
+        });
+
+
+    </script>
+<script>
+        $(document).ready(function () {
+            $('.js-validate').each(function () {
+                var validation = $.HSCore.components.HSValidation.init($(this));
+            });
+        });
+    </script>
+
+<script>
+        $(window).on('load', function () {
+            updateTotalETH();
+        });
+
+        function updateTotalETH() {
+            var a = document.getElementById('ContentPlaceHolder1_txtValidatorCount').value;
+            var b = document.getElementById('totalETHDeposit');
+            if (a !== 0) {
+                var result = a * 32;
+                b.value = result;
+            }
+        }
+
+        function isNumberKey(field, evt, allowDecimal) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+
+            if (charCode == 39 || charCode == 37) {
+                return true;
+            }
+
+            if ((charCode == 190 || charCode == 110) && allowDecimal == true && field.value.indexOf('.') === -1) {
+                return true;
+            }
+
+            if (charCode != 46 && charCode > 31
+                && (charCode < 48 || charCode > 57) && (charCode < 96 || charCode > 105)) {
+                return false;
+
+            } else {
+                return true;
+            }
+        }
+    </script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/highstock.js.download"></script>
+<script type="text/javascript">
+
+        var plotData = eval([[Date.UTC(2024,2,28),32,'32',0],[Date.UTC(2024,3,28),32.0684720049033,'32.0684720049033','0.068472004903326'],[Date.UTC(2024,4,28),32.1416662170414,'32.1416662170414','0.141666217041364'],[Date.UTC(2024,5,28),32.2124993255621,'32.2124993255621','0.212499325562046'],[Date.UTC(2024,6,28),32.2856935377001,'32.2856935377001','0.285693537700084'],[Date.UTC(2024,7,28),32.3565266462208,'32.3565266462208','0.356526646220767']]);
+        var plotData_datemax = Date.UTC(2024,7,28);
+
+
+        Highcharts.chart('stat-staking', {
+            chart: {
+                zoomType: 'x',
+                resetZoomButton: {
+                    position: {
+                        verticalAlign: 'top',
+                        x: -55,
+                        y: 10
+                    },
+                    relativeTo: 'plot'
+                }
+            },
+            title: {
+                text: null
+            },
+
+            xAxis: {
+                gridLineWidth: 1,
+                type: 'datetime',
+                max: plotData_datemax
+            },
+
+            yAxis: {
+                labels: {
+                    enabled: true
+                },
+                gridLineWidth: 1,
+                title: {
+                    text: null
+                }
+
+            },
+
+            tooltip: {
+                useHTML: true,
+                shadow: true,
+                split: false,
+                shared: true,
+                borderColor: '#7F8C8D',
+                borderRadius: 10,
+                backgroundColor: 'white',
+                formatter: function () {
+                    var s;
+                    var points = this.points;
+                    var pointsLength = points.length;
+                    s = '<table class="tableformat" style="border: 0px;" width="100%"><tr><td colspan=2 style="padding-bottom:5px;"><span style="font-size: 10px;"> ' + Highcharts.dateFormat('%a %e, %B %Y', new Date(points[0].key)) + '</span><br></td></tr>'
+                    for (index = 0; index < pointsLength; index += 1) {
+                        var pointData;
+                        pointData = plotData.find(row => row[0] === this.points[index].x);
+
+
+
+                        s += '<tr><td style="padding-top:4px;border-top:1px solid #D5D8DC;"><span style="font-size: 15px !important;">\u25A0</span> Total Amount: </td>' +
+                            '<td align="right" style="padding-top:6px;border-top:1px solid #D5D8DC;"><b>' +
+                            pointData[2] +
+                            '</b>' +
+                            '</td></tr>' +
+                            '<tr><td>Earnings (ETH): </td><td align="right">' + pointData[3] + '</td></tr>';
+
+                    }
+                    s += '</table>';
+                    return s;
+                }
+            },
+
+            legend: {
+                enabled: false
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            plotOptions: {
+                series: {
+                    color: '#6984AA',
+                    enableMouseTracking: true,
+                    lineWidth: 1,
+                    shadow: false,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    marker: {
+                        radius: 0
+                    }
+                }
+            },
+
+            series: [{
+                type: 'spline',
+                valueSuffix: ' eth',
+                keys: ['x', 'y', 'z'],
+                data: plotData,
+
+            }]
+        });
+
+
+    </script>
+<script src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/combine.js.download"></script>
+
+<script async="" src="./Staking Calculator _ Beacon Chain (Phase 0) Ethereum 2.0 Explorer_files/js(3)"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46998878-21');
+    </script>
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
