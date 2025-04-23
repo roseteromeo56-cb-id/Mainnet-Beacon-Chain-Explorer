@@ -1,0 +1,9 @@
+var clsAge=".show-age";var clsDateTime=".show-date";var strAge=$("#hdnAgeText").val();var strDateTime=$("#hdnDateTimeText").val();var strAgeTitle=$("#hdnAgeTitle").val();var strDateTimeTitle=$("#hdnDateTimeTitle").val();function getCookie(cname){var name=cname+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)===' '){c=c.substring(1);}
+if(c.indexOf(name)===0){return c.substring(name.length,c.length);}}
+return "";}
+function setAgeDateTimeCookie(strValue){var d=new Date();d.setFullYear(d.getFullYear()+1);var expires="expires="+d.toUTCString();document.cookie="beaconscan_toggle_age_date="+strValue+";"+expires+";path=/";strGlobal=strValue;}
+function showAgeOrDateTime(){if(strGlobal==""||strGlobal==strAge){$(clsDateTime).hide();$(clsAge).show();if(strGlobal==""){setAgeDateTimeCookie(strAge)}}
+else if(strGlobal==strDateTime){$(clsAge).hide();$(clsDateTime).show();}
+$(".th-age").attr("title",strDateTimeTitle);$(".th-date").attr("title",strAgeTitle);}
+function toggleAge(){$(clsDateTime).hide();$(clsAge).show();setAgeDateTimeCookie(strAge);}
+function toggleDateTime(){$(clsAge).hide();$(clsDateTime).show();setAgeDateTimeCookie(strDateTime);}
