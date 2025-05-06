@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Token Tracker | BTTCScan
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="BTTCScan allows you to explore and search the BitTorrent blockchain for transactions, addresses, tokens, prices and other activities taking place on BitTorrent chain (BTTC)"> <meta name="author" content="bttcscan.com"> <meta name="keywords" content="BTTCScan, explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="Token Tracker | BTTCScan"> <meta property="og:description" content="The list of BRC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the BitTorrent Chain Blockchain on BTTCScan."> <meta property="og:type" content="website"> <meta property="og:site_name" content="BitTorrent Chain Blockchain Explorer"> <meta property="og:url" content="http://bttcscan.com/tokens"> <meta property="og:image" content="https://bttcscan.com/images/brandassets/logo.jpg?v=24.2.3.0"> <meta property="og:image:alt" content="Visit bttcscan.com"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@BTTCScan"> <meta name="twitter:title" content="Token Tracker | BTTCScan"> <meta property="twitter:description" content="The list of BRC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the BitTorrent Chain Blockchain on BTTCScan."> <meta property="twitter:image" content="https://bttcscan.com/images/brandassets/logo.jpg?v=24.2.3.0"> 
+    <style>
+        .card-header.sticky-card-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .dataTable > thead > tr > th[class*="remove-icon"]:before,
+        .dataTable > thead > tr > th[class*="remove-icon"]:after {
+            content: "" !important;
+        }
+
+        table.dataTable thead th.sorting:before,
+        table.dataTable thead th.sorting_asc:before,
+        table.dataTable thead th.sorting_desc:before,
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_desc:after {
+            content: none;
+        }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .fadeout {
+            position: relative;
+            bottom: 4em;
+            height: 4em;
+            background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% )
+        }
+    </style>
+
+    <link rel="shortcut icon" href="https://bttcscan.com/images/favicon.ico?v=24.2.3.0">
+    <link rel="apple-touch-icon" href="https://bttcscan.com/images/favicon.png">
+
+    
+    <script type="text/javascript" async="" src="Token%20Tracker%20BTTCScan_files/analytics.js"></script><script type="text/javascript" async="" src="Token%20Tracker%20BTTCScan_files/js_003"></script><script type="text/javascript" async="" src="Token%20Tracker%20BTTCScan_files/js_002"></script><script async="" src="Token%20Tracker%20BTTCScan_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-JWH3WYVJQ3', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/animate.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/select2.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/theme.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20BTTCScan_files/custom.css">
+
+    <script src="Token%20Tracker%20BTTCScan_files/jquery.min.js"></script>
+    <script type="text/javascript" src="Token%20Tracker%20BTTCScan_files/blockies.js"></script>
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+
+        body.dark-mode .ui-state-active {
+            background-color: #252525;
+            border-color: #323232;
+        }
+
+        .sticky-top {
+            z-index: 999;
+        }
+
+        .defi-icon img {
+            max-width: 27px;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+
+    
+    <link href="Token%20Tracker%20BTTCScan_files/hs.sticky-thead.css" rel="stylesheet">
+    <style>
+        .custwidth {
+            width: 295px !important;
+        }
+
+        @media all and (max-width: 576px) {
+
+            #divSTContainer th:first-child, #divSTContainer td:first-child,
+            #divSTContainer th:nth-child(2), #divSTContainer td:nth-child(2) {
+                position: -webkit-sticky;
+                position: sticky;
+                background-color: white;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:first-child, #divSTContainer td:first-child {
+                left: 0;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:first-child {
+                z-index: 4;
+                padding: .625rem 5px;
+                text-align: left;
+                width: 50px;
+                min-width: 50px;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:nth-child(2) {
+                padding: .625rem 0;
+                left: 50px !important;
+                width: 130px;
+                min-width: 130px;
+            }
+            #divSTContainer td:first-child {
+                border-bottom: 1.4px solid #e7eaf3;
+            }
+            #divSTContainer td:nth-child(2) {
+                padding: .625rem 0;
+                left: 50px !important;
+                width: 130px;
+                min-width: 130px;
+                border-bottom: 1.4px solid #e7eaf3;
+            }
+            #divSTContainer td:nth-child(3) {
+                left: 130px !important;
+            }
+            #divSTContainer td:nth-child(3) {   
+                left: 130px !important;
+                width: 80px;
+                min-width: 80px;
+            }
+            #divSTContainer td:nth-child(4){   
+                left: 80px !important;
+                width: 90px;
+                min-width: 90px;
+            }
+            #divSTContainer td:nth-child(5){   
+                left: 90px !important;
+                width: 100px;
+                min-width: 100px;
+            }
+            #divSTContainer td:nth-child(6){   
+                left: 100px !important;
+                width: 135px;
+                min-width: 135px;
+            }
+            #divSTContainer td:nth-child(7){   
+                left: 135px !important;
+                width: 80px;
+                min-width: 80px;
+            }
+            #divSTContainer .table-text-normal td:first-child {
+                width: 50px;
+                min-width: 50px;
+                padding: .625rem 5px;
+                left: 0 !important;                
+            }
+            #divSTContainer .sticky-thead-original-thead {
+                display: none;
+            }
+            #divSTContainer .sticky-thead-cloned-table thead {
+              border-bottom: 1px solid #e7eaf3;
+            }
+            #divSTContainer .sticky-thead-cloned-table thead  th {
+              border-bottom-width: 0;
+            }
+            #divSTContainer .table tr td {
+                border-top: 1px solid #e7eaf3; 
+            }
+            #divSTContainer .table tr:nth-child(1) td{
+                border-top: 0; 
+            }
+            #divSTContainer .table tr:last-child td{
+                border-bottom: 0; 
+            }
+            #divSTContainer .token-sticky-header {
+                background-color: #f8fafd !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="Token%20Tracker%20BTTCScan_files/datatables.min.css">
+    <script type="text/javascript" src="Token%20Tracker%20BTTCScan_files/datatables.min.js"></script>
+    <script>
+        function showSignInPopUp(tableid) {
+            if ($('#signInPopUp').attr("style")) {
+                $('#signInPopUp').removeAttr("style");
+            }
+
+            if (!$(".add-paywall").hasClass("paywall-mask")) {
+                $('.add-paywall').addClass("paywall-mask");
+            }
+
+            return;
+        }
+
+        function hideSignInPopUp(tableid) {
+            if (!$('#signInPopUp').attr("style")) {
+                $('#signInPopUp').attr("style", "display:none;");
+            }
+
+            if ($('#paywall_mask_' + tableid).hasClass("paywall-mask")) {
+                $('#paywall_mask_' + tableid).removeClass("paywall-mask");
+            }
+
+            return;
+        }
+    </script>
+<meta name="description" content="The list of BRC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the BitTorrent Chain Blockchain on BTTCScan."><script src="Token%20Tracker%20BTTCScan_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section  ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand " href="https://bttcscan.com/" target="_parent" aria-label="BTTCScan">
+                                <img id="logo-header" width="160" src="Token%20Tracker%20BTTCScan_files/logo.png" alt="Logo">
+                                
+                            </a>
+
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">BTT: $0.00000142</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title=""><span class="text-danger"> (-7.13%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://bttcscan.com/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI12"><a href="https://bttcscan.com/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI16"><a href="https://bttcscan.com/txsPending" class="nav-link u-header__sub-menu-nav-link">Pending Transactions</a></li>
+                                            <li id="LI14"><a href="https://bttcscan.com/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI1"><a href="https://bttcscan.com/txnbridge" class="nav-link u-header__sub-menu-nav-link">Cross Chain Transactions</a></li>
+                                            
+
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                              <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_accountall"><a href="https://bttcscan.com/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://bttcscan.com/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_validators" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="validatorMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="validatorSubMenu">Validators</a>
+                                        <ul id="validatorSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="validatorMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI4"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/validators">Validators Leaderboard</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18" class=" active"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokens">BRC20 Tokens By MarketCap</a></li>
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokentxns">View BRC20 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokens-nft">BRC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokentxns-nft">View BRC721 Transfers</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/charts">Charts &amp;  Stats</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+
+                                        
+                                                <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                                    
+                                                    <div class="row u-header__mega-menu-wrapper">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Developers</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.bttcscan.com/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                                <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                                <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                                <li id="LI15"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/pushTx"><i class="fa fa-angle-right small mr-1"></i>Broadcast TXN</a></li>
+                                                                <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                                <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Tools</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI41"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>
+                                                                <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                                
+                                                                <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI50"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/unitconverter"><i class="fa fa-angle-right small mr-1"></i>Unit Converter </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End Resources - Mega Menu -->
+                                    </li>
+
+
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://bttcscan.com/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+
+                                            
+                                            <span class="btn btn-sm btn-icon btn-primary cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="Token%20Tracker%20BTTCScan_files/main_white.png" alt="Logo1">
+                                            </span>
+                                             
+
+
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut p-3" aria-labelledby="explorersWithDropdown" style="min-width: 200px; display: none;">
+                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/">BitTorrent Mainnet</a></li><li class="dropdown-divider"></li><li><a class="nav-link u-header__sub-menu-nav-link" href="https://testnet.bttcscan.com/">Donau Testnet</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-55 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend d-none d-md-block">
+                                            <!-- Select -->
+                                            <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">
+                                                <option selected="selected" value="0">All Filters</option>
+                                                <option value="1">Addresses</option>
+                                                <option value="2">Tokens</option>
+                                                <option value="3">Name Tags</option>
+                                                <option value="4">Labels</option>
+                                                <option value="5">Websites</option>
+                                            </select>
+                                            <!-- End Select -->
+                                        </div>
+                                        
+                                        <input type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Block / Token" aria-label="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" autocomplete="off">
+                                        
+                                        <input type="hidden" value="" id="hdnSearchText">
+                                        <input id="hdnIsTestNet" value="False" type="hidden">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            
+</div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in BTT">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+    <!-- Page Title -->    
+    <div class="container">
+        <div id="ContentPlaceHolder1_divTokensTitle" class="py-3">
+            <div class="mb-1 mb-md-0">
+                <h1 id="ContentPlaceHolder1_h1Tag" class="h4 d-flex align-items-center mb-0">Token Tracker<a class="u-label u-label--xs u-label--secondary rounded color-strong ml-2" href="#" target="_blank" rel="nofollow" data-toggle="tooltip" title="" data-original-title="External link to BRC20 Information">BRC20</a></h1>
+            </div>
+            
+        </div>        
+                
+    </div>
+    <!-- End Page Title -->
+
+    
+
+    <div class="container space-bottom-2">
+        
+        
+
+        <!-- Card Tabs -->
+        <div class="card">
+            <!-- Card Header -->
+            
+            <div id="ContentPlaceHolder1_searchBarDiv" class="card-header d-md-flex justify-content-between align-items-center">
+                <div class="mb-1 mb-md-0">
+                    <h2 class="card-header-title">BRC20 Tokens By Market Capitalization</h2>                    
+                </div>
+
+                <div class="d-flex ml-auto">
+                    
+                    <div class="position-relative order-1 order-md-2">
+                        <a id="searchFilterInvoker" class="btn btn-sm btn-icon btn-primary" href="javascript:;" role="button" aria-controls="searchFilter" aria-haspopup="true" aria-expanded="false" data-unfold-target="#searchFilter" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="false" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut" data-toggle="tooltip" title="" data-original-title="Search for Token Name or Address">
+                            <i class="fa fa-search btn-icon__inner"></i>
+                        </a>
+
+                        <div id="searchFilter" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right p-2 u-unfold--css-animation u-unfold--hidden" aria-labelledby="searchFilterInvoker" style="width: 310px; animation-duration: 300ms;">
+                            <form action="/tokens" method="get" autocomplete="off" spellcheck="false" class="js-focus-state input-group input-group-sm w-100">
+                                <input id="searchtoken" name="q" type="search" class="form-control ui-autocomplete-input list-unstyled py-3 mb-0" placeholder="Search for Token Name or Address" onkeyup="handleTokenSearch(this);" autocomplete="off">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-original-title="" title="">Find</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Header -->
+
+            <div class="card-body">
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="transfers" role="tabpanel" aria-labelledby="tokens-tab">
+                        <div id="ContentPlaceHolder1_divpagingpanel" class="d-md-flex justify-content-between align-items-center mb-4">
+                            <p class="mb-2 mb-lg-0">
+                                <i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse" style="display: none; margin-top: 4px">&nbsp;</i>
+                                Showing 65 Token Contracts (From a total of 2,644 Token Contracts)
+                                
+                            </p>
+                            <nav class="mb-4 mb-md-0" aria-label="page navigation">
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">2</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://bttcscan.com/tokens?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://bttcscan.com/tokens?p=2"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                            </ul></nav>
+                        </div>                        
+
+                        
+
+                        
+                        <div class="stickyTableHead" id="divSTContainer"><div class="sticky-thead-cloned-wrapper">
+							     <table class="sticky-thead-cloned-table table table-text-normal table-hover mb-0 border-bottom-0" style="width: 1344.4px;"><thead class="thead-light">
+                                        <tr>
+                                            <th scope="col" width="1" class="token-sticky-header" style="width: 44px;">#</th>
+                                            <th scope="col" width="30" class="token-sticky-header" style="width: 232.65px;">Token</th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 205.833px;"><a href="https://bttcscan.com/tokens?sort=price_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Price</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 119.983px;"><a href="https://bttcscan.com/tokens?sort=percent_change_24h&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Change (%)</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 178.75px;"><a href="https://bttcscan.com/tokens?sort=24h_volume_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Volume (24H)</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 251.067px;"><strong><i class="fa fa-angle-down"></i></strong>&nbsp;<a href="https://bttcscan.com/tokens?sort=marketcap&amp;order=asc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" style="text-decoration:underline;" data-original-title="Sorted in descending order,Click for ascending sort">Circulating Market Cap</a> <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 222.917px;">On-Chain Market Cap <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the token's Total Supply on BitTorrent Chain with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 89.2px;"><a href="https://bttcscan.com/tokens?sort=holders&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Holders</a></th>
+                                        </tr>
+                                    </thead></table>
+							   </div>
+                            <div id="ContentPlaceHolder1_divresult" class="table-responsive mb-2 mb-md-0">
+                                <table class="table table-text-normal table-hover" id="tblResult">
+                                    <thead class="thead-light sticky-thead-original-thead">
+                                        <tr>
+                                            <th scope="col" width="1" class="token-sticky-header"><div class="sticky-thead-original-th-inner-wrapper">#</div></th>
+                                            <th scope="col" width="30" class="token-sticky-header"><div class="sticky-thead-original-th-inner-wrapper">Token</div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://bttcscan.com/tokens?sort=price_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Price</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://bttcscan.com/tokens?sort=percent_change_24h&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Change (%)</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://bttcscan.com/tokens?sort=24h_volume_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Volume (24H)</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><strong><i class="fa fa-angle-down"></i></strong>&nbsp;<a href="https://bttcscan.com/tokens?sort=marketcap&amp;order=asc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" style="text-decoration:underline;" data-original-title="Sorted in descending order,Click for ascending sort">Circulating Market Cap</a> <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper">On-Chain Market Cap <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the token's Total Supply on BitTorrent Chain with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://bttcscan.com/tokens?sort=holders&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Holders</a></div></th>
+                                        </tr>
+                                    </thead>                                    
+                                    <tbody>
+                                        <tr><td>1</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/btcbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x1a7019909b10cdd2d8b0034293ad729f1c1f604e">BTC Token_BSC (BTC_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Bitcoin
+ uses peer-to-peer technology to operate with no central authority or 
+banks; managing transactions and the issuing of bitcoins is carried out 
+collectively by the network. Bitcoin is open-source; its design is 
+public, nobody owns or controls Bitcoin and everyone can take part.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$62,349.00" data-original-title="" title="">$62,349.00</span><div class="small text-secondary">444,519.471838&nbsp;BTC<span class="d-block">44,020,879,713.638400&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.02%</span></td><td>$21,583,465,141.00</td><td>$1,225,265,791,347.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>26</td></tr><tr><td>2</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/ethereum_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x1249c65afb11d179ffb3ce7d4eedd1d9b98ad006">ETH (ETH)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Ethereum is a global, open-source platform for decentralized applications. ETH is mapped from Ethereum network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,433.11" data-original-title="" title="">$3,433.11</span><div class="small text-secondary">24,476.483087&nbsp;BTC<span class="d-block">2,423,912,530.332310&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.87%</span></td><td>$13,604,153,897.00</td><td>$412,100,821,322.00&nbsp;&nbsp;&nbsp;</td><td>$2,955,907.71&nbsp;&nbsp;&nbsp;</td><td>435</td></tr><tr><td>3</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/ethereum_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xa20dfb01dca223c0e52b0d4991d4afa7e08e3a50">Ethereum Token_BSC (ETH_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Ethereum
+ is a decentralized open-source blockchain system that features its own 
+cryptocurrency, Ether. ETH works as a platform for numerous other 
+cryptocurrencies, as well as for the execution of decentralized smart 
+contracts.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,433.11" data-original-title="" title="">$3,433.11</span><div class="small text-secondary">24,476.483087&nbsp;BTC<span class="d-block">2,423,912,530.332310&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.87%</span></td><td>$13,604,153,897.00</td><td>$412,100,821,322.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>17</td></tr><tr><td>4</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/tetherusdt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x9b5f27f6ea9bbd753ce3793a07cba3c74644330d">Binance-Peg BSC-USD_BSC (USDT_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDT is the official stablecoin issued by Tether, mapped from Binance Smart Chain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.11%</span></td><td>$56,182,318,669.00</td><td>$99,265,354,118.00&nbsp;&nbsp;&nbsp;</td><td>$17,748.73&nbsp;&nbsp;&nbsp;</td><td>568</td></tr><tr><td>5</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/tetherusdt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xe887512ab8bc60bcc9224e1c3b5be68e26048b8b">Tether USD_Ethereum (USDT_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDT is the official stablecoin issued by Tether, mapped from Ethereum network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.11%</span></td><td>$56,182,318,669.00</td><td>$99,265,354,118.00&nbsp;&nbsp;&nbsp;</td><td>$67,336.27&nbsp;&nbsp;&nbsp;</td><td>72</td></tr><tr><td>6</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/tetherusdt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xdb28719f7f938507dbfe4f0eae55668903d34a15">Tether USD_TRON (USDT_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDT is the official stablecoin issued by Tether, mapped from TRON network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.11%</span></td><td>$56,182,318,669.00</td><td>$99,265,354,118.00&nbsp;&nbsp;&nbsp;</td><td>$1,635,418.79&nbsp;&nbsp;&nbsp;</td><td>4,770</td></tr><tr><td>7</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/binancebnb_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x185a4091027e2db459a2433f85f894dc3013aeb5">BNB (BNB)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Binance
+ aims to build a world-class crypto exchange, powering the future of 
+crypto finance. BNB is mapped from Binance Smart Chain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$413.76" data-original-title="" title="">$413.76</span><div class="small text-secondary">2,949.917026&nbsp;BTC<span class="d-block">292,131,055.675553&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.41%</span></td><td>$1,593,082,940.00</td><td>$63,638,865,543.00&nbsp;&nbsp;&nbsp;</td><td>$34,342.08&nbsp;&nbsp;&nbsp;</td><td>301</td></tr><tr><td>8</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/ripplebtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xf5dbb4e26c1946dfd5ad8cf2e1cbda3510721bb8">XRP Token_BSC (XRP_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">XRP
+ is a digital asset built for payments. It is the native digital asset 
+on the XRP Ledger—an open-source, permissionless and decentralized 
+blockchain technology that can settle transactions in 3-5 seconds.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.624329" data-original-title="" title="">$0.6243</span><div class="small text-secondary">4.451176&nbsp;BTC<span class="d-block">440,801.164585&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.80%</span></td><td>$2,166,404,141.00</td><td>$34,170,515,993.00&nbsp;&nbsp;&nbsp;</td><td>$2.50&nbsp;&nbsp;&nbsp;</td><td>5</td></tr><tr><td>9</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/usdcbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xca424b845497f7204d9301bd13ff87c0e2e86fcf">USD Coin_BSC (USDC_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDC
+ is a fully collateralized US Dollar stablecoin developed by CENTRE, the
+ open source project with Circle being the first of several forthcoming 
+issuers. Mapped from Binance Smart Chain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.999769" data-original-title="" title="">$0.9998</span><div class="small text-secondary">7.127890&nbsp;BTC<span class="d-block">705,876.772529&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.18%</span></td><td>$4,552,223,583.00</td><td>$28,992,920,740.00&nbsp;&nbsp;&nbsp;</td><td>$2,776.36&nbsp;&nbsp;&nbsp;</td><td>89</td></tr><tr><td>10</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/usdcbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xae17940943ba9440540940db0f1877f101d39e8b">USD Coin_Ethereum (USDC_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDC
+ is a fully collateralized US Dollar stablecoin developed by CENTRE, the
+ open source project with Circle being the first of several forthcoming 
+issuers. Mapped from TRON network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.999769" data-original-title="" title="">$0.9998</span><div class="small text-secondary">7.127890&nbsp;BTC<span class="d-block">705,876.772529&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.18%</span></td><td>$4,552,223,583.00</td><td>$28,992,920,740.00&nbsp;&nbsp;&nbsp;</td><td>$31,186.79&nbsp;&nbsp;&nbsp;</td><td>84</td></tr><tr><td>11</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/usdcbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x935faa2fcec6ab81265b301a30467bbc804b43d3">USD Coin_TRON (USDC_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDC
+ is a fully collateralized US Dollar stablecoin developed by CENTRE, the
+ open source project with Circle being the first of several forthcoming 
+issuers. Mapped from TRON network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.999769" data-original-title="" title="">$0.9998</span><div class="small text-secondary">7.127890&nbsp;BTC<span class="d-block">705,876.772529&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.18%</span></td><td>$4,552,223,583.00</td><td>$28,992,920,740.00&nbsp;&nbsp;&nbsp;</td><td>$74,075.88&nbsp;&nbsp;&nbsp;</td><td>132</td></tr><tr><td>12</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/adabtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x43559b1786c06d6b826e3cf9aa667ed8840f9106">Cardano Token_BSC (ADA_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Cardano
+ (ADA) is a decentralized platform that will allow complex programmable 
+transfers of value in a secure and scalable fashion. Cardano is built in
+ the secure Haskell programming language.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.726703" data-original-title="" title="">$0.7267</span><div class="small text-secondary">5.181056&nbsp;BTC<span class="d-block">513,081.290005&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.63%</span></td><td>$908,633,337.00</td><td>$25,562,785,982.00&nbsp;&nbsp;&nbsp;</td><td>$18,548.37&nbsp;&nbsp;&nbsp;</td><td>28</td></tr><tr><td>13</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/avaxbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x4cc2fc7373b491db83be3feb5db622e0773420cf">Avalanche Token_BSC (AVAX_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Avalanche
+ is an umbrella platform for launching decentralized finance (DeFi) 
+applications, financial assets, trading and other services.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$42.78" data-original-title="" title="">$42.78</span><div class="small text-secondary">305.001572&nbsp;BTC<span class="d-block">30,204,385.541860&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.62%</span></td><td>$819,888,699.00</td><td>$16,122,907,823.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>14</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/shibabtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x26290429ac8839cb7b16aa283dab359b43e574eb">SHIBA INU_Ethereum (SHIB_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">SHIBA
+ INU is a 100% decentralized community experiment with it claims that 
+1/2 the tokens have been sent to Vitalik and the other half were locked 
+to a Uniswap pool and the keys burned.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00002191" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000156&nbsp;BTC<span class="d-block">15.469334&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 8.92%</span></td><td>$3,988,200,608.00</td><td>$12,993,409,234.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>15</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/tronnetwork_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xedf53026aea60f8f75fca25f8830b7e2d6200662">TRX (TRX)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A pegged version of the TRX token from TRON mainnet by the TRON foundation.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.140258" data-original-title="" title="">$0.1403</span><div class="small text-secondary">0.999975&nbsp;BTC<span class="d-block">99,027.739769&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.08%</span></td><td>$340,103,222.00</td><td>$12,343,558,390.00&nbsp;&nbsp;&nbsp;</td><td>$39,704,349.65&nbsp;&nbsp;&nbsp;</td><td>664</td></tr><tr><td>16</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/dotbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x352cb5e19b12fc216548a2677bd0fce83bae434b">Polkadot Token_BSC (DOT_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Polkadot
+ is a blockchain project that aims to connect blockchains, to enable the
+ transfer of value and logic across chains. DOT is the native coin of 
+the network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$9.21" data-original-title="" title="">$9.21</span><div class="small text-secondary">65.663031&nbsp;BTC<span class="d-block">6,502,627.181873&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.60%</span></td><td>$544,479,343.00</td><td>$12,329,965,333.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>17</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/chainlinkbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xfd3b093ab6bd4f40810f19e5ff822ac8cc7e3184">ChainLink_Ethereum (LINK_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A
+ blockchain-based middleware, acting as a bridge between cryptocurrency 
+smart contracts, data feeds, APIs and traditional bank account payments.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$20.45" data-original-title="" title="">$20.45</span><div class="small text-secondary">145.799022&nbsp;BTC<span class="d-block">14,438,515.295256&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.94%</span></td><td>$835,253,178.00</td><td>$12,009,614,466.00&nbsp;&nbsp;&nbsp;</td><td>$28,241.45&nbsp;&nbsp;&nbsp;</td><td>23</td></tr><tr><td>18</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/polygonmatic_new_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x39a2ec2e3570aa234e49ffec96f0684a352e3e0e">Matic Token_Ethereum (MATIC_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Matic
+ Network brings massive scale to Ethereum using an adapted version of 
+Plasma with PoS based side chains. Polygon is a well-structured, 
+easy-to-use platform for Ethereum scaling and infrastructure 
+development.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.073" data-original-title="" title="">$1.073</span><div class="small text-secondary">7.649993&nbsp;BTC<span class="d-block">757,580.778084&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.22%</span></td><td>$855,414,364.00</td><td>$9,952,816,020.00&nbsp;&nbsp;&nbsp;</td><td>$32.19&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>19</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/wrappedbtcbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x9888221fe6b5a2ad4ce7266c7826d2ad74d40ccf">Wrapped BTC_Ethereum (WBTC_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Wrapped Bitcoin (WBTC) is an ERC20 token backed 1:1 with Bitcoin. Completely transparent. 100% verifiable. Community led.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$62,467.00" data-original-title="" title="">$62,467.00</span><div class="small text-secondary">445,360.757146&nbsp;BTC<span class="d-block">44,104,192,418.031600&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.11%</span></td><td>$152,107,251.00</td><td>$9,736,113,208.00&nbsp;&nbsp;&nbsp;</td><td>$124,934.00&nbsp;&nbsp;&nbsp;</td><td>83</td></tr><tr><td>20</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/uniswapbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xe86c326e9a97c3fb6086d22ca396013d62bfecca">Uniswap_Ethereum (UNI_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">UNI
+ token served as governance token for Uniswap protocol with 1 billion 
+UNI have been minted at genesis. 60% of the UNI genesis supply is 
+allocated to Uniswap community members and remaining for team, investors
+ and advisors.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$12.71" data-original-title="" title="">$12.71</span><div class="small text-secondary">90.616409&nbsp;BTC<span class="d-block">8,973,766.718959&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 5.61%</span></td><td>$507,319,865.00</td><td>$9,607,363,238.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>21</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/bchbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xb8e7f4a9c72f0c8a6611a2d5a6887db8753ab38a">Bitcoin Cash Token_BSC (BCH_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Bitcoin
+ ABC is an electronic cash platform that allows peer-to-peer online cash
+ payments. It is a fork (a copy in a way) of Bitcoin (BTC).</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$475.74" data-original-title="" title="">$475.74</span><div class="small text-secondary">3,391.805699&nbsp;BTC<span class="d-block">335,891,406.677996&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 5.39%</span></td><td>$2,222,929,541.00</td><td>$9,373,226,504.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>22</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/litecoinbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xe9122fb2ae79709beae4a6d41b06cd4ec9ed932d">Litecoin Token_BSC (LTC_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Litecoin
+ is a peer-to-peer Internet currency that enables instant, near-zero 
+cost payments to anyone in the world. Litecoin is an open source, global
+ payment network that is fully decentralized without any central 
+authorities.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$91.69" data-original-title="" title="">$91.69</span><div class="small text-secondary">653.707203&nbsp;BTC<span class="d-block">64,736,795.472959&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.26%</span></td><td>$928,651,976.00</td><td>$6,821,256,762.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>8</td></tr><tr><td>23</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/makerdaibttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xe7dc549ae8db61bde71f22097becc8db542ca100">Dai Stablecoin_Ethereum (DAI_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">DAI
+ is an Ethereum-based stablecoin (stable-price cryptocurrency) whose 
+issuance and development is managed by the Maker Protocol and the 
+MakerDAO decentralized autonomous organization.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.002" data-original-title="" title="">$1.002</span><div class="small text-secondary">7.143796&nbsp;BTC<span class="d-block">707,451.947474&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.45%</span></td><td>$203,831,428.00</td><td>$5,023,217,923.00&nbsp;&nbsp;&nbsp;</td><td>$10.02&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>24</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/okexbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xad1e3a27c50e01cc2d51b64f546621e5ff138c93">OKB_Ethereum (OKB_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Digital Asset Exchange.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$57.77" data-original-title="" title="">$57.77</span><div class="small text-secondary">411.873324&nbsp;BTC<span class="d-block">40,787,923.159263&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 8.55%</span></td><td>$41,791,746.00</td><td>$3,481,496,726.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>25</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/thegraphbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x2df7f3f1b413e9acc2140d19257a37b4e79fd163">Graph Token_Ethereum (GRT_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">The Graph is an indexing protocol and global API for organizing blockchain data and making it easily accessible with GraphQL.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.325302" data-original-title="" title="">$0.3253</span><div class="small text-secondary">2.319252&nbsp;BTC<span class="d-block">229,676.181055&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 4.32%</span></td><td>$266,782,564.00</td><td>$3,045,947,997.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>26</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/makerdaobtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xdd038fe9495488c51fe482ae25bfe5241be974be">Maker_Ethereum (MKR_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Maker is a Decentralized Autonomous Organization that creates and insures the DAI stablecoin on the Ethereum blockchain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$2,072.62" data-original-title="" title="">$2,072.62</span><div class="small text-secondary">14,776.819961&nbsp;BTC<span class="d-block">1,463,352,350.672520&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.49%</span></td><td>$83,235,636.00</td><td>$1,916,228,801.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>27</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/quantnetwork_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x0ed0ca87b19205dadf17cc77922e2ed8b9542e1a">Quant_Ethereum (QNT_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Blockchain operating system that connects the world’s networks and facilitates the development of multi-chain applications.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$124.80" data-original-title="" title="">$124.80</span><div class="small text-secondary">889.766156&nbsp;BTC<span class="d-block">88,113,775.493786&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.46%</span></td><td>$49,205,289.00</td><td>$1,819,415,944.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>28</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/aavebtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xeeca56f73594b8c8eace49044be41ee321a6523f">Aave Token_Ethereum (AAVE_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Aave
+ is an Open Source and Non-Custodial protocol to earn interest on 
+deposits &amp; borrow assets. It also features access to highly 
+innovative flash loans, which let developers borrow instantly and 
+easily; no collateral needed. With 16 different assets, 5 of which are 
+stablecoins.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$112.30" data-original-title="" title="">$112.30</span><div class="small text-secondary">800.646950&nbsp;BTC<span class="d-block">79,288,277.147053&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.55%</span></td><td>$229,830,708.00</td><td>$1,655,616,213.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>29</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/fantombtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xad9a21ff0c9d854ca8c1360af28d4fcbdac53b4f">Fantom Token_Ethereum (FTM_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Fantom
+ is a high-performance, scalable, customizable, and secure 
+smart-contract platform. It is designed to overcome the limitations of 
+previous generation blockchain platforms. Fantom is permissionless, 
+decentralized, and open-source.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.518095" data-original-title="" title="">$0.5181</span><div class="small text-secondary">3.693777&nbsp;BTC<span class="d-block">365,795.725276&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.87%</span></td><td>$205,976,736.00</td><td>$1,454,710,239.00&nbsp;&nbsp;&nbsp;</td><td>$35,043.43&nbsp;&nbsp;&nbsp;</td><td>22</td></tr><tr><td>30</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/axieinfinitybtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xbd1d93ed87cdc4fdfc8ec1baac3d1097f77ef6c9">Axie Infinity_Ethereum (AXS_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Axie
+ Infinity is a Pokémon-inspired digital pet universe where anyone can 
+earn tokens through skilled gameplay and contributions to the ecosystem.
+ Players can battle, collect, raise, and build a land-based kingdom for 
+their pets (known as Axies).</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$10.32" data-original-title="" title="">$10.32</span><div class="small text-secondary">73.576817&nbsp;BTC<span class="d-block">7,286,331.435063&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.76%</span></td><td>$239,858,089.00</td><td>$1,433,778,069.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>31</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/bittorentlight_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x0000000000000000000000000000000000001010">BitTorrent Token (BTT)</a></h3><p class="d-none d-md-block font-size-1 mb-0">BTT
+ is the official token of BitTorrent Chain, mapped from BitTorrent Chain
+ at a ratio of 1:1. BitTorrent Chain is a brand-new heterogeneous 
+cross-chain interoperability protocol, which leverages sidechains for 
+the scaling of smart contracts.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00000142" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000010&nbsp;BTC<span class="d-block">1.002577&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.97%</span></td><td>$133,402,443.00</td><td>$1,377,708,799.00&nbsp;&nbsp;&nbsp;</td><td>$14,200,000,000.00&nbsp;&nbsp;&nbsp;</td><td>191,013</td></tr><tr><td>32</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/bittorentlight_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xcbb9edf6775e39748ea6483a7fa6a385cd7e9a4e">BitTorrent_BSC (BTT_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Official Token of BitTorrent Chain, mapped from Binance Smart Chain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00000142" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000010&nbsp;BTC<span class="d-block">1.002577&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.97%</span></td><td>$133,402,443.00</td><td>$1,377,708,799.00&nbsp;&nbsp;&nbsp;</td><td>$11,161.64&nbsp;&nbsp;&nbsp;</td><td>842</td></tr><tr><td>33</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/bittorentlight_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x65676055e58b02e61272cedec6e5c6d56badfb86">BitTorrent_Ethereum (BTT_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Official Token of BitTorrent Chain, mapped from Ethereum network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00000142" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000010&nbsp;BTC<span class="d-block">1.002577&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.97%</span></td><td>$133,402,443.00</td><td>$1,377,708,799.00&nbsp;&nbsp;&nbsp;</td><td>$7,477.03&nbsp;&nbsp;&nbsp;</td><td>232</td></tr><tr><td>34</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/trueusdbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xa2611f4488c92e1a91eb4d2a8d30110eba9925b5">TrueUSD_BSC (TUSD_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">TrueUSD
+ (TUSD) is the first independently-verified digital asset redeemable 
+1-for-1 for US Dollars. Mapped from Binance Smart Chain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.10%</span></td><td>$63,163,612.00</td><td>$1,289,531,900.00&nbsp;&nbsp;&nbsp;</td><td>$1.00&nbsp;&nbsp;&nbsp;</td><td>2</td></tr><tr><td>35</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/trueusdbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xe7424ab0e1828d83ad402da5644142e55598c782">TrueUSD_Ethereum (TUSD_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">TrueUSD
+ (TUSD) is the first independently-verified digital asset redeemable 
+1-for-1 for US Dollars. Mapped from Ethereum network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.10%</span></td><td>$63,163,612.00</td><td>$1,289,531,900.00&nbsp;&nbsp;&nbsp;</td><td>$50.05&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>36</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/trueusdbttc_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x04b0f8bd78d07be6d27209163a5174b4b4ec0fbd">TrueUSD_TRON (TUSD_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">TrueUSD (TUSD) is the first independently-verified digital asset redeemable 1-for-1 for US Dollars. Mapped from TRON network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.10%</span></td><td>$63,163,612.00</td><td>$1,289,531,900.00&nbsp;&nbsp;&nbsp;</td><td>$122.12&nbsp;&nbsp;&nbsp;</td><td>7</td></tr><tr><td>37</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/pancakeswapbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x2eb6d639621da30f61458d160338cd90547ade9f">PancakeSwap Token_BSC (CAKE_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">PancakeSwap
+ is a yield farming project whereby users can get FLIP (LP token) for 
+staking and get CAKE token as reward. CAKE holders can swap CAKE for 
+SYRUP for additional incentivized staking.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3.32" data-original-title="" title="">$3.32</span><div class="small text-secondary">23.670061&nbsp;BTC<span class="d-block">2,344,052.360892&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.68%</span></td><td>$163,087,940.00</td><td>$802,312,086.00&nbsp;&nbsp;&nbsp;</td><td>$16.60&nbsp;&nbsp;&nbsp;</td><td>9</td></tr><tr><td>38</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/crvfibtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x2e5c72f567da40d0021fb9cadb6980c86c3a8aa7">Curve DAO Token_Ethereum (CRV_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Curve is a decentralized exchange for stablecoins that uses an automated market maker (AMM) to manage liquidity.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.675312" data-original-title="" title="">$0.6753</span><div class="small text-secondary">4.814662&nbsp;BTC<span class="d-block">476,797.195162&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.67%</span></td><td>$134,380,329.00</td><td>$769,333,312.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>39</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/usdd-tron_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x74e7cef747db9c8752874321ba8b26119ef70c9e">Decentralized USD_BSC (USDD_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDD_b is a fully decentralized over-collateralization stablecoin.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.28%</span></td><td>$11,442,895.00</td><td>$736,857,087.00&nbsp;&nbsp;&nbsp;</td><td>$877.88&nbsp;&nbsp;&nbsp;</td><td>23</td></tr><tr><td>40</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/usdd-tron_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xb602f26Bf29B83e4E1595244000E0111A9d39f62">Decentralized USD_Ethereum (USDD_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDD_e is a fully decentralized over-collateralization stablecoin.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.28%</span></td><td>$11,442,895.00</td><td>$736,857,087.00&nbsp;&nbsp;&nbsp;</td><td>$754.75&nbsp;&nbsp;&nbsp;</td><td>21</td></tr><tr><td>41</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/usdd-tron_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x17f235fd5974318e4e2a5e37919a209f7c37a6d1">Decentralized USD_TRON (USDD_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDD_t is a fully decentralized over-collateralization stablecoin.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">7.136666&nbsp;BTC<span class="d-block">706,745.907606&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.28%</span></td><td>$11,442,895.00</td><td>$736,857,087.00&nbsp;&nbsp;&nbsp;</td><td>$5,480,519.04&nbsp;&nbsp;&nbsp;</td><td>183</td></tr><tr><td>42</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/trustwalletbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x1e0c6878f875da634f19c8eb989f416f5c759252">Trust Wallet_BSC (TWT_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Trust
+ Wallet Token, or TWT, is a simple BEP-20 utility token that provides a 
+range of benefits and incentives to Trust Wallet users. Trust Wallet 
+itself is a mobile cryptocurrency wallet that supports dozens of popular
+ native assets.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.48" data-original-title="" title="">$1.48</span><div class="small text-secondary">10.551714&nbsp;BTC<span class="d-block">1,044,939.004253&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.96%</span></td><td>$34,122,596.00</td><td>$617,210,488.00&nbsp;&nbsp;&nbsp;</td><td>$8.88&nbsp;&nbsp;&nbsp;</td><td>6</td></tr><tr><td>43</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/compoundbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xf0bace186818844758c89b4b2b252d3918781a8a">Compound_Ethereum (COMP_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Compound
+ is a DeFi lending protocol that allows users to earn interest on their 
+cryptocurrencies by depositing them into one of several pools supported 
+by the platform.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$89.62" data-original-title="" title="">$89.62</span><div class="small text-secondary">638.949062&nbsp;BTC<span class="d-block">63,275,292.946740&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.65%</span></td><td>$86,104,088.00</td><td>$614,964,161.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>44</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/apenfttron_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x89a93f94c0a3f388930c4a568430f5e8ffffd3ec">APENFT_TRON (NFT_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">APENFT
+ Fund was born with the mission to register world-class artworks as NFTs
+ on blockchain and aim to be the ARK Funds in the NFT space to build a 
+bridge between top-notch artists and blockchain, and to support the 
+growth of native crypto NFT artists.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00000055" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000004&nbsp;BTC<span class="d-block">0.387475&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.87%</span></td><td>$49,458,388.00</td><td>$543,824,212.00&nbsp;&nbsp;&nbsp;</td><td>$418,022.37&nbsp;&nbsp;&nbsp;</td><td>57</td></tr><tr><td>45</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/justtron_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x17501034df227d8565a8c11f41df2418f5d403b6">JUST_TRON (JST_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">JST
+ is a part of the USDJ currency system. Holding JST can participate in 
+the community governance of JUST and pay the stabilization fee for CDP 
+borrowing in the JUST system. Mapped from TRON network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.03835076" data-original-title="" title="">$0.0384</span><div class="small text-secondary">0.273423&nbsp;BTC<span class="d-block">27,077.165518&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.21%</span></td><td>$59,880,882.00</td><td>$341,225,355.00&nbsp;&nbsp;&nbsp;</td><td>$35,845.42&nbsp;&nbsp;&nbsp;</td><td>42</td></tr><tr><td>46</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/terraustbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xeb7121ea70e95c7141c58f15e79f89c5cfb9acbc">Wrapped UST Token_Ethereum (UST_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">The
+ Terra blockchain is secured through distributed consensus over native 
+staked asset Luna, and supports the issuance of price-tracking 
+stablecoins (TerraKRW, TerraUSD, etc.) that are pegged to major world 
+currencies.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.0376029" data-original-title="" title="">$0.0376</span><div class="small text-secondary">0.268091&nbsp;BTC<span class="d-block">26,549.146543&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.69%</span></td><td>$129,249,738.00</td><td>$335,251,328.00&nbsp;&nbsp;&nbsp;</td><td>$0.26&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>47</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/sushibtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0x53c56ece35f8cab135e13d6d00499dfc7c07a92e">SushiToken_Ethereum (SUSHI_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Be
+ a DeFi Chef with Sushi - Swap, earn, stack yields, lend, borrow, 
+leverage all on one decentralized, community driven platform.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.70" data-original-title="" title="">$1.70</span><div class="small text-secondary">12.120212&nbsp;BTC<span class="d-block">1,200,267.775156&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 5.63%</span></td><td>$124,409,664.00</td><td>$326,973,063.00&nbsp;&nbsp;&nbsp;</td><td>$23,012.90&nbsp;&nbsp;&nbsp;</td><td>97</td></tr><tr><td>48</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/venusbtt_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xdf38cf33948418647e6c068f5aec7a1bba5c3bdd">VENUS_BSC (XVS_b)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Venus is an algorithmic money market and synthetic stablecoin decentralized finance protocol.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$13.01" data-original-title="" title="">$13.01</span><div class="small text-secondary">92.755270&nbsp;BTC<span class="d-block">9,185,578.679280&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.78%</span></td><td>$9,765,044.00</td><td>$204,183,742.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>49</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/huobibtcnew_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xfF3a468753712d09Fbd0Df616C61C30DA9895F60">Huobi BTC_Ethereum (HBTC_e)</a></h3><p class="d-none d-md-block font-size-1 mb-0">HBTC
+ is a standard ERC20 token backed by 100% BTC. While maintaining the 
+equivalent value of Bitcoin, it also has the flexibility of Ethereum. A 
+bridge between the centralized market and the DeFi market.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$18,112.30" data-original-title="" title="">$18,112.30</span><div class="small text-secondary">129,132.304123&nbsp;BTC<span class="d-block">12,788,005,896.443100&nbsp;BTT</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.84%</span></td><td>$1,792.00</td><td>$168,395,837.00&nbsp;&nbsp;&nbsp;</td><td>$18,112.30&nbsp;&nbsp;&nbsp;</td><td>62</td></tr><tr><td>50</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20BTTCScan_files/winklinktron_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://bttcscan.com/token/0xd36ca9a2efff2ec05ed016d7cd28e38659d7d09b">WINkLink_TRON (WIN_t)</a></h3><p class="d-none d-md-block font-size-1 mb-0">WINkLink is a decentralized oracle project running on the TRON network.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00017286" data-original-title="" title="">$0.0002</span><div class="small text-secondary">0.001232&nbsp;BTC<span class="d-block">122.046052&nbsp;BTT</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.74%</span></td><td>$57,478,571.00</td><td>$166,712,057.00&nbsp;&nbsp;&nbsp;</td><td>$17,439.37&nbsp;&nbsp;&nbsp;</td><td>43</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+                        <form method="post" action="./tokens" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="V9dDdqHCliXYygx+aHJvNYvgxOHqt/Ze0tbEDR6cna/8jukYl/ot4uFKNkCU9oBWZFWC45HyQ4G75GsLndUWH2G7FTA+hro10jxpA+pgKt4=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3C86B011">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ZXUtwoffqjhcE7A7AbGD0wSM5fgAXuaBHSRIo3IrG4GPCIsDAut4y/bzYwvjUun1QRq2toREpvPFpymOIIqWYl+jv0zamMSZWclp1dxXPGcs+fCevLCpDinqQXZjbb1lM8hOKFh2FWfGBzWXTUF5EuZJPwP++Qq62zAYRn81agqs6Y2njb/04bCb29hwuuMdNZ1lUDnUPybpVarSNH6pHQ==">
+</div>
+                            <div id="ContentPlaceHolder1_divPagination" class="d-md-flex justify-content-between my-3">
+                                <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                    Show
+                                    <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRecordsPerPage\',\'\')', 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option value="25">25</option>
+	<option selected="selected" value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                    Records
+                                </div>
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">2</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://bttcscan.com/tokens?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://bttcscan.com/tokens?p=2"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                            </ul></div>
+                        </form>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <!-- End Card Tabs -->
+        
+    </div>    
+
+    <script type="text/javascript">
+        var tokensFlag = false;
+        $(document).ready(function () {
+            if ($('#ContentPlaceHolder1_searchBarDiv').length) {
+                (function ($) {
+                    $.fn.customAutocomplete = function () {
+                        this.autocomplete({
+                            source: function (request, response) {
+                                var searchTerm = request.term;
+                                $.ajax({
+                                    dataType: "json",
+                                    type: 'Get',
+                                    url: '/searchHandler?t=t',
+                                    data: { term: searchTerm, filterby: '2' },
+                                    success: function (data) {
+                                        response($.map(data, function (item) {
+                                            return {
+                                                label: item.split('\t')[0],
+                                                value: item.split('\t')[1],
+                                                desc: item.split('\t')[2],
+                                                typeval: item.split('\t')[3],
+                                                checkMark: item.split('\t')[4],
+                                                logo: item.split('\t')[5]
+                                            }
+                                        }));
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        console.log(textStatus);
+                                    }
+                                });
+                            },
+                            autoFocus: true,
+                            delay: 100,
+                            minLength: 1,
+                            select: function (event, ui) {
+                                event.preventDefault();
+                                var typeval = ui.item.typeval;
+                                if (typeval == "") {
+                                    typeval = 1;
+                                    ui.item.label = $("#hdnSearchText").val();
+                                }
+
+                                //$(this).val(ui.item.label);
+                                if (typeval == 1) {
+                                    window.location.href = '/token/' + ui.item.label;
+                                } else if (typeval == 2) {
+                                    window.location.href = '/token/' + ui.item.value;
+                                } else if (typeval == 4) {
+                                    window.location.href = '/token/' + ui.item.label;
+                                }
+                            }
+                        }).focus(function (event) {
+                            $(".ui-helper-hidden-accessible").hide();
+                            event.preventDefault();
+                        }).addClass("list-unstyled py-3 mb-0").data("ui-autocomplete")._renderItem = function (ul, item) {
+
+                            if (!tokensFlag) {
+                                tokensFlag = true;
+                                ul.addClass("list-unstyled bg-white-content p-2 mb-0");
+                            }
+
+                            ul.addClass('custwidth');
+                            var tickMark = '';
+                            var imglogo = '';
+                            if (item.checkMark === '1') {
+                                tickMark = "<i class='fa fa-badge-check text-info ml-auto'></i>";
+                            }
+                            if (item.logo !== '') {
+                                imglogo = "<img class='u-xs-avatar' style='margin-top: 1px;' src='/token/images/" + item.logo + "'>";
+                            }
+                            else {
+                                imglogo = "<img class='u-xs-avatar' style='margin-top: 1px;' src='/images/main/empty-token.png'>";
+                            }
+                            //return $("<li>")
+                            //    .append("<div>" + imglogo + item.label.substring(0, 28) + tickMark + "<br><font size='1'>" + item.desc + "</font></div>")
+                            //    .appendTo(ul);
+                            if (item.desc == "" && item.typeval == "" && item.checkMark == "" && item.logo == "") {                                
+                                return $("<li class='mb-2 ether-search-heading'>").append("<h5 class='h6 font-weight-bold bg-light px-2 py-1 rounded mb-2'>" + item.label + "</h5>").appendTo(ul);
+                            } else {
+                                if (searchAddress == false) {
+                                    if (item.typeval == 1 || item.typeval == 4) {
+                                        $("#hdnSearchText").val(item.label);
+                                    } else {
+                                        $("#hdnSearchText").val(item.value);
+                                    }                
+                                    searchAddress = true;
+                                }
+
+                                var website = (item.desc.split('~')[1] != undefined ? "<div class='text-secondary font-size-1 text-truncate'>" + item.desc.split('~')[1] + "</div>" : "");
+                                var tokenType = item.desc.split('~')[2];
+                                var price = (tokenType != "2" ? (item.desc.split('~')[3] != undefined ? "<span class='badge bg-soft-secondary mr-2'>" + item.desc.split('~')[3] + "</span>" : "") : "");
+
+                                return $("<li class='mb-2'>")
+                                    .append("<a class='ether-search media rounded p-2' href='javascript:;'><div class='mr-2'>" + imglogo + "</div><div class='media-body text-truncate'><h6 class='d-flex align-items-center text-size-1 mb-0'><div class='text-truncate mr-2'>" + item.label + "</div>" + price + tickMark + "</h6><span class='text-secondary text-truncate font-size-1'>" + item.value + "</span>" + website + "</div></a>")
+                                    .appendTo(ul);
+                            }
+                        };
+                        return this;
+                    };
+                })(jQuery);
+                var urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.has('l') == false) {
+                    $("#searchtoken").customAutocomplete();
+                }
+            }          
+        });
+    </script>
+    
+
+
+        </main>
+        <div id="push"></div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-dark py-4">
+        <div class="container">
+            <div class="row justify-content-md-between font-size-1 py-2">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex h-100 flex-column">
+                        <div class="d-flex align-items-center mb-4">
+                            <img width="25" src="Token%20Tracker%20BTTCScan_files/main_white.png" alt="Logo">
+                            <span class="h5 text-white mb-0 ml-3">Powered By BitTorrent Chain</span>
+                        </div>
+                        <p class="text-white">
+                            BTTCScan is a Block Explorer and Analytics Platform for BitTorrent Chain
+                        </p>
+                        <!-- Preferences -->
+                        <div class="d-flex align-items-center mb-4">
+                            <span>
+                                <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                    <img class="mr-1" width="15" src="Token%20Tracker%20BTTCScan_files/metamask.svg" alt="Metamask">
+                                    Add BTTC Network
+                                </button>
+                            </span>
+
+                            <a class="btn btn-xss btn-soft-light mr-2" href="https://bttcscan.com/settings">
+                                <i class="fa fa-cogs mr-1"></i>Preferences
+                            </a>
+
+                            <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                        </div>
+                        <!-- End Preferences -->
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <h4 class="h6 text-white heading-border">Technology</h4>
+                    <ul class="list-group list-group-sm list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item" href="https://bittorrentchain.io/" rel="nofollow noopener" target="_blank">BTTC Website</a></li>
+                        <li><a class="list-group-item" href="https://wallet.bittorrentchain.io/" rel="nofollow noopener" target="_blank">BTTC Wallet</a></li>
+                        <li><a class="list-group-item" href="https://wallet.bittorrentchain.io/bridge" rel="nofollow noopener" target="_blank">BTTC Bridge</a></li>
+                        <li><a class="list-group-item" href="https://wallet.bittorrentchain.io/staking" rel="nofollow noopener" target="_blank">BTTC Staking</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <h4 class="h6 text-white heading-border">Community</h4>
+                    <ul class="list-group list-group-sm list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item" href="https://doc.bt.io/" rel="nofollow noopener" target="_blank">BTTC Dev Docs</a></li>
+                        <li class="d-flex align-items-center"><a class="list-group-item" href="https://faucet.bittorrentchain.io/" rel="nofollow noopener" target="_blank">Faucet</a><a class="ml-1" href="http://doc.bittorrentchain.io/v1/doc/en/testnet.html#tron-nile-testnet" rel="nofollow noopener" target="_blank">(How to get?)</a></li>
+                        <li><a class="list-group-item" href="https://github.com/bttcprotocol" rel="nofollow noopener" target="_blank">Github</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    &nbsp;
+                </div>
+            </div>
+            <!-- End Fotoer Content -->
+
+
+            
+                    <hr class="opacity-md">
+                    <div class="row justify-content-between align-items-center font-size-1">
+                        <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                            <p class="mb-0 text-white">
+                                BTTCScan © 2024  (BTTC-A)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>  <span class="mx-1">|</span> <a class="text-white-70" href="https://bttcscan.com/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i> 
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://bttcscan.com/terms">Terms of Service</a> </li> <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://bttcscan.freshstatus.io/">Network Status</a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://bttcscan.com/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us"> <i class="far fa-envelope btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/bttcscan" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"> <i class="fab fa-twitter btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://medium.com/@BitTorrent" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Medium"> <i class="fab fa-medium btn-icon__inner"></i> </a> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: block;">
+                <div class="alert alert-light border shadow p-3" role="alert">
+                    <div class="d-md-flex justify-content-center align-items-center">
+                        <span>
+                            <p class="text-dark mr-3 mb-2 mb-md-0">
+                                <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href="https://bttcscan.com/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="https://bttcscan.com/terms" target="_blank">Terms</a> and <a href="https://bttcscan.com/privacyPolicy">Privacy Policy</a>.
+                            </p>
+                        </span>
+                        <div>
+                            <button id="btnCookie" class="btn btn-sm btn-primary text-nowrap py-1" data-dismiss="alert" aria-label="Close">Got It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+                <span class="fa fa-arrow-up u-go-to__inner"></span>
+            </a>
+            <script src="Token%20Tracker%20BTTCScan_files/jquery-ui.min.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/jquery-migrate.min.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/popper.min.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/bootstrap.min.js"></script>
+
+
+
+            <!-- JS Implementing Plugins -->
+            <script src="Token%20Tracker%20BTTCScan_files/hs.megamenu.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/jquery.cubeportfolio.min.js"></script>
+
+
+            <!-- JS Front -->
+            <script src="Token%20Tracker%20BTTCScan_files/hs.core.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/hs.header.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/hs.unfold.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/hs.malihu-scrollbar.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/hs.focus-state.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/hs.go-to.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/hs.cubeportfolio.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/combine-js-bottom2.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script>
+                $(window).on('load', function () {
+                    // initialization of HSMegaMenu component
+                    $('.js-mega-menu').HSMegaMenu({
+                        event: 'hover',
+                        pageContainer: $('.container'),
+                        breakpoint: 767.98,
+                        hideTimeOut: 0
+                    });
+                    myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+                });
+
+                $(document).on('ready', function () {
+                    // initialization of header
+                    $.HSCore.components.HSHeader.init($('#header'));
+
+                    // initialization of unfold component
+                    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                        afterOpen: function () {
+                            $(this).find('input[type="search"]').focus();
+                        }
+                    });
+
+                    // initialization of malihu scrollbar
+                    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+                    // initialization of focus state
+                    $.HSCore.components.HSFocusState.init();
+
+                    // initialization of go to
+                    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+                    // initialization of cubeportfolio
+                    //$.HSCore.components.HSCubeportfolio.init('.cbp');
+                });
+            </script>
+            <script type="text/javascript">
+                var sid = 'dfe7e2aef8db2eb97e427368803a2013';
+                var strGlobal = sessionStorage.getItem("ShowAs");
+                var strGlobalFee = sessionStorage.getItem("ShowFee");
+                var siteVar = 'BTTCScan';
+                var cookieconsent = getCookie(siteVar + "_cookieconsent");
+                if (cookieconsent !== "True") {
+                    document.getElementById("divcookie").style.display = "block";
+                };
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) === 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+                $("#btnCookie").click(function () {
+                    $("#divcookie").fadeOut("slow", function () {
+                        var d = new Date();
+                        d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = siteVar + "_cookieconsent=True" + ";" + expires + ";path=/";;
+                    });
+                });
+                function handleSearchText(data) {
+                    searchAddress = false;
+                    if ($("txtSearchInput").val() == "") {
+                        $("#hdnSearchText").val("");
+                    }
+                }
+            </script>
+            
+
+            <script src="Token%20Tracker%20BTTCScan_files/web3-utils.min.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/web3-eth.min.js"></script>
+            <script src="Token%20Tracker%20BTTCScan_files/web3-providers-http.min.js"></script>
+            <script type="text/javascript">
+                var eth;
+                var isTestnet = 'false';
+                var SiteNetID = '199';
+                var SiteNetChainID = '0xc7';
+                var SiteNetName = 'BTTC Mainnet';
+                var SiteName = 'BTTCScan';
+                var SiteErc20 = 'BRC20';
+                var SiteErc721 = 'BRC721';
+                var SiteErc1155 = 'BRC1155';
+                var sv = '24.2.3.0';
+                var slt = 'png';
+                var allowErc1155 = '';
+
+                async function addNetwork(type) {
+
+                    if (type === 'web3') {
+                        if (typeof ethereum !== 'undefined') {
+                            eth = new Web3Eth(ethereum);
+                        } else if (typeof web3 !== 'undefined') {
+                            eth = new Web3Eth(web3.givenProvider);
+                        } else {
+                            eth = new Web3Eth(ethereum);
+                        }
+                    }
+
+                    if (typeof eth !== 'undefined') {
+                        var network = 0;
+                        network = await eth.getChainId();
+                        netID = network.toString();
+                        var params;
+                        if (netID == SiteNetID) {
+                            alert("BitTorrent Chain Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: SiteNetChainID,
+                                chainName: 'BTTC Mainnet',
+                                nativeCurrency: {
+                                    name: 'BTT',
+                            symbol: 'BTT',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.bt.io'],
+                                blockExplorerUrls: ['https://bttcscan.com']
+                            }]
+                        }
+
+                        window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                            .then(() => console.log('Success'))
+                            .catch((error) => console.log("Error", error.message));
+                    } else {
+                        alert('Unable to locate a compatible web3 browser!');
+                    }
+                }
+            </script>
+
+                
+    <script src="Token%20Tracker%20BTTCScan_files/hs.sticky-thead.js"></script>
+    <script>
+        $(document).on('ready', function () {
+           
+            if ($("#tblResult").length > 0){
+                // initialization of sticky thead
+               $('.stickyTableHead').HSStickyThead();
+            }     
+
+            renderDataTable();
+            //$("[data-toggle-second='tooltip']").tooltip();
+        });
+
+        function handleTokenSearch(data) {
+            searchAddress = false;
+            if ($("searchtoken").val() == "") {
+                $("#hdnSearchText").val("");                    
+            }
+        }
+
+        function updateUrl(subCatId) {
+            var queryString = '';
+            queryString += 'subcatid=' + subCatId;
+
+            var length = queryStringDictionary["length_" + subCatId];
+            if (length) {
+                if (length < 0) {
+                    length = 7;
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start_" + subCatId];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var col = queryStringDictionary["col_" + subCatId];
+            if (col !== undefined) {
+                queryString += "&col=" + col;
+            }
+
+            var order = queryStringDictionary["order_" + subCatId];
+            if (order !== undefined) {
+                queryString += "&order=" + order;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        var resetSortAfterClickDictionary = {};
+        var resetSortDictionary = {};
+        var resetPageDictionary = {};
+        var visitedTabDictionary = {};
+        var queryStringDictionary = {};
+        var currentLengthDictionary = {}; 
+        var currentTab = 
+            
+            
+            
+
+            function selectTab(el) {
+                $(".nav-link.active").removeClass("active");
+                el.classList.add("active");
+
+                var id = $('.nav-link.active').attr('val');
+                $("#subcattab-" + currentTab).removeClass("show").removeClass("active");
+
+                $("#subcattab-" + id).addClass("show").addClass("active");
+
+                if (!visitedTabDictionary["subCat_" + id]) {
+                    visitedTabDictionary["subCat_" + id] = true;
+                    $('#table-subcatid-'+ id).DataTable().ajax.reload();
+                }
+
+                updateUrl(id);
+                currentTab = id;
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+
+        function renderDataTable() {
+            visitedTabDictionary["subCat_" + currentTab] = true;
+            resetSortAfterClickDictionary["table-subcatid-" + currentTab] = false;
+
+        var config =    {
+                dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                language: {
+                    paginate: {
+                        next: '<i class="fa fa-chevron-right small"></i>',
+                        previous: '<i class="fa fa-chevron-left small"></i>'
+                    },
+                    lengthMenu: "Show _MENU_ Records",
+                    info: 'A total of \<strong\>_MAX_\</strong\> Token Contracts found'
+                },
+                columnDefs: [
+                    { orderable: true, targets: 2, orderSequence: ["asc", "desc", "reset"] },
+                    { orderable: true, targets: 3, orderSequence: ["desc", "asc"] },
+                    { orderable: true, targets: 4, orderSequence: ["desc", "asc", "reset"] },
+                    { orderable: false, targets: '_all' }
+                ],
+                columns: [
+                    { data: "number" },
+                    { data: "contractAddress" },
+                    { data: "tokenName" },
+                    { data: "marketCap" },
+                    { data: "holders" },
+                    { data: "website" }
+            ],
+                
+                searching: false,
+                pagingType: 'full',
+            drawCallback: function (settings) {
+                    //change sorting icon and position
+                    $("#" + this.attr('id')+" th.sorting_asc").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort-up"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                $("#" + this.attr('id') +" th.sorting_desc").not(".remove-icon").each(function () {
+                        if (!$(this).hasClass('no-login')) {
+                            var text = $(this).text();
+                            text = '<i class="fad fa-sort-down"></i> ' + text;
+                            $(this).html(text);
+                        }
+                    });
+
+                $("#" + this.attr('id') +" th.sorting").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    var api = this.api();
+                    var json = api.ajax.json();
+                if (!json) {
+                    var currentPageDisp = "1";
+
+                    //reload state if querystring is available
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var existLength = urlParams.get('size');
+                    if (existLength) {
+                        api.page.len(existLength);
+                        currentLengthDictionary[this.attr('id')] = parseInt(existLength)
+
+                        var existStart = urlParams.get('start');
+
+                        if (!existStart) {
+                            existStart = 0
+                        }
+                            currentPage = Math.floor(existStart / existLength);
+                            api.page(currentPage);
+                            currentPageDisp = currentPage + 1;
+                    }
+
+                    var existCol = urlParams.get('col');
+                    var existOrder = urlParams.get('order');
+
+                    if (existCol && existOrder) {
+                        this.api().order([parseInt(existCol), existOrder]);
+                    }
+
+                    $('.custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                    var totalPage = 0;
+                    $('#' + this.attr('id') + '_wrapper .paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+                    return;
+
+                } else {
+                    $('#' + this.attr('id') + '_wrapper .paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                    if (refreshToDefaultDictionary[settings.nTable.getAttribute("id")]) {
+                        refreshToDefaultDictionary[settings.nTable.getAttribute("id")] = false;
+                        this.api().page.len(defaultLength);
+                        this.api().order([defaultSort["column"], defaultSort["dir"]]);
+                        $("#" + this.attr('id') + " .default-sort").not("no-login").removeClass("sorting").addClass("sorting_desc")
+                        $("#" + this.attr('id') + " .sorting_desc").not(".default-sort").removeClass("sorting_desc").addClass("sorting").removeAttr("aria-sort");
+                        $("#" + this.attr('id') + " .sorting_asc").not(".default-sort").removeClass("sorting_asc").addClass("sorting").removeAttr("aria-sort");
+                    }
+
+                    //bypass standard datatables sorting selection
+                    if (resetSortDictionary[this.attr('id')] || resetSortAfterClickDictionary[this.attr('id')]) {
+                        this.api().order([3, 'desc']); //the default sorting is column 3
+                        resetSortAfterClickDictionary[this.attr('id')] = false;
+                        $("#" + this.attr('id') + " .default-sort").not("no-login").removeClass("sorting").addClass("sorting_desc")
+                        $("#" + this.attr('id') + " .sorting_desc").not(".default-sort").removeClass("sorting_desc").addClass("sorting").removeAttr("aria-sort");
+                        $("#" + this.attr('id') + " .sorting_asc").not(".default-sort").removeClass("sorting_asc").addClass("sorting").removeAttr("aria-sort");
+                    }
+
+                    if (resetPageDictionary[this.attr('id')]) {
+                        this.api().page(0);
+                        resetPageDictionary[this.attr('id')] = false;
+                    }
+
+                    $("#" + this.attr('id') + " th.sorting_asc").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort-up"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    $("#" + this.attr('id') + " th.sorting_desc").not("").each(function () {
+                        if (!$(this).hasClass('no-login')) {
+                            var text = $(this).text();
+                            text = '<i class="fad fa-sort-down"></i> ' + text;
+                            $(this).html(text);
+                        }
+                    });
+
+                    $("#" + this.attr('id') + " th.sorting").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    //maybe can be removed
+                    if (json.showPopUp) {
+                        showSignInPopUp(this.attr('id'));
+                    }
+                    else {
+                        hideSignInPopUp(this.attr('id'))
+                    }
+                //End - maybe can be removed
+                }
+
+                var subCatId = $('.nav-link.active').attr('val');
+
+                //get page info
+                var pageInfo = this.api().page.info();
+
+                if (pageInfo.length) {
+                    queryStringDictionary["length_" + subCatId] = pageInfo.length;
+                }
+
+                if (pageInfo.start !== undefined) {
+                    queryStringDictionary["start_" + subCatId] = pageInfo.start;
+                }
+
+                //get ordering info
+                var orderInfo = this.api().order();
+                queryStringDictionary["col_" + subCatId] = orderInfo[0][0];
+                queryStringDictionary["order_" + subCatId] = orderInfo[0][1];
+
+
+                updateUrl(subCatId);
+                $('[data-toggle="tooltip"]').tooltip()
+
+                },
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/tokens.aspx/GetTokensBySubLabel",
+                    dataType: 'json',
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+                        return JSON.stringify(morp);
+                    },
+                    data: function (d,settings) {
+                        var labelModel = generateLabelModel();
+
+                        if (refreshToDefaultDictionary[settings.nTable.getAttribute("id")]) {
+                            d.length = defaultLength;
+                            d.order[0] = defaultSort;
+                        }
+
+                        if (currentLengthDictionary[settings.nTable.getAttribute("id")] != d.length) {
+                            if (currentLengthDictionary[settings.nTable.getAttribute("id")] != undefined) {
+                                d.start = 0;
+                                resetPageDictionary[settings.nTable.getAttribute("id")] = true;
+                            }
+                            currentLengthDictionary[settings.nTable.getAttribute("id")] = d.length;
+                        }
+
+                        if ((d.order[0] && d.order[0].dir === "reset") ||
+                            resetSortAfterClickDictionary[settings.nTable.getAttribute("id")]) {
+                            d.order[0] = { column: 3, dir: "desc" }
+                            resetSortDictionary[settings.nTable.getAttribute("id")] = true;
+                        }
+                        else {
+                            resetSortDictionary[settings.nTable.getAttribute("id")] = false;
+                        }
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    }
+            },
+                
+                
+                
+                
+                
+                };
+
+        
+        }
+    </script>    
+
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
