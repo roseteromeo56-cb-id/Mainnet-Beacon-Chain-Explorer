@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	BTTC Transactions Information | BTTCScan
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="BTTCScan allows you to explore and search the BitTorrent blockchain for transactions, addresses, tokens, prices and other activities taking place on BitTorrent chain (BTTC)"> <meta name="author" content="bttcscan.com"> <meta name="keywords" content="BTTCScan, explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="BTTC Transactions Information | BTTCScan"> <meta property="og:description" content="Transactions that have been validated and confirmed on the BitTorrent Chain Blockchain. The list consists of transactions from sending BTT and the transactions for interacting with a smart contract."> <meta property="og:type" content="website"> <meta property="og:site_name" content="BitTorrent Chain Blockchain Explorer"> <meta property="og:url" content="http://bttcscan.com/txs"> <meta property="og:image" content="https://bttcscan.com/images/brandassets/logo.jpg?v=24.2.3.0"> <meta property="og:image:alt" content="Visit bttcscan.com"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@BTTCScan"> <meta name="twitter:title" content="BTTC Transactions Information | BTTCScan"> <meta property="twitter:description" content="Transactions that have been validated and confirmed on the BitTorrent Chain Blockchain. The list consists of transactions from sending BTT and the transactions for interacting with a smart contract."> <meta property="twitter:image" content="https://bttcscan.com/images/brandassets/logo.jpg?v=24.2.3.0"> 
+
+    <link rel="shortcut icon" href="https://bttcscan.com/images/favicon.ico?v=24.2.3.0">
+    <link rel="apple-touch-icon" href="https://bttcscan.com/images/favicon.png">
+
+    
+    <script type="text/javascript" async="" src="BTTC%20Transactions%20Information%20BTTCScan_files/analytics.js"></script><script type="text/javascript" async="" src="BTTC%20Transactions%20Information%20BTTCScan_files/js_002"></script><script type="text/javascript" async="" src="BTTC%20Transactions%20Information%20BTTCScan_files/js"></script><script async="" src="BTTC%20Transactions%20Information%20BTTCScan_files/js_003"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-JWH3WYVJQ3', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/animate.min.css">
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/hs.megamenu.css">
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/select2.min.css">
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/theme.min.css">
+    <link rel="stylesheet" href="BTTC%20Transactions%20Information%20BTTCScan_files/custom.css">
+
+    <script src="BTTC%20Transactions%20Information%20BTTCScan_files/jquery.min.js"></script>
+    <script type="text/javascript" src="BTTC%20Transactions%20Information%20BTTCScan_files/blockies.js"></script>
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+
+        body.dark-mode .ui-state-active {
+            background-color: #252525;
+            border-color: #323232;
+        }
+
+        .sticky-top {
+            z-index: 999;
+        }
+
+        .defi-icon img {
+            max-width: 27px;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+
+    
+   
+    <link rel="stylesheet" type="text/css" href="BTTC%20Transactions%20Information%20BTTCScan_files/datatables.min.css">
+    <script type="text/javascript" src="BTTC%20Transactions%20Information%20BTTCScan_files/datatables.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <style>
+        table.dataTable thead th.sorting:before,
+        table.dataTable thead th.sorting_asc:before,
+        table.dataTable thead th.sorting_desc:before,
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_desc:after {
+                content: none;
+            }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .fadeout {
+            position: relative;
+            bottom: 4em;
+            height: 4em;
+            background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        } 
+    </style>
+    <style>
+    .popover {
+      min-height: 100px;
+      min-width: 310px;
+      border: none;
+      box-shadow: 0 0.5rem 1.2rem rgba(189,197,209,.7);
+    }
+
+    .popover-body {
+      padding: 1rem;
+    }
+
+    .spinner-wrapper__icon{
+        top: 40%
+    }
+
+    .tooltip-inner {
+        max-width: 320px;
+    }
+  </style> 
+  <script>
+      function showSignInPopUp() {
+          if ($('#signInPopUp').attr("style")) {
+              $('#signInPopUp').removeAttr("style");
+          }
+
+          if (!$("#paywall_mask").hasClass("paywall-mask")) {
+              $('#paywall_mask').addClass("paywall-mask");
+          }
+
+          return;
+      }
+
+      function hideSignInPopUp() {
+          if (!$('#signInPopUp').attr("style")) {
+              $('#signInPopUp').attr("style", "display:none;");
+          }
+
+          if ($("#paywall_mask").hasClass("paywall-mask")) {
+              $('#paywall_mask').removeClass("paywall-mask");
+          }
+
+          return;
+      }
+  </script>
+<meta name="description" content="Transactions that have been validated and confirmed on the BitTorrent Chain Blockchain. The list consists of transactions from sending BTT and the transactions for interacting with a smart contract."><script src="BTTC%20Transactions%20Information%20BTTCScan_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section  ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand " href="https://bttcscan.com/" target="_parent" aria-label="BTTCScan">
+                                <img id="logo-header" width="160" src="BTTC%20Transactions%20Information%20BTTCScan_files/logo.png" alt="Logo">
+                                
+                            </a>
+
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">BTT: $0.00000142</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title=""><span class="text-danger"> (-6.95%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://bttcscan.com/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI12" class=" active"><a href="https://bttcscan.com/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI16"><a href="https://bttcscan.com/txsPending" class="nav-link u-header__sub-menu-nav-link">Pending Transactions</a></li>
+                                            <li id="LI14"><a href="https://bttcscan.com/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI1"><a href="https://bttcscan.com/txnbridge" class="nav-link u-header__sub-menu-nav-link">Cross Chain Transactions</a></li>
+                                            
+
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                              <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_accountall"><a href="https://bttcscan.com/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://bttcscan.com/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_validators" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="validatorMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="validatorSubMenu">Validators</a>
+                                        <ul id="validatorSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="validatorMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI4"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/validators">Validators Leaderboard</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokens">BRC20 Tokens By MarketCap</a></li>
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokentxns">View BRC20 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokens-nft">BRC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokentxns-nft">View BRC721 Transfers</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/charts">Charts &amp;  Stats</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+
+                                        
+                                                <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                                    
+                                                    <div class="row u-header__mega-menu-wrapper">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Developers</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.bttcscan.com/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                                <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                                <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                                <li id="LI15"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/pushTx"><i class="fa fa-angle-right small mr-1"></i>Broadcast TXN</a></li>
+                                                                <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                                <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Tools</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI41"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>
+                                                                <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                                
+                                                                <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI50"><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/unitconverter"><i class="fa fa-angle-right small mr-1"></i>Unit Converter </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End Resources - Mega Menu -->
+                                    </li>
+
+
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://bttcscan.com/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+
+                                            
+                                            <span class="btn btn-sm btn-icon btn-primary cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="BTTC%20Transactions%20Information%20BTTCScan_files/main_white.png" alt="Logo1">
+                                            </span>
+                                             
+
+
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut p-3" aria-labelledby="explorersWithDropdown" style="min-width: 200px; display: none;">
+                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="https://bttcscan.com/">BitTorrent Mainnet</a></li><li class="dropdown-divider"></li><li><a class="nav-link u-header__sub-menu-nav-link" href="https://testnet.bttcscan.com/">Donau Testnet</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-55 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend d-none d-md-block">
+                                            <!-- Select -->
+                                            <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">
+                                                <option selected="selected" value="0">All Filters</option>
+                                                <option value="1">Addresses</option>
+                                                <option value="2">Tokens</option>
+                                                <option value="3">Name Tags</option>
+                                                <option value="4">Labels</option>
+                                                <option value="5">Websites</option>
+                                            </select>
+                                            <!-- End Select -->
+                                        </div>
+                                        
+                                        <input type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Block / Token" aria-label="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" autocomplete="off">
+                                        
+                                        <input type="hidden" value="" id="hdnSearchText">
+                                        <input id="hdnIsTestNet" value="False" type="hidden">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            
+</div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in BTT">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+    
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center py-3">
+            <div class="mb-1 mb-md-0">
+                 <h1 class="h4 mb-0">Transactions&nbsp;<span class="small text-secondary"></span>
+                    <p class="mb-0 text-break small">
+                        
+                    </p>
+                </h1>
+            </div>
+            
+        </div>
+                
+    </div>    
+
+    
+    <!--<div class="container border-top py-4">   
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+         <!-- Testnet Banner -->
+         <!--<ins class="adsbygoogle"
+             style="display: block"
+             data-ad-client="ca-pub-9365010058051645"
+             data-ad-slot="4376794054"
+             data-ad-format="horizontal"></ins>
+         <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+    </div>-->
+    
+
+    <div class="container space-bottom-2">
+        <span id="ContentPlaceHolder1_lblAdResult"></span>
+        
+        
+        <div id="ContentPlaceHolder1_mainrow" class="card">            
+            <div class="card-body">
+                <!-- Reset Filters -->
+                <div class="d-flex flex-wrap flex-xl-nowrap text-nowrap align-items-center ml-auto">
+                    
+                </div>
+                
+                
+                <!-- End Reset Filters -->
+
+                <div id="ContentPlaceHolder1_topPageDiv" class="d-md-flex justify-content-between mb-4">
+                    <p class="mb-2 mb-md-0">
+                        <span class="d-flex align-items-center">
+                            <i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse mr-1" style="display: none;"></i>
+                            More than 262,734,504 transactions found</span><span class="d-block small">(Showing the last 500k records)</span>
+                        
+                        
+                    </p>                    
+
+                    <!-- Pagination -->
+                    <nav aria-label="page navigation">
+                         <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">10000</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://bttcscan.com/txs?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://bttcscan.com/txs?p=10000"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                        
+                    </ul></nav>
+                    <!-- End Pagination -->
+                </div>
+
+                
+
+                <div class="table-responsive mb-2 mb-md-0" id="paywall_mask">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" width="20"></th>
+                                <th scope="col" width="1">Txn Hash</th>
+                                <th scope="col" width="1">Method <i class="fal fa-info-circle" data-toggle="tooltip" data-html="true" data-boundary="viewport" title="" data-original-title="Function executed based on decoded input data. For unidentified functions, method ID is displayed instead."></i></th>
+                                <th scope="col" width="1" class="d-none d-sm-table-cell">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2">Block</div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2"><a href="javascript:;" onclick="switchAgeToDateTime(this)" id="lnkAgeDateTime" title="" data-toggle-commonjs="tooltip" data-original-title="Click to show Datetime Format">Age</a></div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2">From</div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col" width="30"></th>
+                                <th scope="col">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2">To</div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    Value</th>
+                                <th scope="col">
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2"><a href="javascript:;" onclick="switchTxFeeGasPrice()" class="switch-txn-fee-gas-price" title="" data-toggle-commonjsfee="tooltip" data-original-title="(Gas Price * Gas Used by Txns) in BTT">Txn Fee</a></div>
+                                    </div>
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xcca5b52e38afd396c9f93a269b4cd411f74072af0d0372825c3af6284639dbd6" class="myFnExpandBox_searchVal">0xcca5b52e38afd396c9f93a269b4cd411f74072af0d0372825c3af6284639dbd6</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Swap Out">Swap Out</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087158">34087158</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="6 secs ago">2024-03-03 14:32:58</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:32:58">6 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf5b8ea6160bc1e702b54d662c3582287fa8dfffc"><a href="https://bttcscan.com/address/0xf5b8ea6160bc1e702b54d662c3582287fa8dfffc">0xf5b8ea6160bc1e702b54d662c3582287fa8dfffc</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><a class="hash-tag text-truncate" href="https://bttcscan.com/address/0xcbb9edf6775e39748ea6483a7fa6a385cd7e9a4e" data-toggle="tooltip" title="" data-original-title="BitTorrent: BTT_b Token
+(0xcbb9edf6775e39748ea6483a7fa6a385cd7e9a4e)">BitTorrent: BTT_b Token</a></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">12<b>.</b>8695</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x3ef3ea8e46a93314a40007528d68bde30cf897b185d2501279fc3c89981f5f3a" class="myFnExpandBox_searchVal">0x3ef3ea8e46a93314a40007528d68bde30cf897b185d2501279fc3c89981f5f3a</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087111">34087111</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:24</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:24">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>5,600,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">473<b>.</b>86431233</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">2,055,926<b>.</b>418106078</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x211a8707957da14706118f901b54c9236f09ea5df3acaada05f396ac71ad8a92" class="myFnExpandBox_searchVal">0x211a8707957da14706118f901b54c9236f09ea5df3acaada05f396ac71ad8a92</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Batch Set">Batch Set</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087110">34087110</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:22</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:22">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfeed34d25d6ac982bb09b6a6e478f1ebbd62c5fe"><a href="https://bttcscan.com/address/0xfeed34d25d6ac982bb09b6a6e478f1ebbd62c5fe">0xfeed34d25d6ac982bb09b6a6e478f1ebbd62c5fe</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf330b39f74e7f71ab9604a5307690872b8125ac8"><a href="https://bttcscan.com/address/0xf330b39f74e7f71ab9604a5307690872b8125ac8">0xf330b39f74e7f71ab9604a5307690872b8125ac8</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">47<b>.</b>949</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xb6b33ca5d95a5702fc06621f199dd5baa0be1b0f1de80d5cd15139711bbcbba3" class="myFnExpandBox_searchVal">0xb6b33ca5d95a5702fc06621f199dd5baa0be1b0f1de80d5cd15139711bbcbba3</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x96f35a9b">0x96f35a9b</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087110">34087110</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:22</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:22">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc120a044ac76ec032d0f50879931625d2b41888c"><a href="https://bttcscan.com/address/0xc120a044ac76ec032d0f50879931625d2b41888c">0xc120a044ac76ec032d0f50879931625d2b41888c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x578317914de847ddc4cd3f11b3babbedf6cb0c4e"><a href="https://bttcscan.com/address/0x578317914de847ddc4cd3f11b3babbedf6cb0c4e">0x578317914de847ddc4cd3f11b3babbedf6cb0c4e</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">103<b>.</b>43376305</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">519,128<b>.</b>525466757</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x482639d15ba0db4eb1f513ea1f053ac3b09c9b53ac4440dce90055614272561f" class="myFnExpandBox_searchVal">0x482639d15ba0db4eb1f513ea1f053ac3b09c9b53ac4440dce90055614272561f</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087110">34087110</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:22</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:22">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>5,600,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">557<b>.</b>71877004</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">2,055,916<b>.</b>57928125</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x0c04cad3ef7a33899b93753137626e94119fc224f100647b0576b4a9a72829c0" class="myFnExpandBox_searchVal">0x0c04cad3ef7a33899b93753137626e94119fc224f100647b0576b4a9a72829c0</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087108">34087108</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:18</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:18">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>555122</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x396e66e5d120e246fd381e5429a8a37809f1fd2cf09c07737aa1ca90f6a9dc69" class="myFnExpandBox_searchVal">0x396e66e5d120e246fd381e5429a8a37809f1fd2cf09c07737aa1ca90f6a9dc69</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087108">34087108</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:18</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:18">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc8f32d49408e9816ef7c6dd863d819133fbd1193"><a href="https://bttcscan.com/address/0xc8f32d49408e9816ef7c6dd863d819133fbd1193">0xc8f32d49408e9816ef7c6dd863d819133fbd1193</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf4b5f23616145ffa1bbc240377bde172b42e3b22"><a href="https://bttcscan.com/address/0xf4b5f23616145ffa1bbc240377bde172b42e3b22">0xf4b5f23616145ffa1bbc240377bde172b42e3b22</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>7385</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xb5368581f0e815730856a62570672fa645234197a8b414ef061572c72a67bf3a" class="myFnExpandBox_searchVal">0xb5368581f0e815730856a62570672fa645234197a8b414ef061572c72a67bf3a</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087105">34087105</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:12</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:12">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">61<b>.</b>724484</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x22d755c881cb636695378b26a87eea87ea90b9ff20ad9611b8163269b8b6117a" class="myFnExpandBox_searchVal">0x22d755c881cb636695378b26a87eea87ea90b9ff20ad9611b8163269b8b6117a</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087104">34087104</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1 min ago">2024-03-03 14:31:10</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:10">1 min ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>800,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">297<b>.</b>01108465</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">683,952<b>.</b>324678488</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xdef084d8814eae1db82181582a4947f3ddfe43f9b34197944a016bd4093cb04d" class="myFnExpandBox_searchVal">0xdef084d8814eae1db82181582a4947f3ddfe43f9b34197944a016bd4093cb04d</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x96f35a9b">0x96f35a9b</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087103">34087103</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:31:04</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:04">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc120a044ac76ec032d0f50879931625d2b41888c"><a href="https://bttcscan.com/address/0xc120a044ac76ec032d0f50879931625d2b41888c">0xc120a044ac76ec032d0f50879931625d2b41888c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x578317914de847ddc4cd3f11b3babbedf6cb0c4e"><a href="https://bttcscan.com/address/0x578317914de847ddc4cd3f11b3babbedf6cb0c4e">0x578317914de847ddc4cd3f11b3babbedf6cb0c4e</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">149<b>.</b>69498709</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">752,372<b>.</b>223600468</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xeb4825a27a566184a1e42572f1399d408569f900689a866e239f7b9c9714f2fb" class="myFnExpandBox_searchVal">0xeb4825a27a566184a1e42572f1399d408569f900689a866e239f7b9c9714f2fb</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087103">34087103</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:31:04</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:04">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>3,500,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">703<b>.</b>38706826</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">2,694,081<b>.</b>905057072</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x6f88cf606753eb219f4ebae25322acc657ceaf0c33cb6f8d582705acc6577b5f" class="myFnExpandBox_searchVal">0x6f88cf606753eb219f4ebae25322acc657ceaf0c33cb6f8d582705acc6577b5f</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087101">34087101</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:31:00</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:31:00">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>587558</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xcd6021eb9a554b57a8e46a345d6ed4776d3d1edb7f9d800bbe9051e81cee7751" class="myFnExpandBox_searchVal">0xcd6021eb9a554b57a8e46a345d6ed4776d3d1edb7f9d800bbe9051e81cee7751</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087095">34087095</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:30:48</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:30:48">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>547778</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xd18160a9196d817fe44d80225da4f23b45dd942c1cd579e00645cdc0b752ef5f" class="myFnExpandBox_searchVal">0xd18160a9196d817fe44d80225da4f23b45dd942c1cd579e00645cdc0b752ef5f</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087088">34087088</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:30:34</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:30:34">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>12,000,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">926<b>.</b>73494169</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">4,020,768<b>.</b>814250723</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x301cc798c9ad1bd1b3ab7b8576f98e237d66f968dc66251504ecd7c41e702d4f" class="myFnExpandBox_searchVal">0x301cc798c9ad1bd1b3ab7b8576f98e237d66f968dc66251504ecd7c41e702d4f</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x96f35a9b">0x96f35a9b</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087087">34087087</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:30:32</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:30:32">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc120a044ac76ec032d0f50879931625d2b41888c"><a href="https://bttcscan.com/address/0xc120a044ac76ec032d0f50879931625d2b41888c">0xc120a044ac76ec032d0f50879931625d2b41888c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x578317914de847ddc4cd3f11b3babbedf6cb0c4e"><a href="https://bttcscan.com/address/0x578317914de847ddc4cd3f11b3babbedf6cb0c4e">0x578317914de847ddc4cd3f11b3babbedf6cb0c4e</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">86<b>.</b>09307486</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">549,308<b>.</b>204332601</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x54fa151fca49889215385a6c5ffa22e0a28bbf984c6d4743cbac5c8a1a22edaf" class="myFnExpandBox_searchVal">0x54fa151fca49889215385a6c5ffa22e0a28bbf984c6d4743cbac5c8a1a22edaf</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087087">34087087</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:30:32</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:30:32">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>12,000,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">1,096<b>.</b>12106252</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">4,020,765<b>.</b>777823708</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x97d7380f723ac4436330b2dabbd99cc50934bce63d3ea297277224cb5e43b015" class="myFnExpandBox_searchVal">0x97d7380f723ac4436330b2dabbd99cc50934bce63d3ea297277224cb5e43b015</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087085">34087085</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:30:28</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:30:28">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>555122</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xc4e80500096f72fe50963dd6bb5fb7dacc76fb9adbd1c52cd793b8c1f0e30621" class="myFnExpandBox_searchVal">0xc4e80500096f72fe50963dd6bb5fb7dacc76fb9adbd1c52cd793b8c1f0e30621</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087085">34087085</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2 mins ago">2024-03-03 14:30:28</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:30:28">2 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc8f32d49408e9816ef7c6dd863d819133fbd1193"><a href="https://bttcscan.com/address/0xc8f32d49408e9816ef7c6dd863d819133fbd1193">0xc8f32d49408e9816ef7c6dd863d819133fbd1193</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf4b5f23616145ffa1bbc240377bde172b42e3b22"><a href="https://bttcscan.com/address/0xf4b5f23616145ffa1bbc240377bde172b42e3b22">0xf4b5f23616145ffa1bbc240377bde172b42e3b22</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">44<b>.</b>4465</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x80cdfb905598cece5fce6a546df58914b8a40f4c7784189cd64e3a2c75344835" class="myFnExpandBox_searchVal">0x80cdfb905598cece5fce6a546df58914b8a40f4c7784189cd64e3a2c75344835</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087061">34087061</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="3 mins ago">2024-03-03 14:29:40</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:29:40">3 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>1,200,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">651<b>.</b>5762953</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">1,500,439<b>.</b>360349735</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x8a3347b11b3fb10c3fced75f7aa59ac8fb33ba9f664164499ebe4f0d5764892e" class="myFnExpandBox_searchVal">0x8a3347b11b3fb10c3fced75f7aa59ac8fb33ba9f664164499ebe4f0d5764892e</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34087059">34087059</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="3 mins ago">2024-03-03 14:29:36</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:29:36">3 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>587558</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x05c38421d1235146d90a1ff59b3e44f71796cfb6cadbe667fd0e768dcc825826" class="myFnExpandBox_searchVal">0x05c38421d1235146d90a1ff59b3e44f71796cfb6cadbe667fd0e768dcc825826</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Transfer">Transfer</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086976">34086976</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="6 mins ago">2024-03-03 14:26:46</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:26:46">6 mins ago</span></td><td><a class="hash-tag text-truncate" href="https://bttcscan.com/address/0x0000000000000000000000000000000000000000" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Null: 0x000…000
+(0x0000000000000000000000000000000000000000)">Null: 0x000…000</a></td><td class="text-center"><span class="u-label u-label--xs u-label--secondary color-strong text-uppercase text-center w-100 rounded text-nowrap">SELF</span></td><td><a class="hash-tag text-truncate" href="https://bttcscan.com/address/0x0000000000000000000000000000000000000000" data-toggle="tooltip" title="" data-original-title="Null: 0x000…000
+(0x0000000000000000000000000000000000000000)">Null: 0x000…000</a></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">0</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xb47d622de4ff90680a28408e5a382ebea94be3383fa902ea64529741d2aa14b9" class="myFnExpandBox_searchVal">0xb47d622de4ff90680a28408e5a382ebea94be3383fa902ea64529741d2aa14b9</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086930">34086930</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="7 mins ago">2024-03-03 14:25:10</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:25:10">7 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>587558</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xdc74052583deda2cfbd3ac7c8a79edf3be7a548d2df17aa50237a164fa137693" class="myFnExpandBox_searchVal">0xdc74052583deda2cfbd3ac7c8a79edf3be7a548d2df17aa50237a164fa137693</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0xb28019d6">0xb28019d6</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086924">34086924</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 mins ago">2024-03-03 14:24:58</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:24:58">8 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad"><a href="https://bttcscan.com/address/0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad">0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x4a0f794c80f434ebb69cfbaa1f12109fca68c899"><a href="https://bttcscan.com/address/0x4a0f794c80f434ebb69cfbaa1f12109fca68c899">0x4a0f794c80f434ebb69cfbaa1f12109fca68c899</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">1,229<b>.</b>4585</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xb752717f036f51788a33da8baed5a26f2b3ebd31b240ae5087fd2fcdeab1a200" class="myFnExpandBox_searchVal">0xb752717f036f51788a33da8baed5a26f2b3ebd31b240ae5087fd2fcdeab1a200</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086904">34086904</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 mins ago">2024-03-03 14:24:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:24:14">8 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>800,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">493<b>.</b>33855054</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">1,135,837<b>.</b>561322643</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xc7c079b6a95254a31119c1b0063e7e6bbb0f9709eb37629387fce2c553bb330f" class="myFnExpandBox_searchVal">0xc7c079b6a95254a31119c1b0063e7e6bbb0f9709eb37629387fce2c553bb330f</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086902">34086902</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 mins ago">2024-03-03 14:24:10</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:24:10">8 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>547778</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x0796e72fa254bf49c18ee127fba52cbc01a8582ca2be5e22cb3723a748a002d9" class="myFnExpandBox_searchVal">0x0796e72fa254bf49c18ee127fba52cbc01a8582ca2be5e22cb3723a748a002d9</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Transfer">Transfer</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086900">34086900</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="8 mins ago">2024-03-03 14:24:06</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:24:06">8 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x8ca5c602868739d160043a9e3795a1d0748ad616"><a href="https://bttcscan.com/address/0x8ca5c602868739d160043a9e3795a1d0748ad616">0x8ca5c602868739d160043a9e3795a1d0748ad616</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span class="hash-tag text-truncate" data-toggle="tooltip" title="" data-original-title="0xf5b8ea6160bc1e702b54d662c3582287fa8dfffc"><a href="https://bttcscan.com/address/0xf5b8ea6160bc1e702b54d662c3582287fa8dfffc">0xf5b8ea6160bc1e702b54d662c3582287fa8dfffc</a></span></td><td>300 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">10<b>.</b>5</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x3f3ffec5190b40a247cca57f401348ee6ad691e529bb541c17fbeb57564fe75e" class="myFnExpandBox_searchVal">0x3f3ffec5190b40a247cca57f401348ee6ad691e529bb541c17fbeb57564fe75e</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086899">34086899</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:24:04</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:24:04">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>3,500,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">177<b>.</b>46332537</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">769,949<b>.</b>391376054</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x21de13d11cc8296e647076737e0ebff9759a0902bf90d588792161a0c61b3b48" class="myFnExpandBox_searchVal">0x21de13d11cc8296e647076737e0ebff9759a0902bf90d588792161a0c61b3b48</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086898">34086898</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:24:02</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:24:02">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>3,500,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">208<b>.</b>86747978</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">769,947<b>.</b>395778158</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x80adce208b9c939c566be58dc51f1e4815868a4457d2a74a85f9c9cfa37d5868" class="myFnExpandBox_searchVal">0x80adce208b9c939c566be58dc51f1e4815868a4457d2a74a85f9c9cfa37d5868</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086896">34086896</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:58</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:58">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>555122</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x6e8588730ccd6ee946031b39452607c2d6d83caec0e6ac4a52c5c7f0b1dbf4a8" class="myFnExpandBox_searchVal">0x6e8588730ccd6ee946031b39452607c2d6d83caec0e6ac4a52c5c7f0b1dbf4a8</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0xb28019d6">0xb28019d6</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086890">34086890</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:46</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:46">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad"><a href="https://bttcscan.com/address/0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad">0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x4a0f794c80f434ebb69cfbaa1f12109fca68c899"><a href="https://bttcscan.com/address/0x4a0f794c80f434ebb69cfbaa1f12109fca68c899">0x4a0f794c80f434ebb69cfbaa1f12109fca68c899</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">1,264<b>.</b>7235</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x1abe7fcee9c902448726fb8fef8d5a92eee194d14e70a2cbc98988f11a2fe94c" class="myFnExpandBox_searchVal">0x1abe7fcee9c902448726fb8fef8d5a92eee194d14e70a2cbc98988f11a2fe94c</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086876">34086876</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:18</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:18">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>12,000,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">956<b>.</b>69055456</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">4,150,735<b>.</b>419194187</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x3b5ed91d199d92ce9b987c5afc015e4c2ae9a30b29e0ec0276ddfb76ff2af8da" class="myFnExpandBox_searchVal">0x3b5ed91d199d92ce9b987c5afc015e4c2ae9a30b29e0ec0276ddfb76ff2af8da</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086875">34086875</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:16</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:16">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc8f32d49408e9816ef7c6dd863d819133fbd1193"><a href="https://bttcscan.com/address/0xc8f32d49408e9816ef7c6dd863d819133fbd1193">0xc8f32d49408e9816ef7c6dd863d819133fbd1193</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf4b5f23616145ffa1bbc240377bde172b42e3b22"><a href="https://bttcscan.com/address/0xf4b5f23616145ffa1bbc240377bde172b42e3b22">0xf4b5f23616145ffa1bbc240377bde172b42e3b22</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">118<b>.</b>351</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x9c3bbc09b7b191a8f98396aad44cff3975c9eb913df0cb12d63ab2e8c03f735b" class="myFnExpandBox_searchVal">0x9c3bbc09b7b191a8f98396aad44cff3975c9eb913df0cb12d63ab2e8c03f735b</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x3f591656">0x3f591656</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086874">34086874</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:14">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc47c973f5947ff4641975b7212f2dccb408e1877"><a href="https://bttcscan.com/address/0xc47c973f5947ff4641975b7212f2dccb408e1877">0xc47c973f5947ff4641975b7212f2dccb408e1877</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x2c2372c20940ae4c9ffe8e892da59167d253eb28"><a href="https://bttcscan.com/address/0x2c2372c20940ae4c9ffe8e892da59167d253eb28">0x2c2372c20940ae4c9ffe8e892da59167d253eb28</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">69<b>.</b>6561</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">300,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x2849a637576fe0e740b61af68e265949c9406e035782287680ae469e81ee1fad" class="myFnExpandBox_searchVal">0x2849a637576fe0e740b61af68e265949c9406e035782287680ae469e81ee1fad</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086874">34086874</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:14">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>555122</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x1d19f31e9e4c0eefcad211d64bc5805b26f465bb41ad7b5025fbf2450f116d13" class="myFnExpandBox_searchVal">0x1d19f31e9e4c0eefcad211d64bc5805b26f465bb41ad7b5025fbf2450f116d13</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086874">34086874</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:14">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc8f32d49408e9816ef7c6dd863d819133fbd1193"><a href="https://bttcscan.com/address/0xc8f32d49408e9816ef7c6dd863d819133fbd1193">0xc8f32d49408e9816ef7c6dd863d819133fbd1193</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf4b5f23616145ffa1bbc240377bde172b42e3b22"><a href="https://bttcscan.com/address/0xf4b5f23616145ffa1bbc240377bde172b42e3b22">0xf4b5f23616145ffa1bbc240377bde172b42e3b22</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">44<b>.</b>1525</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x55be6d01b7a794494815cde21273de72b11ca322b3f90dd2eb63bd8e57f874c6" class="myFnExpandBox_searchVal">0x55be6d01b7a794494815cde21273de72b11ca322b3f90dd2eb63bd8e57f874c6</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086874">34086874</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:14">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xca6504e151fa46bfa8b739caf78c9360a2ddd8ef"><a href="https://bttcscan.com/address/0xca6504e151fa46bfa8b739caf78c9360a2ddd8ef">0xca6504e151fa46bfa8b739caf78c9360a2ddd8ef</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xed7f0a73e203afcf1171d0ade27f76ae01097bcc"><a href="https://bttcscan.com/address/0xed7f0a73e203afcf1171d0ade27f76ae01097bcc">0xed7f0a73e203afcf1171d0ade27f76ae01097bcc</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">44<b>.</b>438</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xf6c250fb7fdcea1cf6ba08506183a0a1db0126b576a68d0b379494280c76a503" class="myFnExpandBox_searchVal">0xf6c250fb7fdcea1cf6ba08506183a0a1db0126b576a68d0b379494280c76a503</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x3f591656">0x3f591656</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086874">34086874</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9 mins ago">2024-03-03 14:23:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:23:14">9 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc68fd6404e1b2228e7cf5d9e970ed42a142cc95a"><a href="https://bttcscan.com/address/0xc68fd6404e1b2228e7cf5d9e970ed42a142cc95a">0xc68fd6404e1b2228e7cf5d9e970ed42a142cc95a</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x2c2372c20940ae4c9ffe8e892da59167d253eb28"><a href="https://bttcscan.com/address/0x2c2372c20940ae4c9ffe8e892da59167d253eb28">0x2c2372c20940ae4c9ffe8e892da59167d253eb28</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">42<b>.</b>0165</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xf0b4475ef38a64285d3c6f4db37024562adb9e954ddb681d8b7a4dce3a0f6077" class="myFnExpandBox_searchVal">0xf0b4475ef38a64285d3c6f4db37024562adb9e954ddb681d8b7a4dce3a0f6077</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086786">34086786</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="12 mins ago">2024-03-03 14:20:14</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:20:14">12 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>555122</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x874640fb54e68ff2c4a4bebc8b846c5ddfa99eb512d8de4f7a12c0d88302b926" class="myFnExpandBox_searchVal">0x874640fb54e68ff2c4a4bebc8b846c5ddfa99eb512d8de4f7a12c0d88302b926</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086773">34086773</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 mins ago">2024-03-03 14:19:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:19:44">13 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>12,000,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">894<b>.</b>08806568</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">3,879,125<b>.</b>788819253</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x02010921fe2a15e22b099cdfc788a871d463125829455e89624ad664ca94eac8" class="myFnExpandBox_searchVal">0x02010921fe2a15e22b099cdfc788a871d463125829455e89624ad664ca94eac8</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086772">34086772</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 mins ago">2024-03-03 14:19:42</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:19:42">13 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc8f32d49408e9816ef7c6dd863d819133fbd1193"><a href="https://bttcscan.com/address/0xc8f32d49408e9816ef7c6dd863d819133fbd1193">0xc8f32d49408e9816ef7c6dd863d819133fbd1193</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf4b5f23616145ffa1bbc240377bde172b42e3b22"><a href="https://bttcscan.com/address/0xf4b5f23616145ffa1bbc240377bde172b42e3b22">0xf4b5f23616145ffa1bbc240377bde172b42e3b22</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">119<b>.</b>242</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x51fb1f25f26c4b38b8e21dcea4218877c94c9e5ddd2f17f115eddc668da0ade6" class="myFnExpandBox_searchVal">0x51fb1f25f26c4b38b8e21dcea4218877c94c9e5ddd2f17f115eddc668da0ade6</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086771">34086771</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 mins ago">2024-03-03 14:19:40</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:19:40">13 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>555122</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Error in Main Txn : execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x3368bf017bdc3386d7ab4d36c800a12fe348f25a3d91be3800a8cbc34706a5e9" class="myFnExpandBox_searchVal">0x3368bf017bdc3386d7ab4d36c800a12fe348f25a3d91be3800a8cbc34706a5e9</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x66936244">0x66936244</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086771">34086771</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="13 mins ago">2024-03-03 14:19:40</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:19:40">13 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc8f32d49408e9816ef7c6dd863d819133fbd1193"><a href="https://bttcscan.com/address/0xc8f32d49408e9816ef7c6dd863d819133fbd1193">0xc8f32d49408e9816ef7c6dd863d819133fbd1193</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf4b5f23616145ffa1bbc240377bde172b42e3b22"><a href="https://bttcscan.com/address/0xf4b5f23616145ffa1bbc240377bde172b42e3b22">0xf4b5f23616145ffa1bbc240377bde172b42e3b22</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">44<b>.</b>8605</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x4997f7b0d6ea497acd1c82e3ac947b408cd13babfa3899c92fd6c147c8ab17e0" class="myFnExpandBox_searchVal">0x4997f7b0d6ea497acd1c82e3ac947b408cd13babfa3899c92fd6c147c8ab17e0</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x96f35a9b">0x96f35a9b</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086741">34086741</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 mins ago">2024-03-03 14:18:40</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:18:40">14 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc120a044ac76ec032d0f50879931625d2b41888c"><a href="https://bttcscan.com/address/0xc120a044ac76ec032d0f50879931625d2b41888c">0xc120a044ac76ec032d0f50879931625d2b41888c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x578317914de847ddc4cd3f11b3babbedf6cb0c4e"><a href="https://bttcscan.com/address/0x578317914de847ddc4cd3f11b3babbedf6cb0c4e">0x578317914de847ddc4cd3f11b3babbedf6cb0c4e</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">145<b>.</b>55373133</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">548,177<b>.</b>488698951</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x72b70bd12cdb7d8efe68abdb08c8b639933791e938b758cb8efce0f73c1f8d54" class="myFnExpandBox_searchVal">0x72b70bd12cdb7d8efe68abdb08c8b639933791e938b758cb8efce0f73c1f8d54</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0xb28019d6">0xb28019d6</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086736">34086736</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 mins ago">2024-03-03 14:18:30</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:18:30">14 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad"><a href="https://bttcscan.com/address/0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad">0x40d86f2da1fe54a6bd0e5d23c29f2dcd345c2fad</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x4a0f794c80f434ebb69cfbaa1f12109fca68c899"><a href="https://bttcscan.com/address/0x4a0f794c80f434ebb69cfbaa1f12109fca68c899">0x4a0f794c80f434ebb69cfbaa1f12109fca68c899</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">1,210<b>.</b>8265</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">500,000</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xa4c46696a36cb0c6c2741188655f862a8973544e88486e977247ae18530cf97b" class="myFnExpandBox_searchVal">0xa4c46696a36cb0c6c2741188655f862a8973544e88486e977247ae18530cf97b</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x96f35a9b">0x96f35a9b</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086730">34086730</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 mins ago">2024-03-03 14:18:18</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:18:18">14 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc120a044ac76ec032d0f50879931625d2b41888c"><a href="https://bttcscan.com/address/0xc120a044ac76ec032d0f50879931625d2b41888c">0xc120a044ac76ec032d0f50879931625d2b41888c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x578317914de847ddc4cd3f11b3babbedf6cb0c4e"><a href="https://bttcscan.com/address/0x578317914de847ddc4cd3f11b3babbedf6cb0c4e">0x578317914de847ddc4cd3f11b3babbedf6cb0c4e</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">37<b>.</b>78085822</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">659,558<b>.</b>992862991</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x28314329c8cca62c5b85c5bb945eab0a6efa9cd55a57e28c96e7e31740cdd861" class="myFnExpandBox_searchVal">0x28314329c8cca62c5b85c5bb945eab0a6efa9cd55a57e28c96e7e31740cdd861</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x21cde66c">0x21cde66c</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086729">34086729</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 mins ago">2024-03-03 14:18:16</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:18:16">14 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0c85a17c90499e714bc52dd1dbf749f95c200c3c"><a href="https://bttcscan.com/address/0x0c85a17c90499e714bc52dd1dbf749f95c200c3c">0x0c85a17c90499e714bc52dd1dbf749f95c200c3c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xade41813abdff19e76fd514f4eb1844cfb101278"><a href="https://bttcscan.com/address/0xade41813abdff19e76fd514f4eb1844cfb101278">0xade41813abdff19e76fd514f4eb1844cfb101278</a></span></span></td><td>400,000 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">295<b>.</b>77702587</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">696,391<b>.</b>633870597</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x12f00b17ec58500f71afad891f56b097a3c51994b9ff084d93eaa891c5f8ca82" class="myFnExpandBox_searchVal">0x12f00b17ec58500f71afad891f56b097a3c51994b9ff084d93eaa891c5f8ca82</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086727">34086727</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="14 mins ago">2024-03-03 14:18:12</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:18:12">14 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>587558</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0xd2459beb247f238edac8383ae9034fde18f9f2c0e0217e287367af296c1121e9" class="myFnExpandBox_searchVal">0xd2459beb247f238edac8383ae9034fde18f9f2c0e0217e287367af296c1121e9</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x96f35a9b">0x96f35a9b</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086281">34086281</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="30 mins ago">2024-03-03 14:02:52</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:02:52">30 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf0928914eb660d8baa3f11afc31ab4b95cdf3ce2"><a href="https://bttcscan.com/address/0xf0928914eb660d8baa3f11afc31ab4b95cdf3ce2">0xf0928914eb660d8baa3f11afc31ab4b95cdf3ce2</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x578317914de847ddc4cd3f11b3babbedf6cb0c4e"><a href="https://bttcscan.com/address/0x578317914de847ddc4cd3f11b3babbedf6cb0c4e">0x578317914de847ddc4cd3f11b3babbedf6cb0c4e</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">154<b>.</b>18737809</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">579,501<b>.</b>475525464</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x8c3404e10ee30663b18b109d66010fae4e76a708abef1a298f871bb14a158f76" class="myFnExpandBox_searchVal">0x8c3404e10ee30663b18b109d66010fae4e76a708abef1a298f871bb14a158f76</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086279">34086279</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="30 mins ago">2024-03-03 14:02:48</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:02:48">30 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>547778</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://bttcscan.com/tx/0x7497f317748557a6be2b295e0bf8e8ac2fecd3936eb18ce8c6a1e9f85389cea5" class="myFnExpandBox_searchVal">0x7497f317748557a6be2b295e0bf8e8ac2fecd3936eb18ce8c6a1e9f85389cea5</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x8f227684">0x8f227684</span></td><td class="d-none d-sm-table-cell"><a href="https://bttcscan.com/block/34086272">34086272</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="30 mins ago">2024-03-03 14:02:34</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 14:02:34">30 mins ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xfc7bad47979ca355af779300bee873d6ad8c69a5"><a href="https://bttcscan.com/address/0xfc7bad47979ca355af779300bee873d6ad8c69a5">0xfc7bad47979ca355af779300bee873d6ad8c69a5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46"><a href="https://bttcscan.com/address/0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46">0x52bf3ec299f88d34d93c3d6939c3f3f2b323ac46</a></span></span></td><td>0 BTT</td><td style="" class="showTxnFee"><span class="small text-secondary">43<b>.</b>587558</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">306,000<b>.</b>000000004</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="signInPopUp" class="row justify-content-center align-items-center" style="display:none;">
+                    <div class="col d-none d-lg-block">
+                        <img class="img-fluid mx-4" src="BTTC%20Transactions%20Information%20BTTCScan_files/bg1-left-side.svg" alt="">
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-7 col-xl-5">
+                        <div class="text-center py-5 my-5-alt">
+                            <h4 class="font-weight-bold">Sign In for Continued Access</h4>
+                            <p class="h5 text-secondary mb-4">
+                                No worries, it's absolutely <strong>free</strong> and takes a minute!
+                                <br class="-none d-md-inline-block">
+                                Register a <a class="text-primary" href="https://bttcscan.com/register">Free Account</a> today.
+                            </p>
+                            <div class="mb-3">
+                                <a class="btn btn-primary transition-3d-hover text-nowrap text-uppercase px-4 py-2" href="https://bttcscan.com/login">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <img class="img-fluid mx-4" src="BTTC%20Transactions%20Information%20BTTCScan_files/bg1-right-side.svg" alt="">
+                    </div>
+                </div>
+                
+                <div id="ContentPlaceHolder1_pageRecords">
+                    <form method="post" action="./txs" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="LyKD9VTIdUQxtOagDkDPLXReotjH0o+PVpIL4yJPpGoWB9mZmo4sv80CRG+U0XgxUPdC7o/QPcSsqvfoMRS3dIgwngfZdcnsT9UhoTXlKsk=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FCB51872">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Hn2+01KW86AVPn4HEXwOLMUTOKWgiVY/i1l1OAgj8B4TiHl5Jr0V+91G0H/0n5BK4zHPrrAkp8wrETOpKQ4dBBpXc05GmhzdLxS85K6i6/Nckv+t8kVkbialKnEgVnFsLOxN+uB2Er+HBjyGBh1O5xDhhx7RqYvy9bo7WaRuYLW416jWs2eCsUNarDwVtAeGIznekcPjty1i6ajZrSf22A==">
+</div>
+                         <div class="d-md-flex justify-content-between my-3">                        
+                            <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                Show
+                                <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRecordsPerPage\',\'\')', 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option value="25">25</option>
+	<option selected="selected" value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                Records
+                            </div>
+                             <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">10000</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://bttcscan.com/txs?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://bttcscan.com/txs?p=10000"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                        </ul></div>
+                    </form>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-4">
+                    <div class="d-flex align-items-center text-secondary"></div>
+                    <div class="small text-muted">
+                        
+                    </div>
+                </div>
+               
+            </div>            
+        </div>
+        
+        
+    </div>  
+    
+    
+    
+
+
+        </main>
+        <div id="push"></div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-dark py-4">
+        <div class="container">
+            <div class="row justify-content-md-between font-size-1 py-2">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex h-100 flex-column">
+                        <div class="d-flex align-items-center mb-4">
+                            <img width="25" src="BTTC%20Transactions%20Information%20BTTCScan_files/main_white.png" alt="Logo">
+                            <span class="h5 text-white mb-0 ml-3">Powered By BitTorrent Chain</span>
+                        </div>
+                        <p class="text-white">
+                            BTTCScan is a Block Explorer and Analytics Platform for BitTorrent Chain
+                        </p>
+                        <!-- Preferences -->
+                        <div class="d-flex align-items-center mb-4">
+                            <span>
+                                <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                    <img class="mr-1" width="15" src="BTTC%20Transactions%20Information%20BTTCScan_files/metamask.svg" alt="Metamask">
+                                    Add BTTC Network
+                                </button>
+                            </span>
+
+                            <a class="btn btn-xss btn-soft-light mr-2" href="https://bttcscan.com/settings">
+                                <i class="fa fa-cogs mr-1"></i>Preferences
+                            </a>
+
+                            <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                        </div>
+                        <!-- End Preferences -->
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <h4 class="h6 text-white heading-border">Technology</h4>
+                    <ul class="list-group list-group-sm list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item" href="https://bittorrentchain.io/" rel="nofollow noopener" target="_blank">BTTC Website</a></li>
+                        <li><a class="list-group-item" href="https://wallet.bittorrentchain.io/" rel="nofollow noopener" target="_blank">BTTC Wallet</a></li>
+                        <li><a class="list-group-item" href="https://wallet.bittorrentchain.io/bridge" rel="nofollow noopener" target="_blank">BTTC Bridge</a></li>
+                        <li><a class="list-group-item" href="https://wallet.bittorrentchain.io/staking" rel="nofollow noopener" target="_blank">BTTC Staking</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <h4 class="h6 text-white heading-border">Community</h4>
+                    <ul class="list-group list-group-sm list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item" href="https://doc.bt.io/" rel="nofollow noopener" target="_blank">BTTC Dev Docs</a></li>
+                        <li class="d-flex align-items-center"><a class="list-group-item" href="https://faucet.bittorrentchain.io/" rel="nofollow noopener" target="_blank">Faucet</a><a class="ml-1" href="http://doc.bittorrentchain.io/v1/doc/en/testnet.html#tron-nile-testnet" rel="nofollow noopener" target="_blank">(How to get?)</a></li>
+                        <li><a class="list-group-item" href="https://github.com/bttcprotocol" rel="nofollow noopener" target="_blank">Github</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    &nbsp;
+                </div>
+            </div>
+            <!-- End Fotoer Content -->
+
+
+            
+                    <hr class="opacity-md">
+                    <div class="row justify-content-between align-items-center font-size-1">
+                        <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                            <p class="mb-0 text-white">
+                                BTTCScan © 2024  (BTTC-A)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>  <span class="mx-1">|</span> <a class="text-white-70" href="https://bttcscan.com/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i> 
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://bttcscan.com/terms">Terms of Service</a> </li> <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://bttcscan.freshstatus.io/">Network Status</a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://bttcscan.com/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us"> <i class="far fa-envelope btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/bttcscan" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"> <i class="fab fa-twitter btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://medium.com/@BitTorrent" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Medium"> <i class="fab fa-medium btn-icon__inner"></i> </a> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: block;">
+                <div class="alert alert-light border shadow p-3" role="alert">
+                    <div class="d-md-flex justify-content-center align-items-center">
+                        <span>
+                            <p class="text-dark mr-3 mb-2 mb-md-0">
+                                <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href="https://bttcscan.com/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="https://bttcscan.com/terms" target="_blank">Terms</a> and <a href="https://bttcscan.com/privacyPolicy">Privacy Policy</a>.
+                            </p>
+                        </span>
+                        <div>
+                            <button id="btnCookie" class="btn btn-sm btn-primary text-nowrap py-1" data-dismiss="alert" aria-label="Close">Got It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+                <span class="fa fa-arrow-up u-go-to__inner"></span>
+            </a>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/jquery-ui.min.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/jquery-migrate.min.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/popper.min.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/bootstrap.min.js"></script>
+
+
+
+            <!-- JS Implementing Plugins -->
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.megamenu.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/jquery.cubeportfolio.min.js"></script>
+
+
+            <!-- JS Front -->
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.core.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.header.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.unfold.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.malihu-scrollbar.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.focus-state.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.go-to.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.cubeportfolio.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/combine-js-bottom2.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script>
+                $(window).on('load', function () {
+                    // initialization of HSMegaMenu component
+                    $('.js-mega-menu').HSMegaMenu({
+                        event: 'hover',
+                        pageContainer: $('.container'),
+                        breakpoint: 767.98,
+                        hideTimeOut: 0
+                    });
+                    myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+                });
+
+                $(document).on('ready', function () {
+                    // initialization of header
+                    $.HSCore.components.HSHeader.init($('#header'));
+
+                    // initialization of unfold component
+                    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                        afterOpen: function () {
+                            $(this).find('input[type="search"]').focus();
+                        }
+                    });
+
+                    // initialization of malihu scrollbar
+                    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+                    // initialization of focus state
+                    $.HSCore.components.HSFocusState.init();
+
+                    // initialization of go to
+                    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+                    // initialization of cubeportfolio
+                    //$.HSCore.components.HSCubeportfolio.init('.cbp');
+                });
+            </script>
+            <script type="text/javascript">
+                var sid = 'dfe7e2aef8db2eb97e427368803a2013';
+                var strGlobal = sessionStorage.getItem("ShowAs");
+                var strGlobalFee = sessionStorage.getItem("ShowFee");
+                var siteVar = 'BTTCScan';
+                var cookieconsent = getCookie(siteVar + "_cookieconsent");
+                if (cookieconsent !== "True") {
+                    document.getElementById("divcookie").style.display = "block";
+                };
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) === 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+                $("#btnCookie").click(function () {
+                    $("#divcookie").fadeOut("slow", function () {
+                        var d = new Date();
+                        d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = siteVar + "_cookieconsent=True" + ";" + expires + ";path=/";;
+                    });
+                });
+                function handleSearchText(data) {
+                    searchAddress = false;
+                    if ($("txtSearchInput").val() == "") {
+                        $("#hdnSearchText").val("");
+                    }
+                }
+            </script>
+            
+
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/web3-utils.min.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/web3-eth.min.js"></script>
+            <script src="BTTC%20Transactions%20Information%20BTTCScan_files/web3-providers-http.min.js"></script>
+            <script type="text/javascript">
+                var eth;
+                var isTestnet = 'false';
+                var SiteNetID = '199';
+                var SiteNetChainID = '0xc7';
+                var SiteNetName = 'BTTC Mainnet';
+                var SiteName = 'BTTCScan';
+                var SiteErc20 = 'BRC20';
+                var SiteErc721 = 'BRC721';
+                var SiteErc1155 = 'BRC1155';
+                var sv = '24.2.3.0';
+                var slt = 'png';
+                var allowErc1155 = '';
+
+                async function addNetwork(type) {
+
+                    if (type === 'web3') {
+                        if (typeof ethereum !== 'undefined') {
+                            eth = new Web3Eth(ethereum);
+                        } else if (typeof web3 !== 'undefined') {
+                            eth = new Web3Eth(web3.givenProvider);
+                        } else {
+                            eth = new Web3Eth(ethereum);
+                        }
+                    }
+
+                    if (typeof eth !== 'undefined') {
+                        var network = 0;
+                        network = await eth.getChainId();
+                        netID = network.toString();
+                        var params;
+                        if (netID == SiteNetID) {
+                            alert("BitTorrent Chain Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: SiteNetChainID,
+                                chainName: 'BTTC Mainnet',
+                                nativeCurrency: {
+                                    name: 'BTT',
+                            symbol: 'BTT',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.bt.io'],
+                                blockExplorerUrls: ['https://bttcscan.com']
+                            }]
+                        }
+
+                        window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                            .then(() => console.log('Success'))
+                            .catch((error) => console.log("Error", error.message));
+                    } else {
+                        alert('Unable to locate a compatible web3 browser!');
+                    }
+                }
+            </script>
+
+            
+    <script type="text/javascript" src="BTTC%20Transactions%20Information%20BTTCScan_files/commonjs.js"></script>
+    <script src="BTTC%20Transactions%20Information%20BTTCScan_files/clipboard.min.js"></script>
+    <script src="BTTC%20Transactions%20Information%20BTTCScan_files/hs.clipboard.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            onDocumentReady();
+            renderDataTables();
+            $('[data-toggle="tooltip"]').tooltip();
+            $.fn.dataTable.ext.errMode = 'throw';
+        });
+
+        var resetPage = false;
+        var queryStringDictionary = {};
+        var currentLength = 50;
+
+        function updateUrl() {
+            var queryString = '';
+
+            var length = queryStringDictionary["length"];
+            if (length) {
+                if (length < 0) {
+                    length = 7;
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start"];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+
+        function renderDataTables() {
+            var table = $('#datatable')
+                .DataTable({
+                    dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                    language: {
+                        paginate: {
+                            next: '<i class="fa fa-chevron-right small"></i>',
+                            previous: '<i class="fa fa-chevron-left small"></i>'
+                        },
+                        lengthMenu: "Show _MENU_ Records",
+                        info: "A total of _MAX_ transactions found"
+                    },
+                    searching: false,
+                    pagingType: 'full',
+                    columnDefs: [
+                        { orderable: false, targets: '_all' }
+                    ],
+                    processing: true,
+                    serverSide: true,
+                    
+                    
+                
+                
+                drawCallback: function (settings) {
+                    var api = this.api();
+                        var json = api.ajax.json();
+
+                        myFn_boxExpand.init(".myFnExpandBox", "popover", "txs");
+                        if (!json) {
+                            var currentPageDisp = "1";
+
+                            //reload state if querystring is available
+                            var urlParams = new URLSearchParams(window.location.search);
+                            var existLength = urlParams.get('size');
+                            if (existLength) {
+                                api.page.len(existLength);
+                                currentLength = parseInt(existLength)
+
+                                var existStart = urlParams.get('start');
+                                if (!existStart) {
+                                    existStart = 0
+                                }
+                                    currentPage = Math.floor(existStart / existLength);
+                                    api.page(currentPage);
+                                    currentPageDisp = currentPage + 1;
+                            }
+
+                            var totalPage = ""
+                            $('#datatable_length .custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                            $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+
+                            return;
+                    }
+                    $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                        if (resetPage) {
+                            this.api().page(0);
+                            resetPage = false;
+                        }
+
+                        //get page info
+                        var pageInfo = this.api().page.info();
+                        if (pageInfo.length) {
+                            queryStringDictionary["length"] = pageInfo.length;
+                        }
+
+                        if (pageInfo.start !== undefined) {
+                            queryStringDictionary["start"] = pageInfo.start;
+                        }
+
+                        updateUrl();
+                        $('[data-toggle="tooltip"]').tooltip()
+                },
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/txs.aspx/GetTxsBySubLabel",
+                    data: function (d) {
+                        var labelModel = generateLabelModel();
+
+                        if (currentLength != d.length) {
+                            d.start = 0;
+                            currentLength = d.length;
+                            resetPage = true;
+                        }
+
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    },
+                    dataType: "json",
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+
+                        return JSON.stringify(morp);
+                    },
+                    dataSrc: function (json) {
+                        var response = [];
+                        for (var i = 0, ien = json.data.length; i < ien; i++) {
+                            response.push(formatTxResponseModel(json.data[i]));
+                        }
+                        return response;
+                    }
+                },
+                    columns: [
+                        { data: "expandBox" },
+                        { data: "txnHash" },
+                        { data: "method" },
+                        { data: "block" },
+                        { data: "age" },
+                        { data: "from" },
+                        { data: "xtraArrow" },
+                        { data: "to" },
+                        { data: "value" },
+                        { data: "txnFee" }
+                ]
+
+                });
+        }
+
+        function RenderAgeDateTimeColumn(unixTime, howLongAgo, customStyle, isShowUnixTime) {
+
+            var strBuilder = "<div class='showDate' style='"
+
+            if (!isShowUnixTime) {
+                strBuilder += "display:none !important;";
+            }
+
+            strBuilder += customStyle + "'><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='" + howLongAgo + "'>" + unixTime + "</span></div>";
+            strBuilder += "<div style='"
+
+            if (isShowUnixTime) {
+                strBuilder += "display:none !important;";
+            }
+
+            strBuilder += customStyle + "' class='showAge'><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='" + unixTime + "'>" + howLongAgo + "</span></div>";
+
+            return strBuilder;
+        }
+
+        function formatTxResponseModel(model) {
+            var response = {};
+            response.expandBox = "<a role='button' tabindex='0' type='button' class='js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox'><i class='far fa-eye btn-icon__inner'></i></a>";
+
+            if (model.ensFrom != "") {
+                model.ensFrom + ".cro";
+            }
+
+            if (model.ensTo != "") {
+                model.ensTo = ensTo + ".cro";
+            }
+
+            var strContractResultFailIcon = "";
+            if ("BTTC" != "Rinkeby") {
+                if (model.MainTxStatus != "") {
+                    if (model.MainTxStatus == "0") {
+                        strContractResultFailIcon = "<span class='text-danger' data-toggle='tooltip' title='" & "Error in Main Txn" & " " & model.errDescription & "'><strong>" & "<i class='fa fa-exclamation-circle'></i>" & "</strong></span> "
+                    } else {
+                        strContractResultFailIcon = "<span class='text-danger' data-toggle='tooltip' title='" & "Error in Internal Txn" & " " & model.errDescription & "'><strong>" & "<i class='fa fa-exclamation-circle'></i>" & "</strong></span> "
+                    }
+                }
+            }
+
+            if (strContractResultFailIcon == "") {
+                if (model.txReceiptStatus == "0") {
+                    "<span class='text-danger' data-toggle='tooltip' title='" & "Txn Receipt status fail" & "'><strong>" & "<i class='fa fa-exclamation-circle'></i>" & "</strong></span> ";
+                }
+            }
+
+
+            var txHashStr = "";
+            if (model.labelNote != "") {
+                txHashStr = txHashStr + "<i class='fa fa-info-circle text-secondary' data-toggle='tooltip' title='" + model.LabelNote + "'></i> ";
+            }
+
+            if (!model.txHash.startsWith("GENESIS")) {
+                txHashStr = txHashStr + strContractResultFailIcon + "<span class='hash-tag text-truncate'><a href='/tx/" + model.txHash + "' class='" + "myFnExpandBox_searchVal" + "'>" + model.txHash + "</a></span>";
+            } else {
+                txHashStr = txHashStr + "<span class='hash-tag text-truncate'>" + model.txHash + "</span>"
+            }
+
+            response.txnHash = txHashStr;
+            response.method = model.method;
+            response.block = "<a href='/block/" + model.blockHeight + "'>" + model.blockHeight + "</a>"
+            response.age = RenderAgeDateTimeColumn(model.unixTime, model.howLongAgo, model.pvtNoteStyle, $(".showDate").css("display") == "block");
+            response.xtraArrow = model.xtraArrow;
+
+            response.value = model.value;
+            response.txnFee = "<span class='small text-secondary'>" + model.txnFee + "</span>";
+            response.privateNote = model.privateNote;
+
+            var strDisplayedFrom = "";
+            var ensIconDisplay = "<img src='/images/svg/icons/ENS.svg?v=20.1.3' data-toggle='tooltip' title='ENS Name' alt='ENS Name' width='12' >";
+            if (model.from != "GENESIS") {
+                if (model.tagNameFrom != "") {
+                    strDisplayedFrom = model.tagNameFrom;
+                } else {
+                    if (model.ensFrom != "") {
+                        strDisplayedFrom = model.ensFrom + ".cro"
+                    } else {
+                        strDisplayedFrom = model.from;
+                    }
+                }
+
+                if (model.fromTagNamePrivate != "") {
+                    response.from = "<span class='hash-tag text-truncate u-label u-label--value u-label--secondary text-dark' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='My Name Tag: " + model.fromTagNamePrivate + "&#10;(" + model.from + ")" + ((model.tagNameFrom == "") ? "" : "&#10;&#10;Public Tag: " + model.tagNameFrom) + "'>" + "<a class='hash-tag text-truncate' href='/address/" + model.from + "'>" + model.fromTagNamePrivate + "</a></span>"
+                }
+                else if (model.tagNameFrom != "") {
+                    response.from = "<a class='hash-tag text-truncate' href='/address/" & model.from & "' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" & model.tagNameFrom & "&#10;(" & model.from & ")'>" & model.tagNameFrom & "</a>"
+                }
+                else if (model.ensFrom != "") {
+                    response.from = ensIconDisplay + " <a class='hash-tag text-truncate' href='/address/" + model.from + "' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + model.ensFrom + "&#10;(" + model.from + ")'>" & model.ensFrom + "</a>"
+                } else {
+                    response.from = "<span class='hash-tag text-truncate' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + model.from + "'><a href='/address/" + model.from + "'>" + strDisplayedFrom + "</a></span>"
+                }
+
+            } else {
+                response.from = model.from;
+            }
+
+            var strDisplayedTo = "";
+            if (model.contractAddress != "") {
+                response.to = "<i class='far fa-newspaper text-secondary'></i> <a href='/address/" + model.contractAddress + "' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + model.contractAddress + "'>" + "Contract Creation" + "</a>"
+            } else if (model.addressType == "C") {
+                if (model.tagNameTo != "") {
+                    strDisplayedTo = model.tagNameTo;
+                } else {
+                    if (model.ensTo != "") {
+                        strDisplayedTo = model.ensTo + ".cro"
+                    } else {
+                        strDisplayedTo = model.to;
+                    }
+                }
+
+                var toStr = ""
+                if (model.toTagNamePrivate != "") {
+                    toStr += "";
+                } else {
+                    toStr += "<span style='white-space: nowrap;'><i class='far fa-file-alt text-secondary' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + "Contract" + "'></i> "
+                }
+
+                if (model.toTagNamePrivate != "") {
+                    toStr += "<span class='hash-tag text-truncate u-label u-label--value u-label--secondary text-dark' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='My Name Tag: " + model.toTagNamePrivate + "&#10;(" + model.to + ")" + ((model.tagNameTo == "") ? "" : "&#10;&#10;Public Tag: " + model.tagNameTo) + "'>" + "<a class='hash-tag text-truncate' href='/address/" + model.to + "'><i class='far fa-file-alt text-secondary' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + "Contract" + "'></i> " + model.toTagNamePrivate + "</a></span>";
+                } else if (model.tagNameTo == "") {
+                    toStr += "<span class='hash-tag text-truncate' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + strDisplayedTo + "'><a href='/address/" + model.to + "'>" + strDisplayedTo + "</a></span>";
+                } else {
+                    toStr += "<a class='hash-tag text-truncate' href='/address/" + model.to + "' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + model.tagNameTo + "&#10;(" + model.to + ")'>" + model.tagNameTo + "</a>";
+                }
+                response.to = toStr;
+
+            } else {
+                if (model.tagNameTo != "") {
+                    strDisplayedTo = model.tagNameTo;
+                } else {
+                    if (model.ensTo != "") {
+                        strDisplayedTo = model.ensTo + ".cro";
+                    } else {
+                        strDisplayedTo = model.to;
+                    }
+                }
+
+                if (model.toTagNamePrivate != "") {
+                    response.To = "<span class='hash-tag text-truncate u-label u-label--value u-label--secondary text-dark' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='My Name Tag: " + model.toTagNamePrivate + "&#10;(" + model.to + ")" + ((model.tagNameTo == "") ? "" : "&#10;&#10;Public Tag: " + tagNameTo) + "'>" + "<a class='hash-tag text-truncate' href='/address/" + model.to + "'>" + model.toTagNamePrivate + "</a></span>";
+                } else if (model.tagNameTo != "") {
+                    response.to = "<a class='hash-tag text-truncate' href='/address/" + model.to + "' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + model.tagNameTo + "&#10;(" + model.to + ")'>" + model.tagNameTo + "</a>";
+                } else if (model.ensTo != "") {
+                    response.to = ensIconDisplay + " <a class='hash-tag text-truncate' href='/address/" + model.to + "' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + model.ensTo & "&#10;(" + model.to + ")'>" + model.ensTo + "</a>";
+                } else {
+                    response.to = "<span class='hash-tag text-truncate' data-toggle='tooltip' data-boundary='viewport' data-html='true' title='" + strDisplayedTo + "'><a href='/address/" + model.to + "'>" + strDisplayedTo + "</a></span>";
+                }
+            }
+
+            return response;
+        }
+
+        function getUrlParams() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        function checkQSExist(url, strValue) {
+            var field = strValue;
+            var url = url;
+            if(url.indexOf('?' + field + '=') != -1)
+                return true;
+            else if(url.indexOf('&' + field + '=') != -1)
+                return true;
+            return false;
+        }
+
+        function removeURLParameter(url, parameter) {            
+            var urlparts= url.split('?');   
+            if (urlparts.length>=2) {
+
+                var prefix= encodeURIComponent(parameter)+'=';
+                var pars= urlparts[1].split(/[&;]/g);
+                
+                for (var i= pars.length; i-- > 0;) {                    
+                    if (pars[i].lastIndexOf(prefix, 0) !== -1) {  
+                        pars.splice(i, 1);
+                    }
+                }
+
+                url= urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : "");
+                return url;
+            } else {
+                return url;
+            }
+        }
+
+        function closeFilter(data) {
+            var url = window.location.href;
+            if (data.id == "btnBlockClear") {
+                url = removeURLParameter(url, "blockrange");
+            }
+            else if (data.id == "btnAgeClear") {
+                url = removeURLParameter(url, "agerange");
+            }
+            else if (data.id == "btnFromClear") {
+                url = removeURLParameter(url, "fromaddress");
+            }
+            else if (data.id == "btnToClear") {
+                url = removeURLParameter(url, "toaddress");
+            }
+
+            if (checkQSExist(url, 'address') == true && checkQSExist(url, 'blockrange') == false && checkQSExist(url, 'agerange') == false && checkQSExist(url, 'fromaddress') == false && checkQSExist(url, 'toaddress') == false) {
+                var strAddress = getUrlParams()["address"];
+                var newUrl = removeURLParameter(url, "address");
+                var arr = newUrl.split('?');
+                if (newUrl.length > 1 && arr[1] != '' && arr[1] != undefined) {
+                    newUrl = newUrl + "&";
+                }
+                else {
+                    newUrl = newUrl + "?";
+                }
+
+                window.location.href = newUrl + "address=" + strAddress;
+            }
+            else {
+                window.location.href = url;
+            }
+        }
+        
+        function constructFilterUrl(data) {
+
+            if (data.id == "btnBlockFilter") {
+                if ($("#fromblock").val().trim() == "" || $("#toblock").val().trim() == "") {
+                    alert("Please enter all required fields");
+                    return;
+                }
+            }
+            else if (data.id == "btnAgeFilter") {
+                if ($("#fromage").val().trim() == "" || $("#toage").val().trim() == "") {
+                    alert("Please enter all required fields");
+                    return;
+                }
+            }
+            else if (data.id == "btnFromFilter") {
+                if ($("#fromaddress").val().trim() == "") {
+                    alert("Please enter the required field");
+                    return;
+                }
+            }
+            else if (data.id == "btnToFilter") {
+                if ($("#toaddress").val().trim() == "") {
+                    alert("Please enter the required field");
+                    return;
+                }
+            }
+
+            var currentUrl = window.location.href;
+            var arr = currentUrl.split('?');
+            if (currentUrl.length > 1 && arr[1] != '' && arr[1] != undefined) {
+                currentUrl = currentUrl + "&";
+            }
+            else {
+                currentUrl = currentUrl + "?";
+            }
+
+            var flag = false;
+            if ($("#fromblock").val().trim() != "" && $("#toblock").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "blockrange");
+                currentUrl = newUrl + "blockrange=" + $("#fromblock").val().trim() + "~" + $("#toblock").val().trim();
+            }
+            else if ($("#fromage").val().trim() != "" && $("#toage").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "agerange");
+                currentUrl = newUrl + "agerange=" + $("#fromage").val().trim() + "~" + $("#toage").val().trim();
+            }
+            else if ($("#fromaddress").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "fromaddress");
+                currentUrl = newUrl + "fromaddress=" + $("#fromaddress").val().trim();
+            }
+            else if ($("#toaddress").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "toaddress");
+                currentUrl = newUrl + "toaddress=" + $("#toaddress").val().trim();
+            }
+
+            if (flag == false) {
+                currentUrl = currentUrl.remove("?");
+            }
+            
+            window.location.href = currentUrl;            
+        }
+
+        function onFilterClick(data) {
+            if (data.id == "dropdownBlock" && getUrlParams()["blockrange"] != undefined) {
+                var strBlockRange = getUrlParams()["blockrange"].split('~');
+                $("#fromblock").val(strBlockRange[0]);
+                $("#toblock").val(strBlockRange[1]);
+            }
+            else if (data.id == "dropdownAge" && getUrlParams()["agerange"] != undefined) {
+                var strAgeRange = getUrlParams()["agerange"].split('~');
+                $("#fromage").val(strAgeRange[0]);
+                $("#toage").val(strAgeRange[1]);
+            }
+            else if (data.id == "dropdownFrom" && getUrlParams()["fromaddress"] != undefined) {
+                $("#fromaddress").val(getUrlParams()["fromaddress"]);
+            }
+            else if (data.id == "dropdownTo" && getUrlParams()["toaddress"] != undefined) {
+                $("#toaddress").val(getUrlParams()["toaddress"]);                
+            }
+        }
+
+        function clearFilter(data, e) {
+            if (data.id == "btnBlockFilterClear") {
+                $("#fromblock").val("");
+                $("#toblock").val("");                
+            }
+            else if (data.id == "btnAgeFilterClear") {
+                $("#fromage").val("");
+                $("#toage").val("");
+            }
+            else if (data.id == "btnFromFilterClear") {
+                $("#fromaddress").val("");                
+            }
+            else if (data.id == "btnToFilterClear") {
+                $("#toaddress").val("");                
+            }
+            e.stopPropagation();
+        }
+
+        // Bootstrap Dropdown in Table Responsive
+        $('.table-responsive').on('shown.bs.dropdown', function (e) {
+            var t = $(this),
+                m = $(e.target).find('.dropdown-menu'),
+                tb = t.offset().top + t.height(),
+                mb = m.offset().top + m.outerHeight(true),
+                d = 20; // Space for shadow + scrollbar.
+            if (t[0].scrollWidth > t.innerWidth()) {
+                if (mb + d > tb) {
+                    t.css('padding-bottom', ((mb + d) - tb));
+                }
+            }
+            else {
+                t.css('overflow', 'visible');
+            }
+        }).on('hidden.bs.dropdown', function () {
+            $(this).css({'padding-bottom': '', 'overflow': ''});
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            myFn_boxExpand.init(".myFnExpandBox", "popover", "txs");
+        });
+    </script>
+
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
