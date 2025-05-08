@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Token Tracker | GnosisScan
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="GnosisScan allows you to explore and search the Gnosis blockchain for transactions, addresses, tokens, prices and other activities taking place on GnosisScan chain (GNOSIS)"> <meta name="author" content="gnosisscan.io"> <meta name="keywords" content="GnosisScan, explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="Token Tracker | GnosisScan"> <meta property="og:description" content="The list of ERC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the Gnosis Chain Blockchain on GnosisScan."> <meta property="og:type" content="website"> <meta property="og:site_name" content="Gnosis Chain Blockchain Explorer"> <meta property="og:url" content="http://gnosisscan.io/tokens"> <meta property="og:image" content="https://gnosisscan.io/images/brandassets/logo.jpg?v=24.2.3.0"> <meta property="og:image:alt" content="Visit gnosisscan.io"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@GnosisScan"> <meta name="twitter:title" content="Token Tracker | GnosisScan"> <meta property="twitter:description" content="The list of ERC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the Gnosis Chain Blockchain on GnosisScan."> <meta property="twitter:image" content="https://gnosisscan.io/images/brandassets/logo.jpg?v=24.2.3.0"> 
+    <style>
+        .card-header.sticky-card-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .dataTable > thead > tr > th[class*="remove-icon"]:before,
+        .dataTable > thead > tr > th[class*="remove-icon"]:after {
+            content: "" !important;
+        }
+
+        table.dataTable thead th.sorting:before,
+        table.dataTable thead th.sorting_asc:before,
+        table.dataTable thead th.sorting_desc:before,
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_desc:after {
+            content: none;
+        }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .fadeout {
+            position: relative;
+            bottom: 4em;
+            height: 4em;
+            background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% )
+        }
+    </style>
+
+    <link rel="shortcut icon" href="https://gnosisscan.io/images/favicon.ico?v=24.2.3.0">
+    <link rel="apple-touch-icon" href="https://gnosisscan.io/images/favicon.png">
+
+    
+    <script type="text/javascript" async="" src="Token%20Tracker%20GnosisScan_files/analytics.js"></script><script type="text/javascript" async="" src="Token%20Tracker%20GnosisScan_files/js_002"></script><script type="text/javascript" async="" src="Token%20Tracker%20GnosisScan_files/js"></script><script async="" src="Token%20Tracker%20GnosisScan_files/js_003"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-NHR668YNJG', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/animate.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/select2.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/theme.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20GnosisScan_files/custom.css">
+
+    <script src="Token%20Tracker%20GnosisScan_files/jquery.min.js"></script>
+    <script type="text/javascript" src="Token%20Tracker%20GnosisScan_files/blockies.js"></script>
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+
+        body.dark-mode .ui-state-active {
+            background-color: #252525;
+            border-color: #323232;
+        }
+
+        .sticky-top {
+            z-index: 999;
+        }
+
+        .defi-icon img {
+            max-width: 27px;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+
+    
+    <link href="Token%20Tracker%20GnosisScan_files/hs.sticky-thead.css" rel="stylesheet">
+    <style>
+        .custwidth {
+            width: 295px !important;
+        }
+
+        @media all and (max-width: 576px) {
+
+            #divSTContainer th:first-child, #divSTContainer td:first-child,
+            #divSTContainer th:nth-child(2), #divSTContainer td:nth-child(2) {
+                position: -webkit-sticky;
+                position: sticky;
+                background-color: white;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:first-child, #divSTContainer td:first-child {
+                left: 0;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:first-child {
+                z-index: 4;
+                padding: .625rem 5px;
+                text-align: left;
+                width: 50px;
+                min-width: 50px;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:nth-child(2) {
+                padding: .625rem 0;
+                left: 50px !important;
+                width: 130px;
+                min-width: 130px;
+            }
+            #divSTContainer td:first-child {
+                border-bottom: 1.4px solid #e7eaf3;
+            }
+            #divSTContainer td:nth-child(2) {
+                padding: .625rem 0;
+                left: 50px !important;
+                width: 130px;
+                min-width: 130px;
+                border-bottom: 1.4px solid #e7eaf3;
+            }
+            #divSTContainer td:nth-child(3) {
+                left: 130px !important;
+            }
+            #divSTContainer td:nth-child(3) {   
+                left: 130px !important;
+                width: 80px;
+                min-width: 80px;
+            }
+            #divSTContainer td:nth-child(4){   
+                left: 80px !important;
+                width: 90px;
+                min-width: 90px;
+            }
+            #divSTContainer td:nth-child(5){   
+                left: 90px !important;
+                width: 100px;
+                min-width: 100px;
+            }
+            #divSTContainer td:nth-child(6){   
+                left: 100px !important;
+                width: 135px;
+                min-width: 135px;
+            }
+            #divSTContainer td:nth-child(7){   
+                left: 135px !important;
+                width: 80px;
+                min-width: 80px;
+            }
+            #divSTContainer .table-text-normal td:first-child {
+                width: 50px;
+                min-width: 50px;
+                padding: .625rem 5px;
+                left: 0 !important;                
+            }
+            #divSTContainer .sticky-thead-original-thead {
+                display: none;
+            }
+            #divSTContainer .sticky-thead-cloned-table thead {
+              border-bottom: 1px solid #e7eaf3;
+            }
+            #divSTContainer .sticky-thead-cloned-table thead  th {
+              border-bottom-width: 0;
+            }
+            #divSTContainer .table tr td {
+                border-top: 1px solid #e7eaf3; 
+            }
+            #divSTContainer .table tr:nth-child(1) td{
+                border-top: 0; 
+            }
+            #divSTContainer .table tr:last-child td{
+                border-bottom: 0; 
+            }
+            #divSTContainer .token-sticky-header {
+                background-color: #f8fafd !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="Token%20Tracker%20GnosisScan_files/datatables.min.css">
+    <script type="text/javascript" src="Token%20Tracker%20GnosisScan_files/datatables.min.js"></script>
+    <script>
+        function showSignInPopUp(tableid) {
+            if ($('#signInPopUp').attr("style")) {
+                $('#signInPopUp').removeAttr("style");
+            }
+
+            if (!$(".add-paywall").hasClass("paywall-mask")) {
+                $('.add-paywall').addClass("paywall-mask");
+            }
+
+            return;
+        }
+
+        function hideSignInPopUp(tableid) {
+            if (!$('#signInPopUp').attr("style")) {
+                $('#signInPopUp').attr("style", "display:none;");
+            }
+
+            if ($('#paywall_mask_' + tableid).hasClass("paywall-mask")) {
+                $('#paywall_mask_' + tableid).removeClass("paywall-mask");
+            }
+
+            return;
+        }
+    </script>
+<meta name="description" content="The list of ERC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the Gnosis Chain Blockchain on GnosisScan."><script src="Token%20Tracker%20GnosisScan_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section  ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand " href="https://gnosisscan.io/" target="_parent" aria-label="GnosisScan">
+                                <img id="logo-header" width="140" src="Token%20Tracker%20GnosisScan_files/logo.svg" alt="Logo">
+                                
+                            </a>
+
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">xDAI: $1.00</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title=""><span class="text-success"> (+0.00%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://gnosisscan.io/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI12"><a href="https://gnosisscan.io/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI16"><a href="https://gnosisscan.io/txsPending" class="nav-link u-header__sub-menu-nav-link">Pending Transactions</a></li>
+                                            <li id="LI14"><a href="https://gnosisscan.io/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            <li id="LI_BeaconWithdrawals"><a href="https://gnosisscan.io/txsBeaconWithdrawal" class="nav-link u-header__sub-menu-nav-link">Beacon Withdrawals</a></li>
+                                            
+
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                              <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_accountall"><a href="https://gnosisscan.io/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://gnosisscan.io/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18" class=" active"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokens">ERC20 Tokens By MarketCap</a></li>
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokentxns">View ERC20 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/charts">Charts &amp;  Stats</a></li>
+                                            <li id="LI_topstat"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/topstat">Top Statistics</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+
+                                        
+                                                <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                                    
+                                                    <div class="row u-header__mega-menu-wrapper">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Developers</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.gnosisscan.io/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                                <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                                <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                                <li id="LI15"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/pushTx"><i class="fa fa-angle-right small mr-1"></i>Broadcast TXN</a></li>
+                                                                <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                                <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Explore</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                 <li id="LI21"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/gastracker"><i class="fa fa-angle-right small mr-1"></i>Gas Tracker<sup><span class="badge badge-success font-size-default ml-1"> New</span></sup></a></li>
+                                                                <li id="LI24"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/nodetracker"><i class="fa fa-angle-right small mr-1"></i>Node Tracker<sup><span class="badge badge-success font-size-default ml-1"> New</span></sup></a></li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Tools</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI41"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>
+                                                                <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                                
+                                                                <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI50"><a class="nav-link u-header__sub-menu-nav-link" href="https://gnosisscan.io/unitconverter"><i class="fa fa-angle-right small mr-1"></i>Unit Converter </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End Resources - Mega Menu -->
+                                    </li>
+
+
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://gnosisscan.io/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+
+                                            
+                                            <span class="btn btn-sm btn-icon btn-soft-primary cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="Token%20Tracker%20GnosisScan_files/main.svg" alt="Logo1">
+                                            </span>
+                                            
+
+
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut p-3" aria-labelledby="explorersWithDropdown" style="min-width: 200px; display: none;">
+                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="https://beacon.gnosisscan.io/">Gnosis Beacon</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-55 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend d-none d-md-block">
+                                            <!-- Select -->
+                                            <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">
+                                                <option selected="selected" value="0">All Filters</option>
+                                                <option value="1">Addresses</option>
+                                                <option value="2">Tokens</option>
+                                                <option value="3">Name Tags</option>
+                                                <option value="4">Labels</option>
+                                                <option value="5">Websites</option>
+                                            </select>
+                                            <!-- End Select -->
+                                        </div>
+                                        
+                                        <input type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Block / Token" aria-label="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" autocomplete="off">
+                                        
+                                        <input type="hidden" value="" id="hdnSearchText">
+                                        <input id="hdnIsTestNet" value="False" type="hidden">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            
+</div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in xDAI">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+    <!-- Page Title -->    
+    <div class="container">
+        <div id="ContentPlaceHolder1_divTokensTitle" class="py-3">
+            <div class="mb-1 mb-md-0">
+                <h1 id="ContentPlaceHolder1_h1Tag" class="h4 d-flex align-items-center mb-0">Token Tracker<a class="u-label u-label--xs u-label--secondary rounded color-strong ml-2" href="#" target="_blank" rel="nofollow" data-toggle="tooltip" title="" data-original-title="External link to ERC20 Information">ERC20</a></h1>
+            </div>
+            
+        </div>        
+                
+    </div>
+    <!-- End Page Title -->
+
+    
+
+    <div class="container space-bottom-2">
+        
+        
+
+        <!-- Card Tabs -->
+        <div class="card">
+            <!-- Card Header -->
+            
+            <div id="ContentPlaceHolder1_searchBarDiv" class="card-header d-md-flex justify-content-between align-items-center">
+                <div class="mb-1 mb-md-0">
+                    <h2 class="card-header-title">ERC20 Tokens By Market Capitalization</h2>                    
+                </div>
+
+                <div class="d-flex ml-auto">
+                    
+                    <div class="position-relative order-1 order-md-2">
+                        <a id="searchFilterInvoker" class="btn btn-sm btn-icon btn-primary" href="javascript:;" role="button" aria-controls="searchFilter" aria-haspopup="true" aria-expanded="false" data-unfold-target="#searchFilter" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="false" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut" data-toggle="tooltip" title="" data-original-title="Search for Token Name or Address">
+                            <i class="fa fa-search btn-icon__inner"></i>
+                        </a>
+
+                        <div id="searchFilter" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right p-2 u-unfold--css-animation u-unfold--hidden" aria-labelledby="searchFilterInvoker" style="width: 310px; animation-duration: 300ms;">
+                            <form action="/tokens" method="get" autocomplete="off" spellcheck="false" class="js-focus-state input-group input-group-sm w-100">
+                                <input id="searchtoken" name="q" type="search" class="form-control ui-autocomplete-input list-unstyled py-3 mb-0" placeholder="Search for Token Name or Address" onkeyup="handleTokenSearch(this);" autocomplete="off">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-original-title="" title="">Find</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Header -->
+
+            <div class="card-body">
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="transfers" role="tabpanel" aria-labelledby="tokens-tab">
+                        <div id="ContentPlaceHolder1_divpagingpanel" class="d-md-flex justify-content-between align-items-center mb-4">
+                            <p class="mb-2 mb-lg-0">
+                                <i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse" style="display: none; margin-top: 4px">&nbsp;</i>
+                                Showing 75 Token Contracts (From a total of 237,959 Token Contracts)
+                                
+                            </p>
+                            <nav class="mb-4 mb-md-0" aria-label="page navigation">
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">2</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://gnosisscan.io/tokens?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://gnosisscan.io/tokens?p=2"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                            </ul></nav>
+                        </div>                        
+
+                        
+
+                        
+                        <div class="stickyTableHead" id="divSTContainer"><div class="sticky-thead-cloned-wrapper">
+							     <table class="sticky-thead-cloned-table table table-text-normal table-hover mb-0 border-bottom-0" style="width: 1344.4px;"><thead class="thead-light">
+                                        <tr>
+                                            <th scope="col" width="1" class="token-sticky-header" style="width: 47.9667px;">#</th>
+                                            <th scope="col" width="30" class="token-sticky-header" style="width: 191.733px;">Token</th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 165.05px;"><a href="https://gnosisscan.io/tokens?sort=price_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Price</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 130.8px;"><a href="https://gnosisscan.io/tokens?sort=percent_change_24h&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Change (%)</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 194.867px;"><a href="https://gnosisscan.io/tokens?sort=24h_volume_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Volume (24H)</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 273.7px;"><strong><i class="fa fa-angle-down"></i></strong>&nbsp;<a href="https://gnosisscan.io/tokens?sort=marketcap&amp;order=asc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" style="text-decoration:underline;" data-original-title="Sorted in descending order,Click for ascending sort">Circulating Market Cap</a> <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 243.033px;">On-Chain Market Cap <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the token's Total Supply on Gnosis Chain with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 97.25px;"><a href="https://gnosisscan.io/tokens?sort=holders&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Holders</a></th>
+                                        </tr>
+                                    </thead></table>
+							   </div>
+                            <div id="ContentPlaceHolder1_divresult" class="table-responsive mb-2 mb-md-0">
+                                <table class="table table-text-normal table-hover" id="tblResult">
+                                    <thead class="thead-light sticky-thead-original-thead">
+                                        <tr>
+                                            <th scope="col" width="1" class="token-sticky-header"><div class="sticky-thead-original-th-inner-wrapper">#</div></th>
+                                            <th scope="col" width="30" class="token-sticky-header"><div class="sticky-thead-original-th-inner-wrapper">Token</div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://gnosisscan.io/tokens?sort=price_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Price</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://gnosisscan.io/tokens?sort=percent_change_24h&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Change (%)</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://gnosisscan.io/tokens?sort=24h_volume_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Volume (24H)</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><strong><i class="fa fa-angle-down"></i></strong>&nbsp;<a href="https://gnosisscan.io/tokens?sort=marketcap&amp;order=asc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" style="text-decoration:underline;" data-original-title="Sorted in descending order,Click for ascending sort">Circulating Market Cap</a> <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper">On-Chain Market Cap <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the token's Total Supply on Gnosis Chain with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://gnosisscan.io/tokens?sort=holders&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Holders</a></div></th>
+                                        </tr>
+                                    </thead>                                    
+                                    <tbody>
+                                        <tr><td>1</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/tether_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x4ecaba5870353805a9f068101a40e0f32ed605c6">Tether USD on xDai (USDT)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Tether
+ gives you the joint benefits of open blockchain technology and 
+traditional currency by converting your cash into a stable digital 
+currency equivalent.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">0.000016&nbsp;BTC<span class="d-block">1.001118&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.15%</span></td><td>$35,128,807,257.00</td><td>$99,285,276,764.00&nbsp;&nbsp;&nbsp;</td><td>$4,691,085.40&nbsp;&nbsp;&nbsp;</td><td>28,093</td></tr><tr><td>2</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/usdcgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xddafbb505ad214d7b80b1f830fccc89b60fb7a83">USD//C on xDai (USDC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDC
+ is a fully collateralized US Dollar stablecoin developed by CENTRE, the
+ open source project  with Circle being the first of several forthcoming
+ issuers.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">0.000016&nbsp;BTC<span class="d-block">1.001118&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.16%</span></td><td>$5,017,612,679.00</td><td>$29,010,157,417.00&nbsp;&nbsp;&nbsp;</td><td>$15,717,231.53&nbsp;&nbsp;&nbsp;</td><td>72,516</td></tr><tr><td>3</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/chainlinkog_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xe2e73a1c69ecf83f464efce6a5be353a37ca09b2">ChainLink Token on xDai (LINK)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A
+ blockchain-based middleware, acting as a bridge between cryptocurrency 
+smart contracts, data feeds, APIs and traditional bank account payments.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$20.51" data-original-title="" title="">$20.51</span><div class="small text-secondary">0.000330&nbsp;BTC<span class="d-block">20.512411&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -3.20%</span></td><td>$818,154,010.00</td><td>$12,053,166,750.00&nbsp;&nbsp;&nbsp;</td><td>$963,518.78&nbsp;&nbsp;&nbsp;</td><td>7,177</td></tr><tr><td>4</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/polygonmatic_new_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x7122d7661c4564b7c6cd4878b06766489a6028a2">Matic Token on xDai (MATIC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Crowd Sourced Wisdom - The next generation blockchain network. Speculate on anything with an easy-to-use prediction market</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.07638738" data-original-title="" title="">$1.0764</span><div class="small text-secondary">0.000017&nbsp;BTC<span class="d-block">1.076514&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.80%</span></td><td>$795,465,542.00</td><td>$10,655,303,441.00&nbsp;&nbsp;&nbsp;</td><td>$63,251.75&nbsp;&nbsp;&nbsp;</td><td>14,314</td></tr><tr><td>5</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/wbtcgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x8e5bbbb09ed1ebde8674cda39a0c169401db4252">Wrapped BTC on xDai (WBTC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Wrapped Bitcoin (WBTC) is an ERC20 token backed 1:1 with Bitcoin. 
+Completely transparent. 100% verifiable. Community-led.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$62,364.00" data-original-title="" title="">$62,364.00</span><div class="small text-secondary">1.002027&nbsp;BTC<span class="d-block">62,371.331214&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.63%</span></td><td>$151,587,290.00</td><td>$9,717,274,986.00&nbsp;&nbsp;&nbsp;</td><td>$4,365,480.00&nbsp;&nbsp;&nbsp;</td><td>3,717</td></tr><tr><td>6</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/uniswapgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x4537e328bf7e4efa29d05caea260d7fe26af9d74">Uniswap on xDai (UNI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">UNI
+ token served as governance token for Uniswap protocol with 1 billion 
+UNI have been minted at genesis.  60% of the UNI genesis supply is 
+allocated to Uniswap community members and remaining for team, investors
+ and advisors.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$12.60" data-original-title="" title="">$12.60</span><div class="small text-secondary">0.000202&nbsp;BTC<span class="d-block">12.601481&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.77%</span></td><td>$492,175,870.00</td><td>$9,513,787,080.00&nbsp;&nbsp;&nbsp;</td><td>$31,928.40&nbsp;&nbsp;&nbsp;</td><td>5,467</td></tr><tr><td>7</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/gnosistoken_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x9c58bacc331c9aa871afd802db6379a98e80cedb">Gnosis Token on xDai (GNO)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Crowd Sourced Wisdom - The next generation blockchain network. Speculate on anything with an easy-to-use prediction market.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$395.71" data-original-title="" title="">$395.71</span><div class="small text-secondary">0.006358&nbsp;BTC<span class="d-block">395.756518&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.25%</span></td><td>$3,202,217.00</td><td>$1,025,032,825.00&nbsp;&nbsp;&nbsp;</td><td>$440,351,627.94&nbsp;&nbsp;&nbsp;</td><td>30,856</td></tr><tr><td>8</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/rocketpoolgno_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x2f0e755efe6b58238a67db420ff3513ec1fb31ef">Rocket Pool on xDai (RPL)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Rocket Pool is a decentralised Ethereum Proof of Stake pool designed to be compatible with Casper.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$31.70" data-original-title="" title="">$31.70</span><div class="small text-secondary">0.000509&nbsp;BTC<span class="d-block">31.703727&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 3.27%</span></td><td>$10,158,495.00</td><td>$638,489,657.00&nbsp;&nbsp;&nbsp;</td><td>$7,925.00&nbsp;&nbsp;&nbsp;</td><td>1,000</td></tr><tr><td>9</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/yearnfingno_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xbf65bfcb5da067446cee6a706ba3fe2fb1a9fdfd">yearn.finance on xDai (YFI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">DeFi made simple.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$9,121.49" data-original-title="" title="">$9,121.49</span><div class="small text-secondary">0.146559&nbsp;BTC<span class="d-block">9,122.562279&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.92%</span></td><td>$62,368,645.00</td><td>$302,566,078.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>2,574</td></tr><tr><td>10</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/ewtgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x6a8cb6714b1ee5b471a7d2ec4302cb4f5ff25ec2">Energy Web Token Bridged on xDai (EWTB)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Energy
+ Web Token (EWT) is the native token of the Energy Web Chain, a public, 
+Proof-of-Authority Ethereum Virtual Machine blockchain specifically 
+designed to support enterprise-grade applications in the energy sector.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$2.63" data-original-title="" title="">$2.63</span><div class="small text-secondary">0.000042&nbsp;BTC<span class="d-block">2.630309&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 7.35%</span></td><td>$1,706,924.00</td><td>$128,757,184.00&nbsp;&nbsp;&nbsp;</td><td>$2,240.76&nbsp;&nbsp;&nbsp;</td><td>1,040</td></tr><tr><td>11</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/badgerdaogno_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xdfc20ae04ed70bd9c7d720f449eedae19f659d65">Badger on xDai (BADGER)</a></h3><p class="d-none d-md-block font-size-1 mb-0">BadgerDAO is a decentralized autonomous organization focused on bringing Bitcoin to DeFi.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$5.54" data-original-title="" title="">$5.54</span><div class="small text-secondary">0.000089&nbsp;BTC<span class="d-block">5.540651&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.55%</span></td><td>$25,064,538.00</td><td>$110,400,058.00&nbsp;&nbsp;&nbsp;</td><td>$880.86&nbsp;&nbsp;&nbsp;</td><td>1,576</td></tr><tr><td>12</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/cowprotocolgno2_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x177127622c4a00f3d409b75571e12cb3c8973d3c">CoW Protocol Token from Mainnet (COW)</a></h3><p class="d-none d-md-block font-size-1 mb-0">CoW
+ Protocol matches trades via batch auctions for a variety of on-chain 
+liquidity sources. Trades can be settled via underlying on-chain AMMs 
+directly or via DEX Aggregators, depending on which pool/path offers the
+ best price.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.431654" data-original-title="" title="">$0.4317</span><div class="small text-secondary">0.000007&nbsp;BTC<span class="d-block">0.431705&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.14%</span></td><td>$256,789.00</td><td>$89,825,282.00&nbsp;&nbsp;&nbsp;</td><td>$16,430,208.07&nbsp;&nbsp;&nbsp;</td><td>11,844</td></tr><tr><td>13</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/vitadao_32.svg"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x0939a7c3f8d37c1ce67fada4963ae7e0bd112ff3">VitaDAO Token from Mainnet (VITA)</a></h3></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$2.96" data-original-title="" title="">$2.96</span><div class="small text-secondary">0.000048&nbsp;BTC<span class="d-block">2.960348&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -9.12%</span></td><td>$580,076.00</td><td>$70,558,422.00&nbsp;&nbsp;&nbsp;</td><td>$168,056.96&nbsp;&nbsp;&nbsp;</td><td>173</td></tr><tr><td>14</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/streamr_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x256eb8a51f382650b2a1e946b8811953640ee47d">'Streamr' (DATA)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Streamr
+ is a decentralized real‑time data network for web3. Create, share and 
+consume data streams on an open, scalable P2P protocol with powerful 
+tools for monetization. As a layer zero protocol, it provides a 
+publish/subscribe messaging framework for decentralized applications 
+built on top.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.072509" data-original-title="" title="">$0.0725</span><div class="small text-secondary">0.000001&nbsp;BTC<span class="d-block">0.072518&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 4.92%</span></td><td>$6,316,158.00</td><td>$55,623,273.00&nbsp;&nbsp;&nbsp;</td><td>$141,229.26&nbsp;&nbsp;&nbsp;</td><td>34,376</td></tr><tr><td>15</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/hoprgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xd057604a14982fe8d88c5fc25aac3267ea142a08">HOPR Token on xDai (HOPR)</a></h3><p class="d-none d-md-block font-size-1 mb-0">HOPR
+ provides essential and compliant network-level metadata privacy for 
+everyone. HOPR is an open incentivized mixnet which enables 
+privacy-preserving point-to-point data exchange.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.133827" data-original-title="" title="">$0.1338</span><div class="small text-secondary">0.000002&nbsp;BTC<span class="d-block">0.133843&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 80.60%</span></td><td>$7,702,152.00</td><td>$52,143,873.00&nbsp;&nbsp;&nbsp;</td><td>$14,592,733.36&nbsp;&nbsp;&nbsp;</td><td>7,172</td></tr><tr><td>16</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/shapeshiftfox_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x21a42669643f45bc0e086b8fc2ed70c23d67509d">FOX on xDai (FOX)</a></h3><p class="d-none d-md-block font-size-1 mb-0">FOX
+ is an ERC-20 token created by ShapeShift which serves as the governance
+ token for the ShapeShift DAO. The token supports and provides utility 
+for a borderless, cross-chain crypto trading platform and portfolio 
+manager for user self-sovereignty.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.084684" data-original-title="" title="">$0.0847</span><div class="small text-secondary">0.000001&nbsp;BTC<span class="d-block">0.084694&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.41%</span></td><td>$1,169,061.00</td><td>$52,020,722.00&nbsp;&nbsp;&nbsp;</td><td>$2,531,660.61&nbsp;&nbsp;&nbsp;</td><td>4,049</td></tr><tr><td>17</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/aurafinance_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x1509706a6c66ca549ff0cb464de88231ddbe213b">Aura (AURA)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Centered
+ around Balancer’s veBAL, Aura coordinates incentives around 
+vote-escrowed tokens to boost yield potential and governance power of 
+DeFi liquidity providers, governance token stakers and voters.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.919756" data-original-title="" title="">$0.9198</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.919864&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.93%</span></td><td>$129,078.00</td><td>$42,246,647.00&nbsp;&nbsp;&nbsp;</td><td>$692,670.08&nbsp;&nbsp;&nbsp;</td><td>3,742</td></tr><tr><td>18</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/ethswarm_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xdbf3ea6f5bee45c02255b2c26a16f300502f68da">BZZ on xDai (BZZ)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Swarm
+ is a peer-to-peer network of nodes that collectively provide a 
+decentralised storage and communication service. This system is 
+economically self-sustaining due to a built-in incentive system which is
+ enforced through smart contracts on the Ethereum blockchain and powered
+ by the BZZ token.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.537666" data-original-title="" title="">$0.5377</span><div class="small text-secondary">0.000009&nbsp;BTC<span class="d-block">0.537729&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 5.58%</span></td><td>$1,776,859.00</td><td>$34,135,004.00&nbsp;&nbsp;&nbsp;</td><td>$600,582.06&nbsp;&nbsp;&nbsp;</td><td>220,727</td></tr><tr><td>19</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/dxdaogno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xb90d6bec20993be5d72a5ab353343f7a0281f158">DXdao on xDai (DXD)</a></h3><p class="d-none d-md-block font-size-1 mb-0">DXdao is a decentralized community that develops, governs, and grows DeFi protocols and products.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1,310.66" data-original-title="" title="">$1,310.66</span><div class="small text-secondary">0.021059&nbsp;BTC<span class="d-block">1,310.814075&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.07%</span></td><td>$19,874.00</td><td>$30,748,465.00&nbsp;&nbsp;&nbsp;</td><td>$339,460.94&nbsp;&nbsp;&nbsp;</td><td>4,711</td></tr><tr><td>20</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/defipulsedpi_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xd3d47d5578e55c880505dc40648f7f9307c3e7a8">DefiPulse Index on xDai (DPI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">DeFi
+ Pulse Index - index of decentralized finance that is not a synthetic or
+ a derivative - users own the tokens that constitute the 
+capitalization-weighted index.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$136.50" data-original-title="" title="">$136.50</span><div class="small text-secondary">0.002193&nbsp;BTC<span class="d-block">136.516046&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.04%</span></td><td>$142,998.00</td><td>$28,176,554.00&nbsp;&nbsp;&nbsp;</td><td>$6,279.00&nbsp;&nbsp;&nbsp;</td><td>2,076</td></tr><tr><td>21</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/swashgno_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x84e2c67cbefae6b5148fca7d02b341b12ff4b5bb">Swash Token (SWASH)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Swash
+ is an ecosystem of tools and services that enable people, businesses, 
+and developers to unlock the latent value of data by pooling, securely 
+sharing, and monetizing its value.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.01748483" data-original-title="" title="">$0.0175</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.017487&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 21.77%</span></td><td>$513,102.00</td><td>$16,540,433.00&nbsp;&nbsp;&nbsp;</td><td>$220,195.91&nbsp;&nbsp;&nbsp;</td><td>10,500</td></tr><tr><td>22</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/moonsxdai_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x1e16aa4df73d29c029d94ceda3e3114ec191e25a">Moons on xDai (xMOON)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Moons
+ are r/CryptoCurrency's form of Community Points, a way for users to be 
+rewarded for their contributions to the subreddit, and they can be used 
+on premium features in the community.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.20081" data-original-title="" title="">$0.2008</span><div class="small text-secondary">0.000003&nbsp;BTC<span class="d-block">0.200834&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -8.86%</span></td><td>$369,307.00</td><td>$16,178,892.00&nbsp;&nbsp;&nbsp;</td><td>$650,816.17&nbsp;&nbsp;&nbsp;</td><td>70,489</td></tr><tr><td>23</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/ethichub_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xec3f3e6d7907acda3a7431abd230196cda3fbb19">Ethix on xDai (ETHIX)</a></h3><p class="d-none d-md-block font-size-1 mb-0">EthicHub
+ is a platform that connects small farmers’ communities with investors 
+willing to lend them money and with buyers for their crops.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.199167" data-original-title="" title="">$0.1992</span><div class="small text-secondary">0.000003&nbsp;BTC<span class="d-block">0.199190&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.64%</span></td><td>$3,651.00</td><td>$14,039,254.00&nbsp;&nbsp;&nbsp;</td><td>$45,112.72&nbsp;&nbsp;&nbsp;</td><td>3,051</td></tr><tr><td>24</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/unicryptuncx_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x0116e28b43a358162b96f70b4de14c98a4465f25">UniCrypt on xDai (UNCX)</a></h3><p class="d-none d-md-block font-size-1 mb-0">UniCrypt
+ is a platform creating services for other tokens. Services such as 
+token locking contracts, yield farming as a service and other dex 
+orientated products.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$361.66" data-original-title="" title="">$361.66</span><div class="small text-secondary">0.005811&nbsp;BTC<span class="d-block">361.702515&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.77%</span></td><td>$16,122.00</td><td>$13,066,057.00&nbsp;&nbsp;&nbsp;</td><td>$422,418.88&nbsp;&nbsp;&nbsp;</td><td>185</td></tr><tr><td>25</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/etheriscdip_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x48b1b0d077b4919b65b4e4114806dd803901e1d9">Decentralized Insurance Protocol on xDai (DIP)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Etherisc ​
+is ​building ​a ​platform ​for ​decentralized ​insurance ​applications 
+to ​make ​the ​purchase ​and ​sale ​of ​insurance ​more ​efficient, 
+​​provide ​greater ​transparency ​and ​democratize access ​to 
+​reinsurance.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.03029139" data-original-title="" title="">$0.0303</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.030295&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.90%</span></td><td>$19,361.00</td><td>$11,615,417.00&nbsp;&nbsp;&nbsp;</td><td>$34,338.65&nbsp;&nbsp;&nbsp;</td><td>4,106</td></tr><tr><td>26</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/donutgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x524b969793a64a602342d89bc2789d43a016b13a">Donut on xDai (DONUT)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A tokenization of EthTrader Donuts.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.02215312" data-original-title="" title="">$0.0222</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.022156&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -8.80%</span></td><td>$20,794.00</td><td>$4,712,343.00&nbsp;&nbsp;&nbsp;</td><td>$557,173.30&nbsp;&nbsp;&nbsp;</td><td>11,192</td></tr><tr><td>27</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/Hop_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc">Hop (HOP)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Hop
+ is a scalable rollup-to-rollup general token bridge. It allows users to
+ send tokens from one rollup or sidechain to another almost immediately 
+without having to wait for the networks challenge period.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.061297" data-original-title="" title="">$0.0613</span><div class="small text-secondary">0.000001&nbsp;BTC<span class="d-block">0.061304&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 10.85%</span></td><td>$249,265.00</td><td>$4,574,744.00&nbsp;&nbsp;&nbsp;</td><td>$32,131.27&nbsp;&nbsp;&nbsp;</td><td>392</td></tr><tr><td>28</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/jarvis_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xccf1279c3406ad1181bee00dab4b28b23d17ddb1">Jarvis Reward Token on xDai (JRT)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Jarvis
+ is a non-custodial financial ecosystem which allows you to manage your 
+assets, from payment to savings, trade any financial markets with any 
+collateral and access any Dapps.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00731196" data-original-title="" title="">$0.0073</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.007313&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.09%</span></td><td>$710.00</td><td>$2,904,623.00&nbsp;&nbsp;&nbsp;</td><td>$3,796.60&nbsp;&nbsp;&nbsp;</td><td>43</td></tr><tr><td>29</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/givethgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75">Giveth from Mainnet (GIV)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Giveth
+ is a community focused on Building the Future of Giving using 
+blockchain technology. Our intention is to support and reward the 
+funding of public goods by creating open, transparent, and free access 
+to the revolutionary funding opportunities available within the Ethereum
+ ecosystem.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.01379793" data-original-title="" title="">$0.0138</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.013800&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.23%</span></td><td>$328.00</td><td>$2,791,102.00&nbsp;&nbsp;&nbsp;</td><td>$12,365,329.19&nbsp;&nbsp;&nbsp;</td><td>5,389</td></tr><tr><td>30</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/mtpelerinsharesgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xfa57aa7beed63d03aaf85ffd1753f5f6242588fb">MtPelerin Shares (MPS)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Mt
+ Pelerin is a Swiss Fintech expert in asset tokenization and digital 
+compliance building the infrastructure for tomorrow's finance.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$5.23" data-original-title="" title="">$5.23</span><div class="small text-secondary">0.000084&nbsp;BTC<span class="d-block">5.230615&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.54%</span></td><td>$47.00</td><td>$2,616,722.00&nbsp;&nbsp;&nbsp;</td><td>$52,300,000.00&nbsp;&nbsp;&nbsp;</td><td>1,056</td></tr><tr><td>31</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/agavetoken_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x3a97704a1b25f08aa230ae53b352e2e72ef52843">Agave Token (AGVE)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Agave
+ is the DeFi lending protocol on Gnosis. Agave rewards depositors with 
+passive income and lets them use their deposits as collateral to borrow 
+and lend digital assets</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$57.32" data-original-title="" title="">$57.32</span><div class="small text-secondary">0.000921&nbsp;BTC<span class="d-block">57.326738&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.59%</span></td><td>$1,551.00</td><td>$1,594,101.00&nbsp;&nbsp;&nbsp;</td><td>$5,732,000.00&nbsp;&nbsp;&nbsp;</td><td>7,660</td></tr><tr><td>32</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/daohausgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xb0c5f3100a4d9d9532a4cfd68c55f1ae8da987eb">DAOhaus Token on xDai (HAUS)</a></h3><p class="d-none d-md-block font-size-1 mb-0">DAOhaus is built and run by the community using DAOs to coordinate.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.31" data-original-title="" title="">$1.31</span><div class="small text-secondary">0.000021&nbsp;BTC<span class="d-block">1.310154&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.17%</span></td><td>$1.00</td><td>$1,313,792.00&nbsp;&nbsp;&nbsp;</td><td>$395,080.28&nbsp;&nbsp;&nbsp;</td><td>7,093</td></tr><tr><td>33</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/gravitonpoly_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x6ab6d61428fde76768d7b45d8bfeec19c6ef91a8">Graviton (GTON)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Based
+ on the cutting edge achievements of Web 3.0 technology, GTON Capital is
+ building an infrastructure to advance digital capital markets.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.169883" data-original-title="" title="">$0.1699</span><div class="small text-secondary">0.000003&nbsp;BTC<span class="d-block">0.169903&nbsp;xDAI</span></div></td><td>--</td><td>$170.00</td><td>$616,692.00&nbsp;&nbsp;&nbsp;</td><td>$13.42&nbsp;&nbsp;&nbsp;</td><td>13</td></tr><tr><td>34</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/swaprswpr_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x532801ed6f82fffd2dab70a19fc2d7b2772c4f4b">Swapr on xDai (SWPR)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A governance-enabled automated market maker with adjustable fees.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.01424724" data-original-title="" title="">$0.0142</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.014249&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 1.58%</span></td><td>$193.00</td><td>$563,053.00&nbsp;&nbsp;&nbsp;</td><td>$326,492.93&nbsp;&nbsp;&nbsp;</td><td>1,480</td></tr><tr><td>35</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/unicryptnetwork_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x703120f2f2011a0d03a03a531ac0e84e81f15989">UNCL on xDai (UNCL)</a></h3><p class="d-none d-md-block font-size-1 mb-0">UniCrypt Network defi a multi-chain service provider since 2020.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$5.18" data-original-title="" title="">$5.18</span><div class="small text-secondary">0.000083&nbsp;BTC<span class="d-block">5.180609&nbsp;xDAI</span></div></td><td>--</td><td>$104.00</td><td>$511,757.00&nbsp;&nbsp;&nbsp;</td><td>$123,802.00&nbsp;&nbsp;&nbsp;</td><td>994</td></tr><tr><td>36</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/wrappedethogno_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xb17d999e840e0c1b157ca5ab8039bd958b5fa317">Wrapped ETHO (ETHO)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Immutable,
+ decentralized, highly redundant storage network. Wide ecosystem 
+providing EVM compatibility, IPFS, and SDK to scale use cases and 
+applications. Strong community and dedicated developer team with passion
+ for utilizing revolutionary technology to support free speech and 
+freedom of data.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00690939" data-original-title="" title="">$0.0069</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.006910&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 8.66%</span></td><td>$102,101.00</td><td>$398,225.00&nbsp;&nbsp;&nbsp;</td><td>$179.62&nbsp;&nbsp;&nbsp;</td><td>1,906</td></tr><tr><td>37</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/stakexdai_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xb7d311e2eb55f2f68a9440da38e7989210b9a05e">STAKE on xDai (STAKE)</a></h3><p class="d-none d-md-block font-size-1 mb-0">STAKE
+ is a new ERC20 token designed to secure the on-chain payment layer and 
+provide a mechanism for validators to receive incentives.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.14917" data-original-title="" title="">$0.1492</span><div class="small text-secondary">0.000002&nbsp;BTC<span class="d-block">0.149188&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.14%</span></td><td>$5.00</td><td>$275,889.00&nbsp;&nbsp;&nbsp;</td><td>$42,540.90&nbsp;&nbsp;&nbsp;</td><td>11,061</td></tr><tr><td>38</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/dehivefinance_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xfbdd194376de19a88118e84e279b977f165d01b8">DeHive.finance (DHV)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A decentralized protocol that provides crypto indexes of selected tokens presented on the DeFi market.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.062214" data-original-title="" title="">$0.0622</span><div class="small text-secondary">0.000001&nbsp;BTC<span class="d-block">0.062221&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 3.99%</span></td><td>$44,718.00</td><td>$267,458.00&nbsp;&nbsp;&nbsp;</td><td>$4,186.07&nbsp;&nbsp;&nbsp;</td><td>2,201</td></tr><tr><td>39</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/0xmonero_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x8c88ea1fd60462ef7004b9e288afcb4680a3c50c">0xMonero on xDai (0xMR)</a></h3><p class="d-none d-md-block font-size-1 mb-0">0xMonero. Privacy is freedom.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.03010873" data-original-title="" title="">$0.0301</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.030112&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 11.77%</span></td><td>$881.00</td><td>$56,160.00&nbsp;&nbsp;&nbsp;</td><td>$1,164.21&nbsp;&nbsp;&nbsp;</td><td>1,646</td></tr><tr><td>40</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/mivawallet_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x63e62989d9eb2d37dfdb1f93a22f063635b07d51">Minerva Wallet SuperToken (MIVA)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Minerva Wallet is a user-friendly app for sovereign identities, data, and money.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00420359" data-original-title="" title="">$0.0042</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.004204&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.84%</span></td><td>$80.00</td><td>$43,303.00&nbsp;&nbsp;&nbsp;</td><td>$4,203,590.00&nbsp;&nbsp;&nbsp;</td><td>3,150</td></tr><tr><td>41</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/dappnode_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xc60e38c6352875c051b481cbe79dd0383adb7817">DAppNode DAO Token on xDai (NODE)</a></h3><p class="d-none d-md-block font-size-1 mb-0">DAppNode facilitates running nodes, DApps and hosting P2P networks and economies</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.0004535" data-original-title="" title="">$0.0005</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000454&nbsp;xDAI</span></div></td><td>--</td><td>$18.00</td><td>$7,601.00&nbsp;&nbsp;&nbsp;</td><td>$31,676.66&nbsp;&nbsp;&nbsp;</td><td>2,393</td></tr><tr><td>42</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/levinswap_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x1698cd22278ef6e7c0df45a8dea72edbea9e42aa">Levin (LEVIN)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Experience traditional finance with DeFi.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00074251" data-original-title="" title="">$0.0007</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000743&nbsp;xDAI</span></div></td><td>--</td><td>$32.00</td><td>$278.00&nbsp;&nbsp;&nbsp;</td><td>$7,508.66&nbsp;&nbsp;&nbsp;</td><td>59,597</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/wsteth_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x6c76971f98945ae98dd7d4dfca8711ebea946ea6">Wrapped liquid staked Ether 2.0 from Mainnet (wstETH)</a></h3><p class="d-none d-md-block font-size-1 mb-0">wstETH
+ is a wrapped version of stETH. As some DeFi protocols require a 
+constant balance mechanism for tokens, wstETH keeps your balance of 
+stETH fixed and uses an underlying share system to reflect your earned 
+staking rewards.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,970.94" data-original-title="" title="">$3,970.94</span><div class="small text-secondary">0.063803&nbsp;BTC<span class="d-block">3,971.406805&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.70%</span></td><td>$124,083,975.00</td><td>--</td><td>$138,172,828.24&nbsp;&nbsp;&nbsp;</td><td>803</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/aave_steth.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x23e4e76d01b2002be436ce8d6044b0aa2f68b68a">Aave Gnosis wstETH (aGnowstETH)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Aave is a decentralized non-custodial liquidity protocol where users can participate as depositors or borrowers.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,969.79" data-original-title="" title="">$3,969.79</span><div class="small text-secondary">0.063784&nbsp;BTC<span class="d-block">3,970.256670&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.24%</span></td><td>$0.00</td><td>--</td><td>$15,335,298.77&nbsp;&nbsp;&nbsp;</td><td>113</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/wethgno_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1">Wrapped Ether on xDai (WETH)</a></h3><p class="d-none d-md-block font-size-1 mb-0">wETH is "wrapped ETH".</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,426.99" data-original-title="" title="">$3,426.99</span><div class="small text-secondary">0.055063&nbsp;BTC<span class="d-block">3,427.392861&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.69%</span></td><td>$790,106,015.00</td><td>--</td><td>$50,373,326.01&nbsp;&nbsp;&nbsp;</td><td>37,714</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/aave_weth.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xa818f1b57c201e092c4a2017a91815034326efd1">Aave Gnosis WETH (aGnoWETH)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Aave is a decentralized non-custodial liquidity protocol where users can participate as depositors or borrowers.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,421.82" data-original-title="" title="">$3,421.82</span><div class="small text-secondary">0.054980&nbsp;BTC<span class="d-block">3,422.222253&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.39%</span></td><td>$0.00</td><td>--</td><td>$8,643,517.32&nbsp;&nbsp;&nbsp;</td><td>166</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/1hivehoney_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x71850b7e9ee3f13ab46d67167341e4bdc905eef9">Honey (HNY)</a></h3><p class="d-none d-md-block font-size-1 mb-0">1Hive is a DAO that issues and distributes a digital currency called Honey.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$11.98" data-original-title="" title="">$11.98</span><div class="small text-secondary">0.000192&nbsp;BTC<span class="d-block">11.981408&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.26%</span></td><td>$777.00</td><td>--</td><td>$612,621.26&nbsp;&nbsp;&nbsp;</td><td>19,261</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/jarvisjchf_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x2d5563da42b06fbbf9c67b7dc073cf6a7842239e">Jarvis Synthetic Swiss Franc (jCHF)</a></h3><p class="d-none d-md-block font-size-1 mb-0">The
+ project is focused on the sphere of synthetic assets, more particularly
+ synthetic assets that track Forex. Their goal is to allow users and 
+investors into DeFi to gain exposure to either their local currencies or
+ other stable currencies that are not the USD.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.13" data-original-title="" title="">$1.13</span><div class="small text-secondary">0.000018&nbsp;BTC<span class="d-block">1.130133&nbsp;xDAI</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.03%</span></td><td>$48.00</td><td>--</td><td>$14,192.80&nbsp;&nbsp;&nbsp;</td><td>16</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/jarviseur_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0x9fb1d52596c44603198fb0aee434fac3a679f702">Jarvis Synthetic Euro (jEUR)</a></h3><p class="d-none d-md-block font-size-1 mb-0">The
+ project is focused on the sphere of synthetic assets, more particularly
+ synthetic assets that track Forex. Their goal is to allow users and 
+investors into DeFi to gain exposure to either their local currencies or
+ other stable currencies that are not the USD.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.05" data-original-title="" title="">$1.05</span><div class="small text-secondary">0.000017&nbsp;BTC<span class="d-block">1.050123&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.11%</span></td><td>$5,591.00</td><td>--</td><td>$5,055.75&nbsp;&nbsp;&nbsp;</td><td>66</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20GnosisScan_files/sdailogognosis_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://gnosisscan.io/token/0xaf204776c7245bf4147c2612bf6e5972ee483701">Savings xDAI (sDAI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">All
+ DAI bridged to Gnosis earn interest at MakerDAO. This interest is given
+ to sDAI holder. User can use sDAI in Gnosis Defi like you would use 
+DAI.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.049" data-original-title="" title="">$1.049</span><div class="small text-secondary">0.000017&nbsp;BTC<span class="d-block">1.049123&nbsp;xDAI</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.11%</span></td><td>$306,181.00</td><td>--</td><td>$50,853,480.74&nbsp;&nbsp;&nbsp;</td><td>21,733</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+                        <form method="post" action="./tokens" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lzAt23u85xxEK23+rXtUN7Le9IenxYqzfvD9Kg8Z4UQHFgs6Jn/QTOmcZDjJpU9jwH9X5fbN1lNiQ+mc7Qm5+I6iwDb1wUld6H3XO/DcCBc=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3C86B011">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="b7aYGU6fOr8c8c85yMv4XlvyahziAQknazhSOevOu6IvMVY1Wm7z5ci2qF/PzjRREha8A88YKHgVXet+6QIq25vKCERsl/9Zr0kNBsKIZOlhPZF3CJ/NlYZ6ObNHaDWMgEpu8mFZsSFBXfMxH/VNm4PBfD7A0vCLm+pgBmMRzc3DstHF6aUPLOxffPpkDQhoNyFMM2EI0jIRvkp1a3a9OQ==">
+</div>
+                            <div id="ContentPlaceHolder1_divPagination" class="d-md-flex justify-content-between my-3">
+                                <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                    Show
+                                    <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRecordsPerPage\',\'\')', 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option value="25">25</option>
+	<option selected="selected" value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                    Records
+                                </div>
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">2</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://gnosisscan.io/tokens?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://gnosisscan.io/tokens?p=2"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                            </ul></div>
+                        </form>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <!-- End Card Tabs -->
+        
+    </div>    
+
+    <script type="text/javascript">
+        var tokensFlag = false;
+        $(document).ready(function () {
+            if ($('#ContentPlaceHolder1_searchBarDiv').length) {
+                (function ($) {
+                    $.fn.customAutocomplete = function () {
+                        this.autocomplete({
+                            source: function (request, response) {
+                                var searchTerm = request.term;
+                                $.ajax({
+                                    dataType: "json",
+                                    type: 'Get',
+                                    url: '/searchHandler?t=t',
+                                    data: { term: searchTerm, filterby: '2' },
+                                    success: function (data) {
+                                        response($.map(data, function (item) {
+                                            return {
+                                                label: item.split('\t')[0],
+                                                value: item.split('\t')[1],
+                                                desc: item.split('\t')[2],
+                                                typeval: item.split('\t')[3],
+                                                checkMark: item.split('\t')[4],
+                                                logo: item.split('\t')[5]
+                                            }
+                                        }));
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        console.log(textStatus);
+                                    }
+                                });
+                            },
+                            autoFocus: true,
+                            delay: 100,
+                            minLength: 1,
+                            select: function (event, ui) {
+                                event.preventDefault();
+                                var typeval = ui.item.typeval;
+                                if (typeval == "") {
+                                    typeval = 1;
+                                    ui.item.label = $("#hdnSearchText").val();
+                                }
+
+                                //$(this).val(ui.item.label);
+                                if (typeval == 1) {
+                                    window.location.href = '/token/' + ui.item.label;
+                                } else if (typeval == 2) {
+                                    window.location.href = '/token/' + ui.item.value;
+                                } else if (typeval == 4) {
+                                    window.location.href = '/token/' + ui.item.label;
+                                }
+                            }
+                        }).focus(function (event) {
+                            $(".ui-helper-hidden-accessible").hide();
+                            event.preventDefault();
+                        }).addClass("list-unstyled py-3 mb-0").data("ui-autocomplete")._renderItem = function (ul, item) {
+
+                            if (!tokensFlag) {
+                                tokensFlag = true;
+                                ul.addClass("list-unstyled bg-white-content p-2 mb-0");
+                            }
+
+                            ul.addClass('custwidth');
+                            var tickMark = '';
+                            var imglogo = '';
+                            if (item.checkMark === '1') {
+                                tickMark = "<i class='fa fa-badge-check text-info ml-auto'></i>";
+                            }
+                            if (item.logo !== '') {
+                                imglogo = "<img class='u-xs-avatar' style='margin-top: 1px;' src='/token/images/" + item.logo + "'>";
+                            }
+                            else {
+                                imglogo = "<img class='u-xs-avatar' style='margin-top: 1px;' src='/images/main/empty-token.png'>";
+                            }
+                            //return $("<li>")
+                            //    .append("<div>" + imglogo + item.label.substring(0, 28) + tickMark + "<br><font size='1'>" + item.desc + "</font></div>")
+                            //    .appendTo(ul);
+                            if (item.desc == "" && item.typeval == "" && item.checkMark == "" && item.logo == "") {                                
+                                return $("<li class='mb-2 ether-search-heading'>").append("<h5 class='h6 font-weight-bold bg-light px-2 py-1 rounded mb-2'>" + item.label + "</h5>").appendTo(ul);
+                            } else {
+                                if (searchAddress == false) {
+                                    if (item.typeval == 1 || item.typeval == 4) {
+                                        $("#hdnSearchText").val(item.label);
+                                    } else {
+                                        $("#hdnSearchText").val(item.value);
+                                    }                
+                                    searchAddress = true;
+                                }
+
+                                var website = (item.desc.split('~')[1] != undefined ? "<div class='text-secondary font-size-1 text-truncate'>" + item.desc.split('~')[1] + "</div>" : "");
+                                var tokenType = item.desc.split('~')[2];
+                                var price = (tokenType != "2" ? (item.desc.split('~')[3] != undefined ? "<span class='badge bg-soft-secondary mr-2'>" + item.desc.split('~')[3] + "</span>" : "") : "");
+
+                                return $("<li class='mb-2'>")
+                                    .append("<a class='ether-search media rounded p-2' href='javascript:;'><div class='mr-2'>" + imglogo + "</div><div class='media-body text-truncate'><h6 class='d-flex align-items-center text-size-1 mb-0'><div class='text-truncate mr-2'>" + item.label + "</div>" + price + tickMark + "</h6><span class='text-secondary text-truncate font-size-1'>" + item.value + "</span>" + website + "</div></a>")
+                                    .appendTo(ul);
+                            }
+                        };
+                        return this;
+                    };
+                })(jQuery);
+                var urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.has('l') == false) {
+                    $("#searchtoken").customAutocomplete();
+                }
+            }          
+        });
+    </script>
+    
+
+
+        </main>
+        <div id="push"></div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <footer class="bg-dark py-4">
+                <div class="container">
+                    <div class="row justify-content-sm-between align-items-center">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="d-flex align-items-center">
+                                
+                                <img width="25" src="Token%20Tracker%20GnosisScan_files/main.svg" alt="Logo">
+                                
+
+                                <span class="h5 text-white mb-0 ml-3">Powered By Gnosis Chain</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 align-self-bottom">
+                            <!-- Preferences -->
+                            <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                <span>
+                                    <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                        <img class="mr-1" width="15" src="Token%20Tracker%20GnosisScan_files/metamask.svg" alt="Metamask">
+                                        Add Gnosis Network
+                                    </button>
+                                </span>
+
+                                <a class="btn btn-xss btn-soft-light mr-2" href="https://gnosisscan.io/settings">
+                                    <i class="fa fa-cogs mr-1"></i>Preferences
+                                </a>
+
+                                <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                    <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                            </div>
+                            <!-- End Preferences -->
+                        </div>
+                    </div>
+                    <!-- End Fotoer Content -->
+
+
+
+                    
+                    <hr class="opacity-md">
+                    <div class="row justify-content-between align-items-center font-size-1">
+                        <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                            <p class="mb-0 text-white">
+                                GnosisScan © 2024  (GNOSIS-A)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>  <span class="mx-1">|</span> <a class="text-white-70" href="https://gnosisscan.io/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i> 
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://gnosisscan.io/terms">Terms of Service</a> </li> <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://gnosisscan.freshstatus.io/">Network Status</a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://gnosisscan.io/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us"> <i class="far fa-envelope btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/gnosisscan" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"> <i class="fab fa-twitter btn-icon__inner"></i> </a> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: none;">
+                <div class="alert alert-light border shadow p-3" role="alert">
+                    <div class="d-md-flex justify-content-center align-items-center">
+                        <span>
+                            <p class="text-dark mr-3 mb-2 mb-md-0">
+                                <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href="https://gnosisscan.io/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="https://gnosisscan.io/terms" target="_blank">Terms</a> and <a href="https://gnosisscan.io/privacyPolicy">Privacy Policy</a>.
+                            </p>
+                        </span>
+                        <div>
+                            <button id="btnCookie" class="btn btn-sm btn-primary text-nowrap py-1" data-dismiss="alert" aria-label="Close">Got It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+                <span class="fa fa-arrow-up u-go-to__inner"></span>
+            </a>
+            <script src="Token%20Tracker%20GnosisScan_files/jquery-ui.min.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/jquery-migrate.min.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/popper.min.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/bootstrap.min.js"></script>
+
+
+
+            <!-- JS Implementing Plugins -->
+            <script src="Token%20Tracker%20GnosisScan_files/hs.megamenu.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/jquery.cubeportfolio.min.js"></script>
+
+
+            <!-- JS Front -->
+            <script src="Token%20Tracker%20GnosisScan_files/hs.core.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/hs.header.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/hs.unfold.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/hs.malihu-scrollbar.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/hs.focus-state.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/hs.go-to.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/hs.cubeportfolio.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/combine-js-bottom2.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script>
+                $(window).on('load', function () {
+                    // initialization of HSMegaMenu component
+                    $('.js-mega-menu').HSMegaMenu({
+                        event: 'hover',
+                        pageContainer: $('.container'),
+                        breakpoint: 767.98,
+                        hideTimeOut: 0
+                    });
+                    myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+                });
+
+                $(document).on('ready', function () {
+                    // initialization of header
+                    $.HSCore.components.HSHeader.init($('#header'));
+
+                    // initialization of unfold component
+                    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                        afterOpen: function () {
+                            $(this).find('input[type="search"]').focus();
+                        }
+                    });
+
+                    // initialization of malihu scrollbar
+                    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+                    // initialization of focus state
+                    $.HSCore.components.HSFocusState.init();
+
+                    // initialization of go to
+                    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+                    // initialization of cubeportfolio
+                    //$.HSCore.components.HSCubeportfolio.init('.cbp');
+                });
+            </script>
+            <script type="text/javascript">
+                var sid = '04c72c97a82a4b9270622dfefcd9c7f6';
+                var strGlobal = sessionStorage.getItem("ShowAs");
+                var strGlobalFee = sessionStorage.getItem("ShowFee");
+                var siteVar = 'GnosisScan';
+                var cookieconsent = getCookie(siteVar + "_cookieconsent");
+                if (cookieconsent !== "True") {
+                    document.getElementById("divcookie").style.display = "block";
+                };
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) === 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+                $("#btnCookie").click(function () {
+                    $("#divcookie").fadeOut("slow", function () {
+                        var d = new Date();
+                        d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = siteVar + "_cookieconsent=True" + ";" + expires + ";path=/";;
+                    });
+                });
+                function handleSearchText(data) {
+                    searchAddress = false;
+                    if ($("txtSearchInput").val() == "") {
+                        $("#hdnSearchText").val("");
+                    }
+                }
+            </script>
+            
+
+            <script src="Token%20Tracker%20GnosisScan_files/web3-utils.min.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/web3-eth.min.js"></script>
+            <script src="Token%20Tracker%20GnosisScan_files/web3-providers-http.min.js"></script>
+            <script type="text/javascript">
+                var eth;
+                var isTestnet = 'false';
+                var SiteNetID = '100';
+                var SiteNetChainID = '0x64';
+                var SiteNetName = 'Gnosis';
+                var SiteName = 'GnosisScan';
+                var SiteErc20 = 'ERC20';
+                var SiteErc721 = 'ERC721';
+                var SiteErc1155 = 'ERC1155';
+                var sv = '24.2.3.0';
+                var slt = 'svg';
+                var allowErc1155 = 'True';
+
+                async function addNetwork(type) {
+
+                    if (type === 'web3') {
+                        if (typeof ethereum !== 'undefined') {
+                            eth = new Web3Eth(ethereum);
+                        } else if (typeof web3 !== 'undefined') {
+                            eth = new Web3Eth(web3.givenProvider);
+                        } else {
+                            eth = new Web3Eth(ethereum);
+                        }
+                    }
+
+                    if (typeof eth !== 'undefined') {
+                        var network = 0;
+                        network = await eth.getChainId();
+                        netID = network.toString();
+                        var params;
+                        if (netID == SiteNetID) {
+                            alert("Gnosis Chain Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: SiteNetChainID,
+                                chainName: 'Gnosis',
+                                nativeCurrency: {
+                                    name: 'xDAI',
+                            symbol: 'xDAI',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.ankr.com/gnosis'],
+                                blockExplorerUrls: ['https://gnosisscan.io']
+                            }]
+                        }
+
+                        window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                            .then(() => console.log('Success'))
+                            .catch((error) => console.log("Error", error.message));
+                    } else {
+                        alert('Unable to locate a compatible web3 browser!');
+                    }
+                }
+            </script>
+
+                
+    <script src="Token%20Tracker%20GnosisScan_files/hs.sticky-thead.js"></script>
+    <script>
+        $(document).on('ready', function () {
+           
+            if ($("#tblResult").length > 0){
+                // initialization of sticky thead
+               $('.stickyTableHead').HSStickyThead();
+            }     
+
+            renderDataTable();
+            //$("[data-toggle-second='tooltip']").tooltip();
+        });
+
+        function handleTokenSearch(data) {
+            searchAddress = false;
+            if ($("searchtoken").val() == "") {
+                $("#hdnSearchText").val("");                    
+            }
+        }
+
+        function updateUrl(subCatId) {
+            var queryString = '';
+            queryString += 'subcatid=' + subCatId;
+
+            var length = queryStringDictionary["length_" + subCatId];
+            if (length) {
+                if (length < 0) {
+                    length = 7;
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start_" + subCatId];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var col = queryStringDictionary["col_" + subCatId];
+            if (col !== undefined) {
+                queryString += "&col=" + col;
+            }
+
+            var order = queryStringDictionary["order_" + subCatId];
+            if (order !== undefined) {
+                queryString += "&order=" + order;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        var resetSortAfterClickDictionary = {};
+        var resetSortDictionary = {};
+        var resetPageDictionary = {};
+        var visitedTabDictionary = {};
+        var queryStringDictionary = {};
+        var currentLengthDictionary = {}; 
+        var currentTab = 
+            
+            
+            
+
+            function selectTab(el) {
+                $(".nav-link.active").removeClass("active");
+                el.classList.add("active");
+
+                var id = $('.nav-link.active').attr('val');
+                $("#subcattab-" + currentTab).removeClass("show").removeClass("active");
+
+                $("#subcattab-" + id).addClass("show").addClass("active");
+
+                if (!visitedTabDictionary["subCat_" + id]) {
+                    visitedTabDictionary["subCat_" + id] = true;
+                    $('#table-subcatid-'+ id).DataTable().ajax.reload();
+                }
+
+                updateUrl(id);
+                currentTab = id;
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+
+        function renderDataTable() {
+            visitedTabDictionary["subCat_" + currentTab] = true;
+            resetSortAfterClickDictionary["table-subcatid-" + currentTab] = false;
+
+        var config =    {
+                dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                language: {
+                    paginate: {
+                        next: '<i class="fa fa-chevron-right small"></i>',
+                        previous: '<i class="fa fa-chevron-left small"></i>'
+                    },
+                    lengthMenu: "Show _MENU_ Records",
+                    info: 'A total of \<strong\>_MAX_\</strong\> Token Contracts found'
+                },
+                columnDefs: [
+                    { orderable: true, targets: 2, orderSequence: ["asc", "desc", "reset"] },
+                    { orderable: true, targets: 3, orderSequence: ["desc", "asc"] },
+                    { orderable: true, targets: 4, orderSequence: ["desc", "asc", "reset"] },
+                    { orderable: false, targets: '_all' }
+                ],
+                columns: [
+                    { data: "number" },
+                    { data: "contractAddress" },
+                    { data: "tokenName" },
+                    { data: "marketCap" },
+                    { data: "holders" },
+                    { data: "website" }
+            ],
+                
+                searching: false,
+                pagingType: 'full',
+            drawCallback: function (settings) {
+                    //change sorting icon and position
+                    $("#" + this.attr('id')+" th.sorting_asc").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort-up"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                $("#" + this.attr('id') +" th.sorting_desc").not(".remove-icon").each(function () {
+                        if (!$(this).hasClass('no-login')) {
+                            var text = $(this).text();
+                            text = '<i class="fad fa-sort-down"></i> ' + text;
+                            $(this).html(text);
+                        }
+                    });
+
+                $("#" + this.attr('id') +" th.sorting").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    var api = this.api();
+                    var json = api.ajax.json();
+                if (!json) {
+                    var currentPageDisp = "1";
+
+                    //reload state if querystring is available
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var existLength = urlParams.get('size');
+                    if (existLength) {
+                        api.page.len(existLength);
+                        currentLengthDictionary[this.attr('id')] = parseInt(existLength)
+
+                        var existStart = urlParams.get('start');
+
+                        if (!existStart) {
+                            existStart = 0
+                        }
+                            currentPage = Math.floor(existStart / existLength);
+                            api.page(currentPage);
+                            currentPageDisp = currentPage + 1;
+                    }
+
+                    var existCol = urlParams.get('col');
+                    var existOrder = urlParams.get('order');
+
+                    if (existCol && existOrder) {
+                        this.api().order([parseInt(existCol), existOrder]);
+                    }
+
+                    $('.custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                    var totalPage = 0;
+                    $('#' + this.attr('id') + '_wrapper .paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+                    return;
+
+                } else {
+                    $('#' + this.attr('id') + '_wrapper .paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                    if (refreshToDefaultDictionary[settings.nTable.getAttribute("id")]) {
+                        refreshToDefaultDictionary[settings.nTable.getAttribute("id")] = false;
+                        this.api().page.len(defaultLength);
+                        this.api().order([defaultSort["column"], defaultSort["dir"]]);
+                        $("#" + this.attr('id') + " .default-sort").not("no-login").removeClass("sorting").addClass("sorting_desc")
+                        $("#" + this.attr('id') + " .sorting_desc").not(".default-sort").removeClass("sorting_desc").addClass("sorting").removeAttr("aria-sort");
+                        $("#" + this.attr('id') + " .sorting_asc").not(".default-sort").removeClass("sorting_asc").addClass("sorting").removeAttr("aria-sort");
+                    }
+
+                    //bypass standard datatables sorting selection
+                    if (resetSortDictionary[this.attr('id')] || resetSortAfterClickDictionary[this.attr('id')]) {
+                        this.api().order([3, 'desc']); //the default sorting is column 3
+                        resetSortAfterClickDictionary[this.attr('id')] = false;
+                        $("#" + this.attr('id') + " .default-sort").not("no-login").removeClass("sorting").addClass("sorting_desc")
+                        $("#" + this.attr('id') + " .sorting_desc").not(".default-sort").removeClass("sorting_desc").addClass("sorting").removeAttr("aria-sort");
+                        $("#" + this.attr('id') + " .sorting_asc").not(".default-sort").removeClass("sorting_asc").addClass("sorting").removeAttr("aria-sort");
+                    }
+
+                    if (resetPageDictionary[this.attr('id')]) {
+                        this.api().page(0);
+                        resetPageDictionary[this.attr('id')] = false;
+                    }
+
+                    $("#" + this.attr('id') + " th.sorting_asc").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort-up"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    $("#" + this.attr('id') + " th.sorting_desc").not("").each(function () {
+                        if (!$(this).hasClass('no-login')) {
+                            var text = $(this).text();
+                            text = '<i class="fad fa-sort-down"></i> ' + text;
+                            $(this).html(text);
+                        }
+                    });
+
+                    $("#" + this.attr('id') + " th.sorting").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    //maybe can be removed
+                    if (json.showPopUp) {
+                        showSignInPopUp(this.attr('id'));
+                    }
+                    else {
+                        hideSignInPopUp(this.attr('id'))
+                    }
+                //End - maybe can be removed
+                }
+
+                var subCatId = $('.nav-link.active').attr('val');
+
+                //get page info
+                var pageInfo = this.api().page.info();
+
+                if (pageInfo.length) {
+                    queryStringDictionary["length_" + subCatId] = pageInfo.length;
+                }
+
+                if (pageInfo.start !== undefined) {
+                    queryStringDictionary["start_" + subCatId] = pageInfo.start;
+                }
+
+                //get ordering info
+                var orderInfo = this.api().order();
+                queryStringDictionary["col_" + subCatId] = orderInfo[0][0];
+                queryStringDictionary["order_" + subCatId] = orderInfo[0][1];
+
+
+                updateUrl(subCatId);
+                $('[data-toggle="tooltip"]').tooltip()
+
+                },
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/tokens.aspx/GetTokensBySubLabel",
+                    dataType: 'json',
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+                        return JSON.stringify(morp);
+                    },
+                    data: function (d,settings) {
+                        var labelModel = generateLabelModel();
+
+                        if (refreshToDefaultDictionary[settings.nTable.getAttribute("id")]) {
+                            d.length = defaultLength;
+                            d.order[0] = defaultSort;
+                        }
+
+                        if (currentLengthDictionary[settings.nTable.getAttribute("id")] != d.length) {
+                            if (currentLengthDictionary[settings.nTable.getAttribute("id")] != undefined) {
+                                d.start = 0;
+                                resetPageDictionary[settings.nTable.getAttribute("id")] = true;
+                            }
+                            currentLengthDictionary[settings.nTable.getAttribute("id")] = d.length;
+                        }
+
+                        if ((d.order[0] && d.order[0].dir === "reset") ||
+                            resetSortAfterClickDictionary[settings.nTable.getAttribute("id")]) {
+                            d.order[0] = { column: 3, dir: "desc" }
+                            resetSortDictionary[settings.nTable.getAttribute("id")] = true;
+                        }
+                        else {
+                            resetSortDictionary[settings.nTable.getAttribute("id")] = false;
+                        }
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    }
+            },
+                
+                
+                
+                
+                
+                };
+
+        
+        }
+    </script>    
+
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
