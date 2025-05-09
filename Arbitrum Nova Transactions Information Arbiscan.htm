@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Arbitrum Nova Transactions Information | Arbiscan
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="Description" content="Transactions that have been validated and confirmed on the Arbitrum Blockchain. The list consists of transactions from sending ETH and the transactions for interacting with a smart contract."><meta name="author" content="arbiscan.io"><meta name="keywords" content="Arbitrum, explorer, ETH, search, blockchain, crypto, currency"><meta name="format-detection" content="telephone=no">
+   <meta property="og:title" content="Arbitrum Nova Transactions Information | Arbiscan"> <meta property="og:description" content="Transactions that have been validated and confirmed on the Arbitrum Blockchain. The list consists of transactions from sending ETH and the transactions for interacting with a smart contract."> <meta property="og:type" content="website"> <meta property="og:site_name" content="Arbitrum (ETH) Blockchain Explorer"> <meta property="og:url" content="http://nova.arbiscan.io/txs"> <meta property="og:image" content="https://arbiscan.io/images/brandassets/arbiscan-logo-circle.jpg"> <meta property="og:image:alt" content="Visit arbiscan.io"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Arbitrum Nova Transactions Information | Arbiscan"> <meta property="twitter:description" content="Transactions that have been validated and confirmed on the Arbitrum Blockchain. The list consists of transactions from sending ETH and the transactions for interacting with a smart contract."> <meta name="twitter:site" content="@Arbiscan"> <meta property="twitter:image" content="https://arbiscan.io/images/brandassets/arbiscan-logo-circle.jpg"> 
+<link rel="shortcut icon" href="https://nova.arbiscan.io/images/favicon.ico?v=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7RWENLBEP1');
+    </script>
+    
+
+    <script>
+        //Search box text ad
+        var availableAd = [];
+        var gotAd = [];
+
+        
+        availableAd = [];
+        gotAd = [ "ShowAds					" ];
+        
+    </script>
+    
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/animate.min.css">
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery.mCustomScrollbar.css">
+    
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/select2.min.css">
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/theme.min.css"> 
+    <link rel="stylesheet" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/custom.css">    
+
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery.min.js"></script>     
+    <script type="text/javascript" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/blockies.js"></script>   
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+        body.dark-mode .ui-state-active {
+            background-color: #1A2231;
+            border-color: #323232;
+        }
+        .autolink-safari a{
+            pointer-events: none !important;
+            text-decoration:none !important; 
+            color:inherit !important;
+        }
+    </style>
+
+    
+   
+    <link rel="stylesheet" type="text/css" href="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/datatables.min.css">
+    <script type="text/javascript" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/datatables.min.js"></script>
+    <style>
+        table.dataTable thead th.sorting:before,
+        table.dataTable thead th.sorting_asc:before,
+        table.dataTable thead th.sorting_desc:before,
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_desc:after {
+                content: none;
+            }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .fadeout {
+            position: relative;
+            bottom: 4em;
+            height: 4em;
+            background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        } 
+    </style>
+    <style>
+    .popover {
+      min-height: 100px;
+      min-width: 310px;
+      border: none;
+      box-shadow: 0 0.5rem 1.2rem rgba(189,197,209,.7);
+    }
+
+    .popover-body {
+      padding: 1rem;
+    }
+
+    .spinner-wrapper__icon{
+        top: 40%
+    }
+  </style> 
+  <script>
+        function showSignInPopUp() {
+            if ($('#signInPopUp').attr("style")) {
+                $('#signInPopUp').removeAttr("style");
+            }
+
+            if (!$("#paywall_mask").hasClass("paywall-mask")) {
+                $('#paywall_mask').addClass("paywall-mask");
+            }
+
+            return;
+        }
+
+        function hideSignInPopUp() {
+            if (!$('#signInPopUp').attr("style")) {
+                $('#signInPopUp').attr("style", "display:none;");
+            }
+
+            if ($("#paywall_mask").hasClass("paywall-mask")) {
+                $('#paywall_mask').removeClass("paywall-mask");
+            }
+
+            return;
+        }
+    </script>
+<script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand  pt-md-0" href="https://nova.arbiscan.io/" target="_parent" aria-label="Arbiscan">
+                                <img id="logo-header" width="220" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/logo-Arbiscan.svg" alt="Arbitrum Logo">   
+                                 
+                            </a>
+                          
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">ETH: $3,471.42</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title=""><span class="text-success"> (+1.56%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://nova.arbiscan.io/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            
+                                            <li id="LI12" class=" active"><a href="https://nova.arbiscan.io/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI41"><a href="https://nova.arbiscan.io/txsDeposits" class="nav-link u-header__sub-menu-nav-link">Latest L1→L2 Transactions</a></li>
+                                            <li id="LI66"><a href="https://nova.arbiscan.io/txsExit" class="nav-link u-header__sub-menu-nav-link">Latest L2→L1 Transactions</a></li>
+                                            
+                                            <li id="LI14"><a href="https://nova.arbiscan.io/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                            <li id="LI_batches">
+                                                <a id="navBatches" class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/batches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Batches</a></li>
+
+                                            <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>                                            
+                                            <li id="LI_accountall"><a href="https://nova.arbiscan.io/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://nova.arbiscan.io/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+
+
+
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokens">ERC20 Top Tokens</a></li>
+                                            
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokentxns">View ERC20 Transfers</a></li>                                          
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI1"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/charts">Charts &amp;  Stats</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>    
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+                                        <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                            <div class="row u-header__mega-menu-wrapper">
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Developers</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">
+                                                        <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.arbiscan.io/v/nova-arbiscan"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                        <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                        <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>    
+                                                        <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker<sup><span class="badge badge-success font-size-default ml-1"> New</span></sup></a></li>
+                                                        <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                    </ul>
+                                                </div>                   
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Tools</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">   
+                                                        <li id="LI51"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>                     
+                                                        <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                        
+                                                        <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1"> Beta</span></sup></a></li>
+                                                        <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/messagerelayer"><i class="fa fa-angle-right small mr-1"></i>L2 to L1 Relayer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://nova.arbiscan.io/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                   <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+                                            <span class="btn btn-sm btn-icon btn-soft-primary cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/arbitrum.svg" alt="Arbitrum Logo1">
+                                            </span>
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut" aria-labelledby="explorersWithDropdown" style="min-width: 160px; display: none;">
+                                            <li id="LI_Mainnet"><a class="nav-link u-header__sub-menu-nav-link" href="https://arbiscan.io/">Arbitrum One</a></li>
+                                            <li id="LI_NovaMainnet"><a class="nav-link u-header__sub-menu-nav-link" href="https://nova.arbiscan.io/">Arbitrum Nova</a></li>
+                                            
+                                            <li id="LI_arbsepolia"><a class="nav-link u-header__sub-menu-nav-link" href="https://sepolia.arbiscan.io/">Arbitrum Sepolia</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    
+                                </ul>
+                            </div>
+
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-55 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">                                
+                                        <div class="input-group input-group-sm">
+                                            <div class="input-group-prepend d-none d-md-block">
+                                                <!-- Select -->
+                                                 <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">                                                    <option selected="selected" value="0">All Filters</option>
+                                                    <option value="1">Addresses</option>
+                                                    <option value="2">Tokens</option>
+                                                    <option value="3">Name Tags</option>
+                                                    <option value="4">Labels</option>
+                                                    <option value="5">Websites</option>
+                                                </select>
+                                                <!-- End Select -->
+                                            </div>
+                                            <input type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Block / Token" aria-label="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" autocomplete="off">
+                                            <input type="hidden" value="" id="hdnSearchText">
+                                            <input id="hdnIsTestNet" value="False" type="hidden">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit">
+                                                    <span class="fas fa-search"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                </form>
+                            
+</div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price Paid in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price Paid * Gas Used by Txns) in Ether">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price Paid">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+            
+    
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center py-3">
+            <div class="mb-1 mb-md-0">
+                 <h1 class="h4 mb-0">Transactions&nbsp;<span class="small text-secondary"></span>
+                    <p class="mb-0 text-break small">
+                        
+                    </p>
+                </h1>
+            </div>
+            
+        </div>
+                
+    </div>    
+
+    
+    <!--<div class="container border-top py-4">   
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+         <!-- Testnet Banner -->
+         <!--<ins class="adsbygoogle"
+             style="display: block"
+             data-ad-client="ca-pub-9365010058051645"
+             data-ad-slot="4376794054"
+             data-ad-format="horizontal"></ins>
+         <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+    </div>-->
+    
+
+    <div class="container space-bottom-2">
+        <span id="ContentPlaceHolder1_lblAdResult"></span>
+        
+        
+        <div id="ContentPlaceHolder1_mainrow" class="card">            
+            <div class="card-body">
+                <!-- Reset Filters -->
+                <div class="d-flex flex-wrap flex-xl-nowrap text-nowrap align-items-center ml-auto">
+                    
+                </div>
+                
+                
+                <!-- End Reset Filters -->
+
+                <div id="ContentPlaceHolder1_topPageDiv" class="d-md-flex justify-content-between mb-4">
+                    <p class="mb-2 mb-md-0">
+                        <span class="d-flex align-items-center">
+                            <i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse mr-1" style="display: none;"></i>
+                            More than 157,833,429 transactions found</span><span class="d-block small">(Showing the last 500k records)</span>
+                        
+                        
+                    </p>                    
+
+                    <!-- Pagination -->
+                    <nav aria-label="page navigation">
+                         <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">10000</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://nova.arbiscan.io/txs?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://nova.arbiscan.io/txs?p=10000"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                        
+                    </ul></nav>
+                    <!-- End Pagination -->
+                </div>
+
+                
+
+                <div class="table-responsive mb-2 mb-md-0" id="paywall_mask">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" width="20"></th>
+                                <th scope="col" width="1">Txn Hash</th>
+                                <th scope="col" width="1">Method <i class="fal fa-info-circle" data-toggle="tooltip" data-html="true" data-boundary="viewport" title="" data-original-title="Function executed based on decoded input data. For unidentified functions, method ID is displayed instead."></i></th>
+                                <th scope="col" width="1" class="d-none d-sm-table-cell">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2">Block</div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2"><a href="javascript:;" onclick="switchAgeToDateTime(this)" id="lnkAgeDateTime" title="" data-toggle-commonjs="tooltip" data-original-title="Click to show Datetime Format">Age</a></div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2">From</div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col" width="30"></th>
+                                <th scope="col">                                    
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2">To</div>
+                                        
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    Value</th>
+                                <th scope="col">
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-2"><a href="javascript:;" onclick="switchTxFeeGasPrice()" class="switch-txn-fee-gas-price" title="" data-toggle-commonjsfee="tooltip" data-original-title="(Gas Price Paid * Gas Used by Txns) in Ether">Txn Fee</a></div>
+                                    </div>
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Txn Receipt status fail"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x051a6bc04e00dd95249fea8319fa5b3118316eeb54ce75e1f2bfc3f8aea34e18" class="myFnExpandBox_searchVal">0x051a6bc04e00dd95249fea8319fa5b3118316eeb54ce75e1f2bfc3f8aea34e18</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xdd2694644621cd28968ccfef4de183c270c80a9c"><a href="https://nova.arbiscan.io/address/0xdd2694644621cd28968ccfef4de183c270c80a9c">0xdd2694644621cd28968ccfef4de183c270c80a9c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000224</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x716cb830aa3d540eae9f94734ea963e68022083ca1f17affb6ab4325de3968d8" class="myFnExpandBox_searchVal">0x716cb830aa3d540eae9f94734ea963e68022083ca1f17affb6ab4325de3968d8</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Relay">Relay</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44" aria-describedby="tooltip361979">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x68775ae12749dc0f76409fcd54c53e35c2d01b00"><a href="https://nova.arbiscan.io/address/0x68775ae12749dc0f76409fcd54c53e35c2d01b00">0x68775ae12749dc0f76409fcd54c53e35c2d01b00</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb"><a href="https://nova.arbiscan.io/address/0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb">0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000529</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x90b3c32536c63aed43e7e6c93fe16a0b92f339c12ae4001aaea0927ffde13eb8" class="myFnExpandBox_searchVal">0x90b3c32536c63aed43e7e6c93fe16a0b92f339c12ae4001aaea0927ffde13eb8</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Relay">Relay</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x5d13824a4b12bf7f5592d1ee63c8e1363e668afa"><a href="https://nova.arbiscan.io/address/0x5d13824a4b12bf7f5592d1ee63c8e1363e668afa">0x5d13824a4b12bf7f5592d1ee63c8e1363e668afa</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb"><a href="https://nova.arbiscan.io/address/0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb">0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000529</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x21faa7a5f1e6f7832db86a9663c7bfd88f3d04f84f0b031ecf75c65d71f17a89" class="myFnExpandBox_searchVal">0x21faa7a5f1e6f7832db86a9663c7bfd88f3d04f84f0b031ecf75c65d71f17a89</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5"><a href="https://nova.arbiscan.io/address/0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5">0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000452</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x52917fc988f46910fb078827b508498f3dbe99017ed360ade55cc78dff2b0470" class="myFnExpandBox_searchVal">0x52917fc988f46910fb078827b508498f3dbe99017ed360ade55cc78dff2b0470</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Relay">Relay</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x07ed9df3041adbc6462de85d29ecfa5636dc9183"><a href="https://nova.arbiscan.io/address/0x07ed9df3041adbc6462de85d29ecfa5636dc9183">0x07ed9df3041adbc6462de85d29ecfa5636dc9183</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb"><a href="https://nova.arbiscan.io/address/0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb">0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000529</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Txn Receipt status fail"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x379d9cf07533561a6fdaa55f0f7629aced12c2d9fc0b490e730eae5f07b3cbd7" class="myFnExpandBox_searchVal">0x379d9cf07533561a6fdaa55f0f7629aced12c2d9fc0b490e730eae5f07b3cbd7</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x18fa0faa7f85178fa310409e14e0e9b65b53dc88"><a href="https://nova.arbiscan.io/address/0x18fa0faa7f85178fa310409e14e0e9b65b53dc88">0x18fa0faa7f85178fa310409e14e0e9b65b53dc88</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000246</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x7a32ba7c7dffba1664c46db720d490ddec27bc5ab56f0e3273c935825eff5240" class="myFnExpandBox_searchVal">0x7a32ba7c7dffba1664c46db720d490ddec27bc5ab56f0e3273c935825eff5240</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x5dacb0b97dce87af538893f7e5d6ac4d13afb8a8"><a href="https://nova.arbiscan.io/address/0x5dacb0b97dce87af538893f7e5d6ac4d13afb8a8">0x5dacb0b97dce87af538893f7e5d6ac4d13afb8a8</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000633</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xaf70d97767701f861e7743a1cbf43ddededaa42d2cd7df8ca0e4441d5900d084" class="myFnExpandBox_searchVal">0xaf70d97767701f861e7743a1cbf43ddededaa42d2cd7df8ca0e4441d5900d084</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x6bf6a42d">0x6bf6a42d</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052867">54052867</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td class="text-center"><span class="u-label u-label--xs u-label--secondary color-strong text-uppercase text-center w-100 rounded text-nowrap">SELF</span></td><td><span class="hash-tag text-truncate" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031009</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x7ae560c9c52b05a60cdab765f282b932a376e260126ebda53e2e35fc1b594ad4" class="myFnExpandBox_searchVal">0x7ae560c9c52b05a60cdab765f282b932a376e260126ebda53e2e35fc1b594ad4</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Relay">Relay</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052866">54052866</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x6a4f5364860ebdf85f80320ba5d072d35a83556b"><a href="https://nova.arbiscan.io/address/0x6a4f5364860ebdf85f80320ba5d072d35a83556b">0x6a4f5364860ebdf85f80320ba5d072d35a83556b</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb"><a href="https://nova.arbiscan.io/address/0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb">0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000528</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030972</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x9e9df80c20b15f601e14657842fae790dffab922644a23f549e9cec4b0879b31" class="myFnExpandBox_searchVal">0x9e9df80c20b15f601e14657842fae790dffab922644a23f549e9cec4b0879b31</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052866">54052866</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xdd2694644621cd28968ccfef4de183c270c80a9c"><a href="https://nova.arbiscan.io/address/0xdd2694644621cd28968ccfef4de183c270c80a9c">0xdd2694644621cd28968ccfef4de183c270c80a9c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030972</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xe36b4dfcb7317463510f58f784fccf0f14c41140a995015b12c01ede58c78cc0" class="myFnExpandBox_searchVal">0xe36b4dfcb7317463510f58f784fccf0f14c41140a995015b12c01ede58c78cc0</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052866">54052866</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x4bfd141d4d3ece1ab55f49cc00fb4ec99823db8d"><a href="https://nova.arbiscan.io/address/0x4bfd141d4d3ece1ab55f49cc00fb4ec99823db8d">0x4bfd141d4d3ece1ab55f49cc00fb4ec99823db8d</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000451</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030972</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Txn Receipt status fail"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x3b2141db5c9ee9ea0d019c94b85a54e3e1111a5c31f750a3fb083d231b57ec95" class="myFnExpandBox_searchVal">0x3b2141db5c9ee9ea0d019c94b85a54e3e1111a5c31f750a3fb083d231b57ec95</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052866">54052866</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5"><a href="https://nova.arbiscan.io/address/0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5">0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000246</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030972</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x1d4c158ab9f66dac4e75aad679afc99b63bd419a7915befebde92d3a1e4889c4" class="myFnExpandBox_searchVal">0x1d4c158ab9f66dac4e75aad679afc99b63bd419a7915befebde92d3a1e4889c4</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052866">54052866</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x52fa3fd30398034ffb0050ed5e0665ee91bec76c"><a href="https://nova.arbiscan.io/address/0x52fa3fd30398034ffb0050ed5e0665ee91bec76c">0x52fa3fd30398034ffb0050ed5e0665ee91bec76c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000205</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030972</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x103e6e11e853483360d6f2775163cafc5f1361ec2093dbfea129d8cb4befb365" class="myFnExpandBox_searchVal">0x103e6e11e853483360d6f2775163cafc5f1361ec2093dbfea129d8cb4befb365</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x6bf6a42d">0x6bf6a42d</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052866">54052866</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td class="text-center"><span class="u-label u-label--xs u-label--secondary color-strong text-uppercase text-center w-100 rounded text-nowrap">SELF</span></td><td><span class="hash-tag text-truncate" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030972</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x0759799315e50340e3e901b2b5fd546e1c037223128628b542b306db5a1cda7a" class="myFnExpandBox_searchVal">0x0759799315e50340e3e901b2b5fd546e1c037223128628b542b306db5a1cda7a</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x18fa0faa7f85178fa310409e14e0e9b65b53dc88"><a href="https://nova.arbiscan.io/address/0x18fa0faa7f85178fa310409e14e0e9b65b53dc88">0x18fa0faa7f85178fa310409e14e0e9b65b53dc88</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>0000063</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x15d7c391e5875230bdcfe49d8423b31bebc45b19366cc37ddaa52a7dbc854d2e" class="myFnExpandBox_searchVal">0x15d7c391e5875230bdcfe49d8423b31bebc45b19366cc37ddaa52a7dbc854d2e</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x5dacb0b97dce87af538893f7e5d6ac4d13afb8a8"><a href="https://nova.arbiscan.io/address/0x5dacb0b97dce87af538893f7e5d6ac4d13afb8a8">0x5dacb0b97dce87af538893f7e5d6ac4d13afb8a8</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x89a425a03fdf351a9d4d3afca6bc59c3649f8b66893b54f1ac52b821bee57865" class="myFnExpandBox_searchVal">0x89a425a03fdf351a9d4d3afca6bc59c3649f8b66893b54f1ac52b821bee57865</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xcbf0d12b3971d9db201ed33b19f307d2c42078a2"><a href="https://nova.arbiscan.io/address/0xcbf0d12b3971d9db201ed33b19f307d2c42078a2">0xcbf0d12b3971d9db201ed33b19f307d2c42078a2</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xf113dde519ec0315cb0c5a01464efd219b8bebcf150525ac51ab0b5e03aeb85b" class="myFnExpandBox_searchVal">0xf113dde519ec0315cb0c5a01464efd219b8bebcf150525ac51ab0b5e03aeb85b</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x696845ad323323ceb9f2e4cd8866631a51410f15"><a href="https://nova.arbiscan.io/address/0x696845ad323323ceb9f2e4cd8866631a51410f15">0x696845ad323323ceb9f2e4cd8866631a51410f15</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>0000063</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x22491c14202ec180bdd2030ba4ba2337856e978fae2646382f7268e1a776aa8a" class="myFnExpandBox_searchVal">0x22491c14202ec180bdd2030ba4ba2337856e978fae2646382f7268e1a776aa8a</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x03bea11c624145fde9bd86f45a8d339471ebabab"><a href="https://nova.arbiscan.io/address/0x03bea11c624145fde9bd86f45a8d339471ebabab">0x03bea11c624145fde9bd86f45a8d339471ebabab</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>0000063</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xf998191ffb4217afab9b52a0daef212c724fc19bf3800b07141d0b08f2f81be2" class="myFnExpandBox_searchVal">0xf998191ffb4217afab9b52a0daef212c724fc19bf3800b07141d0b08f2f81be2</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x393246ef963cc829f8348bd6b67e44047e0f5dec"><a href="https://nova.arbiscan.io/address/0x393246ef963cc829f8348bd6b67e44047e0f5dec">0x393246ef963cc829f8348bd6b67e44047e0f5dec</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>0000067</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xfd125bb2d137b6335847beb079ce3fa172cd6c9a9be748c3969f4e2ade187110" class="myFnExpandBox_searchVal">0xfd125bb2d137b6335847beb079ce3fa172cd6c9a9be748c3969f4e2ade187110</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x6bf6a42d">0x6bf6a42d</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052865">54052865</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td class="text-center"><span class="u-label u-label--xs u-label--secondary color-strong text-uppercase text-center w-100 rounded text-nowrap">SELF</span></td><td><span class="hash-tag text-truncate" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030876</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xb4daeeb355009368cb53347c287bc79147bd435ce1140863ac40f1e5be088280" class="myFnExpandBox_searchVal">0xb4daeeb355009368cb53347c287bc79147bd435ce1140863ac40f1e5be088280</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x62187b90041e1fa04ccdfa8f3340423e31c711da"><a href="https://nova.arbiscan.io/address/0x62187b90041e1fa04ccdfa8f3340423e31c711da">0x62187b90041e1fa04ccdfa8f3340423e31c711da</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000453</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x0c6ecaf24053b74d833fb27ed08132ca346774f301fffdad4d168ad1b2f60adf" class="myFnExpandBox_searchVal">0x0c6ecaf24053b74d833fb27ed08132ca346774f301fffdad4d168ad1b2f60adf</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc458699168464f6925dfd0df347c734d1c06a763"><a href="https://nova.arbiscan.io/address/0xc458699168464f6925dfd0df347c734d1c06a763">0xc458699168464f6925dfd0df347c734d1c06a763</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000634</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x1ef793c6b2a9a8084498e3801f6c68d3bd57f8d432b8416c30eb6fb8dd106025" class="myFnExpandBox_searchVal">0x1ef793c6b2a9a8084498e3801f6c68d3bd57f8d432b8416c30eb6fb8dd106025</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xd777a8386bc669092c9dc51916e1af23f883d2f3"><a href="https://nova.arbiscan.io/address/0xd777a8386bc669092c9dc51916e1af23f883d2f3">0xd777a8386bc669092c9dc51916e1af23f883d2f3</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000635</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x968aed34ad72bb512ade77ea0c91ae275560dd5e4f1601129799c22e63e23ed7" class="myFnExpandBox_searchVal">0x968aed34ad72bb512ade77ea0c91ae275560dd5e4f1601129799c22e63e23ed7</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x40901f7c8bb8457116fdbfbdf9e7b1600445522c"><a href="https://nova.arbiscan.io/address/0x40901f7c8bb8457116fdbfbdf9e7b1600445522c">0x40901f7c8bb8457116fdbfbdf9e7b1600445522c</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000675</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x62202483c4174880fe3740a319ae54dcfda9ec9686f21f959c03531338b16377" class="myFnExpandBox_searchVal">0x62202483c4174880fe3740a319ae54dcfda9ec9686f21f959c03531338b16377</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x1943b9e0876c021394938b3526f8e56c861dc213"><a href="https://nova.arbiscan.io/address/0x1943b9e0876c021394938b3526f8e56c861dc213">0x1943b9e0876c021394938b3526f8e56c861dc213</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000679</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x76beb88f69f098d249f4d6a48676fa2d5e9a0734dde77b9bc94a48d1d6fac3f2" class="myFnExpandBox_searchVal">0x76beb88f69f098d249f4d6a48676fa2d5e9a0734dde77b9bc94a48d1d6fac3f2</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x98b636f4ce887262c22027e16c92082d8b460ffd"><a href="https://nova.arbiscan.io/address/0x98b636f4ce887262c22027e16c92082d8b460ffd">0x98b636f4ce887262c22027e16c92082d8b460ffd</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000634</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x0c2ed62cfff8bb90454e18281bc5d44aca6c1c99248d868f5288c97e501a9670" class="myFnExpandBox_searchVal">0x0c2ed62cfff8bb90454e18281bc5d44aca6c1c99248d868f5288c97e501a9670</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3042356c8290c3320600478c50388ca07b16bcf8"><a href="https://nova.arbiscan.io/address/0x3042356c8290c3320600478c50388ca07b16bcf8">0x3042356c8290c3320600478c50388ca07b16bcf8</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000674</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x5d148f06f70823c4f1cf2c3ae55e55dbd9eb368f3baef8198b0708f0ece825e1" class="myFnExpandBox_searchVal">0x5d148f06f70823c4f1cf2c3ae55e55dbd9eb368f3baef8198b0708f0ece825e1</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x2290a72e334d880896a86b9cf1a2edd45ce1965b"><a href="https://nova.arbiscan.io/address/0x2290a72e334d880896a86b9cf1a2edd45ce1965b">0x2290a72e334d880896a86b9cf1a2edd45ce1965b</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000634</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x0aa72fbc1d12aab679bd3e43a5a563b26322bdf34b2583fedf03ea3c6b9ec207" class="myFnExpandBox_searchVal">0x0aa72fbc1d12aab679bd3e43a5a563b26322bdf34b2583fedf03ea3c6b9ec207</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Relay">Relay</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x63cf676bb292cfe494095bb3524b9c7b408a7f78"><a href="https://nova.arbiscan.io/address/0x63cf676bb292cfe494095bb3524b9c7b408a7f78">0x63cf676bb292cfe494095bb3524b9c7b408a7f78</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb"><a href="https://nova.arbiscan.io/address/0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb">0x80c5dbb4cf3b19cd47ee8e41bd71bb367f1871eb</a></span></span></td><td>0<b>.</b>000005517045 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000986</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xd090476af6629780be6a45456e39e7f2332672fd5162297f6e39d2524643fb72" class="myFnExpandBox_searchVal">0xd090476af6629780be6a45456e39e7f2332672fd5162297f6e39d2524643fb72</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf466075663795d29d2762896be3b4662acf88847"><a href="https://nova.arbiscan.io/address/0xf466075663795d29d2762896be3b4662acf88847">0xf466075663795d29d2762896be3b4662acf88847</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000673</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xff590c37c4fe6ec377b5c333c50950a9e89a8934df7626a4792246398a980ccb" class="myFnExpandBox_searchVal">0xff590c37c4fe6ec377b5c333c50950a9e89a8934df7626a4792246398a980ccb</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x4bfd141d4d3ece1ab55f49cc00fb4ec99823db8d"><a href="https://nova.arbiscan.io/address/0x4bfd141d4d3ece1ab55f49cc00fb4ec99823db8d">0x4bfd141d4d3ece1ab55f49cc00fb4ec99823db8d</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000453</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xab4030c35fee1917cc40cab6f1f3cd7787dc6279cb73eaf853730e773a3c452b" class="myFnExpandBox_searchVal">0xab4030c35fee1917cc40cab6f1f3cd7787dc6279cb73eaf853730e773a3c452b</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x18fa0faa7f85178fa310409e14e0e9b65b53dc88"><a href="https://nova.arbiscan.io/address/0x18fa0faa7f85178fa310409e14e0e9b65b53dc88">0x18fa0faa7f85178fa310409e14e0e9b65b53dc88</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000205</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="text-danger" data-toggle="tooltip" title="" data-original-title="Txn Receipt status fail"><strong><i class="fa fa-exclamation-circle"></i></strong></span> <span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x5c1aa3d3de0c1ef0c532c1d27aab83672c1263e422914ea927d722cd7bc16167" class="myFnExpandBox_searchVal">0x5c1aa3d3de0c1ef0c532c1d27aab83672c1263e422914ea927d722cd7bc16167</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xd363593db16063be6693d521616ec73bddd73f6a"><a href="https://nova.arbiscan.io/address/0xd363593db16063be6693d521616ec73bddd73f6a">0xd363593db16063be6693d521616ec73bddd73f6a</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000238</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x590f6330a05592e784ced8b9e2069f707e168dd79845df57002e0bee175aecfd" class="myFnExpandBox_searchVal">0x590f6330a05592e784ced8b9e2069f707e168dd79845df57002e0bee175aecfd</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x98a6b721dfde29df69f4329ae8c8928f72af63f2"><a href="https://nova.arbiscan.io/address/0x98a6b721dfde29df69f4329ae8c8928f72af63f2">0x98a6b721dfde29df69f4329ae8c8928f72af63f2</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000453</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xeb479b9b183810b6083fd2972d10a1c5ae4b02c9ab6a893341308e8ee10a49bf" class="myFnExpandBox_searchVal">0xeb479b9b183810b6083fd2972d10a1c5ae4b02c9ab6a893341308e8ee10a49bf</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x6bf6a42d">0x6bf6a42d</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052864">54052864</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="4 secs ago">2024-03-03 17:24:44</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:44">4 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td class="text-center"><span class="u-label u-label--xs u-label--secondary color-strong text-uppercase text-center w-100 rounded text-nowrap">SELF</span></td><td><span class="hash-tag text-truncate" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031109</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x7d2305de38d9b7ad1ce27c2a74c2e0e7af5f045da34b32522b5bf35c263b0194" class="myFnExpandBox_searchVal">0x7d2305de38d9b7ad1ce27c2a74c2e0e7af5f045da34b32522b5bf35c263b0194</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x393246ef963cc829f8348bd6b67e44047e0f5dec"><a href="https://nova.arbiscan.io/address/0x393246ef963cc829f8348bd6b67e44047e0f5dec">0x393246ef963cc829f8348bd6b67e44047e0f5dec</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000633</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x0a89cb10de65d60805f7478761ec5bb9c11f9cf6b036c3f2a95545fb9d1ff454" class="myFnExpandBox_searchVal">0x0a89cb10de65d60805f7478761ec5bb9c11f9cf6b036c3f2a95545fb9d1ff454</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc70419efb9850955950785a2d64117f13a4bd2c7"><a href="https://nova.arbiscan.io/address/0xc70419efb9850955950785a2d64117f13a4bd2c7">0xc70419efb9850955950785a2d64117f13a4bd2c7</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000633</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xbc5e2bd883c680060b1126b913a8448dd04bf3787eec4068f342e57c4e32f743" class="myFnExpandBox_searchVal">0xbc5e2bd883c680060b1126b913a8448dd04bf3787eec4068f342e57c4e32f743</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x03bea11c624145fde9bd86f45a8d339471ebabab"><a href="https://nova.arbiscan.io/address/0x03bea11c624145fde9bd86f45a8d339471ebabab">0x03bea11c624145fde9bd86f45a8d339471ebabab</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xe70f82566f69c83aa99d52050baecbe4422a658b4b7a32689fa0e1c2e26a44d5" class="myFnExpandBox_searchVal">0xe70f82566f69c83aa99d52050baecbe4422a658b4b7a32689fa0e1c2e26a44d5</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xc458699168464f6925dfd0df347c734d1c06a763"><a href="https://nova.arbiscan.io/address/0xc458699168464f6925dfd0df347c734d1c06a763">0xc458699168464f6925dfd0df347c734d1c06a763</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x7af805c089f8b7851c384f5ba959b08810634b3a53d2f50976115875a7b1d57e" class="myFnExpandBox_searchVal">0x7af805c089f8b7851c384f5ba959b08810634b3a53d2f50976115875a7b1d57e</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5"><a href="https://nova.arbiscan.io/address/0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5">0xf2c1f8d15ef98d3538122b11505ac2059ed42fd5</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000452</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x7c987ebd9d3dbd1e8c3450853a0c28c4c27cbb0a5fd445d66a8b4ebb1fcf1b9b" class="myFnExpandBox_searchVal">0x7c987ebd9d3dbd1e8c3450853a0c28c4c27cbb0a5fd445d66a8b4ebb1fcf1b9b</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x0e97870c9c662c145ed42d29c5af39dc4c33e620"><a href="https://nova.arbiscan.io/address/0x0e97870c9c662c145ed42d29c5af39dc4c33e620">0x0e97870c9c662c145ed42d29c5af39dc4c33e620</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000452</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xd23114304dbd0a370301a5d0b9e589fa71f96f1e5168576239188113dcef05b8" class="myFnExpandBox_searchVal">0xd23114304dbd0a370301a5d0b9e589fa71f96f1e5168576239188113dcef05b8</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x98b636f4ce887262c22027e16c92082d8b460ffd"><a href="https://nova.arbiscan.io/address/0x98b636f4ce887262c22027e16c92082d8b460ffd">0x98b636f4ce887262c22027e16c92082d8b460ffd</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xa081703f6b02624e57f9b645909ab796d4891ae9a76fd5c05e943cd276b7a96e" class="myFnExpandBox_searchVal">0xa081703f6b02624e57f9b645909ab796d4891ae9a76fd5c05e943cd276b7a96e</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3a6163d7ae12c8ac7a967d56e4aeb650c619d5ff"><a href="https://nova.arbiscan.io/address/0x3a6163d7ae12c8ac7a967d56e4aeb650c619d5ff">0x3a6163d7ae12c8ac7a967d56e4aeb650c619d5ff</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000678</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0xccd0260962ea31160adc9d132a7c5aea9a7ace7ab58234a13a86956795d094ed" class="myFnExpandBox_searchVal">0xccd0260962ea31160adc9d132a7c5aea9a7ace7ab58234a13a86956795d094ed</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x2290a72e334d880896a86b9cf1a2edd45ce1965b"><a href="https://nova.arbiscan.io/address/0x2290a72e334d880896a86b9cf1a2edd45ce1965b">0x2290a72e334d880896a86b9cf1a2edd45ce1965b</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x7b920754afe902b8efc65c688dfcda51fe8968a1441c84d70d4f66f26ea83ff4" class="myFnExpandBox_searchVal">0x7b920754afe902b8efc65c688dfcda51fe8968a1441c84d70d4f66f26ea83ff4</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Signal Commitment">Signal Commitmen...</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0xd363593db16063be6693d521616ec73bddd73f6a"><a href="https://nova.arbiscan.io/address/0xd363593db16063be6693d521616ec73bddd73f6a">0xd363593db16063be6693d521616ec73bddd73f6a</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000204</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x04f7e33ec9900998aca82bf6b217e1c1844885664619618dd575439da91aace1" class="myFnExpandBox_searchVal">0x04f7e33ec9900998aca82bf6b217e1c1844885664619618dd575439da91aace1</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Solution">Submit Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x5b3939ccd519f3cf3198a918cd3d2856df04ae5f"><a href="https://nova.arbiscan.io/address/0x5b3939ccd519f3cf3198a918cd3d2856df04ae5f">0x5b3939ccd519f3cf3198a918cd3d2856df04ae5f</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000634</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x3f48511a4f684300f51f78e538eba61e5e6e5890de7508ff639515410ff1fb08" class="myFnExpandBox_searchVal">0x3f48511a4f684300f51f78e538eba61e5e6e5890de7508ff639515410ff1fb08</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Submit Task">Submit Task</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x5d1c97260f76a16e8bbbac1cdf458a09059dc965"><a href="https://nova.arbiscan.io/address/0x5d1c97260f76a16e8bbbac1cdf458a09059dc965">0x5d1c97260f76a16e8bbbac1cdf458a09059dc965</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000688</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x07e7f880e7b0d23bbe834cc3ab1688ed7a9888d4dc6b990d66f92cfdafb69141" class="myFnExpandBox_searchVal">0x07e7f880e7b0d23bbe834cc3ab1688ed7a9888d4dc6b990d66f92cfdafb69141</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="0x6bf6a42d">0x6bf6a42d</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052863">54052863</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td class="text-center"><span class="u-label u-label--xs u-label--secondary color-strong text-uppercase text-center w-100 rounded text-nowrap">SELF</span></td><td><span class="hash-tag text-truncate" data-toggle="tooltip" title="" data-original-title="0x00000000000000000000000000000000000a4b05"><a href="https://nova.arbiscan.io/address/0x00000000000000000000000000000000000a4b05">0x00000000000000000000000000000000000a4b05</a></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0</span></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>031048</span></td></tr><tr><td><a role="button" tabindex="0" type="button" class="js-txnAdditional-1 btn btn-xs btn-icon btn-soft-secondary myFnExpandBox"><i class="far fa-eye btn-icon__inner"></i></a></td><td><span class="hash-tag text-truncate"><a href="https://nova.arbiscan.io/tx/0x07b7ea76d262e0215405d9b7ce8acd788f294ac802dd96b942e40982aaef560f" class="myFnExpandBox_searchVal">0x07b7ea76d262e0215405d9b7ce8acd788f294ac802dd96b942e40982aaef560f</a></span></td><td class=""><span style="min-width:68px;" class="u-label u-label--xs u-label--info rounded text-dark text-center" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Claim Solution">Claim Solution</span></td><td class="d-none d-sm-table-cell"><a href="https://nova.arbiscan.io/block/54052862">54052862</a></td><td class="showDate " style="display:none !important; "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="5 secs ago">2024-03-03 17:24:43</span></td><td style="" class="showAge "><span rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="2024-03-03 17:24:43">5 secs ago</span></td><td><span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x62187b90041e1fa04ccdfa8f3340423e31c711da"><a href="https://nova.arbiscan.io/address/0x62187b90041e1fa04ccdfa8f3340423e31c711da">0x62187b90041e1fa04ccdfa8f3340423e31c711da</a></span></td><td class="text-center"><span class="btn btn-xs btn-icon btn-soft-success rounded-circle"><i class="fas fa-long-arrow-alt-right btn-icon__inner"></i></span></td><td><span style="white-space: nowrap;"><i class="far fa-file-alt text-secondary" data-toggle="tooltip" title="" data-original-title="Contract"></i> <span class="hash-tag text-truncate" data-boundary="viewport" data-html="true" data-toggle="tooltip" title="" data-original-title="0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a"><a href="https://nova.arbiscan.io/address/0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a">0x3bf6050327fa280ee1b5f3e8fd5ea2efe8a6472a</a></span></span></td><td>0 ETH</td><td style="" class="showTxnFee"><span class="small text-secondary">0<b>.</b>00000449</span> <font color="green"><i class="fad fa-lightbulb-dollar" title="Type 2 - EIP 1559"></i></font></td><td style="display:none !important; " class="showGasPrice"><span class="small text-secondary">0<b>.</b>030846</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="signInPopUp" class="row justify-content-center-alt2 align-items-center" style="display:none;">
+                    <div class="col d-none d-lg-block">
+                        <img class="img-fluid mx-4" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/bg1-left-side.svg" alt="">
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-7 col-xl-5">
+                        <div class="text-center py-5 my-5-alt">
+                            <h4 class="font-weight-bold">Sign In for Continued Access</h4>
+                            <p class="h5 text-secondary mb-4">
+                                No worries, it's absolutely <strong>free</strong> and takes a minute!
+                                <br class="-none d-md-inline-block">
+                                Register a <a class="text-primary" href="https://nova.arbiscan.io/register">Free Account</a> today.
+                            </p>
+                            <div class="mb-3">
+                                <a class="btn btn-primary transition-3d-hover text-nowrap text-uppercase px-4 py-2" href="https://nova.arbiscan.io/login">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <img class="img-fluid mx-4" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/bg1-right-side.svg" alt="">
+                    </div>
+                </div>
+                
+                <div id="ContentPlaceHolder1_pageRecords">
+                    <form method="post" action="./txs" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="c6cSrLuuSPpzD9dnxvuX0Mis2bgIAU6mVfAsqYI10BDSJfdHRWPLlKUQB6Jt53S9GGIgeVTm9xVRN1mFMZVGEVj4nZ6I3TNpwCslkO6aHZg=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FCB51872">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="n1JxkOx04njFlvJjJMWl1vG0X+4A/+LfrLi13IcJi0n2XlfuFH7txjuLWyHwpUqASRwSS6RBMtfzTitimdOmUg5c0fHAuglqYfYaUGfOhBxyhYKib24KWgZ8bL3qTqSYX9dslUZ4jtlfFabklpPFZaZwCJAIDmvbzrfVa0h65AsGe2EIMasSI/LxNqFla0FAbJPYk+JvquEVa3FKjYAVcQ==">
+</div>
+                         <div class="d-md-flex justify-content-between my-3">                        
+                            <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                Show
+                                <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRecordsPerPage\',\'\')', 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option value="25">25</option>
+	<option selected="selected" value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                Records
+                            </div>
+                             <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">10000</strong></span></li><li class="page-item" data-toggle="tooltip" title="" data-original-title="Go to Next"><a class="page-link" href="https://nova.arbiscan.io/txs?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="https://nova.arbiscan.io/txs?p=10000"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                        </ul></div>
+                    </form>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-3 mb-4">
+                    <div class="d-flex align-items-center text-secondary"></div>
+                    <div class="small text-muted">
+                        
+                    </div>
+                </div>
+               
+            </div>            
+        </div>
+        
+        
+    </div>  
+    
+    
+    
+
+
+        </main>
+        <div id="push"></div>
+         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+
+        
+    </div>
+    
+        
+     <footer class="bg-img-hero-footer bg-dark py-4">
+        <div class="container">
+            <div class="row justify-content-sm-between align-items-center">
+                <div class="col-sm mb-3 mb-sm-0">
+                    <div class="d-flex align-items-center">
+                        <img width="30" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/arbitrum.svg" alt="Arbitrum Logo">
+						
+                            <span class="h5 text-white mb-0 ml-2">Powered by Arbitrum Nova</span>
+                        
+                    </div>
+                </div>
+
+                <div class="col-sm-6 align-self-bottom">                    
+                    <!-- Preferences -->
+                    <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                        <span>
+                            <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                <img class="mr-1" width="15" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/metamask.svg" alt="Metamask">
+                                
+                                    Add Arbitrum Nova Network
+                                
+                            </button>
+                        </span>
+
+                        <a class="btn btn-xss btn-soft-light mr-2" href="https://nova.arbiscan.io/settings">
+                            <i class="fa fa-cogs mr-1"></i>Preferences
+                        </a>
+
+                        <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                            <i id="darkModaBtnIcon" class="fa fa-moon"></i>
+                    </button></div>
+                    <!-- End Preferences -->
+                </div>
+            </div>
+            <!-- End Fotoer Content -->
+            <hr class="opacity-md">
+            <div class="row justify-content-between align-items-center font-size-1">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <p class="mb-0 text-white">Etherscan © 2024  (ARBNOVA-A1)
+                        <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>
+                    </p>
+                </div>
+                                 <div class="col-md-6 text-md-right">
+                     <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://nova.arbiscan.io/terms">Terms of Service</a>
+                        </li>
+                         <li class="list-inline-item">
+                            <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://arbiscan.freshstatus.io/">Network Status</a>
+                         </li>
+                         <li class="list-inline-item">
+                          <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://nova.arbiscan.io/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us">
+                            <i class="far fa-envelope btn-icon__inner"></i>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                 </div>
+            </div>
+        <!-- End Copyright Content -->
+        </div>
+        
+    </footer>
+
+    <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: none;">
+        <div class="alert alert-light border shadow-sm p-3" role="alert">
+            <div class="d-flex justify-content-center-alt2 align-items-center">
+                <span>
+                    <p class="text-dark mr-3 mb-2 mb-md-0">
+                        <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href="https://nova.arbiscan.io/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="https://nova.arbiscan.io/terms" target="_blank">Terms</a> and <a href="https://nova.arbiscan.io/privacyPolicy">Privacy Policy</a>.
+                    </p>
+                </span>
+                <div>
+                    <button id="btnCookie" class="btn btn-sm btn-primary text-nowrap py-1" data-dismiss="alert" aria-label="Close">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+        <span class="fa fa-arrow-up u-go-to__inner"></span>
+    </a>
+    
+   <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery-ui.min.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery-migrate.min.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/popper.min.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.megamenu.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/jquery.cubeportfolio.min.js"></script>
+
+    <!-- JS Front -->
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.core.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.header.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.unfold.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.malihu-scrollbar.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.focus-state.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.go-to.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.cubeportfolio.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/combine-js-bottom2.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(window).on('load', function () {
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 767.98,
+                hideTimeOut: 0
+            });
+            myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter","#signupSrEmail")
+        });
+
+        $(document).on('ready', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#header'));
+
+            // initialization of unfold component
+            $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                afterOpen: function () {
+                    $(this).find('input[type="search"]').focus();
+                }
+            });
+
+            // initialization of malihu scrollbar
+            $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      
+            // initialization of focus state
+            $.HSCore.components.HSFocusState.init();
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of cubeportfolio
+            //$.HSCore.components.HSCubeportfolio.init('.cbp');
+        });
+    </script>
+    <script type="text/javascript">
+        var sid = '1926180e9f1f8f104d70f73c2b4a3a5b';
+        var strGlobal = sessionStorage.getItem("ShowAs");
+        var strGlobalFee = sessionStorage.getItem("ShowFee");
+        var cookieconsent = getCookie("Arbiscan_cookieconsent");
+        if (cookieconsent !== "True") {
+            document.getElementById("divcookie").style.display = "block";
+        };
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        $("#btnCookie").click(function () {
+            $("#divcookie").fadeOut("slow", function () {
+                var d = new Date();
+                d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = "Arbiscan_cookieconsent=True" + ";" + expires + ";path=/";;
+            });
+        });
+        function handleSearchText(data) {
+            searchAddress = false;
+            if ($("txtSearchInput").val() == "") {
+                $("#hdnSearchText").val("");                    
+            }
+        }
+    </script>
+    
+
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/web3-utils.min.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/web3-eth.min.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/web3-providers-http.min.js"></script>
+    <script type="text/javascript">
+        var eth;
+        var isTestnet = 'false';
+
+        async function addNetwork(type) {
+            
+            if (type === 'web3') {
+                if (typeof ethereum !== 'undefined') {
+                    eth = new Web3Eth(ethereum);
+                } else if (typeof web3 !== 'undefined') {
+                    eth = new Web3Eth(web3.givenProvider);
+                } else {
+                    eth = new Web3Eth(ethereum);
+                }                
+            }            
+
+		if (typeof eth !== 'undefined') {
+                var network = 0;
+                network = await eth.net.getId();
+                netID = network.toString();
+                var siteChain = 'Nova';
+                if (netID == "42161" && isTestnet == 'false' && siteChain == 'Arbitrum') {
+                    alert("Arbitrum Network has already been added to Metamask.");
+                } else if (netID == "421613" && isTestnet == 'true' && siteChain == 'Arbitrum') {
+                    alert("Arbitrum Goerli Network has already been added to Metamask.");
+                } else if (netID == "42170" && isTestnet == 'false' && siteChain == 'Nova') {
+                    alert("Arbitrum Goerli Network has already been added to Metamask.");
+                } else if (netID == "421614" && isTestnet == 'true' && siteChain == 'ARBSepolia') {
+                    alert("Arbitrum Sepolia Network has already been added to Metamask.");
+                } else if (isTestnet == 'true'  && siteChain == 'Arbitrum') {
+                    const params = [{
+                        chainId: '0x66EED',
+                        chainName: 'Arbitrum Goerli Testnet',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://goerli-rollup.arbitrum.io/rpc'],
+                        blockExplorerUrls: ['https://goerli.arbiscan.io/']
+                    }]
+
+                    window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                        .then(() => console.log('Success'))
+                        .catch((error) => console.log("Error", error.message));
+
+                } else if (isTestnet == 'false' && siteChain == 'Arbitrum') {
+                    const params = [{
+                        chainId: '0xA4B1',
+                        chainName: 'Arbitrum One Mainnet',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://arb1.arbitrum.io/rpc'],
+                        blockExplorerUrls: ['https://arbiscan.io/']
+                    }]
+
+                    window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                        .then(() => console.log('Success'))
+                        .catch((error) => console.log("Error", error.message));
+                } else if (isTestnet == 'false' && siteChain == 'Nova') {
+                    const params = [{
+                        chainId: '0xA4BA',
+                        chainName: 'Arbitrum Nova Mainnet',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://nova.arbitrum.io/rpc'],
+                        blockExplorerUrls: ['https://nova.arbiscan.io/']
+                    }]
+
+                    window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                        .then(() => console.log('Success'))
+                        .catch((error) => console.log("Error", error.message));
+                } else if (isTestnet == 'true' && siteChain == 'ARBSepolia') {
+                    const params = [{
+                        chainId: '0x66EEE',
+                        chainName: 'Arbitrum Sepolia Testnet',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://sepolia-rollup.arbitrum.io/rpc'],
+                        blockExplorerUrls: ['https://sepolia.arbiscan.io/']
+                    }]
+
+                    window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                        .then(() => console.log('Success'))
+                        .catch((error) => console.log("Error", error.message));
+                }
+            } else {
+                alert('Unable to locate a compatible web3 browser!');
+            }
+        }
+    </script>
+
+     
+    <script type="text/javascript" src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/commonjs.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/clipboard.min.js"></script>
+    <script src="Arbitrum%20Nova%20Transactions%20Information%20Arbiscan_files/hs.clipboard.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            onDocumentReady();
+            renderDataTables();
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        var resetPage = false;
+        var queryStringDictionary = {};
+        var currentLength = 0;
+
+        function updateUrl() {
+            var queryString = '';
+
+            var length = queryStringDictionary["length"];
+            if (length) {
+                if (length < 0) {
+                    length = 7;
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start"];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+
+        function renderDataTables() {
+            var table = $('#datatable')
+                .DataTable({
+                    dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                    language: {
+                        paginate: {
+                            next: '<i class="fa fa-chevron-right small"></i>',
+                            previous: '<i class="fa fa-chevron-left small"></i>'
+                        },
+                        lengthMenu: "Show _MENU_ Records",
+                        info: "A total of _MAX_ transactions found"
+                    },
+                    searching: false,
+                    pagingType: 'full',
+                    columnDefs: [
+                        { orderable: false, targets: '_all' }
+                    ],
+                    processing: true,
+                    serverSide: true,
+                    
+                    
+                
+                
+                drawCallback: function (settings) {
+                    var api = this.api();
+                    var json = api.ajax.json();
+                        if (!json) {
+                            var currentPageDisp = "1";
+
+                            //reload state if querystring is available
+                            var urlParams = new URLSearchParams(window.location.search);
+                            var existLength = urlParams.get('size');
+                            if (existLength) {
+                                api.page.len(existLength);
+                                currentLength = parseInt(existLength)
+
+                                var existStart = urlParams.get('start');
+                                if (!existStart) {
+                                    existStart = 0
+                                }
+                                    currentPage = Math.floor(existStart / existLength);
+                                    api.page(currentPage);
+                                    currentPageDisp = currentPage + 1;
+                            }
+
+                            var totalPage = ""
+                            $('#datatable_length .custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                            $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+                        return;
+                    }
+                    $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                        if (resetPage) {
+                            this.api().page(0);
+                            resetPage = false;
+                        }
+
+                        //get page info
+                        var pageInfo = this.api().page.info();
+                        if (pageInfo.length) {
+                            queryStringDictionary["length"] = pageInfo.length;
+                        }
+
+                        if (pageInfo.start !== undefined) {
+                            queryStringDictionary["start"] = pageInfo.start;
+                        }
+
+                        updateUrl();
+                        $('[data-toggle="tooltip"]').tooltip()
+                },
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/txs.aspx/GetTxsBySubLabel",
+                    data: function (d) {
+                        var labelModel = generateLabelModel();
+
+                        if (currentLength != d.length) {
+                            d.start = 0;
+                            currentLength = d.length;
+                            resetPage = true;
+                        }
+
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    },
+                    dataType: "json",
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+
+                        return JSON.stringify(morp);
+                    }
+                },
+                    columns: [
+                        { data: "expandBox" },
+                        { data: "txnHash" },
+                        { data: "method" },
+                        { data: "block" },
+                        { data: "age" },
+                        { data: "from" },
+                        { data: "xtraArrow" },
+                        { data: "to" },
+                        { data: "value" },
+                        { data: "txnFee" }
+                ]
+
+                });
+        }
+
+        function getUrlParams() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        function checkQSExist(url, strValue) {
+            var field = strValue;
+            var url = url;
+            if(url.indexOf('?' + field + '=') != -1)
+                return true;
+            else if(url.indexOf('&' + field + '=') != -1)
+                return true;
+            return false;
+        }
+
+        function removeURLParameter(url, parameter) {            
+            var urlparts= url.split('?');   
+            if (urlparts.length>=2) {
+
+                var prefix= encodeURIComponent(parameter)+'=';
+                var pars= urlparts[1].split(/[&;]/g);
+                
+                for (var i= pars.length; i-- > 0;) {                    
+                    if (pars[i].lastIndexOf(prefix, 0) !== -1) {  
+                        pars.splice(i, 1);
+                    }
+                }
+
+                url= urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : "");
+                return url;
+            } else {
+                return url;
+            }
+        }
+
+        function closeFilter(data) {
+            var url = window.location.href;
+            if (data.id == "btnBlockClear") {
+                url = removeURLParameter(url, "blockrange");
+            }
+            else if (data.id == "btnAgeClear") {
+                url = removeURLParameter(url, "agerange");
+            }
+            else if (data.id == "btnFromClear") {
+                url = removeURLParameter(url, "fromaddress");
+            }
+            else if (data.id == "btnToClear") {
+                url = removeURLParameter(url, "toaddress");
+            }
+
+            if (checkQSExist(url, 'address') == true && checkQSExist(url, 'blockrange') == false && checkQSExist(url, 'agerange') == false && checkQSExist(url, 'fromaddress') == false && checkQSExist(url, 'toaddress') == false) {
+                var strAddress = getUrlParams()["address"];
+                var newUrl = removeURLParameter(url, "address");
+                var arr = newUrl.split('?');
+                if (newUrl.length > 1 && arr[1] != '' && arr[1] != undefined) {
+                    newUrl = newUrl + "&";
+                }
+                else {
+                    newUrl = newUrl + "?";
+                }
+
+                window.location.href = newUrl + "address=" + strAddress;
+            }
+            else {
+                window.location.href = url;
+            }
+        }
+        
+        function constructFilterUrl(data) {
+
+            if (data.id == "btnBlockFilter") {
+                if ($("#fromblock").val().trim() == "" || $("#toblock").val().trim() == "") {
+                    alert("Please enter all required fields");
+                    return;
+                }
+            }
+            else if (data.id == "btnAgeFilter") {
+                if ($("#fromage").val().trim() == "" || $("#toage").val().trim() == "") {
+                    alert("Please enter all required fields");
+                    return;
+                }
+            }
+            else if (data.id == "btnFromFilter") {
+                if ($("#fromaddress").val().trim() == "") {
+                    alert("Please enter the required field");
+                    return;
+                }
+            }
+            else if (data.id == "btnToFilter") {
+                if ($("#toaddress").val().trim() == "") {
+                    alert("Please enter the required field");
+                    return;
+                }
+            }
+
+            var currentUrl = window.location.href;
+            var arr = currentUrl.split('?');
+            if (currentUrl.length > 1 && arr[1] != '' && arr[1] != undefined) {
+                currentUrl = currentUrl + "&";
+            }
+            else {
+                currentUrl = currentUrl + "?";
+            }
+
+            var flag = false;
+            if ($("#fromblock").val().trim() != "" && $("#toblock").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "blockrange");
+                currentUrl = newUrl + "blockrange=" + $("#fromblock").val().trim() + "~" + $("#toblock").val().trim();
+            }
+            else if ($("#fromage").val().trim() != "" && $("#toage").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "agerange");
+                currentUrl = newUrl + "agerange=" + $("#fromage").val().trim() + "~" + $("#toage").val().trim();
+            }
+            else if ($("#fromaddress").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "fromaddress");
+                currentUrl = newUrl + "fromaddress=" + $("#fromaddress").val().trim();
+            }
+            else if ($("#toaddress").val().trim() != "") {
+                flag = true;
+                var newUrl = removeURLParameter(currentUrl, "toaddress");
+                currentUrl = newUrl + "toaddress=" + $("#toaddress").val().trim();
+            }
+
+            if (flag == false) {
+                currentUrl = currentUrl.remove("?");
+            }
+            
+            window.location.href = currentUrl;            
+        }
+
+        function onFilterClick(data) {
+            if (data.id == "dropdownBlock" && getUrlParams()["blockrange"] != undefined) {
+                var strBlockRange = getUrlParams()["blockrange"].split('~');
+                $("#fromblock").val(strBlockRange[0]);
+                $("#toblock").val(strBlockRange[1]);
+            }
+            else if (data.id == "dropdownAge" && getUrlParams()["agerange"] != undefined) {
+                var strAgeRange = getUrlParams()["agerange"].split('~');
+                $("#fromage").val(strAgeRange[0]);
+                $("#toage").val(strAgeRange[1]);
+            }
+            else if (data.id == "dropdownFrom" && getUrlParams()["fromaddress"] != undefined) {
+                $("#fromaddress").val(getUrlParams()["fromaddress"]);
+            }
+            else if (data.id == "dropdownTo" && getUrlParams()["toaddress"] != undefined) {
+                $("#toaddress").val(getUrlParams()["toaddress"]);                
+            }
+        }
+
+        function clearFilter(data, e) {
+            if (data.id == "btnBlockFilterClear") {
+                $("#fromblock").val("");
+                $("#toblock").val("");                
+            }
+            else if (data.id == "btnAgeFilterClear") {
+                $("#fromage").val("");
+                $("#toage").val("");
+            }
+            else if (data.id == "btnFromFilterClear") {
+                $("#fromaddress").val("");                
+            }
+            else if (data.id == "btnToFilterClear") {
+                $("#toaddress").val("");                
+            }
+            e.stopPropagation();
+        }
+
+        // Bootstrap Dropdown in Table Responsive
+        $('.table-responsive').on('shown.bs.dropdown', function (e) {
+            var t = $(this),
+                m = $(e.target).find('.dropdown-menu'),
+                tb = t.offset().top + t.height(),
+                mb = m.offset().top + m.outerHeight(true),
+                d = 20; // Space for shadow + scrollbar.
+            if (t[0].scrollWidth > t.innerWidth()) {
+                if (mb + d > tb) {
+                    t.css('padding-bottom', ((mb + d) - tb));
+                }
+            }
+            else {
+                t.css('overflow', 'visible');
+            }
+        }).on('hidden.bs.dropdown', function () {
+            $(this).css({'padding-bottom': '', 'overflow': ''});
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            myFn_boxExpand.init(".myFnExpandBox", "popover", "txs");
+        });
+    </script>
+
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="tooltip fade bs-tooltip-bottom" role="tooltip" id="tooltip361979" x-placement="bottom" style="position: absolute; transform: translate3d(543px, 345px, 0px); top: 0px; left: 0px; will-change: transform;"><div class="arrow" style="left: 55px;"></div><div class="tooltip-inner">2024-03-03 17:24:44</div></div></body></html>
