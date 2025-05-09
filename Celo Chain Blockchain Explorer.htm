@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Celo Chain Blockchain Explorer
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="CeloScan allows you to explore and search the Celo blockchain for transactions, addresses, tokens, prices and other activities taking place on Celo chain (CELO)"> <meta name="author" content="celoscan.io"> <meta name="keywords" content="CeloScan, explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="Celo Chain Blockchain Explorer"> <meta property="og:description" content="CeloScan allows you to explore and search the Celo Chain blockchain for transactions, addresses, tokens, prices and other activities taking place on Celo Chain (CELO)"> <meta property="og:type" content="website"> <meta property="og:site_name" content="Celo Chain Blockchain Explorer"> <meta property="og:url" content="http://celoscan.io/"> <meta property="og:image" content="https://celoscan.io/images/brandassets/logo.jpg?v=24.2.4.0"> <meta property="og:image:alt" content="Visit celoscan.io"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@CeloScan"> <meta name="twitter:title" content="Celo Chain Blockchain Explorer"> <meta property="twitter:description" content="CeloScan allows you to explore and search the Celo Chain blockchain for transactions, addresses, tokens, prices and other activities taking place on Celo Chain (CELO)"> <meta property="twitter:image" content="https://celoscan.io/images/brandassets/logo.jpg?v=24.2.4.0"> 
+
+    <link rel="shortcut icon" href="https://celoscan.io/images/favicon.ico?v=24.2.4.0">
+    <link rel="apple-touch-icon" href="https://celoscan.io/images/favicon.png">
+
+    
+    <script type="text/javascript" async="" src="Celo%20Chain%20Blockchain%20Explorer_files/analytics.js"></script><script type="text/javascript" async="" src="Celo%20Chain%20Blockchain%20Explorer_files/js"></script><script async="" src="Celo%20Chain%20Blockchain%20Explorer_files/js_002"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-ESW69T7Q1S', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/animate.min.css">
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/select2.min.css">
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/theme.min.css">
+    <link rel="stylesheet" href="Celo%20Chain%20Blockchain%20Explorer_files/custom.css">
+
+    <script src="Celo%20Chain%20Blockchain%20Explorer_files/jquery.min.js"></script>
+    <script type="text/javascript" src="Celo%20Chain%20Blockchain%20Explorer_files/blockies.js"></script>
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+
+        body.dark-mode .ui-state-active {
+            background-color: #252525;
+            border-color: #323232;
+        }
+
+        .sticky-top {
+            z-index: 999;
+        }
+
+        .defi-icon img {
+            max-width: 27px;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+
+    
+   
+    <style>
+        .ui-autocomplete {
+            z-index: 3;
+        }
+    </style>
+<meta name="description" content="CeloScan allows you to explore and search the Celo Chain blockchain for transactions, addresses, tokens, prices and other activities taking place on Celo Chain (CELO)"><script src="Celo%20Chain%20Blockchain%20Explorer_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section py-1 ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand " href="https://celoscan.io/" target="_parent" aria-label="CeloScan">
+                                <img id="logo-header" width="140" src="Celo%20Chain%20Blockchain%20Explorer_files/logo.svg" alt="Logo">
+                                
+                            </a>
+
+                            
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://celoscan.io/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item hs-sub-menu-opened" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer animated slideInUp" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: block;">
+                                            <li id="LI12"><a href="https://celoscan.io/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI16"><a href="https://celoscan.io/txsPending" class="nav-link u-header__sub-menu-nav-link">Pending Transactions</a></li>
+                                            <li id="LI14"><a href="https://celoscan.io/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            
+
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                              <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_accountall"><a href="https://celoscan.io/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://celoscan.io/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokens">ERC20 Tokens By MarketCap</a></li>
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokentxns">View ERC20 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/charts">Charts &amp;  Stats</a></li>
+                                            <li id="LI_topstat"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/topstat">Top Statistics</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+
+                                        
+                                        <div class="hs-mega-menu w-80 u-header__sub-menu mt-md-n1" aria-labelledby="moreMegaMenu" style="display: none;">
+                                            
+                                                    <div class="row u-header__mega-menu-wrapper">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Developers</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.celoscan.io/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                                <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                                <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                                <li id="LI15"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/pushTx"><i class="fa fa-angle-right small mr-1"></i>Broadcast TXN</a></li>
+                                                                <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                                <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Explore</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                 <li id="LI21"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/gastracker"><i class="fa fa-angle-right small mr-1"></i>Gas Tracker<sup><span class="badge badge-success font-size-default ml-1"> New</span></sup></a></li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Tools</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI41"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>
+                                                                <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                                
+                                                                <li id="LI31"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/advanced-filter"><i class="fa fa-angle-right small mr-1"></i>Advanced Filter <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI50"><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/unitconverter"><i class="fa fa-angle-right small mr-1"></i>Unit Converter </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End Resources - Mega Menu -->
+                                    </li>
+
+
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://celoscan.io/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+
+                                            
+                                            <span class="btn btn-sm btn-icon btn-soft-primary cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="Celo%20Chain%20Blockchain%20Explorer_files/main.svg" alt="Logo1">
+                                            </span>
+                                            
+
+
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut p-3" aria-labelledby="explorersWithDropdown" style="min-width: 200px; display: none;">
+                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="https://celoscan.io/">Celo Mainnet</a></li><li><a class="nav-link u-header__sub-menu-nav-link" href="https://alfajores.celoscan.io/">Alfajores Testnet</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in CELO">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+    
+      <section class="bg-img-hero-main bg-dark">
+          <div class="container space-top-2 space-bottom-3">
+    
+      
+
+        <!-- Search -->
+        <div class="row justify-content-center align-items-center mb-4">
+          <div class="col-sm-12 col-md-10 text-center   col-lg-8 col-xl-6 ">
+            <div class="pr-lg-4 pr-xll-5">
+              
+                <h1 class="h4 mb-3 text-white ">
+                    Celo Chain Explorer           
+                </h1>
+              
+                
+                 <form class="mb-3" action="/search" method="GET">
+                    <div class="input-group input-group-shadow">
+                        <div class="input-group-prepend d-none d-md-block">
+                            <!-- Select -->
+                            <select name="f" class="custom-select custom-arrow-select input-group-text font-size-base filterby text-left">
+                                <option selected="selected" value="0">All Filters</option>
+                                <option value="1">Addresses</option>
+                                <option value="2">Tokens</option>
+                                <option value="3">Name Tags</option>
+                                <option value="4">Labels</option>
+                                <option value="5">Websites</option>
+                            </select>
+                            <!-- End Select -->
+                        </div>
+                        
+                        <input id="txtSearchInput" type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" placeholder="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" name="q" onkeyup="handleSearchText(this);" autocomplete="off">
+                        
+                        <input type="hidden" value="" id="hdnSearchText">
+                        <input id="hdnIsTestNet" value="False" type="hidden">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Text Ads -->
+                
+                    <p class="text-white-70 mb-0" style="min-height:22px">
+                        
+                        
+                    </p>
+                
+
+              <!-- End Text Ads -->             
+            
+            </div>
+          </div>
+
+          
+        </div>
+        <!-- End Search -->
+      </div>
+    </section>
+
+
+    <div class="container space-bottom-1 mt-n5">
+         
+
+      <!-- Stats -->
+       <div id="ContentPlaceHolder1_mainboxes" class="card mb-4">
+            <div class="card-body ">
+                <div class="row mx-gutters-md-1">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="media align-items-center ">
+                            <figure class="u-sm-avatar mr-2">
+                                <div class="u-xs-avatar mx-auto">
+                                    
+                                    <img src="Celo%20Chain%20Blockchain%20Explorer_files/mainbrand-1.svg" width="28px" style="margin-left:-4px">
+                                    
+                                    
+                                </div>
+                            </figure>
+                            <div class="media-body">
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">CELO Price</h2>
+                                <a class="text-size-1 text-link" href="https://celoscan.io/chart/price" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View Historical CELO Price">$1.12<span class="text-secondary"> @ 0.000017 BTC</span><span class="text-danger small"> (-2.86%)</span></a>
+                            </div>
+                        </div>
+
+
+                        <hr class="hr-space-lg">
+
+                        <div class="media align-items-center">
+                             
+                                <figure class="u-sm-avatar mr-2">
+                                    <img src="Celo%20Chain%20Blockchain%20Explorer_files/icon-8.svg" alt="Market Cap">
+                                </figure>
+                             
+                                <div class="media-body">
+                                    <h2 class="font-size-1 text-uppercase text-secondary mb-0">Market Cap
+                                    </h2>                                
+                                        <span class="text-size-1">$594,139,876.00 <span class="text-secondary">(530,956,100 CELO)</span></span>                                
+                                </div>
+                            
+                        </div>
+                      
+                        <hr class="d-block d-md-none hr-space-lg">
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 u-ver-divider u-ver-divider--left u-ver-divider--none-md">
+                        <div class="media align-items-center">
+                               
+                                
+                            <figure class="u-sm-avatar mr-2">
+                                <img src="Celo%20Chain%20Blockchain%20Explorer_files/icon-2-1.svg" alt="Network Difficulty">
+                            </figure>
+                             
+
+
+                            <div class="media-body">
+                                 <h2 class="font-size-1 text-uppercase text-secondary mb-0">Transactions</h2>
+                                 <a href="https://celoscan.io/txs" class="text-size-1 text-link" rel="tooltip" data-toggle="tooltip" data-placement="left" data-html="true" title="" data-original-title="Total Transactions Counter&lt;br&gt;(Update every 5 mins)">325.88 M</a><span class="text-secondary small" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Transactions per Second"> (5.0 TPS)</span>
+                            </div>
+                            
+                            <div class="text-right" title="GasTracker Estimate for Average Gas">
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Med Gas Price</h2>
+                                <a href="https://celoscan.io/gastracker" class="text-size-1 text-link">5 GWEI <span class="text-secondary small">(&lt; $0.01)</span></a>
+                            </div>
+                            
+                        </div>
+                        
+
+
+                        <hr class="hr-space-lg">
+                      
+                        <div class="media align-items-center">
+                              
+                                 <figure class="u-sm-avatar mr-2">
+                                    <img src="Celo%20Chain%20Blockchain%20Explorer_files/icon-51.svg" alt="SVG">
+                                 </figure>
+                              
+
+                            <div class="media-body">
+                              <h2 class="font-size-1 text-uppercase text-secondary mb-0">Latest Block</h2>
+                                <a class="text-size-1 text-link" href="https://celoscan.io/blocks" rel="tooltip" data-placement="bottom" title="The latest Block No"><span id="lastblock">24377387</span></a>
+                                <a data-toggle="tooltip" href="https://celoscan.io/chart/blocktime" class="small text-secondary  text-link" data-placement="right" data-title="Average Block Time (The latest 5000 blocks)" data-original-title="" title="">(<span id="avgblocktime">5.0s</span>)</a>
+                            </div>
+                              
+                        </div>
+                      
+                        <hr class="d-block d-md-none hr-space-lg">
+                    </div>
+
+                    <div class="col-md-12 col-lg-4 u-ver-divider u-ver-divider--left u-ver-divider--none-lg">
+                        <hr class="d-none d-md-block d-lg-none my-4">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="font-size-1 text-uppercase text-secondary mb-0">Celo Chain TRANSACTION HISTORY LAST 14 DAYS</h2>
+                            <div class="position-relative float-right z-index-2">
+                                <a id="customchartsinvoker" class="btn btn-xs btn-icon btn-soft-secondary" href="javascript:;" role="button" aria-controls="customcharts" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#customcharts" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                    <i class="fa fa-ellipsis-v btn-icon__inner"></i>
+                                </a>
+
+                                <div id="customcharts" class="dropdown-menu dropdown-menu-right dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="customchartsinvoker" style="animation-duration: 300ms;">
+                                    <a class="dropdown-item" href="https://celoscan.io/chart/tx">View Detailed Chart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="container-1" class="" style="height: 106px;" data-highcharts-chart="0"><div id="highcharts-qkdcu0a-0" style="position: relative; overflow: hidden; width: 416px; height: 106px; text-align: left; line-height: normal; z-index: 0; left: 0.966675px; top: 0.93335px;" dir="ltr" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="416" height="106" viewBox="0 0 416 106"><desc>Created with Highcharts 6.1.4</desc><defs><clipPath id="highcharts-qkdcu0a-1"><rect x="0" y="0" width="364" height="74" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="416" height="106" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="42" y="10" width="364" height="74"></rect><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 65.5 10 L 65.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 90.5 10 L 90.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 114.5 10 L 114.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 138.5 10 L 138.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 162.5 10 L 162.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 187.5 10 L 187.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 211.5 10 L 211.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 235.5 10 L 235.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 259.5 10 L 259.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 284.5 10 L 284.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 308.5 10 L 308.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 332.5 10 L 332.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 356.5 10 L 356.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 381.5 10 L 381.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 405.5 10 L 405.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 41.5 10 L 41.5 84" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 42 84.5 L 406 84.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 42 47.5 L 406 47.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 42 10.5 L 406 10.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="42" y="10" width="364" height="74"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 42 84 L 406 84"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 42 10 L 42 84"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-spline-series " transform="translate(42,10) scale(1 1)" clip-path="url(#highcharts-qkdcu0a-1)"><path fill="none" d="M 12.133333333333 34.15766 C 12.133333333333 34.15766 26.693333333333197 31.46591 36.4 31.46591 C 46.1066666666668 31.46591 50.96000000000019 37.88356 60.666666666667 37.88356 C 70.3733333333334 37.88356 75.2266666666666 34.519890000000004 84.933333333333 34.519890000000004 C 94.6399999999998 34.519890000000004 99.4933333333332 38.18807 109.2 38.18807 C 118.906666666668 38.18807 123.760000000002 37.731934000000514 133.46666666667 35.237320000000004 C 143.173333333334 32.74270600000052 148.02666666666602 28.161883999999493 157.73333333333 25.715000000000003 C 167.439999999998 23.268115999999495 172.293333333332 25.050406000000006 182 23.002900000000004 C 191.706666666668 20.955394000000005 196.560000000002 15.477470000000004 206.26666666667 15.477470000000004 C 215.97333333333398 15.477470000000004 220.826666666666 15.477470000000004 230.53333333333 16.947110000000002 C 240.23999999999802 18.41675 245.09333333333203 23.04145400000001 254.8 27.262340000000002 C 264.506666666668 31.48322600000001 269.36000000000206 34.04110999999918 279.06666666667 38.05154 C 288.773333333334 42.06196999999918 293.626666666666 47.31449 303.33333333333 47.31449 C 313.03999999999803 47.31449 317.893333333332 40.55792 327.6 40.55792 C 337.30666666666804 40.55792 351.86666666667 55.63172 351.86666666667 55.63172" class="highcharts-graph" data-z-index="1" stroke="#1e2022" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 2.1333333333330007 34.15766 L 12.133333333333 34.15766 C 12.133333333333 34.15766 26.693333333333197 31.46591 36.4 31.46591 C 46.1066666666668 31.46591 50.96000000000019 37.88356 60.666666666667 37.88356 C 70.3733333333334 37.88356 75.2266666666666 34.519890000000004 84.933333333333 34.519890000000004 C 94.6399999999998 34.519890000000004 99.4933333333332 38.18807 109.2 38.18807 C 118.906666666668 38.18807 123.760000000002 37.731934000000514 133.46666666667 35.237320000000004 C 143.173333333334 32.74270600000052 148.02666666666602 28.161883999999493 157.73333333333 25.715000000000003 C 167.439999999998 23.268115999999495 172.293333333332 25.050406000000006 182 23.002900000000004 C 191.706666666668 20.955394000000005 196.560000000002 15.477470000000004 206.26666666667 15.477470000000004 C 215.97333333333398 15.477470000000004 220.826666666666 15.477470000000004 230.53333333333 16.947110000000002 C 240.23999999999802 18.41675 245.09333333333203 23.04145400000001 254.8 27.262340000000002 C 264.506666666668 31.48322600000001 269.36000000000206 34.04110999999918 279.06666666667 38.05154 C 288.773333333334 42.06196999999918 293.626666666666 47.31449 303.33333333333 47.31449 C 313.03999999999803 47.31449 317.893333333332 40.55792 327.6 40.55792 C 337.30666666666804 40.55792 351.86666666667 55.63172 351.86666666667 55.63172 L 361.86666666667 55.63172" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="21" visibility="visible" data-z-index="2" class="highcharts-tracker-line" style="cursor:pointer;"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-tracker" transform="translate(42,10) scale(1 1)" style="cursor:pointer;" clip-path="none"></g></g><text x="0" text-anchor="start" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="203" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="54.133333333333674" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="103" opacity="1"><tspan>Feb 18</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 19</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 20</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 21</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 22</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 23</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 24</tspan></text><text x="223.99999999999667" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="103" opacity="1"><tspan>Feb 25</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 26</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 27</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 28</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 29</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Mar 1</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Mar 2</tspan></text><text x="393.8666666666667" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="103" opacity="1"><tspan>Mar 3</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="27" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="88" opacity="1">200k</text><text x="27" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="51" opacity="1">300k</text><text x="27" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">400k</text></g></svg></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         
+      <!-- End Stats -->
+    
+
+        <!-- Ads -->
+         
+        <div class="d-block d-lg-none text-center pl-lg-4 pl-xll-5 mb-4">
+         
+            
+            
+        </div>
+         
+        <!-- End Ads -->
+
+      <!-- Lastest Blocks & Transactions -->
+      <div class="row mb-5">
+        <!-- Blocks -->
+        <div id="ContentPlaceHolder1_divBlocks" class="col-lg-6 mb-4 mb-lg-0">
+          <div class="card h-100">
+            <!-- Card Header -->
+              <div class="card-body p-4">
+                  <h2 class="card-header-title">Latest Blocks</h2>
+
+                  <hr class="hr-space my-4">
+                  <!-- End Card Header -->
+
+                  <div class="js-scrollbar overflow-hidden pr-4 mr-n4 mCustomScrollbar _mCS_1 mCS-autoHide" style="height: 420px; position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                      <div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377387">24377387</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xe09632da4deafb3da2cd6939f31c98607fccdbc5">0xe09632da4deafb3da2cd6939f31c98607fccdbc5</a></span><a href="https://celoscan.io/txs?block=24377387" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">31 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01794 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01794 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377386">24377386</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 11 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xe267d978037b89db06c6a5fcf82fad8297e290ff">0xe267d978037b89db06c6a5fcf82fad8297e290ff</a></span><a href="https://celoscan.io/txs?block=24377386" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">33 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>02854 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>02854 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377385">24377385</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 16 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x77ef632e023632a4e9130ab81882e163485849a1">0x77ef632e023632a4e9130ab81882e163485849a1</a></span><a href="https://celoscan.io/txs?block=24377385" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">38 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01733 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01733 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377384">24377384</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 21 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xc60803cd2714c371092ab5ddb6529b0d7609e6a4">0xc60803cd2714c371092ab5ddb6529b0d7609e6a4</a></span><a href="https://celoscan.io/txs?block=24377384" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">27 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01936 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01936 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377383">24377383</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 26 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x9052b0ea28ce47cf51d4098247095a4e555c95d8">0x9052b0ea28ce47cf51d4098247095a4e555c95d8</a></span><a href="https://celoscan.io/txs?block=24377383" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">26 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01296 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01296 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377382">24377382</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 31 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x5c41e372e21c39dcb8ac878f35f700e3856fca85">0x5c41e372e21c39dcb8ac878f35f700e3856fca85</a></span><a href="https://celoscan.io/txs?block=24377382" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">32 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>0359 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>0359 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377381">24377381</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 36 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xbf5049910db82e8c92b7158c959330bfe5cc135e">0xbf5049910db82e8c92b7158c959330bfe5cc135e</a></span><a href="https://celoscan.io/txs?block=24377381" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">22 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01781 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01781 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377380">24377380</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 41 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xe55fac7c79153180c134d7ee4e0da52f40474c55">0xe55fac7c79153180c134d7ee4e0da52f40474c55</a></span><a href="https://celoscan.io/txs?block=24377380" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">26 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>02789 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>02789 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377379">24377379</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 46 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x74288dbefa3a55986c039953b67139a466474fc4">0x74288dbefa3a55986c039953b67139a466474fc4</a></span><a href="https://celoscan.io/txs?block=24377379" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">25 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01398 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>01398 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 text-nowrap"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://celoscan.io/block/24377378">24377378</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 51 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-flex justify-content-between align-items-center"><div class="text-nowrap"><span class="d-block mb-1 mb-sm-0">Validated By  <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x5ed0a078386b52856e094581ba759f44f38a9945">0x5ed0a078386b52856e094581ba759f44f38a9945</a></span><a href="https://celoscan.io/txs?block=24377378" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">34 txns </a> <span class="small text-secondary">in 5 secs</span><span class="d-inline-block d-sm-none"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>07092 CELO</span></span></div><div class="d-none d-sm-block"><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Block Reward">0<b>.</b>07092 CELO</span></div></div></div></div>
+                  </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 252px; max-height: 386px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+             
+               <hr class="hr-space my-4">
+
+              <a class="btn btn-xs btn-block btn-soft-primary " href="https://celoscan.io/blocks">View all blocks</a>
+              </div>
+          </div>
+        </div>
+        <!-- End Blocks -->
+
+           
+
+        <!-- Transactions -->
+        <div id="ContentPlaceHolder1_divTransactions" class="col-lg-6">
+         <div class="card h-100">
+            <!-- Card Header -->
+            <div class="card-body p-4">
+                <h2 class="card-header-title">Latest Transactions</h2>
+            <hr class="hr-space my-4">
+              <div class="js-scrollbar overflow-hidden pr-4 mr-n4 mCustomScrollbar _mCS_2 mCS-autoHide" style="height: 420px; position: relative; overflow: visible;"><div id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                  <div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x3022a814d10f82bc69b2d3ae4c775a52f01f1ed2a846c720dca9ecd38113630f">0x3022a814d10f82bc69b2d3ae4c775a52f01f1ed2a846c720dca9ecd38113630f</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xc1ee32ab9efa5c7eead3142f698a12b3d1e397e7">0xc1ee32ab9efa5c7eead3142f698a12b3d1e397e7</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x6c54429c582eef5e3c66c34a640dd5e3889e12b2fe47847aaaffbe16ef460fa8">0x6c54429c582eef5e3c66c34a640dd5e3889e12b2fe47847aaaffbe16ef460fa8</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x531c55cb0d7ec4af2faaef05ec237ea7edae202a">0x531c55cb0d7ec4af2faaef05ec237ea7edae202a</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x93c6a1d0a177825fa0944d4f2b9c4501db82a737935893a266f5aa4d4500bc4e">0x93c6a1d0a177825fa0944d4f2b9c4501db82a737935893a266f5aa4d4500bc4e</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xd7999076047985765fa119e817ff78f85191eefc">0xd7999076047985765fa119e817ff78f85191eefc</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x9fd6f3c230f1f980a6ebcb2e5c4e8e9b75e34cfe3857953fdb430ec7c4159e4f">0x9fd6f3c230f1f980a6ebcb2e5c4e8e9b75e34cfe3857953fdb430ec7c4159e4f</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x3bc68e5fce63f41683ff2ad3f9806a22956d6fba">0x3bc68e5fce63f41683ff2ad3f9806a22956d6fba</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0xcc5b23883f5682eb8f484144152d5aaea864ecd7ee880a17dcb8bc42c9e9772c">0xcc5b23883f5682eb8f484144152d5aaea864ecd7ee880a17dcb8bc42c9e9772c</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0x806022ff4b42f75bca0310a988d4e76c56d16ca3">0x806022ff4b42f75bca0310a988d4e76c56d16ca3</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x4f93fa058b03953c851efaa2e4fc5c34afdfab84" class="hash-tag text-truncate">0x4f93fa058b03953c851efaa2e4fc5c34afdfab84</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x435e854f464d4e8d27f447d851c89bc10f30b50bc6d63386f0588717517bed5b">0x435e854f464d4e8d27f447d851c89bc10f30b50bc6d63386f0588717517bed5b</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xd1b74c36c7a54a97a17c4ce98d89d36eb4307ec5">0xd1b74c36c7a54a97a17c4ce98d89d36eb4307ec5</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x729ab4161d945b66c872a4b3f0f040f44d59c5a68bed8f1d0ae6d0487742df00">0x729ab4161d945b66c872a4b3f0f040f44d59c5a68bed8f1d0ae6d0487742df00</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xec07c0fb55e046d3d2fef69f4693befb8772f6b1">0xec07c0fb55e046d3d2fef69f4693befb8772f6b1</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0x2982390bc156195b145bc6d84f726d50c45d69819071b20cf9889736b5092f78">0x2982390bc156195b145bc6d84f726d50c45d69819071b20cf9889736b5092f78</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xbc76dcc9928f225b5f28d88be840de0ba7b367cb">0xbc76dcc9928f225b5f28d88be840de0ba7b367cb</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x4f93fa058b03953c851efaa2e4fc5c34afdfab84" class="hash-tag text-truncate">0x4f93fa058b03953c851efaa2e4fc5c34afdfab84</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0xe785e7496bfd7bd04d38335cd5e29a39b2bca54030d8fc067dd935405b6431dc">0xe785e7496bfd7bd04d38335cd5e29a39b2bca54030d8fc067dd935405b6431dc</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xa71c78343ce97aab1cc7f893108e7cc633f80407">0xa71c78343ce97aab1cc7f893108e7cc633f80407</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">TX</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none mr-1">TX#</span><a class="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate" href="https://celoscan.io/tx/0xfcaa5442a98e33d71dc09adaa4385f111066b9532a1d430c4b1529e59def07a1">0xfcaa5442a98e33d71dc09adaa4385f111066b9532a1d430c4b1529e59def07a1</a><span class="d-none d-sm-block small text-secondary">6 secs ago</span></div></div></div><div class="col-sm-8"><div class="d-sm-flex justify-content-between align-items-center"><div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a class="hash-tag text-truncate" href="https://celoscan.io/address/0xb193d22ccfef7c9a8de7848d44ae24807fcb1b46">0xb193d22ccfef7c9a8de7848d44ae24807fcb1b46</a></span><span class="d-sm-block">To <a href="https://celoscan.io/address/0x43d72ff17701b2da814620735c39c620ce0ea4a1" class="hash-tag text-truncate">0x43d72ff17701b2da814620735c39c620ce0ea4a1</a></span></div><div><span class="u-label u-label--xs u-label--badge-in  u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 CELO</span></div></div></div></div>
+              </div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 252px; max-height: 386px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+              <hr class="hr-space my-4">
+                  <a class="btn btn-xs btn-block btn-soft-primary " href="https://celoscan.io/txs">View all transactions</a>
+              </div>
+          </div>
+        </div>
+        <!-- End Transactions -->
+
+        <!-- L2 explorers -->
+
+          <!-- Blocks -->
+        
+        <!-- End Blocks -->
+
+          <!-- Transactions -->
+          
+          <!-- End Transaction -->
+
+          <!-- L1 Transactions -->
+          
+          <!-- End L1 Transactions -->
+
+          <!-- Transactions -->
+          
+        <!-- End Transactions -->
+
+       <!-- End L2 Explorers -->
+
+      </div>
+      <!-- End Lastest Blocks & Transactions -->
+
+    </div>
+  
+   
+
+
+        
+        
+
+
+        </main>
+        <div id="push"></div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <footer class="bg-dark py-4">
+                <div class="container">
+                    <div class="row justify-content-sm-between align-items-center">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="d-flex align-items-center">
+                                
+                                <img width="25" src="Celo%20Chain%20Blockchain%20Explorer_files/main.svg" alt="Logo">
+                                
+
+                                <span class="h5 text-white mb-0 ml-3">Powered By Celo Chain</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 align-self-bottom">
+                            <!-- Preferences -->
+                            <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                <span>
+                                    <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                        <img class="mr-1" width="15" src="Celo%20Chain%20Blockchain%20Explorer_files/metamask.svg" alt="Metamask">
+                                        Add CELO Network
+                                    </button>
+                                </span>
+
+                                <a class="btn btn-xss btn-soft-light mr-2" href="https://celoscan.io/settings">
+                                    <i class="fa fa-cogs mr-1"></i>Preferences
+                                </a>
+
+                                <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                    <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                            </div>
+                            <!-- End Preferences -->
+                        </div>
+                    </div>
+                    <!-- End Fotoer Content -->
+
+
+
+                    
+                    <hr class="opacity-md">
+                    <div class="row justify-content-between align-items-center font-size-1">
+                        <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                            <p class="mb-0 text-white">
+                                CeloScan © 2024  (CELO-A)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>  <span class="mx-1">|</span> <a class="text-white-70" href="https://celoscan.io/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i> 
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://celoscan.io/terms">Terms of Service</a> </li> <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://celoscan.freshstatus.io/">Network Status</a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://celoscan.io/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us"> <i class="far fa-envelope btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/CeloscanHQ" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"> <i class="fab fa-twitter btn-icon__inner"></i> </a> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: none;">
+                
+            </div>
+
+            <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+                <span class="fa fa-arrow-up u-go-to__inner"></span>
+            </a>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/jquery-ui.min.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/jquery-migrate.min.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/popper.min.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/bootstrap.min.js"></script>
+
+
+
+            <!-- JS Implementing Plugins -->
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.megamenu.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/jquery.cubeportfolio.min.js"></script>
+
+
+            <!-- JS Front -->
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.core.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.header.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.unfold.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.malihu-scrollbar.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.focus-state.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.go-to.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/hs.cubeportfolio.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/combine-js-bottom2.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script>
+                $(window).on('load', function () {
+                    // initialization of HSMegaMenu component
+                    $('.js-mega-menu').HSMegaMenu({
+                        event: 'hover',
+                        pageContainer: $('.container'),
+                        breakpoint: 767.98,
+                        hideTimeOut: 0
+                    });
+                    myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+                });
+
+                $(document).on('ready', function () {
+                    // initialization of header
+                    $.HSCore.components.HSHeader.init($('#header'));
+
+                    // initialization of unfold component
+                    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                        afterOpen: function () {
+                            $(this).find('input[type="search"]').focus();
+                        }
+                    });
+
+                    // initialization of malihu scrollbar
+                    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+                    // initialization of focus state
+                    $.HSCore.components.HSFocusState.init();
+
+                    // initialization of go to
+                    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+                    // initialization of cubeportfolio
+                    //$.HSCore.components.HSCubeportfolio.init('.cbp');
+                });
+            </script>
+            <script type="text/javascript">
+                var sid = 'f177d90eb4cc11fdf383937b79becce4';
+                var strGlobal = sessionStorage.getItem("ShowAs");
+                var strGlobalFee = sessionStorage.getItem("ShowFee");
+                var siteVar = 'CeloScan';
+                var cookieconsent = getCookie(siteVar + "_cookieconsent");
+                if (cookieconsent !== "True") {
+                    document.getElementById("divcookie").style.display = "block";
+                };
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) === 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+                $("#btnCookie").click(function () {
+                    $("#divcookie").fadeOut("slow", function () {
+                        var d = new Date();
+                        d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = siteVar + "_cookieconsent=True" + ";" + expires + ";path=/";;
+                    });
+                });
+                function handleSearchText(data) {
+                    searchAddress = false;
+                    if ($("txtSearchInput").val() == "") {
+                        $("#hdnSearchText").val("");
+                    }
+                }
+            </script>
+            
+
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/web3-utils.min.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/web3-eth.min.js"></script>
+            <script src="Celo%20Chain%20Blockchain%20Explorer_files/web3-providers-http.min.js"></script>
+            <script type="text/javascript">
+                var eth;
+                var isTestnet = 'false';
+                var SiteNetID = '42220';
+                var SiteNetChainID = '0xA4EC';
+                var SiteNetName = 'Celo Mainnet';
+                var SiteName = 'CeloScan';
+                var SiteErc20 = 'ERC20';
+                var SiteErc721 = 'ERC721';
+                var SiteErc1155 = 'ERC1155';
+                var sv = '24.2.4.0';
+                var slt = 'svg';
+                var allowErc1155 = 'True';
+
+                async function addNetwork(type) {
+
+                    if (type === 'web3') {
+                        if (typeof ethereum !== 'undefined') {
+                            eth = new Web3Eth(ethereum);
+                        } else if (typeof web3 !== 'undefined') {
+                            eth = new Web3Eth(web3.givenProvider);
+                        } else {
+                            eth = new Web3Eth(ethereum);
+                        }
+                    }
+
+                    if (typeof eth !== 'undefined') {
+                        var network = 0;
+                        network = await eth.getChainId();
+                        netID = network.toString();
+                        var params;
+                        if (netID == SiteNetID) {
+                            alert("Celo Chain Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: SiteNetChainID,
+                                chainName: 'Celo Mainnet',
+                                nativeCurrency: {
+                                    name: 'CELO',
+                            symbol: 'CELO',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://forno.celo.org'],
+                                blockExplorerUrls: ['https://celoscan.io']
+                            }]
+                        }
+
+                        window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                            .then(() => console.log('Success'))
+                            .catch((error) => console.log("Error", error.message));
+                    } else {
+                        alert('Unable to locate a compatible web3 browser!');
+                    }
+                }
+            </script>
+
+            
+
+    <script src="Celo%20Chain%20Blockchain%20Explorer_files/highcharts.js"></script>
+
+    <script>
+        var lang_miner = "Validator";
+        var lang_mined_by = "Validated By";
+        var lang_block = "Block";
+        var lang_block_reward = "Block Reward";
+        var lang_sec = "sec";
+        var lang_secs = "secs";
+        var lang_min = "min";
+        var lang_mins = "mins";
+        var lang_from = "From";
+        var lang_to = "To";
+        var lang_amount = "Amount";
+        var lang_tx = "TX";
+        var lang_bk = "BK";
+        var lang_ether = "CELO";
+        var lang_txns = "txns";
+        var lang_in_X = "in";
+        var lang_ago = "ago";
+        var lang_secs_ago = "secs ago";
+        var lang_sec_ago = "sec ago";
+        var lang_sec_in = "";
+        var lang_hash = "Hash";
+        var lang_c = "CELO";
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#container-1').highcharts({
+                chart: {
+                    spacingTop: 10,
+                    spacingBottom: 0,
+                    spacingLeft: 0,
+                    spacingRight: 10,
+                },
+
+                title: {
+                    text: '',
+                    align: 'left',
+                },
+
+                xAxis: {
+                    title: { text: '' },
+                    lineWidth: 0,
+                    minorTickLength: 0,
+                    tickLength: 0,
+                    labels: {
+                        step: 7,
+                    },
+                    categories: [
+                        'Feb 18','Feb 19','Feb 20','Feb 21','Feb 22','Feb 23','Feb 24','Feb 25','Feb 26','Feb 27','Feb 28','Feb 29','Mar 1','Mar 2','Mar 3',
+                    ]
+                },
+
+                yAxis: {
+                    labels: {
+                        enabled: true
+                    },
+                    gridLineWidth: 0,
+                    title: {
+                        text: null
+                    }
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                credits: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '<span style="font-size:10px">' + this.point.friendlydate + '</span><br><table><tr><td style="padding:0">' +
+                            '<span style="color:' + this.series.color + '">Transactions: </a></span><b>' + this.point.formattedValue + '</b><br>' +
+                            
+                            '</td></tr></table>';
+                    }
+                },
+
+                plotOptions: {
+                    series: {
+                        color: '#1e2022',
+                        enableMouseTracking: true,
+                        lineWidth: 1,
+                        shadow: false,
+                        animation: false,
+                        cursor: 'pointer',
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        marker: {
+                            radius: 0
+                        },
+                        point: {
+                            events: {
+                                select: function (e) {
+                                    location.href = 'txs?dt=' + this.options.dt;
+                                }
+                            }
+                        }
+                    },
+                    column: {
+                        pointPadding: 0.1,
+                        borderWidth: 0
+                    }
+                },
+
+                series: [{
+                    name: 'Transactions',
+                    type: 'spline',
+                    data: [{y : 307682, dt : '1708214400', formattedValue : '307,682', friendlydate : 'Sunday, February 18, 2024', price : '$0.77'  },{y : 314957, dt : '1708300800', formattedValue : '314,957', friendlydate : 'Monday, February 19, 2024', price : '$0.78'  },{y : 297612, dt : '1708387200', formattedValue : '297,612', friendlydate : 'Tuesday, February 20, 2024', price : '$0.76'  },{y : 306703, dt : '1708473600', formattedValue : '306,703', friendlydate : 'Wednesday, February 21, 2024', price : '$0.74'  },{y : 296789, dt : '1708560000', formattedValue : '296,789', friendlydate : 'Thursday, February 22, 2024', price : '$0.81'  },{y : 304764, dt : '1708646400', formattedValue : '304,764', friendlydate : 'Friday, February 23, 2024', price : '$0.78'  },{y : 330500, dt : '1708732800', formattedValue : '330,500', friendlydate : 'Saturday, February 24, 2024', price : '$0.84'  },{y : 337830, dt : '1708819200', formattedValue : '337,830', friendlydate : 'Sunday, February 25, 2024', price : '$0.93'  },{y : 358169, dt : '1708905600', formattedValue : '358,169', friendlydate : 'Monday, February 26, 2024', price : '$0.96'  },{y : 354197, dt : '1708992000', formattedValue : '354,197', friendlydate : 'Tuesday, February 27, 2024', price : '$0.96'  },{y : 326318, dt : '1709078400', formattedValue : '326,318', friendlydate : 'Wednesday, February 28, 2024', price : '$0.94'  },{y : 297158, dt : '1709164800', formattedValue : '297,158', friendlydate : 'Thursday, February 29, 2024', price : '$1.07'  },{y : 272123, dt : '1709251200', formattedValue : '272,123', friendlydate : 'Friday, March 1, 2024', price : '$1.20'  },{y : 290384, dt : '1709337600', formattedValue : '290,384', friendlydate : 'Saturday, March 2, 2024', price : '$1.22'  },{y : 249644, dt : '1709424000', formattedValue : '249,644', friendlydate : 'Sunday, March 3, 2024', price : '$1.15'  },],
+                    allowPointSelect: true,
+                    pointStart: 0
+                }]
+            });
+        });
+    </script>
+
+     
+    <script type="text/javascript">
+
+        //function setFocus() {
+        //    if (window.innerWidth > 600)
+        //        $("input[name=q]").focus();
+        //}
+        //$(document).ready(function () {
+        //    setFocus();
+        //});
+    </script>
+    
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
