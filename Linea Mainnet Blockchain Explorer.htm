@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Linea Mainnet Blockchain Explorer
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="LineaScan allows you to explore and search the blockchain for transactions, addresses, tokens, prices and other activities taking place on Linea Mainnet."> <meta name="author" content="lineascan.build"> <meta name="keywords" content="LineaScan, Mainnet explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="Linea Mainnet Blockchain Explorer"> <meta property="og:description" content="LineaScan allows you to explore and search the Linea Mainnet blockchain for transactions, addresses, tokens, prices and other activities taking place on Linea Mainnet (ETH)"> <meta property="og:type" content="website"> <meta property="og:site_name" content="Linea Mainnet Blockchain Explorer"> <meta property="og:url" content="http://lineascan.build/"> <meta property="og:image" content="https://lineascan.build/images/brandassets/logo.jpg?v=24.2.3.0"> <meta property="og:image:alt" content="Visit lineascan.build"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@LineaScan"> <meta name="twitter:title" content="Linea Mainnet Blockchain Explorer"> <meta property="twitter:description" content="LineaScan allows you to explore and search the Linea Mainnet blockchain for transactions, addresses, tokens, prices and other activities taking place on Linea Mainnet (ETH)"> <meta property="twitter:image" content="https://lineascan.build/images/brandassets/logo.jpg?v=24.2.3.0"> 
+
+    <link rel="shortcut icon" href="https://lineascan.build/images/favicon.ico?v=24.2.3.0">
+    <link rel="apple-touch-icon" href="https://lineascan.build/images/favicon.png">
+
+    
+    <script async="" src="Linea%20Mainnet%20Blockchain%20Explorer_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-7HXXHXN492', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/animate.min.css">
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/select2.min.css">
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/theme.min.css">
+    <link rel="stylesheet" href="Linea%20Mainnet%20Blockchain%20Explorer_files/custom.css">
+
+    <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery.min.js"></script>
+    <script type="text/javascript" src="Linea%20Mainnet%20Blockchain%20Explorer_files/blockies.js"></script>
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+
+        body.dark-mode .ui-state-active {
+            background-color: #252525;
+            border-color: #323232;
+        }
+
+        .sticky-top {
+            z-index: 999;
+        }
+
+        .defi-icon img {
+            max-width: 27px;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+
+    
+   
+    <style>
+        .ui-autocomplete {
+            z-index: 3;
+        }
+    </style>
+<meta name="description" content="LineaScan allows you to explore and search the Linea Mainnet blockchain for transactions, addresses, tokens, prices and other activities taking place on Linea Mainnet (ETH)"><script src="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section py-1 ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand " href="https://lineascan.build/" target="_parent" aria-label="LineaScan">
+                                <img id="logo-header" width="100" src="Linea%20Mainnet%20Blockchain%20Explorer_files/logo.svg" alt="Logo">
+                                
+                            </a>
+
+                            
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://lineascan.build/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI12"><a href="https://lineascan.build/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI26"><a href="https://lineascan.build/txsDeposits" class="nav-link u-header__sub-menu-nav-link">Latest L1→L2 Transactions</a></li>
+                                                <li id="LI66"><a href="https://lineascan.build/txsExit" class="nav-link u-header__sub-menu-nav-link">Latest L2→L1 Transactions</a></li>                                              
+                                            <li id="LI16"><a href="https://lineascan.build/txsPending" class="nav-link u-header__sub-menu-nav-link">Pending Transactions</a></li>
+                                            <li id="LI14"><a href="https://lineascan.build/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            
+
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                              <li id="LI_batches"><a href="https://lineascan.build/batches" class="nav-link u-header__sub-menu-nav-link">View Batches</a></li>
+                                            
+
+                                            
+                                            <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_accountall"><a href="https://lineascan.build/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://lineascan.build/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokens">ERC20 Tokens By MarketCap</a></li>
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokentxns">View ERC20 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/charts">Charts &amp;  Stats</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+
+                                        
+                                                <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                                    
+                                                    <div class="row u-header__mega-menu-wrapper">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Developers</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.lineascan.build/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                                <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                                <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                                <li id="LI15"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/pushTx"><i class="fa fa-angle-right small mr-1"></i>Broadcast TXN</a></li>
+                                                                <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                                <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Tools</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI41"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>
+                                                                <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                                
+                                                                <li id="LI31"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/advanced-filter"><i class="fa fa-angle-right small mr-1"></i>Advanced Filter <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI50"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/unitconverter"><i class="fa fa-angle-right small mr-1"></i>Unit Converter </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End Resources - Mega Menu -->
+                                    </li>
+
+
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://lineascan.build/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+
+                                            
+                                            <span class="btn btn-sm btn-icon btn-dark cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="Linea%20Mainnet%20Blockchain%20Explorer_files/main.svg" alt="Logo1">
+                                            </span>
+                                            
+
+
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut p-3" aria-labelledby="explorersWithDropdown" style="min-width: 200px; display: none;">
+                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/">Linea Mainnet</a></li><li><a class="nav-link u-header__sub-menu-nav-link" href="https://goerli.lineascan.build/">Linea Testnet</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in ETH">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+    
+      <section class="bg-img-hero-main bg-dark">
+          <div class="container space-top-2 space-bottom-3">
+    
+      
+
+        <!-- Search -->
+        <div class="row justify-content-center align-items-center mb-4">
+          <div class="col-sm-12 col-md-10 text-center   col-lg-8 col-xl-6 ">
+            <div class="pr-lg-4 pr-xll-5">
+              
+                <h1 class="h4 mb-3 text-white ">
+                    Linea Mainnet Explorer           
+                </h1>
+              
+                
+                 <form class="mb-3" action="/search" method="GET">
+                    <div class="input-group input-group-shadow">
+                        <div class="input-group-prepend d-none d-md-block">
+                            <!-- Select -->
+                            <select name="f" class="custom-select custom-arrow-select input-group-text font-size-base filterby text-left">
+                                <option selected="selected" value="0">All Filters</option>
+                                <option value="1">Addresses</option>
+                                <option value="2">Tokens</option>
+                                <option value="3">Name Tags</option>
+                                <option value="4">Labels</option>
+                                <option value="5">Websites</option>
+                            </select>
+                            <!-- End Select -->
+                        </div>
+                        
+                        <input id="txtSearchInput" type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" placeholder="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" name="q" onkeyup="handleSearchText(this);" autocomplete="off">
+                        
+                        <input type="hidden" value="" id="hdnSearchText">
+                        <input id="hdnIsTestNet" value="False" type="hidden">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Text Ads -->
+                
+                    <p class="text-white-70 mb-0" style="min-height:22px">
+                        
+                        
+                    </p>
+                
+
+              <!-- End Text Ads -->             
+            
+            </div>
+          </div>
+
+          
+        </div>
+        <!-- End Search -->
+      </div>
+    </section>
+
+
+    <div class="container space-bottom-1 mt-n5">
+         
+
+      <!-- Stats -->
+       <div id="ContentPlaceHolder1_mainboxes" class="card mb-4">
+            <div class="card-body ">
+                <div class="row mx-gutters-md-1">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="media align-items-center ">
+                            <figure class="u-sm-avatar mr-2">
+                                <div class="u-xs-avatar mx-auto">
+                                    
+                                    <img src="Linea%20Mainnet%20Blockchain%20Explorer_files/mainbrand-1.svg" style="margin-left:-4px">
+                                    
+                                    
+                                </div>
+                            </figure>
+                            <div class="media-body">
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">ETH Price</h2>
+                                <a class="text-size-1 text-link" href="https://lineascan.build/chart/price" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View Historical ETH Price">$3,545.35<span class="text-secondary"> @ 0.053509 BTC</span><span class="text-success small"> (+1.82%)</span></a>
+                            </div>
+                        </div>
+
+
+                        <hr class="hr-space-lg">
+
+                        <div class="media align-items-center">
+                             
+                                <figure class="u-sm-avatar mr-2">
+                                    <img src="Linea%20Mainnet%20Blockchain%20Explorer_files/icon-8.svg" alt="Market Cap">
+                                </figure>
+                             
+                                <div class="media-body">
+                                    <h2 class="font-size-1 text-uppercase text-secondary mb-0">Market Cap
+                                    </h2>                                
+                                        <span class="text-size-1">$425,913,765,668.00 <span class="text-secondary">(120,133,137 ETH)</span></span>                                
+                                </div>
+                            
+                        </div>
+                      
+                        <hr class="d-block d-md-none hr-space-lg">
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 u-ver-divider u-ver-divider--left u-ver-divider--none-md">
+                        <div class="media align-items-center">
+                               
+                                
+                            <figure class="u-sm-avatar mr-2">
+                                <img src="Linea%20Mainnet%20Blockchain%20Explorer_files/icon-2-1.svg" alt="Network Difficulty">
+                            </figure>
+                             
+
+
+                            <div class="media-body">
+                                 <h2 class="font-size-1 text-uppercase text-secondary mb-0">Transactions</h2>
+                                 <a href="https://lineascan.build/txs" class="text-size-1 text-link" rel="tooltip" data-toggle="tooltip" data-placement="left" data-html="true" title="" data-original-title="Total Transactions Counter&lt;br&gt;(Update every 5 mins)">59.26 M</a><span class="text-secondary small" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Transactions per Second"> (3.2 TPS)</span>
+                            </div>
+                            
+                            <div class="text-right" title="GasTracker Estimate for Average Gas">
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Med Gas Price</h2>
+                                <a href="https://lineascan.build/gastracker" class="text-size-1 text-link">2.8 GWEI <span class="text-secondary small">($0.21)</span></a>
+                            </div>
+                            
+                        </div>
+                        
+
+
+                        <hr class="hr-space-lg">
+                      
+                        <div class="media align-items-center">
+                              
+                                 <figure class="u-sm-avatar mr-2">
+                                    <img src="Linea%20Mainnet%20Blockchain%20Explorer_files/icon-51.svg" alt="SVG">
+                                 </figure>
+                              
+
+                            <div class="media-body">
+                              <h2 class="font-size-1 text-uppercase text-secondary mb-0">Latest Block</h2>
+                                <a class="text-size-1 text-link" href="https://lineascan.build/blocks" rel="tooltip" data-placement="bottom" title="The latest Block No"><span id="lastblock">2678057</span></a>
+                                <a data-toggle="tooltip" href="https://lineascan.build/chart/blocktime" class="small text-secondary  text-link" data-placement="right" data-title="Average Block Time (The latest 5000 blocks)" data-original-title="" title="">(<span id="avgblocktime">4.0s</span>)</a>
+                            </div>
+                              
+                            <div class="text-right">
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Latest Batch</h2>
+                                <a class="text-size-1 text-link" href="https://lineascan.build/batches" rel="tooltip" data-placement="bottom" title="Latest Batch No"><span id="lastbatch">405327</span></a>
+                            </div>
+                          
+                             
+                        </div>
+                      
+                        <hr class="d-block d-md-none hr-space-lg">
+                    </div>
+
+                    <div class="col-md-12 col-lg-4 u-ver-divider u-ver-divider--left u-ver-divider--none-lg">
+                        <hr class="d-none d-md-block d-lg-none my-4">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="font-size-1 text-uppercase text-secondary mb-0">Linea Mainnet TRANSACTION HISTORY LAST 14 DAYS</h2>
+                            <div class="position-relative float-right z-index-2">
+                                <a id="customchartsinvoker" class="btn btn-xs btn-icon btn-soft-secondary" href="javascript:;" role="button" aria-controls="customcharts" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#customcharts" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                    <i class="fa fa-ellipsis-v btn-icon__inner"></i>
+                                </a>
+
+                                <div id="customcharts" class="dropdown-menu dropdown-menu-right dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="customchartsinvoker" style="animation-duration: 300ms;">
+                                    <a class="dropdown-item" href="https://lineascan.build/chart/tx">View Detailed Chart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="container-1" class="" style="height: 106px;" data-highcharts-chart="0"><div id="highcharts-11ffw8b-0" style="position: relative; overflow: hidden; width: 416px; height: 106px; text-align: left; line-height: normal; z-index: 0; left: 0.966675px; top: 0.93335px;" dir="ltr" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="416" height="106" viewBox="0 0 416 106"><desc>Created with Highcharts 6.1.4</desc><defs><clipPath id="highcharts-11ffw8b-1"><rect x="0" y="0" width="375" height="74" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="416" height="106" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="31" y="10" width="375" height="74"></rect><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 55.5 10 L 55.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 80.5 10 L 80.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 105.5 10 L 105.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 130.5 10 L 130.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 155.5 10 L 155.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 180.5 10 L 180.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 205.5 10 L 205.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 230.5 10 L 230.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 255.5 10 L 255.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 280.5 10 L 280.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 305.5 10 L 305.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 330.5 10 L 330.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 355.5 10 L 355.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 380.5 10 L 380.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 405.5 10 L 405.5 84" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 30.5 10 L 30.5 84" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 31 84.5 L 406 84.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 31 47.5 L 406 47.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 31 10.5 L 406 10.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="31" y="10" width="375" height="74"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 31 84 L 406 84"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 31 10 L 31 84"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-spline-series " transform="translate(31,10) scale(1 1)" clip-path="url(#highcharts-11ffw8b-1)"><path fill="none" d="M 12.5 64.528592 C 12.5 64.528592 27.5 63.427656999999996 37.5 63.427656999999996 C 47.5 63.427656999999996 52.5 63.816083 62.5 63.816083 C 72.5 63.816083 77.5 63.816083 87.5 61.141723 C 97.5 58.467363 102.5 52.3308094 112.5 49.128526 C 122.5 45.9262426 127.5 47.2226856 137.5 45.130306000000004 C 147.5 43.0379264 152.5 40.64384880000001 162.5 38.666628 C 172.5 36.689407200000005 177.5 36.4225336 187.5 35.244202 C 197.5 34.0658704 202.5 32.921638 212.5 32.77497 C 222.5 32.628302000000005 227.5 32.628302000000005 237.5 32.628302000000005 C 247.5 32.628302000000005 252.5 41.091423 262.5 41.091423 C 272.5 41.091423 277.5 38.734893 287.5 38.734893 C 297.5 38.734893 302.5 47.869009000000005 312.5 47.869009000000005 C 322.5 47.869009000000005 327.5 46.64627000000001 337.5 43.57867400000001 C 347.5 40.51107800000001 362.5 32.531029000000004 362.5 32.531029000000004" class="highcharts-graph" data-z-index="1" stroke="#1e2022" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 2.5 64.528592 L 12.5 64.528592 C 12.5 64.528592 27.5 63.427656999999996 37.5 63.427656999999996 C 47.5 63.427656999999996 52.5 63.816083 62.5 63.816083 C 72.5 63.816083 77.5 63.816083 87.5 61.141723 C 97.5 58.467363 102.5 52.3308094 112.5 49.128526 C 122.5 45.9262426 127.5 47.2226856 137.5 45.130306000000004 C 147.5 43.0379264 152.5 40.64384880000001 162.5 38.666628 C 172.5 36.689407200000005 177.5 36.4225336 187.5 35.244202 C 197.5 34.0658704 202.5 32.921638 212.5 32.77497 C 222.5 32.628302000000005 227.5 32.628302000000005 237.5 32.628302000000005 C 247.5 32.628302000000005 252.5 41.091423 262.5 41.091423 C 272.5 41.091423 277.5 38.734893 287.5 38.734893 C 297.5 38.734893 302.5 47.869009000000005 312.5 47.869009000000005 C 322.5 47.869009000000005 327.5 46.64627000000001 337.5 43.57867400000001 C 347.5 40.51107800000001 362.5 32.531029000000004 362.5 32.531029000000004 L 372.5 32.531029000000004" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="21" visibility="visible" data-z-index="2" class="highcharts-tracker-line" style="cursor:pointer;"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-tracker" transform="translate(31,10) scale(1 1)" style="cursor:pointer;" clip-path="none"></g></g><text x="0" text-anchor="start" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="203" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="43.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="103" opacity="1"><tspan>Feb 17</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 18</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 19</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 20</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 21</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 22</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 23</tspan></text><text x="218.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="103" opacity="1"><tspan>Feb 24</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 25</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 26</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 27</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 28</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 29</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Mar 1</tspan></text><text x="393.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="103" opacity="1"><tspan>Mar 2</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="16" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="88" opacity="1">0</text><text x="16" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="51" opacity="1">1M</text><text x="16" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">2M</text></g></svg></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         
+      <!-- End Stats -->
+    
+
+        <!-- Ads -->
+         
+        <div class="d-block d-lg-none text-center pl-lg-4 pl-xll-5 mb-4">
+         
+            
+            
+        </div>
+         
+        <!-- End Ads -->
+
+      <!-- Lastest Blocks & Transactions -->
+      <div class="row mb-5">
+        <!-- Blocks -->
+        
+        <!-- End Blocks -->
+
+           
+
+        <!-- Transactions -->
+        
+        <!-- End Transactions -->
+
+        <!-- L2 explorers -->
+
+          <!-- Blocks -->
+        <div id="ContentPlaceHolder1_divL2Blocks" class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card h-100">
+            <!-- Card Header -->
+              <div class="card-body p-4">
+                  <h2 class="card-header-title">Latest Blocks</h2>
+
+                  <hr class="hr-space my-4">
+                  <!-- End Card Header -->
+
+                  <div class="js-scrollbar overflow-hidden pr-4 mr-n4 mCustomScrollbar _mCS_1 mCS-autoHide" style="height: 420px; position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                      <div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678057">2678057</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 5 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678057" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">8 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678056">2678056</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 9 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678056" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">12 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678055">2678055</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 13 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678055" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">15 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678054">2678054</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 17 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678054" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">5 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678053">2678053</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 21 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678053" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">9 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678052">2678052</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 25 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678052" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">22 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678051">2678051</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 29 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678051" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">14 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678050">2678050</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 33 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678050" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">12 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678049">2678049</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 37 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678049" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">14 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-sm-4 col-md-5 col-xl-4"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn  btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">BK</span></span></div><div class="media-body text-nowrap"><span class="d-inline-block d-sm-none">Block</span> <a href="https://lineascan.build/block/2678048">2678048</a><span class="d-sm-block small text-secondary ml-1 ml-sm-0"> 41 secs ago</span></div></div></div><div class="col-sm-8 col-md-7 col-xl-8"><div class="d-flex justify-content-between"><div class="text-nowrap"><span class="d-flex flex-wrap align-items-center mb-1 mb-sm-0" style="gap: 0.25rem">Sequenced By  <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x0000000000000000000000000000000000000000">0x0000000000000000000000000000000000000000</a></span><a href="https://lineascan.build/txs?block=2678048" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">9 txns </a> <span class="small text-secondary">in 4 secs</span></div></div></div></div>
+                  </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 252px; max-height: 386px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+             
+               <hr class="hr-space my-4">
+
+              <a class="btn btn-xs btn-block btn-soft-primary" href="https://lineascan.build/blocks">View all blocks</a>
+              </div>
+          </div>
+        </div>
+        <!-- End Blocks -->
+
+          <!-- Transactions -->
+          <div id="ContentPlaceHolder1_divL2Transactions" class="col-lg-4 mb-4 mb-lg-0">
+              <div class="card h-100">
+                  <!-- Card Header -->
+                  <div class="card-body p-4">
+                      <h2 class="card-header-title">Latest Transactions</h2>
+                      <hr class="hr-space my-4">
+                      <div class="js-scrollbar overflow-hidden pr-4 mr-n4 mCustomScrollbar _mCS_2 mCS-autoHide" style="height: 420px; position: relative; overflow: visible;"><div id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                          <div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0xb6aad2c3665b29a2bd9a38a0dedba826c604777ff76aa5a1313e0ec145ae4b34">0xb6aad2c3665b29a2bd9a38a0dedba826c604777ff76aa5a1313e0ec145ae4b34</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x1fe7312aba0e20e4f48289b020cefdd7bdbe2d3f">0x1fe7312aba0e20e4f48289b020cefdd7bdbe2d3f</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0x34be5b8c30ee4fde069dc878989686abe9884470" class="hash-tag hash-tag--xs text-truncate">0x34be5b8c30ee4fde069dc878989686abe9884470</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0x29bbde065ba127991bc29daf0f7ecba36a298ba809e6615a2ab79ea25a3933b8">0x29bbde065ba127991bc29daf0f7ecba36a298ba809e6615a2ab79ea25a3933b8</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xb4ea0900d40afe5d87434eee85d5b91e110dcadb">0xb4ea0900d40afe5d87434eee85d5b91e110dcadb</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0xb86b3e16b6b960fd822849fd4b4861d73805879b" class="hash-tag hash-tag--xs text-truncate">0xb86b3e16b6b960fd822849fd4b4861d73805879b</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>0008 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0x76278bf7bed5d5f2ef0d70c798e5f7c0a25f04b267c4a0fedec2cd4c8568fda8">0x76278bf7bed5d5f2ef0d70c798e5f7c0a25f04b267c4a0fedec2cd4c8568fda8</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xea53c5ca92165f09ae3aef95d02f754fbd423d27">0xea53c5ca92165f09ae3aef95d02f754fbd423d27</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0xb18b7847072117ae863f71f9473d555d601eb537" class="hash-tag hash-tag--xs text-truncate">0xb18b7847072117ae863f71f9473d555d601eb537</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0xd2a93b7d5ea78c0d5fd48ea3a0d9b72ab6acaf60dd1a6c391b342497b6e9e90a">0xd2a93b7d5ea78c0d5fd48ea3a0d9b72ab6acaf60dd1a6c391b342497b6e9e90a</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xfff3896d840b274da401a69a82aa3d2c0e79ac6b">0xfff3896d840b274da401a69a82aa3d2c0e79ac6b</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0x66ccc220543b6832f93c2082edd7be19c21df6c0" class="hash-tag hash-tag--xs text-truncate">0x66ccc220543b6832f93c2082edd7be19c21df6c0</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>0001 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0xc5adff18ee4db2dc86f0a7819f22c44c04277401b5e051e3da8aa52f1f92a0d2">0xc5adff18ee4db2dc86f0a7819f22c44c04277401b5e051e3da8aa52f1f92a0d2</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x2a0cfd6c559e0565a01873fe91e554037a970e63">0x2a0cfd6c559e0565a01873fe91e554037a970e63</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0xb86b3e16b6b960fd822849fd4b4861d73805879b" class="hash-tag hash-tag--xs text-truncate">0xb86b3e16b6b960fd822849fd4b4861d73805879b</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>0008 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0x72835830106edb29b57389329d6b82dcaa781dfd5ec0186a8ea74a957afeae92">0x72835830106edb29b57389329d6b82dcaa781dfd5ec0186a8ea74a957afeae92</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xd3d7dbe73bbdd5a5c7a49ca322763c4d400fc240">0xd3d7dbe73bbdd5a5c7a49ca322763c4d400fc240</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0x3e087c14311871e97e0a13fe38e6a367577cc80d" class="hash-tag hash-tag--xs text-truncate">0x3e087c14311871e97e0a13fe38e6a367577cc80d</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>0138 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0x613b66ba6783b31845b4371c62856d6d2161b738475a979a416b0a466c1a4099">0x613b66ba6783b31845b4371c62856d6d2161b738475a979a416b0a466c1a4099</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xcadee12338068cb14d7fac71e5fab64a33d0323f">0xcadee12338068cb14d7fac71e5fab64a33d0323f</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0xcf97adebad696781e6b75280ba11040a1a20c27a" class="hash-tag hash-tag--xs text-truncate">0xcf97adebad696781e6b75280ba11040a1a20c27a</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0x04fdb629bf879d5a6f108fe7e311421d08318711e9f2f51a9cccc620e88a32d5">0x04fdb629bf879d5a6f108fe7e311421d08318711e9f2f51a9cccc620e88a32d5</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xc33f816c1ee804994361c5fe3b7f87ec46201cb1">0xc33f816c1ee804994361c5fe3b7f87ec46201cb1</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0xcf97adebad696781e6b75280ba11040a1a20c27a" class="hash-tag hash-tag--xs text-truncate">0xcf97adebad696781e6b75280ba11040a1a20c27a</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">5 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0xad006776c5d63b575cd1d3687a8c8c1e1513a926128d47b2f4ca3524004d9715">0xad006776c5d63b575cd1d3687a8c8c1e1513a926128d47b2f4ca3524004d9715</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0xb116eae1b2efc137f38fe3afa3a2b08e87460d43">0xb116eae1b2efc137f38fe3afa3a2b08e87460d43</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0x0332fce92897679e97620a097aa515f5d7cf4034" class="hash-tag hash-tag--xs text-truncate">0x0332fce92897679e97620a097aa515f5d7cf4034</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">9 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>0005 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://lineascan.build/tx/0x783b30240631cdd987ad0de92da9f2137a673ac9387748a63416368eae6aed67">0x783b30240631cdd987ad0de92da9f2137a673ac9387748a63416368eae6aed67</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate" href="https://lineascan.build/address/0x401eb34fb48176ebaa88f56597f6c7ac68abc740">0x401eb34fb48176ebaa88f56597f6c7ac68abc740</a></span><span class="d-sm-block">To <a href="https://lineascan.build/address/0x80e38291e06339d10aab483c65695d004dbd5c69" class="hash-tag hash-tag--xs text-truncate">0x80e38291e06339d10aab483c65695d004dbd5c69</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">9 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>04986 ETH</span></div></div></div></div></div>
+                      </div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 180px; max-height: 386px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+                      <hr class="hr-space my-4">
+                      <a class="btn btn-xs btn-block btn-soft-primary" href="https://lineascan.build/txs">View all transactions</a>
+                  </div>
+              </div>
+          </div>
+          <!-- End Transaction -->
+
+          <!-- L1 Transactions -->
+          
+          <!-- End L1 Transactions -->
+
+          <!-- Transactions -->
+          <div id="ContentPlaceHolder1_divEnqueuedTransactions" class="col-lg-4">
+              <div class="card h-100">
+                  <!-- Card Header -->
+                  <div class="card-body p-4">
+                      <h2 class="card-header-title" data-toggle="tooltip" data-placement="top" data-title="Latest Transactions submitted from L1 to L2" data-original-title="" title="">Latest L1→L2 Transactions</h2>
+                      <hr class="hr-space my-4">
+                      <div class="js-scrollbar overflow-hidden pr-4 mr-n4 mCustomScrollbar _mCS_3 mCS-autoHide" style="height: 420px; position: relative; overflow: visible;"><div id="mCSB_3" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                          <div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362479" class="hash-tag hash-tag--md text-truncate" target="_blank">19362479</a><a class="ml-1" href="https://etherscan.io/block/19362479" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x23db803f938427599b67391d6a7aaa4777aae7291e7fd43079c42036f60c73b0" target="_blank">0x23db803f938427599b67391d6a7aaa4777aae7291e7fd43079c42036f60c73b0</a><a class="mr-1" href="https://etherscan.io/tx/0x23db803f938427599b67391d6a7aaa4777aae7291e7fd43079c42036f60c73b0" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x19739c83e0f9bdd35cb662001764f9a700944de0b83cdfccbdd68f02ce97589f" class="hash-tag hash-tag--xs text-truncate">0x19739c83e0f9bdd35cb662001764f9a700944de0b83cdfccbdd68f02ce97589f</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362471" class="hash-tag hash-tag--md text-truncate" target="_blank">19362471</a><a class="ml-1" href="https://etherscan.io/block/19362471" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x6c40de988261d0a2b914ed6c4bb1269db37123c6b622624d052646e0afb8c791" target="_blank">0x6c40de988261d0a2b914ed6c4bb1269db37123c6b622624d052646e0afb8c791</a><a class="mr-1" href="https://etherscan.io/tx/0x6c40de988261d0a2b914ed6c4bb1269db37123c6b622624d052646e0afb8c791" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x1ac46d84ecef2fddf156e779b9a4dea42a968edc5fd982c92fa597ba9881f151" class="hash-tag hash-tag--xs text-truncate">0x1ac46d84ecef2fddf156e779b9a4dea42a968edc5fd982c92fa597ba9881f151</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362353" class="hash-tag hash-tag--md text-truncate" target="_blank">19362353</a><a class="ml-1" href="https://etherscan.io/block/19362353" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x95348db62d12226afa79ed8a5254e3f4d22858600275cb832fbdd7b746738e77" target="_blank">0x95348db62d12226afa79ed8a5254e3f4d22858600275cb832fbdd7b746738e77</a><a class="mr-1" href="https://etherscan.io/tx/0x95348db62d12226afa79ed8a5254e3f4d22858600275cb832fbdd7b746738e77" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0xa2f9d58b290043346801938e478af807e0bb17b80100b321e658970d2857bcfb" class="hash-tag hash-tag--xs text-truncate">0xa2f9d58b290043346801938e478af807e0bb17b80100b321e658970d2857bcfb</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362341" class="hash-tag hash-tag--md text-truncate" target="_blank">19362341</a><a class="ml-1" href="https://etherscan.io/block/19362341" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x3b5c0985023f332dfabd9c94e16159a936af4bd6fe0b9883363fccd076af7e44" target="_blank">0x3b5c0985023f332dfabd9c94e16159a936af4bd6fe0b9883363fccd076af7e44</a><a class="mr-1" href="https://etherscan.io/tx/0x3b5c0985023f332dfabd9c94e16159a936af4bd6fe0b9883363fccd076af7e44" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0xf8c98335970b02a742f7cb8e026c5c518c1cb75308de5b8e7279f60185a7417d" class="hash-tag hash-tag--xs text-truncate">0xf8c98335970b02a742f7cb8e026c5c518c1cb75308de5b8e7279f60185a7417d</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362221" class="hash-tag hash-tag--md text-truncate" target="_blank">19362221</a><a class="ml-1" href="https://etherscan.io/block/19362221" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x5bdeaf1a20d7c0c9fb973a2a9fe6dd2bf67580886459dbfb03996de9e006c248" target="_blank">0x5bdeaf1a20d7c0c9fb973a2a9fe6dd2bf67580886459dbfb03996de9e006c248</a><a class="mr-1" href="https://etherscan.io/tx/0x5bdeaf1a20d7c0c9fb973a2a9fe6dd2bf67580886459dbfb03996de9e006c248" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0xbb1b4ac2a56399bdfa6e1bc90ceab3408cdcfb1c1e91a2879af5bbcd0004c0d2" class="hash-tag hash-tag--xs text-truncate">0xbb1b4ac2a56399bdfa6e1bc90ceab3408cdcfb1c1e91a2879af5bbcd0004c0d2</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362192" class="hash-tag hash-tag--md text-truncate" target="_blank">19362192</a><a class="ml-1" href="https://etherscan.io/block/19362192" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0xf6e2f4d4709a12b804ed0d9109c62a062b758b2f8f157ddedc0e2a31c534c33b" target="_blank">0xf6e2f4d4709a12b804ed0d9109c62a062b758b2f8f157ddedc0e2a31c534c33b</a><a class="mr-1" href="https://etherscan.io/tx/0xf6e2f4d4709a12b804ed0d9109c62a062b758b2f8f157ddedc0e2a31c534c33b" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x9d4856436421dc3707a83eaae7f0ff2aa3c2fe66cfca1dd46c493a438bbb9dd0" class="hash-tag hash-tag--xs text-truncate">0x9d4856436421dc3707a83eaae7f0ff2aa3c2fe66cfca1dd46c493a438bbb9dd0</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362191" class="hash-tag hash-tag--md text-truncate" target="_blank">19362191</a><a class="ml-1" href="https://etherscan.io/block/19362191" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x404a26b830d5e2a3a09e66af25ee63d852558c8b8dc2ded4be76268a516b8d54" target="_blank">0x404a26b830d5e2a3a09e66af25ee63d852558c8b8dc2ded4be76268a516b8d54</a><a class="mr-1" href="https://etherscan.io/tx/0x404a26b830d5e2a3a09e66af25ee63d852558c8b8dc2ded4be76268a516b8d54" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x3f9b9a0c8ab5cbeb2c8d54b3f0cee4355c7c329855188d7ee797b1c69bdb9a7e" class="hash-tag hash-tag--xs text-truncate">0x3f9b9a0c8ab5cbeb2c8d54b3f0cee4355c7c329855188d7ee797b1c69bdb9a7e</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362188" class="hash-tag hash-tag--md text-truncate" target="_blank">19362188</a><a class="ml-1" href="https://etherscan.io/block/19362188" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x2f6d81230a541071aabbf96077ea99d63027bd049bbea39b3d45b731cbc588fb" target="_blank">0x2f6d81230a541071aabbf96077ea99d63027bd049bbea39b3d45b731cbc588fb</a><a class="mr-1" href="https://etherscan.io/tx/0x2f6d81230a541071aabbf96077ea99d63027bd049bbea39b3d45b731cbc588fb" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x637221d46faaec114b81111843b49dde39b8c9e0bfda3e923912cad59eea1376" class="hash-tag hash-tag--xs text-truncate">0x637221d46faaec114b81111843b49dde39b8c9e0bfda3e923912cad59eea1376</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362104" class="hash-tag hash-tag--md text-truncate" target="_blank">19362104</a><a class="ml-1" href="https://etherscan.io/block/19362104" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x25b50a4172a89147ab99d88fea6c6e68d372ad22f924423dd75302146ba44c1d" target="_blank">0x25b50a4172a89147ab99d88fea6c6e68d372ad22f924423dd75302146ba44c1d</a><a class="mr-1" href="https://etherscan.io/tx/0x25b50a4172a89147ab99d88fea6c6e68d372ad22f924423dd75302146ba44c1d" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x2d90a52cb52d1edf2200708899e0a36cf012d6ef3d951910b1c37704b19fb73c" class="hash-tag hash-tag--xs text-truncate">0x2d90a52cb52d1edf2200708899e0a36cf012d6ef3d951910b1c37704b19fb73c</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19362069" class="hash-tag hash-tag--md text-truncate" target="_blank">19362069</a><a class="ml-1" href="https://etherscan.io/block/19362069" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0xcfb94883a7087cfeabfaa36d80f32a298cb3e6487024ccb1f46beb8d833defe4" target="_blank">0xcfb94883a7087cfeabfaa36d80f32a298cb3e6487024ccb1f46beb8d833defe4</a><a class="mr-1" href="https://etherscan.io/tx/0xcfb94883a7087cfeabfaa36d80f32a298cb3e6487024ccb1f46beb8d833defe4" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://lineascan.build/tx/0x5393d2c7df666384a1ccc4ca11d50237c5708bc05f213aed32c343e1d82e80fa" class="hash-tag hash-tag--xs text-truncate">0x5393d2c7df666384a1ccc4ca11d50237c5708bc05f213aed32c343e1d82e80fa</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div>
+                      </div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 243px; max-height: 386px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+                      <hr class="hr-space my-4">
+                      <a class="btn btn-xs btn-block btn-soft-primary" href="https://lineascan.build/txsDeposits">View all L1→L2 transactions</a>
+                  </div>
+              </div>
+          </div>
+        <!-- End Transactions -->
+
+       <!-- End L2 Explorers -->
+
+      </div>
+      <!-- End Lastest Blocks & Transactions -->
+
+    </div>
+  
+   
+
+
+        
+        
+
+
+        </main>
+        <div id="push"></div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <footer class="bg-dark py-4">
+                <div class="container">
+                    <div class="row justify-content-sm-between align-items-center">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="d-flex align-items-center">
+                                
+                                <img width="25" src="Linea%20Mainnet%20Blockchain%20Explorer_files/main.svg" alt="Logo">
+                                
+
+                                <span class="h5 text-white mb-0 ml-3">Powered By Linea</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 align-self-bottom">
+                            <!-- Preferences -->
+                            <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                <span>
+                                    <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                        <img class="mr-1" width="15" src="Linea%20Mainnet%20Blockchain%20Explorer_files/metamask.svg" alt="Metamask">
+                                        Add Linea Mainnet Network
+                                    </button>
+                                </span>
+
+                                <a class="btn btn-xss btn-soft-light mr-2" href="https://lineascan.build/settings">
+                                    <i class="fa fa-cogs mr-1"></i>Preferences
+                                </a>
+
+                                <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                    <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                            </div>
+                            <!-- End Preferences -->
+                        </div>
+                    </div>
+                    <!-- End Fotoer Content -->
+
+
+
+                    
+                    <hr class="opacity-md">
+                    <div class="row justify-content-between align-items-center font-size-1">
+                        <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                            <p class="mb-0 text-white">
+                                LineaScan © 2024  (Linea-A1)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>  <span class="mx-1">|</span> <a class="text-white-70" href="https://lineascan.build/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i> 
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://lineascan.build/terms">Terms of Service</a> </li> <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://lineascan.statuspage.io/">Network Status</a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://lineascan.build/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us"> <i class="far fa-envelope btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/LineaScan" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"> <i class="fab fa-twitter btn-icon__inner"></i> </a> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: block;">
+                <div class="alert alert-light border shadow p-3" role="alert">
+                    <div class="d-md-flex justify-content-center align-items-center">
+                        <span>
+                            <p class="text-dark mr-3 mb-2 mb-md-0">
+                                <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href="https://lineascan.build/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="https://lineascan.build/terms" target="_blank">Terms</a> and <a href="https://lineascan.build/privacyPolicy">Privacy Policy</a>.
+                            </p>
+                        </span>
+                        <div>
+                            <button id="btnCookie" class="btn btn-sm btn-primary text-nowrap py-1" data-dismiss="alert" aria-label="Close">Got It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+                <span class="fa fa-arrow-up u-go-to__inner"></span>
+            </a>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery-ui.min.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery-migrate.min.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/popper.min.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/bootstrap.min.js"></script>
+
+
+
+            <!-- JS Implementing Plugins -->
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.megamenu.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/jquery.cubeportfolio.min.js"></script>
+
+
+            <!-- JS Front -->
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.core.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.header.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.unfold.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.malihu-scrollbar.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.focus-state.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.go-to.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/hs.cubeportfolio.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/combine-js-bottom2.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script>
+                $(window).on('load', function () {
+                    // initialization of HSMegaMenu component
+                    $('.js-mega-menu').HSMegaMenu({
+                        event: 'hover',
+                        pageContainer: $('.container'),
+                        breakpoint: 767.98,
+                        hideTimeOut: 0
+                    });
+                    myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+                });
+
+                $(document).on('ready', function () {
+                    // initialization of header
+                    $.HSCore.components.HSHeader.init($('#header'));
+
+                    // initialization of unfold component
+                    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                        afterOpen: function () {
+                            $(this).find('input[type="search"]').focus();
+                        }
+                    });
+
+                    // initialization of malihu scrollbar
+                    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+                    // initialization of focus state
+                    $.HSCore.components.HSFocusState.init();
+
+                    // initialization of go to
+                    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+                    // initialization of cubeportfolio
+                    //$.HSCore.components.HSCubeportfolio.init('.cbp');
+                });
+            </script>
+            <script type="text/javascript">
+                var sid = '8df3ee04604b3c5bc4d93d3b0c1adb12';
+                var strGlobal = sessionStorage.getItem("ShowAs");
+                var strGlobalFee = sessionStorage.getItem("ShowFee");
+                var siteVar = 'LineaScan';
+                var cookieconsent = getCookie(siteVar + "_cookieconsent");
+                if (cookieconsent !== "True") {
+                    document.getElementById("divcookie").style.display = "block";
+                };
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) === 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+                $("#btnCookie").click(function () {
+                    $("#divcookie").fadeOut("slow", function () {
+                        var d = new Date();
+                        d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = siteVar + "_cookieconsent=True" + ";" + expires + ";path=/";;
+                    });
+                });
+                function handleSearchText(data) {
+                    searchAddress = false;
+                    if ($("txtSearchInput").val() == "") {
+                        $("#hdnSearchText").val("");
+                    }
+                }
+            </script>
+            
+
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/web3-utils.min.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/web3-eth.min.js"></script>
+            <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/web3-providers-http.min.js"></script>
+            <script type="text/javascript">
+                var eth;
+                var isTestnet = 'false';
+                var SiteNetID = '59144';
+                var SiteNetChainID = '0xE708';
+                var SiteNetName = 'Linea';
+                var SiteName = 'LineaScan';
+                var SiteErc20 = 'ERC20';
+                var SiteErc721 = 'ERC721';
+                var SiteErc1155 = 'ERC1155';
+                var sv = '24.2.3.0';
+                var slt = 'svg';
+                var allowErc1155 = 'True';
+
+                async function addNetwork(type) {
+
+                    if (type === 'web3') {
+                        if (typeof ethereum !== 'undefined') {
+                            eth = new Web3Eth(ethereum);
+                        } else if (typeof web3 !== 'undefined') {
+                            eth = new Web3Eth(web3.givenProvider);
+                        } else {
+                            eth = new Web3Eth(ethereum);
+                        }
+                    }
+
+                    if (typeof eth !== 'undefined') {
+                        var network = 0;
+                        network = await eth.getChainId();
+                        netID = network.toString();
+                        var params;
+                        if (netID == SiteNetID) {
+                            alert("Linea Mainnet Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: SiteNetChainID,
+                                chainName: 'Linea',
+                                nativeCurrency: {
+                                    name: 'ETH',
+                            symbol: 'ETH',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.linea.build'],
+                                blockExplorerUrls: ['https://lineascan.build']
+                            }]
+                        }
+
+                        window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                            .then(() => console.log('Success'))
+                            .catch((error) => console.log("Error", error.message));
+                    } else {
+                        alert('Unable to locate a compatible web3 browser!');
+                    }
+                }
+            </script>
+
+            
+
+    <script src="Linea%20Mainnet%20Blockchain%20Explorer_files/highcharts.js"></script>
+
+    <script>
+        var lang_miner = "Sequencer";
+        var lang_mined_by = "Sequenced By";
+        var lang_block = "Block";
+        var lang_block_reward = "Block Reward";
+        var lang_sec = "sec";
+        var lang_secs = "secs";
+        var lang_min = "min";
+        var lang_mins = "mins";
+        var lang_from = "From";
+        var lang_to = "To";
+        var lang_amount = "Amount";
+        var lang_tx = "TX";
+        var lang_bk = "BK";
+        var lang_ether = "ETH";
+        var lang_txns = "txns";
+        var lang_in_X = "in";
+        var lang_ago = "ago";
+        var lang_secs_ago = "secs ago";
+        var lang_sec_ago = "sec ago";
+        var lang_sec_in = "";
+        var lang_hash = "Hash";
+        var lang_c = "LINEA";
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#container-1').highcharts({
+                chart: {
+                    spacingTop: 10,
+                    spacingBottom: 0,
+                    spacingLeft: 0,
+                    spacingRight: 10,
+                },
+
+                title: {
+                    text: '',
+                    align: 'left',
+                },
+
+                xAxis: {
+                    title: { text: '' },
+                    lineWidth: 0,
+                    minorTickLength: 0,
+                    tickLength: 0,
+                    labels: {
+                        step: 7,
+                    },
+                    categories: [
+                        'Feb 17','Feb 18','Feb 19','Feb 20','Feb 21','Feb 22','Feb 23','Feb 24','Feb 25','Feb 26','Feb 27','Feb 28','Feb 29','Mar 1','Mar 2',
+                    ]
+                },
+
+                yAxis: {
+                    labels: {
+                        enabled: true
+                    },
+                    gridLineWidth: 0,
+                    title: {
+                        text: null
+                    }
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                credits: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '<span style="font-size:10px">' + this.point.friendlydate + '</span><br><table><tr><td style="padding:0">' +
+                            '<span style="color:' + this.series.color + '">Transactions: </a></span><b>' + this.point.formattedValue + '</b><br>' +
+                            
+                            '</td></tr></table>';
+                    }
+                },
+
+                plotOptions: {
+                    series: {
+                        color: '#1e2022',
+                        enableMouseTracking: true,
+                        lineWidth: 1,
+                        shadow: false,
+                        animation: false,
+                        cursor: 'pointer',
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        marker: {
+                            radius: 0
+                        },
+                        point: {
+                            events: {
+                                select: function (e) {
+                                    location.href = 'txs?dt=' + this.options.dt;
+                                }
+                            }
+                        }
+                    },
+                    column: {
+                        pointPadding: 0.1,
+                        borderWidth: 0
+                    }
+                },
+
+                series: [{
+                    name: 'Transactions',
+                    type: 'spline',
+                    data: [{y : 255984, dt : '1708128000', formattedValue : '255,984', friendlydate : 'Saturday, February 17, 2024', price : '$2,787.00'  },{y : 285739, dt : '1708214400', formattedValue : '285,739', friendlydate : 'Sunday, February 18, 2024', price : '$2,881.40'  },{y : 275241, dt : '1708300800', formattedValue : '275,241', friendlydate : 'Monday, February 19, 2024', price : '$2,945.00'  },{y : 347521, dt : '1708387200', formattedValue : '347,521', friendlydate : 'Tuesday, February 20, 2024', price : '$3,015.27'  },{y : 672202, dt : '1708473600', formattedValue : '672,202', friendlydate : 'Wednesday, February 21, 2024', price : '$2,968.67'  },{y : 780262, dt : '1708560000', formattedValue : '780,262', friendlydate : 'Thursday, February 22, 2024', price : '$2,969.67'  },{y : 954956, dt : '1708646400', formattedValue : '954,956', friendlydate : 'Friday, February 23, 2024', price : '$2,922.10'  },{y : 1047454, dt : '1708732800', formattedValue : '1,047,454', friendlydate : 'Saturday, February 24, 2024', price : '$2,992.35'  },{y : 1114190, dt : '1708819200', formattedValue : '1,114,190', friendlydate : 'Sunday, February 25, 2024', price : '$3,112.81'  },{y : 1118154, dt : '1708905600', formattedValue : '1,118,154', friendlydate : 'Monday, February 26, 2024', price : '$3,178.24'  },{y : 889421, dt : '1708992000', formattedValue : '889,421', friendlydate : 'Tuesday, February 27, 2024', price : '$3,243.69'  },{y : 953111, dt : '1709078400', formattedValue : '953,111', friendlydate : 'Wednesday, February 28, 2024', price : '$3,386.34'  },{y : 706243, dt : '1709164800', formattedValue : '706,243', friendlydate : 'Thursday, February 29, 2024', price : '$3,342.24'  },{y : 822198, dt : '1709251200', formattedValue : '822,198', friendlydate : 'Friday, March 1, 2024', price : '$3,435.90'  },{y : 1120783, dt : '1709337600', formattedValue : '1,120,783', friendlydate : 'Saturday, March 2, 2024', price : '$3,423.65'  },],
+                    allowPointSelect: true,
+                    pointStart: 0
+                }]
+            });
+        });
+    </script>
+
+     
+    <script type="text/javascript">
+
+        //function setFocus() {
+        //    if (window.innerWidth > 600)
+        //        $("input[name=q]").focus();
+        //}
+        //$(document).ready(function () {
+        //    setFocus();
+        //});
+    </script>
+    
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
