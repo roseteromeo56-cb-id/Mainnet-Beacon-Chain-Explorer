@@ -1,0 +1,853 @@
+
+
+<!doctype html>
+<html lang="en">
+<head><title>
+	BaseScan State Batches | Base
+</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content=basescan.org>
+    <meta name="keywords" content="ethereum, explorer, ether, L2, search, blockchain, crypto, currency" /><meta name="format-detection" content="telephone=no" />
+   <meta name="Description" content="Base allows you to explore and search the Base Network for transactions, addresses, tokens, prices and other activities taking place on the Base Network" /> <meta name="author" content="basescan.org" /> <meta name="keywords" content="Base, explorer, search, blockchain, crypto, currency" /> <meta property="og:title" content="BaseScan State Batches | Base" /> <meta property="og:description" content="State batches that are included in the Ethereum blockchain." /> <meta property="og:type" content="website" /> <meta property="og:site_name" content="Base Explorer" /> <meta property="og:url" content="http://basescan.org/statebatches" /> <meta property="og:image" content="https://basescan.org/images/brandassets/logo.jpg?v=24.2.1.1" /> <meta property="og:image:alt" content="Visit basescan.org" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:site" content="@BaseScan" /> <meta name="twitter:title" content="BaseScan State Batches | Base" /> <meta property="twitter:description" content="State batches that are included in the Ethereum blockchain." /> <meta property="twitter:image" content="https://basescan.org/images/brandassets/logo.jpg?v=24.2.1.1" /> 
+
+    <link rel="shortcut icon" href="/images/favicon.ico?v=24.2.1.1">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWEL8GRQ12"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+        gtag('config','G-TWEL8GRQ12', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+        //Search box text ad
+        var availableAd = [];
+        var gotAd = [];
+
+        
+        availableAd = [];
+        gotAd = [ "ShowAds					" ];
+        
+    </script>
+
+    <!-- Google Fonts -->
+    
+    
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/fontawesome-all.min.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/vendor/hs-megamenu/src/hs.megamenu.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css?v=24.2.1.1">
+    
+    <link rel="stylesheet" href="/assets/vendor/select2/dist/css/select2.min.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/css/theme.min.css?v=24.2.1.1"> 
+    <link rel="stylesheet" href="/assets/css/custom.css?v=24.2.1.1">    
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js?v=24.2.1.1"></script>     
+    <script type="text/javascript" src="/jss/blockies.js?v=24.2.1.1"></script>
+
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+        body.dark-mode .ui-state-active {
+          background-color: #132a47;
+          border-color: #18365b;
+        }
+        .autolink-safari a{
+            pointer-events: none !important;
+            text-decoration:none !important; 
+            color:inherit !important;
+        }
+    </style>
+
+    
+   
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/datatables/datatables.min.css?v=24.2.1.1" />
+    <style>
+        .dataTable > thead > tr > th[class*="sort"]:before,
+        .dataTable > thead > tr > th[class*="sort"]:after {
+            content: "" !important;
+        }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .tooltip-inner {
+            max-width: 290px;            
+        }
+    </style>
+<meta name="description" content="State batches that are included in the Ethereum blockchain." /></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header ">
+            <div class="u-header__section  ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand  pt-md-0" href="/" target="_parent" aria-label="Etherscan">
+                                <img id="logo-header" width="140" src="/images/logo-ether.svg?v=0.0.7" alt="Site Logo">     
+                                 
+                            </a>
+                          
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">Eth: $3,593.31</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours"><span class='text-success'> (+3.29%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger"
+                                aria-label="Toggle navigation"
+                                aria-expanded="false"
+                                aria-controls="navBar"
+                                data-toggle="collapse"
+                                data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        
+                                            <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+                                        
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu  u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px;">
+                                            <li id="LI12"><a href="/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI41"><a href="/txsEnqueued" class="nav-link u-header__sub-menu-nav-link">Latest L1→L2 Transactions</a></li>
+                                            <li id="LI66"><a href="/txsExit" class="nav-link u-header__sub-menu-nav-link">Latest L2→L1 Transactions</a></li>
+                                            
+                                            <li id="LI14"><a href="/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                            <li id="LI_batches">
+                                                <a id="navBatches" class="nav-link u-header__sub-menu-nav-link" href="/batches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View L1 Transaction Batches</a></li>
+                                            <li id="LI_statebatches" class=" active">
+                                                <a id="navStateBatch" class="nav-link u-header__sub-menu-nav-link" href="/statebatches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View L1 State Batches</a></li>
+                                            
+                                            
+                                            <li class="dropdown-divider"></li>                                            
+                                            <li id="LI_accountall"><a href="/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="tokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="tokensSubMenu">Tokens</a>
+
+                                        <!-- Tokens - Submenu -->
+                                        <ul id="tokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="tokensMegaMenu" style="min-width: 230px;">
+                                            <li id="LI21"><a class="nav-link u-header__sub-menu-nav-link" href="/tokens">ERC20 Top Tokens</a></li>
+                                            <li id="LI1"><a class="nav-link u-header__sub-menu-nav-link" href="/tokentxns">View ERC20 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="/charts">Charts &amp;  Stats</a></li>
+                                            
+                                            
+                                                                                
+                                        </ul>
+                                    </li>
+                                    <li id="LI_services2" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+                                         <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu">
+                                            <div class="row u-header__mega-menu-wrapper">
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Developers</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">
+                                                        <li id="LI_BASE_MAINNET_Docs"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.basescan.org/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                        <li id="LI17"><a class="nav-link u-header__sub-menu-nav-link" href="/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                        <li id="LI24"><a class="nav-link u-header__sub-menu-nav-link" href="/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                        <li id="LI54"><a class="nav-link u-header__sub-menu-nav-link" href="/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker<sup><span class="badge badge-success font-size-default ml-1">New</span></sup></a></li>
+                                                        <li id="LI27"><a class="nav-link u-header__sub-menu-nav-link" href="/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Tools</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">   
+                                                       <li id="LI2"><a class="nav-link u-header__sub-menu-nav-link" href="/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>                       
+                                                       <li id="LI22"><a class="nav-link u-header__sub-menu-nav-link" href="/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+
+                                                        <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="/advanced-filter"><i class="fa fa-angle-right small mr-1"></i>Advanced Filter <sup><span class='badge badge-secondary ml-1'>Beta</span></sup></a></li>
+                                                        <li id="LI5"><a class="nav-link u-header__sub-menu-nav-link" href="/exportDataMain"><i class="fa fa-angle-right small mr-1"></i>Export Data</a></li>
+                                                       <li id="LI9"><a class="nav-link u-header__sub-menu-nav-link" href="/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class='badge badge-secondary font-size-default ml-1'> Beta</span></sup></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+                                            
+                                                <span class="btn btn-sm btn-icon btn-soft-primary cursor-pointer d-none d-md-inline-block">
+                                                    <img id ="logo-header-icon" img class="u-xs-avatar btn-icon__inner" src="/images/logo-symbol.svg" alt="Logo">
+                                                </span>
+
+                                            
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut" aria-labelledby="explorersWithDropdown" style="min-width: 170px; display: none;">
+                                            <li id="LI_Mainnet_Base"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/">Base Mainnet</a></li>
+
+                                                <li id="LI_Sepolia_Base"><a class="nav-link u-header__sub-menu-nav-link" href="https://sepolia.basescan.org/">Base Sepolia</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-60 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">                                
+                                        <div class="input-group input-group-sm">
+                                            <div class="input-group-prepend d-none d-md-block">
+                                                <!-- Select -->
+                                                 <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">
+                                                    <option selected value="0">All Filters</option>
+                                                    <option value="1">Addresses</option>
+                                                    <option value="2">Tokens</option>
+                                                    
+                                                    <option value="5">Websites</option>
+                                                </select>
+                                                <!-- End Select -->
+                                            </div>
+                                            <input type="text" class="form-control searchautocomplete" autocomplete="off" spellcheck="false" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Batch / Token" aria-label="Search by Address / Txhash / Batch / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" maxlength="68">
+                                            <input type="hidden" value="" id="hdnSearchText" />
+                                            <input type="hidden" value="" id="hdnSearchLabel" />
+                                            <input id="hdnIsTestNet" value="False" type="hidden" />
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit">
+                                                    <span class="fas fa-search"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                </form>
+                            
+</div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content"  role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age" />
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)" />
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format" />
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format" />
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee" />
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price" />
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas) in ETH" />
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei" />
+            
+
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center py-3">
+            <div class="mb-1 mb-md-0">
+                <h1 class="h4 font-weight-normal mb-0">State Batches&nbsp;<span class="small text-secondary"></span>
+                    <p class="mb-0 text-break small">
+                        <span class="small text-secondary"></span>
+                    </p>
+                </h1>
+            </div>
+            
+        </div>
+                
+    </div>
+    
+    
+    <!-- Ads -->
+    <div class="container">
+        <div class="border-top py-3">
+            <div class="d-flex text-secondary" style="line-height: 2.2;">
+                <span id="ContentPlaceHolder1_lblAdResult"><!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.0.5 --><ins data-revive-zoneid='2' data-revive-id='94930f9d02164723d814eabe9168eb46'></ins><script Async src='//abt-optimistic.etherscan.io/www/d/asyncjses.php?v=0.01'></script></span>&nbsp;
+            </div>
+        </div>
+    </div>
+    
+    <!--<div class="container border-top py-4"> 
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+         <!-- Testnet Banner -->
+         <!--<ins class="adsbygoogle"
+             style="display: block"
+             data-ad-client="ca-pub-9365010058051645"
+             data-ad-slot="4376794054"
+             data-ad-format="horizontal"></ins>
+         <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+
+
+    </div>-->
+    
+
+    <div class="container space-bottom-2">
+
+        
+        
+
+        <div class="card">
+            
+            <div class="card-body">
+                <div id="ContentPlaceHolder1_topPageDiv" class="d-md-flex justify-content-between mb-4">
+                    <p class="mb-2 mb-md-0"><i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse mr-1" style="display: none;"></i>
+                        State Batch  #6307 to  #6331 (Total of 6,340 batches)
+                        
+                    </p>                   
+                    
+                    <nav aria-label="page navigation">
+                         <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link" >First</span></li><li class="page-item disabled"><span class="page-link" ><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li Class="page-item disabled"><span Class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">254</strong></span></li><li class="page-item" data-toggle='tooltip' title="Go to Next"><a class="page-link" href="statebatches?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="statebatches?p=254"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                    </nav>
+                </div>
+                 
+                <div class="table-responsive mb-2 mb-md-0">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Index</th>
+                                <th scope="col">L1 Status</th>
+                                <th scope="col">L1 Block</th>
+                                
+                                <th scope="col">L1 Txn Hash</th>
+                                <th scope="col">Output Root</th>
+                                <th scope="col"><a href="javascript:;" onclick="switchAgeToDateTime(this)" id="lnkAgeDateTime"></a></th>
+                                <th scope="col">Canonical</th>
+                                <th scope="col">Txn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href='/statebatch/6331?isbedrock=true'>6331</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19364312' target='_blank'>19364312<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x0a2eb50c7fee4cd35d203e99a8198532fde5e5bf2aaa1291be0faf96c513c130' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x0a2eb50c7fee4cd35d203e99a8198532fde5e5bf2aaa1291be0faf96c513c130' target='_blank'>0x0a2eb50c7fee4cd35d203e99a8198532fde5e5bf2aaa1291be0faf96c513c130</a><a href='https://etherscan.io/tx/0x0a2eb50c7fee4cd35d203e99a8198532fde5e5bf2aaa1291be0faf96c513c130' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x78f072322a85ed521a28bbe65e33f0757dbe1b2459b5229597f683b8a08e84b0'>0x78f072322a85ed521a28bbe65e33f0757dbe1b2459b5229597f683b8a08e84b0</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='11 mins ago'>2024-03-04 20:52:47</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 20:52:47'>11 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6331&isbedrock=true'>17464</a></td></tr><tr><td><a href='/statebatch/6330?isbedrock=true'>6330</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19364023' target='_blank'>19364023<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x159f1fff40e1e6f21760a8445f05621af04a82ba330be4f0d324cf3e0eb7fbe7' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x159f1fff40e1e6f21760a8445f05621af04a82ba330be4f0d324cf3e0eb7fbe7' target='_blank'>0x159f1fff40e1e6f21760a8445f05621af04a82ba330be4f0d324cf3e0eb7fbe7</a><a href='https://etherscan.io/tx/0x159f1fff40e1e6f21760a8445f05621af04a82ba330be4f0d324cf3e0eb7fbe7' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xc7613b79bea8f94d742703a34443dec5be459159ea538bbe48628a94232e2f6f'>0xc7613b79bea8f94d742703a34443dec5be459159ea538bbe48628a94232e2f6f</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='1 hr 9 mins ago'>2024-03-04 19:54:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 19:54:59'>1 hr 9 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6330&isbedrock=true'>18025</a></td></tr><tr><td><a href='/statebatch/6329?isbedrock=true'>6329</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19363704' target='_blank'>19363704<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xa0add158052de06185fb0ce7835fd72d7e2e0c0b53d65e8063e1b17da0905172' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xa0add158052de06185fb0ce7835fd72d7e2e0c0b53d65e8063e1b17da0905172' target='_blank'>0xa0add158052de06185fb0ce7835fd72d7e2e0c0b53d65e8063e1b17da0905172</a><a href='https://etherscan.io/tx/0xa0add158052de06185fb0ce7835fd72d7e2e0c0b53d65e8063e1b17da0905172' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x374e326093f86d1a7168e526990aab90c002c869a65f93e2abee6aaf7444f033'>0x374e326093f86d1a7168e526990aab90c002c869a65f93e2abee6aaf7444f033</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2 hrs 13 mins ago'>2024-03-04 18:50:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 18:50:59'>2 hrs 13 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6329&isbedrock=true'>17151</a></td></tr><tr><td><a href='/statebatch/6328?isbedrock=true'>6328</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19363420' target='_blank'>19363420<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x12f0df06d821897710cb5e6b1cacfe83c7a5637f68b6265a4028eb69e9bc350d' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x12f0df06d821897710cb5e6b1cacfe83c7a5637f68b6265a4028eb69e9bc350d' target='_blank'>0x12f0df06d821897710cb5e6b1cacfe83c7a5637f68b6265a4028eb69e9bc350d</a><a href='https://etherscan.io/tx/0x12f0df06d821897710cb5e6b1cacfe83c7a5637f68b6265a4028eb69e9bc350d' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x09130831c149dff2b852923c15e2c1c8cf3b691174f60412287d2e498a71be31'>0x09130831c149dff2b852923c15e2c1c8cf3b691174f60412287d2e498a71be31</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='3 hrs 10 mins ago'>2024-03-04 17:54:11</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 17:54:11'>3 hrs 10 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6328&isbedrock=true'>16863</a></td></tr><tr><td><a href='/statebatch/6327?isbedrock=true'>6327</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19363128' target='_blank'>19363128<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xb31dfee0a894aa2be890f43044964522dcb33040d6c5931ee7a12884458bb707' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xb31dfee0a894aa2be890f43044964522dcb33040d6c5931ee7a12884458bb707' target='_blank'>0xb31dfee0a894aa2be890f43044964522dcb33040d6c5931ee7a12884458bb707</a><a href='https://etherscan.io/tx/0xb31dfee0a894aa2be890f43044964522dcb33040d6c5931ee7a12884458bb707' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xe6fb5a1451c4c62f8c6b489370ca75bc98b2e05968c951c10df82ca7fc033fec'>0xe6fb5a1451c4c62f8c6b489370ca75bc98b2e05968c951c10df82ca7fc033fec</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='4 hrs 8 mins ago'>2024-03-04 16:55:47</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 16:55:47'>4 hrs 8 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6327&isbedrock=true'>18497</a></td></tr><tr><td><a href='/statebatch/6326?isbedrock=true'>6326</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19362809' target='_blank'>19362809<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x1f72ba23273cc88cdfd833c02b69bcb940658851d9efb1225936a0d14cabffdf' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x1f72ba23273cc88cdfd833c02b69bcb940658851d9efb1225936a0d14cabffdf' target='_blank'>0x1f72ba23273cc88cdfd833c02b69bcb940658851d9efb1225936a0d14cabffdf</a><a href='https://etherscan.io/tx/0x1f72ba23273cc88cdfd833c02b69bcb940658851d9efb1225936a0d14cabffdf' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xc2ce15e2a36e29578aba4f657e503945de7d033d9b32f48e63470e188608d61f'>0xc2ce15e2a36e29578aba4f657e503945de7d033d9b32f48e63470e188608d61f</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='5 hrs 12 mins ago'>2024-03-04 15:51:47</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 15:51:47'>5 hrs 12 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6326&isbedrock=true'>17132</a></td></tr><tr><td><a href='/statebatch/6325?isbedrock=true'>6325</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19362526' target='_blank'>19362526<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x235a1d143e171a33e6934e267ba4cef4f9cd3bc3b370b29c6c9a45cb404d15c4' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x235a1d143e171a33e6934e267ba4cef4f9cd3bc3b370b29c6c9a45cb404d15c4' target='_blank'>0x235a1d143e171a33e6934e267ba4cef4f9cd3bc3b370b29c6c9a45cb404d15c4</a><a href='https://etherscan.io/tx/0x235a1d143e171a33e6934e267ba4cef4f9cd3bc3b370b29c6c9a45cb404d15c4' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x5f6630e3321f1a6b70552974e76a34531d780c918c106808b30ce6a67ee951ed'>0x5f6630e3321f1a6b70552974e76a34531d780c918c106808b30ce6a67ee951ed</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='6 hrs 10 mins ago'>2024-03-04 14:54:35</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 14:54:35'>6 hrs 10 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6325&isbedrock=true'>17206</a></td></tr><tr><td><a href='/statebatch/6324?isbedrock=true'>6324</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19362238' target='_blank'>19362238<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x3c9fd2717b9c74c2462868865c09b641982a57f7aba156cc3413fb9541416c97' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x3c9fd2717b9c74c2462868865c09b641982a57f7aba156cc3413fb9541416c97' target='_blank'>0x3c9fd2717b9c74c2462868865c09b641982a57f7aba156cc3413fb9541416c97</a><a href='https://etherscan.io/tx/0x3c9fd2717b9c74c2462868865c09b641982a57f7aba156cc3413fb9541416c97' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x0c590ff6a7c423c069567c278e656f565ae452541b7071bd4d30f81710a63b17'>0x0c590ff6a7c423c069567c278e656f565ae452541b7071bd4d30f81710a63b17</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='7 hrs 7 mins ago'>2024-03-04 13:56:47</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 13:56:47'>7 hrs 7 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6324&isbedrock=true'>16627</a></td></tr><tr><td><a href='/statebatch/6323?isbedrock=true'>6323</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19361924' target='_blank'>19361924<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xf07a9d7db6eb4d8d6f03e45055d060a6970713799b6407eb658ca1a0f2b07cab' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xf07a9d7db6eb4d8d6f03e45055d060a6970713799b6407eb658ca1a0f2b07cab' target='_blank'>0xf07a9d7db6eb4d8d6f03e45055d060a6970713799b6407eb658ca1a0f2b07cab</a><a href='https://etherscan.io/tx/0xf07a9d7db6eb4d8d6f03e45055d060a6970713799b6407eb658ca1a0f2b07cab' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x70bb4c9ede4185d0fa6c78d6be2793c477a1b588f51b309f221533eebd042c5a'>0x70bb4c9ede4185d0fa6c78d6be2793c477a1b588f51b309f221533eebd042c5a</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='8 hrs 11 mins ago'>2024-03-04 12:53:35</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 12:53:35'>8 hrs 11 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6323&isbedrock=true'>16532</a></td></tr><tr><td><a href='/statebatch/6322?isbedrock=true'>6322</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19361631' target='_blank'>19361631<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xcb5b0c508a6899d0722f6c7e1b96ecaabfa9c3c97f8860e62d3b50c83b39278f' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xcb5b0c508a6899d0722f6c7e1b96ecaabfa9c3c97f8860e62d3b50c83b39278f' target='_blank'>0xcb5b0c508a6899d0722f6c7e1b96ecaabfa9c3c97f8860e62d3b50c83b39278f</a><a href='https://etherscan.io/tx/0xcb5b0c508a6899d0722f6c7e1b96ecaabfa9c3c97f8860e62d3b50c83b39278f' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x6ba6b424dadd3bfb03f5b05c1d1e7145900543a2e6eccf7aa0169d2c2c29ac44'>0x6ba6b424dadd3bfb03f5b05c1d1e7145900543a2e6eccf7aa0169d2c2c29ac44</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='9 hrs 9 mins ago'>2024-03-04 11:54:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 11:54:59'>9 hrs 9 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6322&isbedrock=true'>16165</a></td></tr><tr><td><a href='/statebatch/6321?isbedrock=true'>6321</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19361313' target='_blank'>19361313<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x98fa29b259b1745d7ae695fc344610fd29235f3982a851b79696ef2300f38148' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x98fa29b259b1745d7ae695fc344610fd29235f3982a851b79696ef2300f38148' target='_blank'>0x98fa29b259b1745d7ae695fc344610fd29235f3982a851b79696ef2300f38148</a><a href='https://etherscan.io/tx/0x98fa29b259b1745d7ae695fc344610fd29235f3982a851b79696ef2300f38148' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x7c06d614cfb984f100ed7864d4cdf1a5dfbb39c46409f182c066022f62fee10a'>0x7c06d614cfb984f100ed7864d4cdf1a5dfbb39c46409f182c066022f62fee10a</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='10 hrs 13 mins ago'>2024-03-04 10:50:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 10:50:59'>10 hrs 13 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6321&isbedrock=true'>15424</a></td></tr><tr><td><a href='/statebatch/6320?isbedrock=true'>6320</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19361029' target='_blank'>19361029<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x673d1b9f531c9e911f01a006fb38a08583fef10819d65ef7b14c867661dd19e0' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x673d1b9f531c9e911f01a006fb38a08583fef10819d65ef7b14c867661dd19e0' target='_blank'>0x673d1b9f531c9e911f01a006fb38a08583fef10819d65ef7b14c867661dd19e0</a><a href='https://etherscan.io/tx/0x673d1b9f531c9e911f01a006fb38a08583fef10819d65ef7b14c867661dd19e0' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xdafbb3c49d286a3ca8a4ba7288f2d70c8edd8655d48a2f13b597716c772f3d51'>0xdafbb3c49d286a3ca8a4ba7288f2d70c8edd8655d48a2f13b597716c772f3d51</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='11 hrs 11 mins ago'>2024-03-04 9:53:23</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 9:53:23'>11 hrs 11 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6320&isbedrock=true'>16096</a></td></tr><tr><td><a href='/statebatch/6319?isbedrock=true'>6319</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19360742' target='_blank'>19360742<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x92543aa84879c6660004f4fca0b9119e560d3ad4fef7540b3c97654cc475c2fd' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x92543aa84879c6660004f4fca0b9119e560d3ad4fef7540b3c97654cc475c2fd' target='_blank'>0x92543aa84879c6660004f4fca0b9119e560d3ad4fef7540b3c97654cc475c2fd</a><a href='https://etherscan.io/tx/0x92543aa84879c6660004f4fca0b9119e560d3ad4fef7540b3c97654cc475c2fd' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xaa24b9f534c94e9251cdff4b771a8d62c944203e004a8365a4b4bc8f97c56428'>0xaa24b9f534c94e9251cdff4b771a8d62c944203e004a8365a4b4bc8f97c56428</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='12 hrs 8 mins ago'>2024-03-04 8:55:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 8:55:59'>12 hrs 8 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6319&isbedrock=true'>17516</a></td></tr><tr><td><a href='/statebatch/6318?isbedrock=true'>6318</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19360423' target='_blank'>19360423<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xdd765c671a3f8c4f3db03f679e753b000ccadabf2bb7eb7c31b2c12db7790b47' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xdd765c671a3f8c4f3db03f679e753b000ccadabf2bb7eb7c31b2c12db7790b47' target='_blank'>0xdd765c671a3f8c4f3db03f679e753b000ccadabf2bb7eb7c31b2c12db7790b47</a><a href='https://etherscan.io/tx/0xdd765c671a3f8c4f3db03f679e753b000ccadabf2bb7eb7c31b2c12db7790b47' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x339dbb9501edacc4bd8a99f74adf34b69be474bc477db3786f3a059044c0a47e'>0x339dbb9501edacc4bd8a99f74adf34b69be474bc477db3786f3a059044c0a47e</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='13 hrs 12 mins ago'>2024-03-04 7:51:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 7:51:59'>13 hrs 12 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6318&isbedrock=true'>14966</a></td></tr><tr><td><a href='/statebatch/6317?isbedrock=true'>6317</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19360135' target='_blank'>19360135<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xf8c9cf9cf18450fc639383f0b135652e273b6e0c18e28b8db4896d90b7c8c4ef' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xf8c9cf9cf18450fc639383f0b135652e273b6e0c18e28b8db4896d90b7c8c4ef' target='_blank'>0xf8c9cf9cf18450fc639383f0b135652e273b6e0c18e28b8db4896d90b7c8c4ef</a><a href='https://etherscan.io/tx/0xf8c9cf9cf18450fc639383f0b135652e273b6e0c18e28b8db4896d90b7c8c4ef' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x15beb1b54afd3d354dfad945d3620d51ec6574b727e7f0cceee8c0635eb8e40b'>0x15beb1b54afd3d354dfad945d3620d51ec6574b727e7f0cceee8c0635eb8e40b</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='14 hrs 10 mins ago'>2024-03-04 6:54:11</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 6:54:11'>14 hrs 10 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6317&isbedrock=true'>14784</a></td></tr><tr><td><a href='/statebatch/6316?isbedrock=true'>6316</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19359819' target='_blank'>19359819<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x0cc56d707221ebfa742a4d808c25f744256eb27716665e2356a1c516aebe9d2c' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x0cc56d707221ebfa742a4d808c25f744256eb27716665e2356a1c516aebe9d2c' target='_blank'>0x0cc56d707221ebfa742a4d808c25f744256eb27716665e2356a1c516aebe9d2c</a><a href='https://etherscan.io/tx/0x0cc56d707221ebfa742a4d808c25f744256eb27716665e2356a1c516aebe9d2c' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x4b530895dfd110ed16f889e6fef35023a8b33c9cec09b534f86770e21e252289'>0x4b530895dfd110ed16f889e6fef35023a8b33c9cec09b534f86770e21e252289</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='15 hrs 14 mins ago'>2024-03-04 5:50:11</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 5:50:11'>15 hrs 14 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6316&isbedrock=true'>15246</a></td></tr><tr><td><a href='/statebatch/6315?isbedrock=true'>6315</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19359532' target='_blank'>19359532<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x0cd881d9c93fd6f8150a0d0f7e464c058165054d2f152f8f68d4d4a0652e6a4f' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x0cd881d9c93fd6f8150a0d0f7e464c058165054d2f152f8f68d4d4a0652e6a4f' target='_blank'>0x0cd881d9c93fd6f8150a0d0f7e464c058165054d2f152f8f68d4d4a0652e6a4f</a><a href='https://etherscan.io/tx/0x0cd881d9c93fd6f8150a0d0f7e464c058165054d2f152f8f68d4d4a0652e6a4f' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x4663b8baec04e72903cf4d4f7c29d88e5c2c3488bc3ba31460fa143cc38d42fb'>0x4663b8baec04e72903cf4d4f7c29d88e5c2c3488bc3ba31460fa143cc38d42fb</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='16 hrs 12 mins ago'>2024-03-04 4:52:35</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 4:52:35'>16 hrs 12 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6315&isbedrock=true'>14890</a></td></tr><tr><td><a href='/statebatch/6314?isbedrock=true'>6314</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19359245' target='_blank'>19359245<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xe1981057798a44c91ccfa26e88be0593493076eb409236807c82cac56d3601a2' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xe1981057798a44c91ccfa26e88be0593493076eb409236807c82cac56d3601a2' target='_blank'>0xe1981057798a44c91ccfa26e88be0593493076eb409236807c82cac56d3601a2</a><a href='https://etherscan.io/tx/0xe1981057798a44c91ccfa26e88be0593493076eb409236807c82cac56d3601a2' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x0a004594ce29bc0ba74da5b80e94528ceba43e4bf2bd7b2130b8d2c45960410c'>0x0a004594ce29bc0ba74da5b80e94528ceba43e4bf2bd7b2130b8d2c45960410c</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='17 hrs 9 mins ago'>2024-03-04 3:54:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 3:54:59'>17 hrs 9 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6314&isbedrock=true'>15437</a></td></tr><tr><td><a href='/statebatch/6313?isbedrock=true'>6313</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19358927' target='_blank'>19358927<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x0bf48a8600db34fe85d3df703f8e42f76a767ee699b5293b58cd2d1f577724eb' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x0bf48a8600db34fe85d3df703f8e42f76a767ee699b5293b58cd2d1f577724eb' target='_blank'>0x0bf48a8600db34fe85d3df703f8e42f76a767ee699b5293b58cd2d1f577724eb</a><a href='https://etherscan.io/tx/0x0bf48a8600db34fe85d3df703f8e42f76a767ee699b5293b58cd2d1f577724eb' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xc1927f2b5e6872c108788dd0e4f2996666edbda5e3f689ced61605065e01b471'>0xc1927f2b5e6872c108788dd0e4f2996666edbda5e3f689ced61605065e01b471</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='18 hrs 13 mins ago'>2024-03-04 2:50:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 2:50:59'>18 hrs 13 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6313&isbedrock=true'>13839</a></td></tr><tr><td><a href='/statebatch/6312?isbedrock=true'>6312</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19358639' target='_blank'>19358639<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x6ced3f82b959d47475bb082410253021c28743c38e68d3abb985148062e47b6a' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x6ced3f82b959d47475bb082410253021c28743c38e68d3abb985148062e47b6a' target='_blank'>0x6ced3f82b959d47475bb082410253021c28743c38e68d3abb985148062e47b6a</a><a href='https://etherscan.io/tx/0x6ced3f82b959d47475bb082410253021c28743c38e68d3abb985148062e47b6a' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x59b5f78751d83c123e31006ff47373b8118766f1486a1c96735410915634c51b'>0x59b5f78751d83c123e31006ff47373b8118766f1486a1c96735410915634c51b</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='19 hrs 11 mins ago'>2024-03-04 1:53:11</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 1:53:11'>19 hrs 11 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6312&isbedrock=true'>15357</a></td></tr><tr><td><a href='/statebatch/6311?isbedrock=true'>6311</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19358359' target='_blank'>19358359<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0x59aadbde82a93faf0bcbfbc144e4264b6557646d2c943031b808aad8bb879e0a' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x59aadbde82a93faf0bcbfbc144e4264b6557646d2c943031b808aad8bb879e0a' target='_blank'>0x59aadbde82a93faf0bcbfbc144e4264b6557646d2c943031b808aad8bb879e0a</a><a href='https://etherscan.io/tx/0x59aadbde82a93faf0bcbfbc144e4264b6557646d2c943031b808aad8bb879e0a' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x61d685078a7783d5dedcbc6e3e6fe670e74c18b7388dd5e3345e4e3b39e43380'>0x61d685078a7783d5dedcbc6e3e6fe670e74c18b7388dd5e3345e4e3b39e43380</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='20 hrs 8 mins ago'>2024-03-04 0:55:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 0:55:59'>20 hrs 8 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6311&isbedrock=true'>17213</a></td></tr><tr><td><a href='/statebatch/6310?isbedrock=true'>6310</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19358039' target='_blank'>19358039<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xf68c220cac333ede8b495c0f2c9c9964b6579b5858042b654b5ced16c9c556fa' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xf68c220cac333ede8b495c0f2c9c9964b6579b5858042b654b5ced16c9c556fa' target='_blank'>0xf68c220cac333ede8b495c0f2c9c9964b6579b5858042b654b5ced16c9c556fa</a><a href='https://etherscan.io/tx/0xf68c220cac333ede8b495c0f2c9c9964b6579b5858042b654b5ced16c9c556fa' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xcc515f51a0edaab0e4848613da6e9e8a40756022dd82657c0d3f7ad5ca7478be'>0xcc515f51a0edaab0e4848613da6e9e8a40756022dd82657c0d3f7ad5ca7478be</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='21 hrs 12 mins ago'>2024-03-03 23:51:59</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-03 23:51:59'>21 hrs 12 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6310&isbedrock=true'>17326</a></td></tr><tr><td><a href='/statebatch/6309?isbedrock=true'>6309</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19357751' target='_blank'>19357751<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xa8ea76293bc0c894b3348a9657b1085f90d9e95572fcb693363ff38b099d57a8' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xa8ea76293bc0c894b3348a9657b1085f90d9e95572fcb693363ff38b099d57a8' target='_blank'>0xa8ea76293bc0c894b3348a9657b1085f90d9e95572fcb693363ff38b099d57a8</a><a href='https://etherscan.io/tx/0xa8ea76293bc0c894b3348a9657b1085f90d9e95572fcb693363ff38b099d57a8' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x8ac24c42b36b70792d8cd73a38ed4f8b3f24e7b62baa4e7cba0d6a3f28030198'>0x8ac24c42b36b70792d8cd73a38ed4f8b3f24e7b62baa4e7cba0d6a3f28030198</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='22 hrs 10 mins ago'>2024-03-03 22:54:11</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-03 22:54:11'>22 hrs 10 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6309&isbedrock=true'>18913</a></td></tr><tr><td><a href='/statebatch/6308?isbedrock=true'>6308</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19357463' target='_blank'>19357463<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xd243b9a5dab3e55151df7383069af7b0abfee9b2e702725234e8194c58c56650' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xd243b9a5dab3e55151df7383069af7b0abfee9b2e702725234e8194c58c56650' target='_blank'>0xd243b9a5dab3e55151df7383069af7b0abfee9b2e702725234e8194c58c56650</a><a href='https://etherscan.io/tx/0xd243b9a5dab3e55151df7383069af7b0abfee9b2e702725234e8194c58c56650' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0x89f27b0b069e3e0fdd7abad93c86152e2b8e76267d23fb10a8064b301a803870'>0x89f27b0b069e3e0fdd7abad93c86152e2b8e76267d23fb10a8064b301a803870</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='23 hrs 8 mins ago'>2024-03-03 21:56:35</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-03 21:56:35'>23 hrs 8 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6308&isbedrock=true'>19854</a></td></tr><tr><td><a href='/statebatch/6307?isbedrock=true'>6307</a></td><td><span class='u-label u-label--sm u-label--value u-label--success rounded'>Finalized</span></td><td><a href='https://etherscan.io/block/19357144' target='_blank'>19357144<i class='fa fa-external-link small ml-1'></i></a></td><td><a href='https://etherscan.io/tx/0xcf51420e17f8836c0e49886bcecc52d829e2212b49a608401c6e7c8244e5d1c5' class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xcf51420e17f8836c0e49886bcecc52d829e2212b49a608401c6e7c8244e5d1c5' target='_blank'>0xcf51420e17f8836c0e49886bcecc52d829e2212b49a608401c6e7c8244e5d1c5</a><a href='https://etherscan.io/tx/0xcf51420e17f8836c0e49886bcecc52d829e2212b49a608401c6e7c8244e5d1c5' target='_blank'><i class='fa fa-external-link small'></i></a></td><td><span class='hash-tag text-truncate' data-boundary='viewport' data-toggle='tooltip' title='0xc9be4dd2fdb96653c0d506edf0d4f039d144305150a533aad0a98db394cc72cd'>0xc9be4dd2fdb96653c0d506edf0d4f039d144305150a533aad0a98db394cc72cd</span></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='1 day 11 mins ago'>2024-03-03 20:52:47</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-03 20:52:47'>1 day 11 mins ago</span></td><td class='text-success'>Yes</td><td><a href='/txs?statebatch=6307&isbedrock=true'>19264</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="ContentPlaceHolder1_pageRecords">
+                    <form method="post" action="./statebatches" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="0d70NcgM6hufEV8znyzEdWm89jk/ytihpJQs4aZ+/3jD0ElrhvEIiMljHqJcDukJi6Gj/tkbazFYU2NGNb7O+1ktTHscUHPgrYbSFnmvnM8=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="130FDF00" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="2ogWP0TzBduoA/d3dMQfY9Zob9WleGnBRD2OAXTcNAqqluKRPHIWtJrpRamRFFhhfRObnzNA4p6mKlmsnZ1dg04Kv+AJdigAkMTMXg2TrgXLtEDa1NtIxI7pTJkMEaNXI5oBRApNua2mV5VOOt0ipfN3q+at90+kNaNmgBE2joRdacccOOYW9h9lor6ktJxOk8YipmSwCQW44iU1faU3Jg==" />
+</div>
+                        <div class="d-md-flex justify-content-between my-3"> 
+                            <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                Show
+                                <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlRecordsPerPage\&#39;,\&#39;\&#39;)&#39;, 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option selected="selected" value="25">25</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                Records
+                            </div>
+                            <nav class="mb-4 mb-md-0" aria-label="page navigation">
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link" >First</span></li><li class="page-item disabled"><span class="page-link" ><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li Class="page-item disabled"><span Class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">254</strong></span></li><li class="page-item" data-toggle='tooltip' title="Go to Next"><a class="page-link" href="statebatches?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="statebatches?p=254"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                            </nav>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+        </div>
+
+        
+    </div>
+    
+    
+
+
+        </main>
+        <div id="push"></div>
+         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+
+        
+    </div>
+
+            <footer class="bg-dark py-4">
+                 <div class="container">
+                     <div class="row justify-content-sm-between align-items-center">
+                         <div class="col-sm-6 mb-3 mb-sm-0">
+                             <div class="d-flex align-items-center">
+                                 
+                                    <img width="25" src="/images/svg/brands/main.svg?v=24.2.1.1" alt="Logo">
+                                 
+                                 <span class="h5 text-white mb-0 ml-3">Powered By Base</span>
+                             </div>
+                         </div>
+
+                         <div class="col-sm-6 align-self-bottom">
+                             <!-- Preferences -->
+                             <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                 <span>
+                                     <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');"><img Class="mr-1" width="15" src="/images/svg/brands/metamask.svg" alt="Metamask">Add Base to Metamask</button>
+                                 </span>
+
+                                 <a class="btn btn-xss btn-soft-light mr-2" href="/settings">
+                                     <i class="fa fa-cogs mr-1"></i>Preferences
+                                 </a>
+
+                                  <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light">
+                                        <i id="darkModaBtnIcon" Class="fa fa-moon"></i></button>
+
+                             </div>
+                             <!-- End Preferences -->
+                         </div>
+                     </div>
+                     <!-- End Fotoer Content -->
+
+              <hr class="opacity-md">
+             <div class="row justify-content-between align-items-center font-size-1">
+                 <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                     <p class="mb-0 text-white">BaseScan © 2024  (BASE-A1)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a> <span class="mx-1">|</span> <a class="text-white-70" href="/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i>
+                     </p>
+                 </div>
+            <div class="col-md-6 text-md-right">
+                <ul class="list-inline mb-0">
+
+                    
+                    <li class="list-inline-item">
+                    <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="/terms">Terms of Service</a>
+                    </li>
+                    
+                    <li class="list-inline-item">
+                    <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://basescan.statuspage.io/">Network Status</a>
+                    </li>
+                    
+
+                    <li class="list-inline-item">
+                    
+                           <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="/cdn-cgi/l/email-protection#b1d8dfd7def1d3d0c2d4c2d2d0df9fdec3d6" data-toggle="tooltip" data-placement="top" title="Contact Us">
+                           <i class="far fa-envelope btn-icon__inner"></i>
+                    
+                    </a>
+                </li>
+                </ul>
+            </div>
+             </div>
+         </div>
+    </footer>
+
+    <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: none;">
+        <div class="alert alert-light border shadow p-3" role="alert">
+            <div class="d-md-flex justify-content-center-alt1 align-items-center">
+                <span>
+                    <p class="text-dark mr-3 mb-2 mb-md-0">
+                        <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href='/terms#cookiestatement' target='_blank'>uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href='/terms' target='_blank'>Terms</a> and <a href='/privacyPolicy'>Privacy Policy</a>.
+                    </p>
+                </span>
+                <div>
+                    <button id ='btnCookie' class="btn btn-sm btn-primary text-nowrap py-1"  data-dismiss="alert" aria-label="Close">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="js-go-to u-go-to" href="#"
+        data-position='{"bottom": 20, "right": 15 }'
+        data-type="fixed"
+        data-offset-top="400"
+        data-compensation="#header"
+        data-show-effect="slideInUp"
+        data-hide-effect="slideOutDown">
+        <span class="fa fa-arrow-up u-go-to__inner"></span>
+    </a>
+    
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/vendor/jquery-ui/jquery-ui.min.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/popper.js/dist/umd/popper.min.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js?v=24.2.1.1"></script>
+    
+
+    <!-- JS Implementing Plugins -->
+    <script src="/assets/vendor/hs-megamenu/src/hs.megamenu.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js?v=24.2.1.1"></script> 
+    <script src="/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js?v=24.2.1.1"></script>
+
+
+    <!-- JS Front -->
+    <script src="/assets/js/hs.core.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.header.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.unfold.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.malihu-scrollbar.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.focus-state.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.go-to.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.cubeportfolio.js?v=24.2.1.1"></script>
+    <script src="/assets/js/custom/combine-js-bottom2.js?v=24.2.1.1"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(window).on('load', function () {
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 767.98,
+                hideTimeOut: 0
+            });
+            myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter","#signupSrEmail")
+        });
+
+        $(document).on('ready', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#header'));
+
+            // initialization of unfold component
+            $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                afterOpen: function () {
+                    $(this).find('input[type="search"]').focus();
+                }
+            });
+
+            // initialization of malihu scrollbar
+            $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      
+            // initialization of focus state
+            $.HSCore.components.HSFocusState.init();
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of cubeportfolio
+            //$.HSCore.components.HSCubeportfolio.init('.cbp');
+        });
+    </script>
+    <script type="text/javascript">
+        var sid = '1b3df34f99ac32fcbe5aeddaa851e1bf';
+        var strGlobal = getCookie("site_switch_age_datetime");
+        var strGlobalFee = sessionStorage.getItem("ShowFee");
+        var cookieconsent = getCookie("Base" + "_cookieconsent");
+        if (cookieconsent !== "True") {
+            document.getElementById("divcookie").style.display = "block";
+        };
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        $("#btnCookie").click(function () {
+            $("#divcookie").fadeOut("slow", function () {
+                var d = new Date();
+                d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = "Base" + "_cookieconsent=True" + ";" + expires + ";path=/";;
+            });
+        });
+        function handleSearchText(data) {
+            searchAddress = false;
+            if ($("txtSearchInput").val() == "") {
+                $("#hdnSearchText").val("");
+                $("#hdnSearchLabel").val("");
+            }
+        }
+    </script>
+    
+
+    <script src="/assets/js/custom/web3.min.js?v=0.5.2.2"></script>
+    <script type="text/javascript">
+        var web3Obj;
+        var isTestnet = 'false';
+        var SiteNetID = '8453';
+        var SiteNetChainID = '0x2105';
+        var SiteNetName = 'Base';
+        var SiteName = 'BaseScan';
+        var SiteErc20 = 'ERC20';
+        var SiteErc721 = 'ERC721';
+        var SiteErc1155 = 'ERC1155';
+        var sv = '24.2.1.1';
+        var allowErc1155 = '';
+
+        async function addNetwork(type) {
+            
+            if (type === 'web3') {
+                if (typeof ethereum !== 'undefined') {
+                    if (window.ethereum.providers?.length) {
+                        if (window.ethereum.isMetaMask) {
+                            ethereum = window.ethereum.providers.find((provider) => provider.isMetaMask);
+                            web3Obj = new Web3(ethereum);
+                        }
+                    } else {
+                        web3Obj = new Web3(ethereum);
+                    }
+                } else if (typeof web3 !== 'undefined') {
+                    web3Obj = new Web3(web3.givenProvider);
+                } else {
+                    web3Obj = new Web3(ethereum);
+                }                
+            }            
+
+            if (typeof web3Obj !== 'undefined') {
+                var network = 0;
+                network = await web3Obj.eth.getChainId();
+                netID = network.toString();
+                var params;
+             if (netID == SiteNetID) {
+                    alert("Base Network has already been added to Metamask.");
+                    return;
+                } else {
+                    params = [{
+                        chainId: SiteNetChainID,
+                        chainName: 'Base',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://mainnet.base.org/'],
+                        blockExplorerUrls: ['https://basescan.org']
+                    }]
+                }
+            
+                window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                    .then(() => console.log('Success'))
+                    .catch((error) => console.log("Error", error.message));
+            } else {
+                alert('Unable to locate a compatible web3 browser!');
+            }
+        }
+    </script>
+
+    
+    <script type="text/javascript" src="/assets/vendor/datatables/datatables.min.js?v=24.2.1.1"></script>
+    <script type="text/javascript" src="/assets/js/custom/commonjs.js?v=24.2.1.1"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            onDocumentReady();
+            renderDataTable();
+            $("[data-toggle='tooltip']").tooltip(); 
+        });      
+
+        function renderDataTable() {
+            var table = $("#datatable").DataTable({
+                dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                language: {
+                    paginate: {
+                        next: '<i class="fa fa-chevron-right small"></i>',
+                        previous: '<i class="fa fa-chevron-left small"></i>'
+                    },
+                    lengthMenu: "Show _MENU_ Records",
+                    info: "A total of _MAX_ records found"
+                },
+                searching: false,
+                pagingType: 'full',
+                columnDefs: [
+                    { orderable: false, targets: '_all' }
+                ],
+                processing: true,
+                serverSide: true,
+                //pageLength: ,
+                
+                deferLoading: "",
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/blocks.aspx/GetBlocksBySubLabel",
+                    data: function (d) {
+                        var labelModel = generateLabelModel();
+
+                        if (currentLength != d.length) {
+                            d.start = 0;
+                            currentLength = d.length;
+                            resetPage = true;
+                        }
+
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    },
+                    dataType: "json",
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+
+                        return JSON.stringify(morp);
+                    }
+                },
+                columns: [
+                    { data: "block" },
+                    { data: "age" },
+                    { data: "txn" },
+                    { data: "uncles" },
+                    { data: "miner" },
+                    { data: "gasUsed" },
+                    { data: "gasLimit" },
+                    { data: "avgGasPrice" },
+                    { data: "reward" }
+                ],
+                drawCallback: function (settings) {
+                    var api = this.api();
+                    var json = api.ajax.json();
+                    if (!json) {
+                        var currentPageDisp = "1";
+
+                        //reload state if querystring is available
+                        var urlParams = new URLSearchParams(window.location.search);
+                        var existLength = urlParams.get('size');
+                        if (existLength) {
+                            api.page.len(existLength);
+                            currentLength = parseInt(existLength)
+
+                            var existStart = urlParams.get('start');
+                            if (!existStart) {
+                                existStart = 0
+                            }
+                                currentPage = Math.floor(existStart / existLength);
+                                api.page(currentPage);
+                                currentPageDisp = currentPage + 1;
+                        }
+
+                        var totalPage = "";
+                        var totalRecord = "";
+
+                        if (totalRecord < 10) {
+                            $(".bottom").remove();
+                        }
+
+                        $('#datatable_length .custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                        $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+                        return;
+                    }
+
+                    $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                    if (resetPage) {
+                        this.api().page(0);
+                        resetPage = false;
+                    }
+
+                    //get page info
+                    var pageInfo = this.api().page.info();
+                    if (pageInfo.length) {
+                        queryStringDictionary["length"] = pageInfo.length;
+                    }
+
+                    if (pageInfo.start !== undefined) {
+                        queryStringDictionary["start"] = pageInfo.start;
+                    }
+
+                    updateUrl();
+                    $('[data-toggle="tooltip"]').tooltip()
+                }
+
+            });
+        }
+
+        var resetPage = false;
+        var queryStringDictionary = {};
+        var currentLength = 0;
+
+        function updateUrl() {
+            var queryString = '';
+
+            var length = queryStringDictionary["length"];
+            if (length) {
+                if (length < 0) {
+                    length = 7
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start"];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+    </script>
+
+
+</body>
+</html>
