@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Base Explorer
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="basescan.org">
+    <meta name="keywords" content="ethereum, explorer, ether, L2, search, blockchain, crypto, currency"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="Base allows you to explore and search the Base Network for transactions, addresses, tokens, prices and other activities taking place on the Base Network"> <meta name="author" content="basescan.org"> <meta name="keywords" content="Base, explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="Base Explorer"> <meta property="og:description" content="BaseScan allows you to explore and search the Base blockchain for transactions, addresses, tokens, prices and other activities taking place on Base (ETH)"> <meta property="og:type" content="website"> <meta property="og:site_name" content="Base Explorer"> <meta property="og:url" content="http://basescan.org/"> <meta property="og:image" content="https://basescan.org/images/brandassets/logo.jpg?v=24.2.1.1"> <meta property="og:image:alt" content="Visit basescan.org"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@BaseScan"> <meta name="twitter:title" content="Base Explorer"> <meta property="twitter:description" content="BaseScan allows you to explore and search the Base blockchain for transactions, addresses, tokens, prices and other activities taking place on Base (ETH)"> <meta property="twitter:image" content="https://basescan.org/images/brandassets/logo.jpg?v=24.2.1.1"> 
+
+
+    <link rel="shortcut icon" href="https://basescan.org/images/favicon.ico?v=24.2.1.1">
+
+    
+    <script async="" src="Base%20Explorer_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+        gtag('config','G-TWEL8GRQ12', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+        //Search box text ad
+        var availableAd = [];
+        var gotAd = [];
+
+        
+        availableAd = [];
+        gotAd = [ "ShowAds					" ];
+        
+    </script>
+
+    <!-- Google Fonts -->
+    
+    
+    <link rel="stylesheet" href="Base%20Explorer_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Base%20Explorer_files/animate.min.css">
+    <link rel="stylesheet" href="Base%20Explorer_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Base%20Explorer_files/jquery.mCustomScrollbar.css">
+    
+    <link rel="stylesheet" href="Base%20Explorer_files/select2.min.css">
+    <link rel="stylesheet" href="Base%20Explorer_files/theme.min.css"> 
+    <link rel="stylesheet" href="Base%20Explorer_files/custom.css">    
+
+    <script src="Base%20Explorer_files/jquery.min.js"></script>     
+    <script type="text/javascript" src="Base%20Explorer_files/blockies.js"></script>
+
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+        body.dark-mode .ui-state-active {
+          background-color: #132a47;
+          border-color: #18365b;
+        }
+        .autolink-safari a{
+            pointer-events: none !important;
+            text-decoration:none !important; 
+            color:inherit !important;
+        }
+    </style>
+
+    
+   <style type="text/css">#div-advert {line-height: 1.7}@media (max-width: 667px) {#div-advert {min-height: 62px;}}@media (max-width: 767px) {#div-advert {padding-bottom: 20px;}}</style>
+    <style>
+        .wrapper {
+            background-color: #fff !important;
+        }
+        .ui-autocomplete {
+            z-index: 1;
+        }
+    </style>
+<meta name="description" content="BaseScan allows you to explore and search the Base blockchain for transactions, addresses, tokens, prices and other activities taking place on Base (ETH)"><script src="Base%20Explorer_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section py-1 ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand  pt-md-0" href="https://basescan.org/" target="_parent" aria-label="Etherscan">
+                                <img id="logo-header" width="140" src="Base%20Explorer_files/logo-ether.svg" alt="Site Logo">     
+                                 
+                            </a>
+                          
+                            
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://basescan.org/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        
+                                            <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+                                        
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI12"><a href="https://basescan.org/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI41"><a href="https://basescan.org/txsEnqueued" class="nav-link u-header__sub-menu-nav-link">Latest L1→L2 Transactions</a></li>
+                                            <li id="LI66"><a href="https://basescan.org/txsExit" class="nav-link u-header__sub-menu-nav-link">Latest L2→L1 Transactions</a></li>
+                                            
+                                            <li id="LI14"><a href="https://basescan.org/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                            <li id="LI_batches">
+                                                <a id="navBatches" class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/batches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View L1 Transaction Batches</a></li>
+                                            <li id="LI_statebatches">
+                                                <a id="navStateBatch" class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/statebatches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View L1 State Batches</a></li>
+                                            
+                                            
+                                            <li class="dropdown-divider"></li>                                            
+                                            <li id="LI_accountall"><a href="https://basescan.org/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://basescan.org/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="tokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="tokensSubMenu">Tokens</a>
+
+                                        <!-- Tokens - Submenu -->
+                                        <ul id="tokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="tokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI21"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokens">ERC20 Top Tokens</a></li>
+                                            <li id="LI1"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokentxns">View ERC20 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/charts">Charts &amp;  Stats</a></li>
+                                            
+                                            
+                                                                                
+                                        </ul>
+                                    </li>
+                                    <li id="LI_services2" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+                                         <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                            <div class="row u-header__mega-menu-wrapper">
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Developers</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">
+                                                        <li id="LI_BASE_MAINNET_Docs"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.basescan.org/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                        <li id="LI17"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                        <li id="LI24"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                        <li id="LI54"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker<sup><span class="badge badge-success font-size-default ml-1">New</span></sup></a></li>
+                                                        <li id="LI27"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Tools</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">   
+                                                       <li id="LI2"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>                       
+                                                       <li id="LI22"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+
+                                                        <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/advanced-filter"><i class="fa fa-angle-right small mr-1"></i>Advanced Filter <sup><span class="badge badge-secondary ml-1">Beta</span></sup></a></li>
+                                                        <li id="LI5"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/exportDataMain"><i class="fa fa-angle-right small mr-1"></i>Export Data</a></li>
+                                                       <li id="LI9"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1"> Beta</span></sup></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://basescan.org/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+                                            
+                                                <span class="btn btn-sm btn-icon btn-soft-primary cursor-pointer d-none d-md-inline-block">
+                                                    <img id="logo-header-icon" img="" class="u-xs-avatar btn-icon__inner" src="Base%20Explorer_files/logo-symbol.svg" alt="Logo">
+                                                </span>
+
+                                            
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut" aria-labelledby="explorersWithDropdown" style="min-width: 170px; display: none;">
+                                            <li id="LI_Mainnet_Base"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/">Base Mainnet</a></li>
+
+                                                <li id="LI_Sepolia_Base"><a class="nav-link u-header__sub-menu-nav-link" href="https://sepolia.basescan.org/">Base Sepolia</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas) in ETH">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            
+        
+            <section class="bg-img-hero-main bg-dark">
+        
+      <div class="container space-top-2 space-bottom-3">
+        <!-- Search -->
+        
+            <div class="row justify-content-between align-items-center mb-4">
+              <div class="col-sm-12 col-md-10 col-lg-7 col-xl-6">
+        
+            <div class="pr-lg-4 pr-xll-5">
+                
+                        <h1 class="h4 text-white mb-3">
+                            Base Explorer
+                        </h1>
+                    
+
+              <form class="mb-3" action="/search" method="GET">
+                <div class="input-group input-group-shadow">
+                  <div class="input-group-prepend d-none d-md-block">
+                    <!-- Select -->
+                      <select name="f" class="custom-select custom-arrow-select input-group-text font-size-base filterby text-left">
+                          <option selected="selected" value="0">All Filters</option>
+                          <option value="1">Addresses</option>
+                          <option value="2">Tokens</option>
+                          
+                          <option value="5">Websites</option>
+                      </select>
+                    <!-- End Select -->
+                  </div>
+
+                  <input id="txtSearchInput" type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" autocomplete="off" spellcheck="false" placeholder="Search by Address / Txn Hash / Batch / Token" aria-describedby="button-header-search" name="q" onkeyup="handleSearchText(this);" maxlength="68">
+                    <input type="hidden" value="" id="hdnSearchText">
+                    <input type="hidden" value="" id="hdnSearchLabel">
+                    <input id="hdnIsTestNet" value="False" type="hidden">
+                   <div class="input-group-append">
+                      
+                            <button class="btn btn-primary" type="submit">
+                      
+
+                              <i class="fa fa-search"></i>
+                          </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Text Ads -->
+                <p id="ContentPlaceHolder1_pAnnouncement" class="text-white-70 mb-0" style="min-height:22px">
+                        
+                        <!-- Revive Adserver Anti Adblocker Asynchronous JS Tag - Generated with Revive Adserver v5.5.0 -->
+<ins data-t8xt5pt6kr-em9uzwlk="32" data-t8xt5pt6kr-id="033e0828aecd8a15c31181716c4b1552" data-t8xt5pt6kr-seq="0" id="t8xt5pt6kr-0-0" data-t8xt5pt6kr-loaded="1" style="text-decoration: none;"><b>Featured:</b> Chat with any EVM address on the <b>Blockscan Chat App <img src="Base%20Explorer_files/blockscan-logo.svg"></b><a href="https://eas.etherscan.com/d3d3/ZGVsaXZlcnk/Y3Cs=.php?YmFubmVyaWQ=4382&amp;em9uZWlk=32&amp;sig=a73d8c4eb585eecbb811d9f19f40f8b59fda8781ebe7c2a1ef04a0860df7f03b&amp;oadest=https%3A%2F%2Fchat.blockscan.com%2Flinks" target="_blank" title="Links to an External Advertiser site"> <b> Download Now!</b></a><div id="beacon_ff7c71ea44" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="Base%20Explorer_files/bGc=.gif" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div></ins>
+<script async="" src="Base%20Explorer_files/YXN5bmNqcw==.php"></script>
+                    </p>
+                
+
+              <!-- End Text Ads -->             
+            </div>
+          </div>
+
+        
+         <div class="col-12 col-lg-5">
+            <!-- Ads -->
+            <div class="d-none d-lg-block text-center pl-lg-4 pl-xll-5">
+              <a class="d-inline-block d-sm-none position-relative text-dark" target="_blank" href="https://chat.blockscan.com/start">
+<span class="showcase-banner-text bg-white font-size-1 shadow rounded px-1" style="left: 1rem;">Ad</span><img class="img-fluid rounded" width="321" height="101" src="Base%20Explorer_files/blockscan_321x101.png" alt="Ads"></a>
+
+<a class="d-none d-sm-inline-block d-lg-none position-relative text-dark" target="_blank" href="https://chat.blockscan.com/start">
+<span class="showcase-banner-text bg-white font-size-1 shadow rounded px-1" style="left: 1rem;">Ad</span><img class="img-fluid rounded" src="Base%20Explorer_files/blockscan_730x90.png" alt="Ads"></a>
+
+<a class="d-none d-lg-inline-block-alt position-relative text-dark" target="_blank" href="https://chat.blockscan.com/start">
+<span class="showcase-banner-text bg-white font-size-1 shadow rounded px-1" style="right: 1rem;">Ad</span><img class="img-fluid rounded" width="321" height="101" src="Base%20Explorer_files/blockscan_321x101.png" alt="Ads"></a>
+
+                     
+                <!--div class="mb-4">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script-->
+                    <!-- Testnet Banner -->
+                    <!--<ins class="adsbygoogle"
+                        style="display: block"
+                        data-ad-client="ca-pub-9365010058051645"
+                        data-ad-slot="4376794054"
+                        data-ad-format="horizontal"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div--> 
+            
+            </div>
+            <!-- End Ads -->
+          </div>
+        
+        </div>
+        <!-- End Search -->
+      </div>
+    </section>
+
+
+    <div class="container space-bottom-1 mt-n5">
+         
+
+      <!-- Stats -->
+        <div id="ContentPlaceHolder1_mainboxes" class="card mb-4">
+        <div class="card-body p-4">
+          <div class="row mx-gutters-md-1 align-items-center">
+            <!-- Prices -->
+            <div class="col-md-6 col-lg-4">
+              <div class="media align-items-center">
+                <figure class="u-sm-avatar mr-2">
+                  <div class="u-xs-avatar mx-auto">
+                      
+                        <img src="Base%20Explorer_files/ethereum-1.svg" alt="Ethereum Logo">
+                      
+                  </div>
+                </figure>
+
+                <div class="media-body">
+                    <h2 class="font-size-1 text-uppercase text-secondary mb-0">ETH Price</h2>
+                    <a class="text-size-1 text-link" href="https://basescan.org/chart/etherprice" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View Historical ETH  Price">$3,592.19<span class="text-secondary"> @ 0.053044 BTC</span><span class="text-success small"> (+3.51%)</span></a>
+                </div>
+              </div>
+
+              <hr class="hr-space-lg">
+
+              <div class="media align-items-center">
+                
+                    <figure class="u-sm-avatar mr-2">
+                      <img src="Base%20Explorer_files/icon-8.svg" alt="SVG">
+                    </figure>
+
+                    <div class="media-body">
+                        <h2 class="font-size-1 text-uppercase text-secondary mb-0">Market Cap
+                        </h2>
+                        
+                            <a class="text-size-1 text-link" data-toggle="tooltip" data-placement="top" data-title="Visit Etherscan For More Info" href="https://etherscan.io/" target="_blank" data-original-title="" title="">
+                        $409,537,687,905
+                        </a>
+                    </div>
+                
+              </div>
+
+              <hr class="d-block d-md-none hr-space-lg">
+            </div>
+            <!-- End Prices -->
+
+            <!-- Blocks, Hash etc. -->
+            <div class="col-md-6 col-lg-4 u-ver-divider u-ver-divider--left u-ver-divider--none-md">
+              <div class="media align-items-center">
+                <figure class="u-sm-avatar mr-2">
+                  <img src="Base%20Explorer_files/icon-2-1.svg" alt="Transaction">
+                </figure>
+
+          
+                  <div class="media-body">
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Latest Block</h2>
+                                <a class="text-size-1 text-link" href="https://basescan.org/blocks" rel="tooltip" data-placement="bottom" title="The latest Block No"><span id="lastblock">11398357</span></a>
+                                <a data-toggle="tooltip" href="https://basescan.org/chart/blocktime" class="small text-secondary  text-link" data-placement="right" data-title="Average Block Time (The latest 5000 blocks)" data-original-title="" title="">(<span id="avgblocktime">2.0s</span>)</a>
+                            </div>
+
+                  <div class="media-right">
+                      <h2 class="font-size-1 text-uppercase text-secondary mb-0">Transactions</h2>
+                      <a href="https://basescan.org/txs" class="text-size-1 text-link" rel="tooltip" data-toggle="tooltip" data-placement="left" data-html="true" title="" data-original-title="Total Transactions Counter&lt;br&gt;(Update every 5 mins)">107.22 M</a><span class="text-secondary small" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Transactions per Second"> (4.5 TPS)</span>
+                  </div>
+
+                  <div class="text-right d-none" title="GasTracker Estimate for Average Gas">
+                      <h2 class="font-size-1 text-uppercase text-secondary mb-0">Med Gas Price</h2>
+                      
+                  </div>
+              </div>
+              
+
+              <hr class="hr-space-lg">
+
+              <div class="media align-items-center">
+                <figure class="u-sm-avatar mr-2">
+                  <img src="Base%20Explorer_files/icon-51.svg" alt="Batch">
+                </figure>
+
+                  <div class="media-body">
+                      <h2 class="font-size-1 text-uppercase text-secondary mb-0">Latest L1 Txn Batch</h2>
+                      <a href="https://basescan.org/batches" class="text-size-1 text-link" rel="tooltip" data-toggle="tooltip" data-placement="left" data-html="true" title="" data-original-title="Total Txn Batch Counter&lt;br&gt;(Update every 5 mins)">362593</a>
+                  </div>
+                  <div class="text-right">
+                      <h2 class="font-size-1 text-uppercase text-secondary mb-0">Latest L1 State Batch</h2>
+                      <a href="https://basescan.org/statebatches" class="text-size-1 text-link" rel="tooltip" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Total State Batch Counter&lt;br&gt;(Update every 5 mins)">6331</a>
+                  </div>
+
+
+              </div>
+
+              <hr class="d-block d-md-none hr-space-lg">
+            </div>
+            <!-- End Blocks, Hash etc. -->
+
+            <!-- Charts -->
+            <div class="col-md-12 col-lg-4 u-ver-divider u-ver-divider--left u-ver-divider--none-lg">
+              <hr class="d-none d-md-block d-lg-none my-4">
+
+              <div class="d-flex justify-content-between  align-items-center">
+                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Base TRANSACTION HISTORY LAST 14 DAYS</h2>
+                  <div class="position-relative float-right z-index-2">
+                      <a id="customchartsinvoker" class="btn btn-xs btn-icon btn-soft-secondary" href="javascript:;" role="button" aria-controls="customcharts" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#customcharts" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                          <i class="fa fa-ellipsis-v btn-icon__inner"></i>
+                      </a>
+
+                      <div id="customcharts" class="dropdown-menu dropdown-menu-right dropdown-unfold u-unfold--css-animation u-unfold--hidden fadeOut" aria-labelledby="customchartsinvoker" style="animation-duration: 300ms;">
+                          <a class="dropdown-item" href="https://basescan.org/chart/tx">View Detailed Chart</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="container-1" class="w-100 pt-2" style="height: 106px;" data-highcharts-chart="0"><div id="highcharts-bd88d9t-0" style="position: relative; overflow: hidden; width: 411px; height: 98px; text-align: left; line-height: normal; z-index: 0; left: 0.633301px; top: 0.350006px;" dir="ltr" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="411" height="98" viewBox="0 0 411 98"><desc>Created with Highcharts 6.1.4</desc><defs><clipPath id="highcharts-bd88d9t-1"><rect x="0" y="0" width="359" height="66" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="411" height="98" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="42" y="10" width="359" height="66"></rect><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 65.5 10 L 65.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 89.5 10 L 89.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 113.5 10 L 113.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 137.5 10 L 137.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 161.5 10 L 161.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 185.5 10 L 185.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 209.5 10 L 209.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 232.5 10 L 232.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 256.5 10 L 256.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 280.5 10 L 280.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 304.5 10 L 304.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 328.5 10 L 328.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 352.5 10 L 352.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 376.5 10 L 376.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 400.5 10 L 400.5 76" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 41.5 10 L 41.5 76" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 42 76.5 L 401 76.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 42 10.5 L 401 10.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="42" y="10" width="359" height="66"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 42 76 L 401 76"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 42 10 L 42 76"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-spline-series " transform="translate(42,10) scale(1 1)" clip-path="url(#highcharts-bd88d9t-1)"><path fill="none" d="M 11.966666666667 4.816762499999996 C 11.966666666667 4.816762499999996 26.326666666666796 14.659589999999998 35.9 18.416337499999997 C 45.4733333333332 22.173084999999997 50.2599999999998 23.600499999999997 59.833333333333 23.600499999999997 C 69.40666666666661 23.600499999999997 74.19333333333341 16.225137499999995 83.766666666667 16.225137499999995 C 93.34000000000022 16.225137499999995 98.12666666666681 25.136924999999803 107.7 28.2338375 C 117.27333333333199 31.330749999999803 122.05999999999798 31.709699999999998 131.63333333333 31.709699999999998 C 141.20666666666597 31.709699999999998 145.99333333333396 19.63667750000091 155.56666666667 15.302512499999999 C 165.14000000000198 10.968347500000913 169.926666666668 10.038874999999997 179.5 10.038874999999997 C 189.073333333332 10.038874999999997 193.85999999999802 23.018187499999996 203.43333333333 23.018187499999996 C 213.00666666666604 23.018187499999996 217.79333333333403 21.572540000000185 227.36666666667 20.6694125 C 236.94000000000202 19.766285000000188 241.726666666668 19.362392500000002 251.3 18.50255 C 260.87333333333197 17.6427075 265.65999999999804 16.370199999999997 275.23333333333 16.370199999999997 C 284.80666666666605 16.370199999999997 289.593333333334 25.376037499999995 299.16666666667 25.376037499999995 C 308.740000000002 25.376037499999995 313.526666666668 21.406825000000005 323.1 21.3868875 C 332.673333333332 21.366949999999996 347.03333333333 21.366949999999996 347.03333333333 21.366949999999996" class="highcharts-graph" data-z-index="1" stroke="#1e2022" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 1.9666666666670007 4.816762499999996 L 11.966666666667 4.816762499999996 C 11.966666666667 4.816762499999996 26.326666666666796 14.659589999999998 35.9 18.416337499999997 C 45.4733333333332 22.173084999999997 50.2599999999998 23.600499999999997 59.833333333333 23.600499999999997 C 69.40666666666661 23.600499999999997 74.19333333333341 16.225137499999995 83.766666666667 16.225137499999995 C 93.34000000000022 16.225137499999995 98.12666666666681 25.136924999999803 107.7 28.2338375 C 117.27333333333199 31.330749999999803 122.05999999999798 31.709699999999998 131.63333333333 31.709699999999998 C 141.20666666666597 31.709699999999998 145.99333333333396 19.63667750000091 155.56666666667 15.302512499999999 C 165.14000000000198 10.968347500000913 169.926666666668 10.038874999999997 179.5 10.038874999999997 C 189.073333333332 10.038874999999997 193.85999999999802 23.018187499999996 203.43333333333 23.018187499999996 C 213.00666666666604 23.018187499999996 217.79333333333403 21.572540000000185 227.36666666667 20.6694125 C 236.94000000000202 19.766285000000188 241.726666666668 19.362392500000002 251.3 18.50255 C 260.87333333333197 17.6427075 265.65999999999804 16.370199999999997 275.23333333333 16.370199999999997 C 284.80666666666605 16.370199999999997 289.593333333334 25.376037499999995 299.16666666667 25.376037499999995 C 308.740000000002 25.376037499999995 313.526666666668 21.406825000000005 323.1 21.3868875 C 332.673333333332 21.366949999999996 347.03333333333 21.366949999999996 347.03333333333 21.366949999999996 L 357.03333333333 21.366949999999996" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="21" visibility="visible" data-z-index="2" class="highcharts-tracker-line" style="cursor:pointer;"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-tracker" transform="translate(42,10) scale(1 1)" style="cursor:pointer;" clip-path="none"></g></g><text x="0" text-anchor="start" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="201" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="53.96666666666633" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="95" opacity="1"><tspan>Feb 18</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 19</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 20</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 21</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 22</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 23</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 24</tspan></text><text x="221.50000000000333" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="95" opacity="1"><tspan>Feb 25</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 26</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 27</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 28</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Feb 29</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Mar 1</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="-9999"><tspan>Mar 2</tspan></text><text x="389.03333333333336" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="95" opacity="1"><tspan>Mar 3</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="27" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="80" opacity="1">120k</text><text x="27" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">600k</text></g></svg></div></div>
+            </div>
+            <!-- End Charts -->
+          </div>
+        </div>
+      </div>
+      <!-- End Stats -->
+        
+
+        <!-- Ads -->
+         
+        <div class="d-block d-lg-none text-center pl-lg-4 pl-xll-5 mb-4">
+         
+            <a class="d-inline-block d-sm-none position-relative text-dark" target="_blank" href="https://chat.blockscan.com/start">
+<span class="showcase-banner-text bg-white font-size-1 shadow rounded px-1" style="left: 1rem;">Ad</span><img class="img-fluid rounded" width="321" height="101" src="Base%20Explorer_files/blockscan_321x101.png" alt="Ads"></a>
+
+<a class="d-none d-sm-inline-block d-lg-none position-relative text-dark" target="_blank" href="https://chat.blockscan.com/start">
+<span class="showcase-banner-text bg-white font-size-1 shadow rounded px-1" style="left: 1rem;">Ad</span><img class="img-fluid rounded" src="Base%20Explorer_files/blockscan_730x90.png" alt="Ads"></a>
+
+<a class="d-none d-lg-inline-block-alt position-relative text-dark" target="_blank" href="https://chat.blockscan.com/start">
+<span class="showcase-banner-text bg-white font-size-1 shadow rounded px-1" style="right: 1rem;">Ad</span><img class="img-fluid rounded" width="321" height="101" src="Base%20Explorer_files/blockscan_321x101.png" alt="Ads"></a>
+            
+        </div>
+         
+        <!-- End Ads -->
+
+        <!-- Lastest Blocks & Transactions -->
+        <div class="row mb-5">
+            <!-- Blocks -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="card h-100">
+                    <!-- Card Header -->
+                    <div class="card-header">
+                       <h2 class="card-header-title" data-toggle="tooltip" data-placement="top" data-title="Latest Blocks On the Base network" data-original-title="" title="">Latest L2 Blocks</h2>
+                    </div>
+                    <!-- End Card Header -->
+
+                    <div class="js-scrollbar card-body overflow-hidden mCustomScrollbar _mCS_1 mCS-autoHide" style="height: 400px; position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                        <div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398357">11398357</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 2 secs ago</span><a href="https://basescan.org/txs?block=11398357" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">9 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398356">11398356</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 4 secs ago</span><a href="https://basescan.org/txs?block=11398356" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">11 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398355">11398355</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 6 secs ago</span><a href="https://basescan.org/txs?block=11398355" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">7 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398354">11398354</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 8 secs ago</span><a href="https://basescan.org/txs?block=11398354" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">10 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398353">11398353</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 10 secs ago</span><a href="https://basescan.org/txs?block=11398353" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">9 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398352">11398352</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 12 secs ago</span><a href="https://basescan.org/txs?block=11398352" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">9 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398351">11398351</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 14 secs ago</span><a href="https://basescan.org/txs?block=11398351" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">6 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398350">11398350</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 16 secs ago</span><a href="https://basescan.org/txs?block=11398350" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">6 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398349">11398349</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 18 secs ago</span><a href="https://basescan.org/txs?block=11398349" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">8 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media align-items-sm-center mr-4 mb-1 mb-sm-0"><div class="d-none d-sm-flex mr-2"><span class="btn btn-icon btn-soft-secondary"><span class="btn-icon__inner text-dark">Bk</span></span></div><div class="media-body"><span class="d-inline-block d-sm-none">Block</span> <a href="https://basescan.org/block/11398348">11398348</a><span class="d-sm-block"></span><span class="small text-secondary ml-1 ml-sm-0 mr-1 text-nowrap"> 20 secs ago</span><a href="https://basescan.org/txs?block=11398348" data-toggle="tooltip" title="" data-original-title="Transactions in this Block">5 txns </a> <span class="small text-secondary">in 2 secs</span><span class="d-inline-block d-sm-none"></span></div></div></div></div>
+                    </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 214px; max-height: 366px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+                    <div class="card-footer">
+                        <a class="btn btn-xs btn-block btn-soft-primary" href="https://basescan.org/blocks">View all blocks</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Blocks -->
+
+            <!-- Transactions -->
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                    <!-- Card Header -->
+                    <div class="card-header">
+                        <h2 class="card-header-title" data-toggle="tooltip" data-placement="top" data-title="Latest Transactions" data-original-title="" title="">Latest Transactions</h2>
+                    </div>
+              
+                    <div class="js-scrollbar card-body overflow-hidden mCustomScrollbar _mCS_2 mCS-autoHide" style="height: 400px; position: relative; overflow: visible;"><div id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                        <div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0x462f68b95441465b3087afb3674d3e51ab0e3b0a554a1ca503b1e597c5f93b0f">0x462f68b95441465b3087afb3674d3e51ab0e3b0a554a1ca503b1e597c5f93b0f</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0xe8907f8cb1f66af33b6401ab8282e7049976f632">0xe8907f8cb1f66af33b6401ab8282e7049976f632</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x887749abb233682aa7d5594a54659c51501445b1" class="hash-tag hash-tag--xs text-truncate">0x887749abb233682aa7d5594a54659c51501445b1</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xd2ea8f36cf047c043767f9d3b9c29528ad29d5abaf00e52176fdbdee2433d571">0xd2ea8f36cf047c043767f9d3b9c29528ad29d5abaf00e52176fdbdee2433d571</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0x20fe51a9229eef2cf8ad9e89d91cab9312cf3b7a">0x20fe51a9229eef2cf8ad9e89d91cab9312cf3b7a</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x8efaee665b588b1d640d6b894530c3cbe0814693" class="hash-tag hash-tag--xs text-truncate">0x8efaee665b588b1d640d6b894530c3cbe0814693</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>02784 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xe8616b97c02997f198b4236191cfee124e06704af4efffdc92649a05ff6d328c">0xe8616b97c02997f198b4236191cfee124e06704af4efffdc92649a05ff6d328c</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0xf83c333af409286e04f59dea1dd55d024fc44e6b">0xf83c333af409286e04f59dea1dd55d024fc44e6b</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca" class="hash-tag hash-tag--xs text-truncate">0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0x6aba9e963e6e235a7b6e6ef89e9799a592d5a3ef5cb5790ecacac5f1030a6fef">0x6aba9e963e6e235a7b6e6ef89e9799a592d5a3ef5cb5790ecacac5f1030a6fef</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0xc458a7e221b124fa5229fbb53771ae134403eae3">0xc458a7e221b124fa5229fbb53771ae134403eae3</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x1195cf65f83b3a5768f3c496d3a05ad6412c64b7" class="hash-tag hash-tag--xs text-truncate">0x1195cf65f83b3a5768f3c496d3a05ad6412c64b7</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>00007 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xa7d743ca7882efaa32b80b51830ed43e3d5a08518ceada3933a8bd78a97a898d">0xa7d743ca7882efaa32b80b51830ed43e3d5a08518ceada3933a8bd78a97a898d</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0xe93685f3bba03016f02bd1828badd6195988d950">0xe93685f3bba03016f02bd1828badd6195988d950</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0xcb566e3b6934fa77258d68ea18e931fa75e1aaaa" class="hash-tag hash-tag--xs text-truncate">0xcb566e3b6934fa77258d68ea18e931fa75e1aaaa</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xca4e5c6162e358dbe4b00cb2a1b60df92bcdc941eb77fbcad1444fd9fbfa10ac">0xca4e5c6162e358dbe4b00cb2a1b60df92bcdc941eb77fbcad1444fd9fbfa10ac</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0xcc84fa2f07169782b145d6aa669ba6914b51be35">0xcc84fa2f07169782b145d6aa669ba6914b51be35</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0xcf205808ed36593aa40a44f10c7f7c2f67d4a4d4" class="hash-tag hash-tag--xs text-truncate">0xcf205808ed36593aa40a44f10c7f7c2f67d4a4d4</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0x1f4a7d4d8627d14ac1a70da65187ccd51a6e5e238fa9aca383498ee8aa6b2fea">0x1f4a7d4d8627d14ac1a70da65187ccd51a6e5e238fa9aca383498ee8aa6b2fea</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0x90c5bd83e3ea7204854abbea75abaf1c5c4135b6">0x90c5bd83e3ea7204854abbea75abaf1c5c4135b6</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x0205ab288d10587e3695d96e5a26972542c77242" class="hash-tag hash-tag--xs text-truncate">0x0205ab288d10587e3695d96e5a26972542c77242</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xbf1de7aa80c44e713bc0192c6adcaf93dc6537ea5c5f50773dd14fe0a0df3a9f">0xbf1de7aa80c44e713bc0192c6adcaf93dc6537ea5c5f50773dd14fe0a0df3a9f</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0x80c67432656d59144ceff962e8faf8926599bcf8">0x80c67432656d59144ceff962e8faf8926599bcf8</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x316e1bb0b6145726d3b1cb98db0ec455a76740fd" class="hash-tag hash-tag--xs text-truncate">0x316e1bb0b6145726d3b1cb98db0ec455a76740fd</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>354 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xfb2a10a09068d3678859a9f6af0c19f275efcb516ce801ff0c5329ad5cbe281b">0xfb2a10a09068d3678859a9f6af0c19f275efcb516ce801ff0c5329ad5cbe281b</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate mr-1" href="https://basescan.org/address/0xdeaddeaddeaddeaddeaddeaddeaddeaddead0001">System Address</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x4200000000000000000000000000000000000015" class="hash-tag hash-tag--xs text-truncate">0x4200000000000000000000000000000000000015</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">2 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0 ETH</span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Tx#</span> <a class="hash-tag hash-tag--md text-truncate" href="https://basescan.org/tx/0xa86132b92332ec2b042378497eaaa0501fec6fe153e396af95ca72fac9c74342">0xa86132b92332ec2b042378497eaaa0501fec6fe153e396af95ca72fac9c74342</a><div class="d-flex text-nowrap mb-1"><span>From <a class="hash-tag hash-tag--xs text-truncate " href="https://basescan.org/address/0x20fe51a9229eef2cf8ad9e89d91cab9312cf3b7a">0x20fe51a9229eef2cf8ad9e89d91cab9312cf3b7a</a></span><span class="d-sm-block"> To <a href="https://basescan.org/address/0x66fa6f474bff82ecc46c4ce864535ef75d8d7843" class="hash-tag hash-tag--xs text-truncate">0x66fa6f474bff82ecc46c4ce864535ef75d8d7843</a></span></div><div class="d-flex align-items-center"><span class="small text-secondary mr-1">4 secs ago</span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" data-toggle="tooltip" title="" data-original-title="Amount">0<b>.</b>1416 ETH</span></div></div></div></div></div>
+                    </div></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 153px; max-height: 366px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+                    <div class="card-footer">
+                        
+                            <a class="btn btn-xs btn-block btn-soft-primary" href="https://basescan.org/txs">View all transactions</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Transactions -->
+
+            <!-- Transactions -->
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                    <!-- Card Header -->
+                    <div class="card-header">
+                        <h2 class="card-header-title" data-toggle="tooltip" data-placement="top" data-title="Latest Transactions submitted from L1 to L2" data-original-title="" title="">Latest L1→L2 Transactions</h2>
+                    </div>
+              
+                    <div class="js-scrollbar card-body overflow-hidden mCustomScrollbar _mCS_3 mCS-autoHide" style="height: 400px; position: relative; overflow: visible;"><div id="mCSB_3" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                        <div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364348" class="hash-tag hash-tag--md text-truncate" target="_blank">19364348</a><a class="ml-1" href="https://etherscan.io/block/19364348" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0xf288ee36cc84726721c5dddedc29c3ee2704d9f7199624bc9fd4c0cce534fc22" target="_blank">0xf288ee36cc84726721c5dddedc29c3ee2704d9f7199624bc9fd4c0cce534fc22</a><a class="mr-1" href="https://etherscan.io/tx/0xf288ee36cc84726721c5dddedc29c3ee2704d9f7199624bc9fd4c0cce534fc22" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/" class="hash-tag hash-tag--xs text-truncate"></a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364338" class="hash-tag hash-tag--md text-truncate" target="_blank">19364338</a><a class="ml-1" href="https://etherscan.io/block/19364338" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x7efbbeb9de3e452400607ed37eef4f1fb17ba2e7af71761cccd107cf7dcb39c8" target="_blank">0x7efbbeb9de3e452400607ed37eef4f1fb17ba2e7af71761cccd107cf7dcb39c8</a><a class="mr-1" href="https://etherscan.io/tx/0x7efbbeb9de3e452400607ed37eef4f1fb17ba2e7af71761cccd107cf7dcb39c8" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0xbf4f9c5200435e9fba9a098ee73ed987381ccdd4298ded634657a6793505b730" class="hash-tag hash-tag--xs text-truncate">0xbf4f9c5200435e9fba9a098ee73ed987381ccdd4298ded634657a6793505b730</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364334" class="hash-tag hash-tag--md text-truncate" target="_blank">19364334</a><a class="ml-1" href="https://etherscan.io/block/19364334" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x503c893e43d39435f2b00ef72138f18545c874ff4da6eddaecdfd02baa37d623" target="_blank">0x503c893e43d39435f2b00ef72138f18545c874ff4da6eddaecdfd02baa37d623</a><a class="mr-1" href="https://etherscan.io/tx/0x503c893e43d39435f2b00ef72138f18545c874ff4da6eddaecdfd02baa37d623" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0xe2805caf0297049827062d81b2bd993c5ad4e7b52804c0ab9036b3818f68613a" class="hash-tag hash-tag--xs text-truncate">0xe2805caf0297049827062d81b2bd993c5ad4e7b52804c0ab9036b3818f68613a</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364328" class="hash-tag hash-tag--md text-truncate" target="_blank">19364328</a><a class="ml-1" href="https://etherscan.io/block/19364328" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0xc57b042322395ea18c3ddf549e23dd03c231431ee644be84d6b08cee4096d498" target="_blank">0xc57b042322395ea18c3ddf549e23dd03c231431ee644be84d6b08cee4096d498</a><a class="mr-1" href="https://etherscan.io/tx/0xc57b042322395ea18c3ddf549e23dd03c231431ee644be84d6b08cee4096d498" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0xf1107e74e5c82061e342645aa76cfbb1d10fcafc03f776a6a342bcc9328114b1" class="hash-tag hash-tag--xs text-truncate">0xf1107e74e5c82061e342645aa76cfbb1d10fcafc03f776a6a342bcc9328114b1</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364325" class="hash-tag hash-tag--md text-truncate" target="_blank">19364325</a><a class="ml-1" href="https://etherscan.io/block/19364325" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x73200e6ad74994aff79938a822b262f277d8edacf7b3cc3cf1f1b0697ac79569" target="_blank">0x73200e6ad74994aff79938a822b262f277d8edacf7b3cc3cf1f1b0697ac79569</a><a class="mr-1" href="https://etherscan.io/tx/0x73200e6ad74994aff79938a822b262f277d8edacf7b3cc3cf1f1b0697ac79569" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0xf8879fed70a2c01094e0476d733edcb81094f1218da9ccc16a190bf05f1c92e8" class="hash-tag hash-tag--xs text-truncate">0xf8879fed70a2c01094e0476d733edcb81094f1218da9ccc16a190bf05f1c92e8</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364322" class="hash-tag hash-tag--md text-truncate" target="_blank">19364322</a><a class="ml-1" href="https://etherscan.io/block/19364322" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x55dc68c7fa7696f0be86820db183a95a824f5c7e9d226191dbfcde5e206ce5c2" target="_blank">0x55dc68c7fa7696f0be86820db183a95a824f5c7e9d226191dbfcde5e206ce5c2</a><a class="mr-1" href="https://etherscan.io/tx/0x55dc68c7fa7696f0be86820db183a95a824f5c7e9d226191dbfcde5e206ce5c2" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0xa3650041e07d44d8e8d08880fdbe6bd747285dea1f2a483c45fc8f394107bf45" class="hash-tag hash-tag--xs text-truncate">0xa3650041e07d44d8e8d08880fdbe6bd747285dea1f2a483c45fc8f394107bf45</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364321" class="hash-tag hash-tag--md text-truncate" target="_blank">19364321</a><a class="ml-1" href="https://etherscan.io/block/19364321" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x73ef3dd54969e5f20795d92bca64bad3524989e61ca1f3f38c0d3639771db6ea" target="_blank">0x73ef3dd54969e5f20795d92bca64bad3524989e61ca1f3f38c0d3639771db6ea</a><a class="mr-1" href="https://etherscan.io/tx/0x73ef3dd54969e5f20795d92bca64bad3524989e61ca1f3f38c0d3639771db6ea" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0x1ece22867a3e618ce8f1dcf428483bba11df1c66bf2def52bdfdfcc98b67358b" class="hash-tag hash-tag--xs text-truncate">0x1ece22867a3e618ce8f1dcf428483bba11df1c66bf2def52bdfdfcc98b67358b</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364315" class="hash-tag hash-tag--md text-truncate" target="_blank">19364315</a><a class="ml-1" href="https://etherscan.io/block/19364315" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0xd79816b2eb98873512b9e82bb8771ff09d8d51dea0c8eb8caead0d4e6d4f908c" target="_blank">0xd79816b2eb98873512b9e82bb8771ff09d8d51dea0c8eb8caead0d4e6d4f908c</a><a class="mr-1" href="https://etherscan.io/tx/0xd79816b2eb98873512b9e82bb8771ff09d8d51dea0c8eb8caead0d4e6d4f908c" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0x2e7f05401641a46128a3f260f5eda89c6acd56f3097e3317dbda214612f913b1" class="hash-tag hash-tag--xs text-truncate">0x2e7f05401641a46128a3f260f5eda89c6acd56f3097e3317dbda214612f913b1</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364312" class="hash-tag hash-tag--md text-truncate" target="_blank">19364312</a><a class="ml-1" href="https://etherscan.io/block/19364312" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0xb7392e5879b6b5b1872eda3679e56d0011e2a131ed69b57d406b69edc23115e5" target="_blank">0xb7392e5879b6b5b1872eda3679e56d0011e2a131ed69b57d406b69edc23115e5</a><a class="mr-1" href="https://etherscan.io/tx/0xb7392e5879b6b5b1872eda3679e56d0011e2a131ed69b57d406b69edc23115e5" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0xec4cfeb70a8781b69cb0008f1fa30f6d7d4bb29d68296802a3f23373c58a8a38" class="hash-tag hash-tag--xs text-truncate">0xec4cfeb70a8781b69cb0008f1fa30f6d7d4bb29d68296802a3f23373c58a8a38</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div><hr class="hr-space"><div class="row"><div class="col-12"><div class="media"><div class="mr-2"><span class="btn btn-icon btn-soft-secondary rounded-circle"><span class="btn-icon__inner text-dark">Tx</span></span></div><div class="media-body"><span class="d-inline-block">Bk</span> <a href="https://etherscan.io/block/19364303" class="hash-tag hash-tag--md text-truncate" target="_blank">19364303</a><a class="ml-1" href="https://etherscan.io/block/19364303" target="_blank"><i class="fa fa-external-link small"></i></a><div class="d-flex text-nowrap mb-1"><span>L1 Tx#  <a class="hash-tag hash-tag--xs text-truncate" href="https://etherscan.io/tx/0x32f12d9cf6b2438b16725c854843c6eaa0e04fbfa7b35ce68810753951bbdb75" target="_blank">0x32f12d9cf6b2438b16725c854843c6eaa0e04fbfa7b35ce68810753951bbdb75</a><a class="mr-1" href="https://etherscan.io/tx/0x32f12d9cf6b2438b16725c854843c6eaa0e04fbfa7b35ce68810753951bbdb75" target="_blank"><i class="fa fa-external-link small"></i></a></span><span class="d-sm-block">L2 Tx# <a href="https://basescan.org/tx/0x6b1671152a2dcb9b4e69476d7529552ac164f68e208cba4361511a370afc21eb" class="hash-tag hash-tag--xs text-truncate">0x6b1671152a2dcb9b4e69476d7529552ac164f68e208cba4361511a370afc21eb</a></span></div><div class="d-none"><span class="small text-secondary mr-1"></span><span class="u-label u-label--xs u-label--badge-in u-label--secondary text-center text-nowrap" title="Amount"></span></div></div></div></div></div>
+                    </div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 207px; max-height: 366px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+                    <div class="card-footer">
+                        
+                            <a class="btn btn-xs btn-block btn-soft-primary" href="https://basescan.org/txsEnqueued">View all L1→L2 transactions</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Transactions -->
+      </div>
+      <!-- End Lastest Blocks & Transactions -->
+
+    </div>
+        
+
+
+        </main>
+        <div id="push"></div>
+         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+
+        
+    </div>
+
+            <footer class="bg-dark py-4">
+                 <div class="container">
+                     <div class="row justify-content-sm-between align-items-center">
+                         <div class="col-sm-6 mb-3 mb-sm-0">
+                             <div class="d-flex align-items-center">
+                                 
+                                    <img width="25" src="Base%20Explorer_files/main.svg" alt="Logo">
+                                 
+                                 <span class="h5 text-white mb-0 ml-3">Powered By Base</span>
+                             </div>
+                         </div>
+
+                         <div class="col-sm-6 align-self-bottom">
+                             <!-- Preferences -->
+                             <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                 <span>
+                                     <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');"><img class="mr-1" width="15" src="Base%20Explorer_files/metamask.svg" alt="Metamask">Add Base to Metamask</button>
+                                 </span>
+
+                                 <a class="btn btn-xss btn-soft-light mr-2" href="https://basescan.org/settings">
+                                     <i class="fa fa-cogs mr-1"></i>Preferences
+                                 </a>
+
+                                  <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                        <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                             </div>
+                             <!-- End Preferences -->
+                         </div>
+                     </div>
+                     <!-- End Fotoer Content -->
+
+              <hr class="opacity-md">
+             <div class="row justify-content-between align-items-center font-size-1">
+                 <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                     <p class="mb-0 text-white">BaseScan © 2024  (BASE-A1)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a> <span class="mx-1">|</span> <a class="text-white-70" href="https://basescan.org/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i>
+                     </p>
+                 </div>
+            <div class="col-md-6 text-md-right">
+                <ul class="list-inline mb-0">
+
+                    
+                    <li class="list-inline-item">
+                    <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://basescan.org/terms">Terms of Service</a>
+                    </li>
+                    
+                    <li class="list-inline-item">
+                    <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://basescan.statuspage.io/">Network Status</a>
+                    </li>
+                    
+
+                    <li class="list-inline-item">
+                    
+                           <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="mailto:info@basescan.org" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us">
+                           <i class="far fa-envelope btn-icon__inner"></i>
+                    
+                    </a>
+                </li>
+                </ul>
+            </div>
+             </div>
+         </div>
+    </footer>
+
+    <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: none;">
+        
+    </div>
+
+    <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+        <span class="fa fa-arrow-up u-go-to__inner"></span>
+    </a>
+    
+      <script src="Base%20Explorer_files/jquery-ui.min.js"></script>
+    <script src="Base%20Explorer_files/jquery-migrate.min.js"></script>
+    <script src="Base%20Explorer_files/popper.min.js"></script>
+    <script src="Base%20Explorer_files/bootstrap.min.js"></script>
+    
+
+    <!-- JS Implementing Plugins -->
+    <script src="Base%20Explorer_files/hs.megamenu.js"></script>
+    <script src="Base%20Explorer_files/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script src="Base%20Explorer_files/jquery.cubeportfolio.min.js"></script>
+
+
+    <!-- JS Front -->
+    <script src="Base%20Explorer_files/hs.core.js"></script>
+    <script src="Base%20Explorer_files/hs.header.js"></script>
+    <script src="Base%20Explorer_files/hs.unfold.js"></script>
+    <script src="Base%20Explorer_files/hs.malihu-scrollbar.js"></script>
+    <script src="Base%20Explorer_files/hs.focus-state.js"></script>
+    <script src="Base%20Explorer_files/hs.go-to.js"></script>
+    <script src="Base%20Explorer_files/hs.cubeportfolio.js"></script>
+    <script src="Base%20Explorer_files/combine-js-bottom2.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(window).on('load', function () {
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 767.98,
+                hideTimeOut: 0
+            });
+            myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter","#signupSrEmail")
+        });
+
+        $(document).on('ready', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#header'));
+
+            // initialization of unfold component
+            $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                afterOpen: function () {
+                    $(this).find('input[type="search"]').focus();
+                }
+            });
+
+            // initialization of malihu scrollbar
+            $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      
+            // initialization of focus state
+            $.HSCore.components.HSFocusState.init();
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of cubeportfolio
+            //$.HSCore.components.HSCubeportfolio.init('.cbp');
+        });
+    </script>
+    <script type="text/javascript">
+        var sid = '1b3df34f99ac32fcbe5aeddaa851e1bf';
+        var strGlobal = getCookie("site_switch_age_datetime");
+        var strGlobalFee = sessionStorage.getItem("ShowFee");
+        var cookieconsent = getCookie("Base" + "_cookieconsent");
+        if (cookieconsent !== "True") {
+            document.getElementById("divcookie").style.display = "block";
+        };
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        $("#btnCookie").click(function () {
+            $("#divcookie").fadeOut("slow", function () {
+                var d = new Date();
+                d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = "Base" + "_cookieconsent=True" + ";" + expires + ";path=/";;
+            });
+        });
+        function handleSearchText(data) {
+            searchAddress = false;
+            if ($("txtSearchInput").val() == "") {
+                $("#hdnSearchText").val("");
+                $("#hdnSearchLabel").val("");
+            }
+        }
+    </script>
+    
+
+    <script src="Base%20Explorer_files/web3.min.js"></script>
+    <script type="text/javascript">
+        var web3Obj;
+        var isTestnet = 'false';
+        var SiteNetID = '8453';
+        var SiteNetChainID = '0x2105';
+        var SiteNetName = 'Base';
+        var SiteName = 'BaseScan';
+        var SiteErc20 = 'ERC20';
+        var SiteErc721 = 'ERC721';
+        var SiteErc1155 = 'ERC1155';
+        var sv = '24.2.1.1';
+        var allowErc1155 = '';
+
+        async function addNetwork(type) {
+            
+            if (type === 'web3') {
+                if (typeof ethereum !== 'undefined') {
+                    if (window.ethereum.providers?.length) {
+                        if (window.ethereum.isMetaMask) {
+                            ethereum = window.ethereum.providers.find((provider) => provider.isMetaMask);
+                            web3Obj = new Web3(ethereum);
+                        }
+                    } else {
+                        web3Obj = new Web3(ethereum);
+                    }
+                } else if (typeof web3 !== 'undefined') {
+                    web3Obj = new Web3(web3.givenProvider);
+                } else {
+                    web3Obj = new Web3(ethereum);
+                }                
+            }            
+
+            if (typeof web3Obj !== 'undefined') {
+                var network = 0;
+                network = await web3Obj.eth.getChainId();
+                netID = network.toString();
+                var params;
+             if (netID == SiteNetID) {
+                    alert("Base Network has already been added to Metamask.");
+                    return;
+                } else {
+                    params = [{
+                        chainId: SiteNetChainID,
+                        chainName: 'Base',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://mainnet.base.org/'],
+                        blockExplorerUrls: ['https://basescan.org']
+                    }]
+                }
+            
+                window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                    .then(() => console.log('Success'))
+                    .catch((error) => console.log("Error", error.message));
+            } else {
+                alert('Unable to locate a compatible web3 browser!');
+            }
+        }
+    </script>
+
+    
+
+    <script src="Base%20Explorer_files/highcharts.js"></script>
+
+    <script>
+        var lang_miner = "Miner";
+        var lang_mined_by = "Mined by";
+        var lang_block = "Block";
+        var lang_block_reward = "Block Reward";
+        var lang_sec = "sec";
+        var lang_secs = "secs";
+        var lang_min = "min";
+        var lang_mins = "mins";
+        var lang_from = "From";
+        var lang_to = "To";
+        var lang_amount = "Amount";
+        var lang_tx = "Tx";
+        var lang_ba = "Ba";
+        var lang_bk = "Bk";
+        var lang_ether = "ETH";
+        var lang_txns = "txns";
+        var lang_in_X = "in";
+        var lang_ago = "ago";
+        var lang_secs_ago = "secs ago";
+        var lang_sec_ago = "sec ago";
+        var lang_sec_in = "";
+        var lang_hash = "Hash";
+        var lang_url = "etherscan.io"
+    </script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#container-1').highcharts({
+                chart: {
+                    spacingTop: 10,
+                    spacingBottom: 0,
+                    spacingLeft: 0,
+                    spacingRight: 10,
+                },
+
+                title: {
+                    text: '',
+                    align: 'left',
+                },
+
+                xAxis: {
+                    title: { text: '' },
+                    lineWidth: 0,
+                    minorTickLength: 0,
+                    tickLength: 0,
+                    labels: {
+                        step: 7,
+                    },
+                    categories: [
+                        'Feb 18','Feb 19','Feb 20','Feb 21','Feb 22','Feb 23','Feb 24','Feb 25','Feb 26','Feb 27','Feb 28','Feb 29','Mar 1','Mar 2','Mar 3',
+                    ]
+                },
+
+                yAxis: {
+                    labels: {
+                        enabled: true
+                    },
+                    gridLineWidth: 0,
+                    title: {
+                        text: null
+                    }
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                credits: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '<span style="font-size:10px">' + this.point.friendlydate + '</span><br><table><tr><td style="padding:0">' +
+                            '<span style="color:' + this.series.color + '">Transactions: </a></span><b>' + this.point.formattedValue + '</b><br>' +
+                            '<br>' + 'Price: ' + this.point.price + ''
+                            '</td></tr></table>';
+                    }
+                },
+
+                plotOptions: {
+                    series: {
+                        color: '#1e2022',
+                        enableMouseTracking: true,
+                        lineWidth: 1,
+                        shadow: false,
+                        animation: false,
+                        cursor: 'pointer',
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        marker: {
+                            radius: 0
+                        },
+                        point: {
+                            events: {
+                                select: function (e) {
+                                    location.href = 'txs?dt=' + this.options.dt;
+                                }
+                            }
+                        }
+                    },
+                    column: {
+                        pointPadding: 0.1,
+                        borderWidth: 0
+                    }
+                },
+
+                series: [{
+                    name: 'Transactions',
+                    type: 'spline',
+                    data: [{y : 564969, dt : '1708214400', formattedValue : '564,969', friendlydate : 'Sunday, February 18, 2024', price : '$2,881.40'  },{y : 466063, dt : '1708300800', formattedValue : '466,063', friendlydate : 'Monday, February 19, 2024', price : '$2,945.00'  },{y : 428360, dt : '1708387200', formattedValue : '428,360', friendlydate : 'Tuesday, February 20, 2024', price : '$3,015.27'  },{y : 481999, dt : '1708473600', formattedValue : '481,999', friendlydate : 'Wednesday, February 21, 2024', price : '$2,968.67'  },{y : 394663, dt : '1708560000', formattedValue : '394,663', friendlydate : 'Thursday, February 22, 2024', price : '$2,969.67'  },{y : 369384, dt : '1708646400', formattedValue : '369,384', friendlydate : 'Friday, February 23, 2024', price : '$2,922.10'  },{y : 488709, dt : '1708732800', formattedValue : '488,709', friendlydate : 'Saturday, February 24, 2024', price : '$2,992.35'  },{y : 526990, dt : '1708819200', formattedValue : '526,990', friendlydate : 'Sunday, February 25, 2024', price : '$3,112.81'  },{y : 432595, dt : '1708905600', formattedValue : '432,595', friendlydate : 'Monday, February 26, 2024', price : '$3,178.24'  },{y : 449677, dt : '1708992000', formattedValue : '449,677', friendlydate : 'Tuesday, February 27, 2024', price : '$3,243.69'  },{y : 465436, dt : '1709078400', formattedValue : '465,436', friendlydate : 'Wednesday, February 28, 2024', price : '$3,386.34'  },{y : 480944, dt : '1709164800', formattedValue : '480,944', friendlydate : 'Thursday, February 29, 2024', price : '$3,342.24'  },{y : 415447, dt : '1709251200', formattedValue : '415,447', friendlydate : 'Friday, March 1, 2024', price : '$3,435.90'  },{y : 444459, dt : '1709337600', formattedValue : '444,459', friendlydate : 'Saturday, March 2, 2024', price : '$3,423.65'  },{y : 444604, dt : '1709424000', formattedValue : '444,604', friendlydate : 'Sunday, March 3, 2024', price : '$3,489.57'  },],
+                    allowPointSelect: true,
+                    pointStart: 0
+                }]
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+
+        function setFocus() {
+            if (window.innerWidth > 600)
+                $("input[name=q]").focus();
+        }
+        $(document).ready(function () {
+            //setFocus();
+        });
+    </script>
+    
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>

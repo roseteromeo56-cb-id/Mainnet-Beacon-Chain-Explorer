@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Token Tracker | LineaScan
+</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="format-detection" content="telephone=no">
+   <meta name="Description" content="LineaScan allows you to explore and search the blockchain for transactions, addresses, tokens, prices and other activities taking place on Linea Mainnet."> <meta name="author" content="lineascan.build"> <meta name="keywords" content="LineaScan, Mainnet explorer, search, blockchain, crypto, currency"> <meta property="og:title" content="Token Tracker | LineaScan"> <meta property="og:description" content="The list of ERC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the Linea Mainnet Blockchain on LineaScan."> <meta property="og:type" content="website"> <meta property="og:site_name" content="Linea Mainnet Blockchain Explorer"> <meta property="og:url" content="http://lineascan.build/tokens"> <meta property="og:image" content="https://lineascan.build/images/brandassets/logo.jpg?v=24.2.3.0"> <meta property="og:image:alt" content="Visit lineascan.build"> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content="@LineaScan"> <meta name="twitter:title" content="Token Tracker | LineaScan"> <meta property="twitter:description" content="The list of ERC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the Linea Mainnet Blockchain on LineaScan."> <meta property="twitter:image" content="https://lineascan.build/images/brandassets/logo.jpg?v=24.2.3.0"> 
+    <style>
+        .card-header.sticky-card-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .dataTable > thead > tr > th[class*="remove-icon"]:before,
+        .dataTable > thead > tr > th[class*="remove-icon"]:after {
+            content: "" !important;
+        }
+
+        table.dataTable thead th.sorting:before,
+        table.dataTable thead th.sorting_asc:before,
+        table.dataTable thead th.sorting_desc:before,
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_desc:after {
+            content: none;
+        }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .fadeout {
+            position: relative;
+            bottom: 4em;
+            height: 4em;
+            background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+            background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% )
+        }
+    </style>
+
+    <link rel="shortcut icon" href="https://lineascan.build/images/favicon.ico?v=24.2.3.0">
+    <link rel="apple-touch-icon" href="https://lineascan.build/images/favicon.png">
+
+    
+    <script async="" src="Token%20Tracker%20LineaScan_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-7HXXHXN492', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/animate.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/hs.megamenu.css">
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/select2.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/theme.min.css">
+    <link rel="stylesheet" href="Token%20Tracker%20LineaScan_files/custom.css">
+
+    <script src="Token%20Tracker%20LineaScan_files/jquery.min.js"></script>
+    <script type="text/javascript" src="Token%20Tracker%20LineaScan_files/blockies.js"></script>
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+
+        body.dark-mode .ui-state-active {
+            background-color: #252525;
+            border-color: #323232;
+        }
+
+        .sticky-top {
+            z-index: 999;
+        }
+
+        .defi-icon img {
+            max-width: 27px;
+        }
+
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+
+    
+    <link href="Token%20Tracker%20LineaScan_files/hs.sticky-thead.css" rel="stylesheet">
+    <style>
+        .custwidth {
+            width: 295px !important;
+        }
+
+        @media all and (max-width: 576px) {
+
+            #divSTContainer th:first-child, #divSTContainer td:first-child,
+            #divSTContainer th:nth-child(2), #divSTContainer td:nth-child(2) {
+                position: -webkit-sticky;
+                position: sticky;
+                background-color: white;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:first-child, #divSTContainer td:first-child {
+                left: 0;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:first-child {
+                z-index: 4;
+                padding: .625rem 5px;
+                text-align: left;
+                width: 50px;
+                min-width: 50px;
+            }
+            #divSTContainer .sticky-thead-cloned-table th:nth-child(2) {
+                padding: .625rem 0;
+                left: 50px !important;
+                width: 130px;
+                min-width: 130px;
+            }
+            #divSTContainer td:first-child {
+                border-bottom: 1.4px solid #e7eaf3;
+            }
+            #divSTContainer td:nth-child(2) {
+                padding: .625rem 0;
+                left: 50px !important;
+                width: 130px;
+                min-width: 130px;
+                border-bottom: 1.4px solid #e7eaf3;
+            }
+            #divSTContainer td:nth-child(3) {
+                left: 130px !important;
+            }
+            #divSTContainer td:nth-child(3) {   
+                left: 130px !important;
+                width: 80px;
+                min-width: 80px;
+            }
+            #divSTContainer td:nth-child(4){   
+                left: 80px !important;
+                width: 90px;
+                min-width: 90px;
+            }
+            #divSTContainer td:nth-child(5){   
+                left: 90px !important;
+                width: 100px;
+                min-width: 100px;
+            }
+            #divSTContainer td:nth-child(6){   
+                left: 100px !important;
+                width: 135px;
+                min-width: 135px;
+            }
+            #divSTContainer td:nth-child(7){   
+                left: 135px !important;
+                width: 80px;
+                min-width: 80px;
+            }
+            #divSTContainer .table-text-normal td:first-child {
+                width: 50px;
+                min-width: 50px;
+                padding: .625rem 5px;
+                left: 0 !important;                
+            }
+            #divSTContainer .sticky-thead-original-thead {
+                display: none;
+            }
+            #divSTContainer .sticky-thead-cloned-table thead {
+              border-bottom: 1px solid #e7eaf3;
+            }
+            #divSTContainer .sticky-thead-cloned-table thead  th {
+              border-bottom-width: 0;
+            }
+            #divSTContainer .table tr td {
+                border-top: 1px solid #e7eaf3; 
+            }
+            #divSTContainer .table tr:nth-child(1) td{
+                border-top: 0; 
+            }
+            #divSTContainer .table tr:last-child td{
+                border-bottom: 0; 
+            }
+            #divSTContainer .token-sticky-header {
+                background-color: #f8fafd !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="Token%20Tracker%20LineaScan_files/datatables.min.css">
+    <script type="text/javascript" src="Token%20Tracker%20LineaScan_files/datatables.min.js"></script>
+    <script>
+        function showSignInPopUp(tableid) {
+            if ($('#signInPopUp').attr("style")) {
+                $('#signInPopUp').removeAttr("style");
+            }
+
+            if (!$(".add-paywall").hasClass("paywall-mask")) {
+                $('.add-paywall').addClass("paywall-mask");
+            }
+
+            return;
+        }
+
+        function hideSignInPopUp(tableid) {
+            if (!$('#signInPopUp').attr("style")) {
+                $('#signInPopUp').attr("style", "display:none;");
+            }
+
+            if ($('#paywall_mask_' + tableid).hasClass("paywall-mask")) {
+                $('#paywall_mask_' + tableid).removeClass("paywall-mask");
+            }
+
+            return;
+        }
+    </script>
+<meta name="description" content="The list of ERC20 Tokens and their Prices, Market Capitalizations and the Number of Holders in the Linea Mainnet Blockchain on LineaScan."><script src="Token%20Tracker%20LineaScan_files/jquery.mousewheel.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header">
+            <div class="u-header__section  ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand " href="https://lineascan.build/" target="_parent" aria-label="LineaScan">
+                                <img id="logo-header" width="100" src="Token%20Tracker%20LineaScan_files/logo.svg" alt="Logo">
+                                
+                            </a>
+
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">ETH: $3,550.87</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title=""><span class="text-success"> (+1.98%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="https://lineascan.build/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI12"><a href="https://lineascan.build/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI26"><a href="https://lineascan.build/txsDeposits" class="nav-link u-header__sub-menu-nav-link">Latest L1→L2 Transactions</a></li>
+                                                <li id="LI66"><a href="https://lineascan.build/txsExit" class="nav-link u-header__sub-menu-nav-link">Latest L2→L1 Transactions</a></li>                                              
+                                            <li id="LI16"><a href="https://lineascan.build/txsPending" class="nav-link u-header__sub-menu-nav-link">Pending Transactions</a></li>
+                                            <li id="LI14"><a href="https://lineascan.build/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            
+
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                              <li id="LI_batches"><a href="https://lineascan.build/batches" class="nav-link u-header__sub-menu-nav-link">View Batches</a></li>
+                                            
+
+                                            
+                                            <li id="LI8" class="d-none"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/uncles">View Uncles</a></li>
+                                            <li class="divider"></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_accountall"><a href="https://lineascan.build/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="https://lineascan.build/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Tokens" class="nav-item hs-has-sub-menu u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="testTokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="testTokensSubMenu">Tokens</a>
+                                        <ul id="testTokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="testTokensMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI18" class=" active"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokens">ERC20 Tokens By MarketCap</a></li>
+                                            <li id="LI3"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokentxns">View ERC20 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px; display: none;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/charts">Charts &amp;  Stats</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_Misc" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+
+                                        
+                                                <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu" style="display: none;">
+                                                    
+                                                    <div class="row u-header__mega-menu-wrapper">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Developers</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI11"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.lineascan.build/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                                <li id="LI20"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                                <li id="LI23"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                                <li id="LI15"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/pushTx"><i class="fa fa-angle-right small mr-1"></i>Broadcast TXN</a></li>
+                                                                <li id="LI7"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                                <li id="LI6"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                            <span class="u-header__sub-menu-title">Tools</span>
+                                                            <ul class="u-header__sub-menu-nav-group mb-3">
+                                                                <li id="LI41"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>
+                                                                <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+                                                                
+                                                                <li id="LI31"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/advanced-filter"><i class="fa fa-angle-right small mr-1"></i>Advanced Filter <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI28"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class="badge badge-secondary font-size-default ml-1">Beta</span></sup></a></li>
+                                                                <li id="LI50"><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/unitconverter"><i class="fa fa-angle-right small mr-1"></i>Unit Converter </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End Resources - Mega Menu -->
+                                    </li>
+
+
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="https://lineascan.build/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+
+                                            
+                                            <span class="btn btn-sm btn-icon btn-dark cursor-pointer d-none d-md-inline-block">
+                                                <img class="u-xs-avatar btn-icon__inner" src="Token%20Tracker%20LineaScan_files/main.svg" alt="Logo1">
+                                            </span>
+                                            
+
+
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut p-3" aria-labelledby="explorersWithDropdown" style="min-width: 200px; display: none;">
+                                            <li><a class="nav-link u-header__sub-menu-nav-link" href="https://lineascan.build/">Linea Mainnet</a></li><li><a class="nav-link u-header__sub-menu-nav-link" href="https://goerli.lineascan.build/">Linea Testnet</a></li>
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-55 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend d-none d-md-block">
+                                            <!-- Select -->
+                                            <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">
+                                                <option selected="selected" value="0">All Filters</option>
+                                                <option value="1">Addresses</option>
+                                                <option value="2">Tokens</option>
+                                                <option value="3">Name Tags</option>
+                                                <option value="4">Labels</option>
+                                                <option value="5">Websites</option>
+                                            </select>
+                                            <!-- End Select -->
+                                        </div>
+                                        
+                                        <input type="text" class="form-control searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Block / Token" aria-label="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" autocomplete="off">
+                                        
+                                        <input type="hidden" value="" id="hdnSearchText">
+                                        <input id="hdnIsTestNet" value="False" type="hidden">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            
+</div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content" role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age">
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)">
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format">
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format">
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei">
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in ETH">
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price">
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee">
+            
+    <!-- Page Title -->    
+    <div class="container">
+        <div id="ContentPlaceHolder1_divTokensTitle" class="py-3">
+            <div class="mb-1 mb-md-0">
+                <h1 id="ContentPlaceHolder1_h1Tag" class="h4 d-flex align-items-center mb-0">Token Tracker<a class="u-label u-label--xs u-label--secondary rounded color-strong ml-2" href="#" target="_blank" rel="nofollow" data-toggle="tooltip" title="" data-original-title="External link to ERC20 Information">ERC20</a></h1>
+            </div>
+            
+        </div>        
+                
+    </div>
+    <!-- End Page Title -->
+
+    
+
+    <div class="container space-bottom-2">
+        
+        
+
+        <!-- Card Tabs -->
+        <div class="card">
+            <!-- Card Header -->
+            
+            <div id="ContentPlaceHolder1_searchBarDiv" class="card-header d-md-flex justify-content-between align-items-center">
+                <div class="mb-1 mb-md-0">
+                    <h2 class="card-header-title">ERC20 Tokens By Market Capitalization</h2>                    
+                </div>
+
+                <div class="d-flex ml-auto">
+                    
+                    <div class="position-relative order-1 order-md-2">
+                        <a id="searchFilterInvoker" class="btn btn-sm btn-icon btn-primary" href="javascript:;" role="button" aria-controls="searchFilter" aria-haspopup="true" aria-expanded="false" data-unfold-target="#searchFilter" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="false" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut" data-toggle="tooltip" title="" data-original-title="Search for Token Name or Address">
+                            <i class="fa fa-search btn-icon__inner"></i>
+                        </a>
+
+                        <div id="searchFilter" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right p-2 u-unfold--css-animation u-unfold--hidden" aria-labelledby="searchFilterInvoker" style="width: 310px; animation-duration: 300ms;">
+                            <form action="/tokens" method="get" autocomplete="off" spellcheck="false" class="js-focus-state input-group input-group-sm w-100">
+                                <input id="searchtoken" name="q" type="search" class="form-control ui-autocomplete-input list-unstyled py-3 mb-0" placeholder="Search for Token Name or Address" onkeyup="handleTokenSearch(this);" autocomplete="off">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-original-title="" title="">Find</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Header -->
+
+            <div class="card-body">
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="transfers" role="tabpanel" aria-labelledby="tokens-tab">
+                        <div id="ContentPlaceHolder1_divpagingpanel" class="d-md-flex justify-content-between align-items-center mb-4">
+                            <p class="mb-2 mb-lg-0">
+                                <i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse" style="display: none; margin-top: 4px">&nbsp;</i>
+                                Showing 28 Token Contracts (From a total of 21,026 Token Contracts)
+                                
+                            </p>
+                            <nav class="mb-4 mb-md-0" aria-label="page navigation">
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">1</strong></span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-right small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link">Last</span></li>
+                            </ul></nav>
+                        </div>                        
+
+                        
+
+                        
+                        <div class="stickyTableHead" id="divSTContainer"><div class="sticky-thead-cloned-wrapper">
+							     <table class="sticky-thead-cloned-table table table-text-normal table-hover mb-0 border-bottom-0" style="width: 1344.4px;"><thead class="thead-light">
+                                        <tr>
+                                            <th scope="col" width="1" class="token-sticky-header" style="width: 48.3333px;">#</th>
+                                            <th scope="col" width="30" class="token-sticky-header" style="width: 214.217px;">Token</th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 134.817px;"><a href="https://lineascan.build/tokens?sort=price_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Price</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 131.833px;"><a href="https://lineascan.build/tokens?sort=percent_change_24h&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Change (%)</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 196.4px;"><a href="https://lineascan.build/tokens?sort=24h_volume_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Volume (24H)</a></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 275.85px;"><strong><i class="fa fa-angle-down"></i></strong>&nbsp;<a href="https://lineascan.build/tokens?sort=marketcap&amp;order=asc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" style="text-decoration:underline;" data-original-title="Sorted in descending order,Click for ascending sort">Circulating Market Cap</a> <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 244.933px;">On-Chain Market Cap <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the token's Total Supply on Linea Mainnet with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></th>
+                                            <th scope="col" width="5" class="text-nowrap" style="width: 98.0167px;"><a href="https://lineascan.build/tokens?sort=holders&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Holders</a></th>
+                                        </tr>
+                                    </thead></table>
+							   </div>
+                            <div id="ContentPlaceHolder1_divresult" class="table-responsive mb-2 mb-md-0">
+                                <table class="table table-text-normal table-hover" id="tblResult">
+                                    <thead class="thead-light sticky-thead-original-thead">
+                                        <tr>
+                                            <th scope="col" width="1" class="token-sticky-header"><div class="sticky-thead-original-th-inner-wrapper">#</div></th>
+                                            <th scope="col" width="30" class="token-sticky-header"><div class="sticky-thead-original-th-inner-wrapper">Token</div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://lineascan.build/tokens?sort=price_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Price</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://lineascan.build/tokens?sort=percent_change_24h&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Change (%)</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://lineascan.build/tokens?sort=24h_volume_usd&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Volume (24H)</a></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><strong><i class="fa fa-angle-down"></i></strong>&nbsp;<a href="https://lineascan.build/tokens?sort=marketcap&amp;order=asc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" style="text-decoration:underline;" data-original-title="Sorted in descending order,Click for ascending sort">Circulating Market Cap</a> <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper">On-Chain Market Cap <i class="far fa-question-circle text-muted" data-placement="right" data-boundary="viewport" data-toggle="tooltip" data-html="true" data-title="&lt;p class='text-white text-left mb-0'&gt;Calculated by multiplying the token's Total Supply on Linea Mainnet with the current market price per token.&lt;/p&gt;" data-original-title="" title=""></i></div></th>
+                                            <th scope="col" width="5" class="text-nowrap"><div class="sticky-thead-original-th-inner-wrapper"><a href="https://lineascan.build/tokens?sort=holders&amp;order=desc" data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="Click for descending sort">Holders</a></div></th>
+                                        </tr>
+                                    </thead>                                    
+                                    <tbody>
+                                        <tr><td>1</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/usdtlogo_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xa219439258ca9da29e9cc4ce5596924745e12b93">Tether USD (USDT)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Tether
+ gives you the joint benefits of open blockchain technology and 
+traditional currency by converting your cash into a stable digital 
+currency equivalent.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000282&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.07%</span></td><td>$91,334,857,441.00</td><td>$99,622,777,207.00&nbsp;&nbsp;&nbsp;</td><td>$6,721,820.11&nbsp;&nbsp;&nbsp;</td><td>103,227</td></tr><tr><td>2</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/centre-usdc_28.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x176211869ca2b568f2a7d4ee941e073a821ee1ff">USDC.e (USDC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USDC
+ is a fully collateralized US Dollar stablecoin developed by CENTRE, the
+ open source project  with Circle being the first of several forthcoming
+ issuers.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.998847" data-original-title="" title="">$0.9988</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000281&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.27%</span></td><td>$8,478,330,229.00</td><td>$28,849,669,513.00&nbsp;&nbsp;&nbsp;</td><td>$20,149,738.53&nbsp;&nbsp;&nbsp;</td><td>408,940</td></tr><tr><td>3</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/shibainu_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x99ad925c1dc14ac7cc6ca1244eef8043c74e99d5">SHIBA INU (SHIB)</a></h3><p class="d-none d-md-block font-size-1 mb-0">SHIBA
+ INU is a 100% decentralized community experiment with it claims that 
+1/2 the tokens have been sent to Vitalik and the other half were locked 
+to a Uniswap pool and the keys burned.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00003108" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000000&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 42.64%</span></td><td>$6,938,300,267.00</td><td>$17,800,902,633.00&nbsp;&nbsp;&nbsp;</td><td>$13,525.39&nbsp;&nbsp;&nbsp;</td><td>217</td></tr><tr><td>4</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/chainlink_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x5b16228b94b68c7ce33af2acc5663ebde4dcfa2d">ChainLink Token (LINK)</a></h3><p class="d-none d-md-block font-size-1 mb-0">A
+ blockchain-based middleware, acting as a bridge between cryptocurrency 
+smart contracts, data feeds, APIs and traditional bank account payments.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$20.47" data-original-title="" title="">$20.47</span><div class="small text-secondary">0.000308&nbsp;BTC<span class="d-block">0.005765&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.40%</span></td><td>$699,274,685.00</td><td>$12,027,198,314.00&nbsp;&nbsp;&nbsp;</td><td>$7,942.36&nbsp;&nbsp;&nbsp;</td><td>7</td></tr><tr><td>5</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/wbtc_28.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4">Wrapped BTC (WBTC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Wrapped Bitcoin (WBTC) is an ERC20 token backed 1:1 with Bitcoin. 
+Completely transparent. 100% verifiable. Community led.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$66,449.00" data-original-title="" title="">$66,449.00</span><div class="small text-secondary">1.001410&nbsp;BTC<span class="d-block">18.713468&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 6.46%</span></td><td>$408,474,438.00</td><td>$10,381,207,320.00&nbsp;&nbsp;&nbsp;</td><td>$15,881,311.00&nbsp;&nbsp;&nbsp;</td><td>13,147</td></tr><tr><td>6</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/uniswap_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x636b22bc471c955a8db60f28d4795066a8201fa3">Uniswap (UNI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">UNI
+ token served as governance token for Uniswap protocol with 1 billion 
+UNI have been minted at genesis.  60% of the UNI genesis supply is 
+allocated to Uniswap community members and remaining for team, investors
+ and advisors.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$12.57" data-original-title="" title="">$12.57</span><div class="small text-secondary">0.000189&nbsp;BTC<span class="d-block">0.003540&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -3.05%</span></td><td>$397,032,407.00</td><td>$9,501,360,105.00&nbsp;&nbsp;&nbsp;</td><td>$515.37&nbsp;&nbsp;&nbsp;</td><td>2</td></tr><tr><td>7</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/daistablecoin_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x4af15ec2a0bd43db75dd04e62faa3b8ef36b00d5">Dai Stablecoin (DAI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Multi-
+Collateral Dai, brings a lot of new and exciting features, such as 
+support for new CDP collateral types and Dai Savings Rate.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.999294" data-original-title="" title="">$0.9993</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000281&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.18%</span></td><td>$281,958,760.00</td><td>$4,997,198,692.00&nbsp;&nbsp;&nbsp;</td><td>$737,342.07&nbsp;&nbsp;&nbsp;</td><td>17,784</td></tr><tr><td>8</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/pepe_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x7da14988e4f390c2e34ed41df1814467d3ade0c3">Pepe (PEPE)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Pepe
+ is a community based memecoin with one mission: to make memecoins great
+ again. Made to honor the iconic meme we all know and love, Pepe is here
+ to take reign as the most memeable memecoin in existence, fueled purely
+ by memetic power. Pepe is for the people.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00000809" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000000&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 48.91%</span></td><td>$3,553,680,630.00</td><td>$3,401,301,566.00&nbsp;&nbsp;&nbsp;</td><td>$80.85&nbsp;&nbsp;&nbsp;</td><td>2</td></tr><tr><td>9</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/lidodao_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x0e076aafd86a71dceac65508daf975425c9d0cb6">Lido DAO Token (LDO)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Lido
+ is a liquid staking solution for Ethereum. Lido lets users stake their 
+ETH - with no minimum deposits or maintaining of infrastructure - whilst
+ participating in on-chain activities, e.g. lending, to compound 
+returns. LDO is an ERC20 token granting governance rights in the Lido 
+DAO.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3.27" data-original-title="" title="">$3.27</span><div class="small text-secondary">0.000049&nbsp;BTC<span class="d-block">0.000921&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -2.40%</span></td><td>$95,239,994.00</td><td>$2,917,258,798.00&nbsp;&nbsp;&nbsp;</td><td>$6,543.27&nbsp;&nbsp;&nbsp;</td><td>2</td></tr><tr><td>10</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/apecoinlinea_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x6baa318cf7c51c76e17ae1ebe9bbff96ae017acb">ApeCoin (APE)</a></h3><p class="d-none d-md-block font-size-1 mb-0">ApeCoin
+ found new expression in web3 through art, gaming, entertainment, and 
+events. APE is a token made to support what’s next, controlled, and 
+built on by the community. It will serve as a decentralized protocol 
+layer for community-led initiatives that drive culture forward into the 
+metaverse.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$2.20" data-original-title="" title="">$2.20</span><div class="small text-secondary">0.000033&nbsp;BTC<span class="d-block">0.000620&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -3.08%</span></td><td>$146,600,055.00</td><td>$1,317,517,777.00&nbsp;&nbsp;&nbsp;</td><td>$1,238.60&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>11</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/kybernetworkcrystal_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x3b2f62d42db19b30588648bf1c184865d4c3b1d6">Kyber Network Crystal v2 (KNC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Kyber
+ is a blockchain-based liquidity protocol that aggregates liquidity from
+ a wide range of reserves, powering instant and secure token exchange in
+ any decentralized application.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.820817" data-original-title="" title="">$0.8208</span><div class="small text-secondary">0.000012&nbsp;BTC<span class="d-block">0.000231&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 5.41%</span></td><td>$23,790,435.00</td><td>$140,711,937.00&nbsp;&nbsp;&nbsp;</td><td>$31,081.06&nbsp;&nbsp;&nbsp;</td><td>3,084</td></tr><tr><td>12</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/abracadabra_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xdd3b8084af79b9bae3d1b668c0de08ccc2c9429a">Magic Internet Money (MIM)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Abracadabra.money
+ is a lending protocol that allows users to borrow a USD-pegged 
+Stablecoin (MIM) using interest-bearing tokens as collateral.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.988814" data-original-title="" title="">$0.9888</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000278&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.29%</span></td><td>$887,293.00</td><td>$55,417,808.00&nbsp;&nbsp;&nbsp;</td><td>$4,769.05&nbsp;&nbsp;&nbsp;</td><td>1,609</td></tr><tr><td>13</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/usdplus_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xb79dd08ea68a908a97220c76d19a6aa9cbde4376">USD+ (USD+)</a></h3><p class="d-none d-md-block font-size-1 mb-0">USD+
+ is a yield-generating stablecoin yielding 8-12% pa, via daily rebase. 
+It is fully backed by a portfolio of liquid, yield generating, low risk 
+DeFi assets .</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.001" data-original-title="" title="">$1.001</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000282&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.09%</span></td><td>$1,049,814.00</td><td>$25,833,385.00&nbsp;&nbsp;&nbsp;</td><td>$250,959.71&nbsp;&nbsp;&nbsp;</td><td>9,192</td></tr><tr><td>14</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/ageurlinea_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8">agEUR (agEUR)</a></h3><p class="d-none d-md-block font-size-1 mb-0">agEUR is a decentralized Euro stablecoin based on the Angle Protocol, a decentralized and capital-efficient stablecoin protocol.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.083" data-original-title="" title="">$1.083</span><div class="small text-secondary">0.000016&nbsp;BTC<span class="d-block">0.000305&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -0.14%</span></td><td>$2,343,612.00</td><td>$21,151,269.00&nbsp;&nbsp;&nbsp;</td><td>$22,202.58&nbsp;&nbsp;&nbsp;</td><td>2,154</td></tr><tr><td>15</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/hapitoken_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x0e5f2ee8c29e7ebc14e45da7ff90566d8c407db7">HAPI (HAPI)</a></h3><p class="d-none d-md-block font-size-1 mb-0">HAPI
+ is a set of cross chain smart contracts that are embedded into DeFi 
+products that allow them to reach a new security level. Also, HAPI’s 
+Oraclizing and DAO system delivers SaaS in the DeFi environment that 
+prevents hack attempts.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$24.58" data-original-title="" title="">$24.58</span><div class="small text-secondary">0.000370&nbsp;BTC<span class="d-block">0.006922&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -5.62%</span></td><td>$839,706.00</td><td>$17,609,984.00&nbsp;&nbsp;&nbsp;</td><td>$54,051.42&nbsp;&nbsp;&nbsp;</td><td>260</td></tr><tr><td>16</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/dvf_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x1f031f8c523b339c7a831355879e3568fa3eb263">DeversiFi Token (DVF)</a></h3><p class="d-none d-md-block font-size-1 mb-0">RhinoFi is designed as a Layer 2 protocol on Ethereum using zk proofs for settlement.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.714127" data-original-title="" title="">$0.7141</span><div class="small text-secondary">0.000011&nbsp;BTC<span class="d-block">0.000201&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 2.78%</span></td><td>$67,652.00</td><td>$10,748,626.00&nbsp;&nbsp;&nbsp;</td><td>$71.41&nbsp;&nbsp;&nbsp;</td><td>1</td></tr><tr><td>17</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/lynexfi_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x1a51b19ce03dbe0cb44c1528e34a7edd7771e9af">Lynex (LYNX)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Lynex
+ stands as a cutting-edge decentralized exchange (DEX), liquidity layer,
+ and ALM aggregator on the Linea blockchain. This robust platform 
+revolutionizes DeFi activities by offering token swapping, seamless 
+liquidity provision, and governance through the innovative veLYNX voting
+ mechanism.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.166156" data-original-title="" title="">$0.1662</span><div class="small text-secondary">0.000003&nbsp;BTC<span class="d-block">0.000047&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -6.81%</span></td><td>$601,541.00</td><td>$3,808,486.00&nbsp;&nbsp;&nbsp;</td><td>$18,268,852.20&nbsp;&nbsp;&nbsp;</td><td>2,290</td></tr><tr><td>18</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/ethos_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xa334884bF6b0A066d553D19e507315E839409e62">Ethos Reserve Note (ERN)</a></h3></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.99877" data-original-title="" title="">$0.9988</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000281&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.70%</span></td><td>$145,388.00</td><td>$2,443,731.00&nbsp;&nbsp;&nbsp;</td><td>-&nbsp;&nbsp;&nbsp;</td><td>0</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/weth_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f">Wrapped Ether (WETH)</a></h3></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$3,555.84" data-original-title="" title="">$3,555.84</span><div class="small text-secondary">0.053588&nbsp;BTC<span class="d-block">1.001401&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 3.19%</span></td><td>$2,677,199.00</td><td>--</td><td>$18,113,448.96&nbsp;&nbsp;&nbsp;</td><td>113,392</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/bnbchain2_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xf5c6825015280cdfd0b56903f9f8b5a2233476f5">Binance Coin (BNB)</a></h3><p class="d-none d-md-block font-size-1 mb-0">BNB Smart Chain is an innovative solution to bring programmability and interoperability to BNB Beacon Chain.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$417.39" data-original-title="" title="">$417.39</span><div class="small text-secondary">0.006290&nbsp;BTC<span class="d-block">0.117546&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.73%</span></td><td>$417,434,122.00</td><td>--</td><td>$120,625.71&nbsp;&nbsp;&nbsp;</td><td>12,920</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/wrappedavax_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x5471ea8f739dd37e9b81be9c5c77754d8aa953e4">Avalanche (AVAX)</a></h3><p class="d-none d-md-block font-size-1 mb-0">Avalanche
+ is the smart contracts platform in the blockchain industry, as measured
+ by time-to-finality. Avalanche is blazingly fast, low cost, and 
+eco-friendly.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$43.15" data-original-title="" title="">$43.15</span><div class="small text-secondary">0.000650&nbsp;BTC<span class="d-block">0.012152&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.99%</span></td><td>$114,948,989.00</td><td>--</td><td>$62,696.95&nbsp;&nbsp;&nbsp;</td><td>8,181</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/wrappedmatic_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x265b25e22bcd7f10a5bd6e6410f10537cc7567e8">Matic Token (MATIC)</a></h3><p class="d-none d-md-block font-size-1 mb-0">The fundamental protocol that allows anyone to create and exchange value, powered by zero-knowledge technology.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.13" data-original-title="" title="">$1.13</span><div class="small text-secondary">0.000017&nbsp;BTC<span class="d-block">0.000318&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 4.83%</span></td><td>$126,897,881.00</td><td>--</td><td>$337,631.57&nbsp;&nbsp;&nbsp;</td><td>10,561</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/leet_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x0963a1abaf36ca88c21032b82e479353126a1c4b">leetswap.finance (LEET)</a></h3><p class="d-none d-md-block font-size-1 mb-0">LeetSwap
+ is an emerging DEX and DeFi ecosystem built on the leetest blockchains 
+with a focus on retaining a secure, fast, and user-friendly experience, 
+while introducing novel approaches and ideas to the space.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.036" data-original-title="" title="">$1.036</span><div class="small text-secondary">0.000016&nbsp;BTC<span class="d-block">0.000292&nbsp;ETH</span></div></td><td>--</td><td>$84,132.00</td><td>--</td><td>$1,385,132.00&nbsp;&nbsp;&nbsp;</td><td>1,334</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/busd_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x7d43aabc515c356145049227cee54b608342c0ad">Binance USD (BUSD)</a></h3></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$1.006" data-original-title="" title="">$1.006</span><div class="small text-secondary">0.000015&nbsp;BTC<span class="d-block">0.000283&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 0.25%</span></td><td>$87,860.00</td><td>--</td><td>$485,449.32&nbsp;&nbsp;&nbsp;</td><td>85,290</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/echodexlinea_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x9201f3b9dfab7c13cd659ac5695d12d605b5f1e6">ECP (ECP)</a></h3><p class="d-none d-md-block font-size-1 mb-0">EchoDEX is the first generation DEX on LineaBuild using breakthrough technology in ZK-EVM.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.537555" data-original-title="" title="">$0.5376</span><div class="small text-secondary">0.000008&nbsp;BTC<span class="d-block">0.000151&nbsp;ETH</span></div></td><td><span class="text-success text-nowrap"><i class="fa  fa-caret-up"></i> 15.71%</span></td><td>$8,565.00</td><td>--</td><td>$53,755,500.00&nbsp;&nbsp;&nbsp;</td><td>16,542</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/horizon_32.png"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1">Horizon (HZN)</a></h3><p class="d-none d-md-block font-size-1 mb-0">HorizonDEX
+ is a Concentrated Liquidity DEX which let users allocate liquidity 
+within a custom price range, enabling traders to maximize their 
+efficiency and minimize slippage</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00622208" data-original-title="" title="">$0.0062</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000002&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -1.34%</span></td><td>$4,448.00</td><td>--</td><td>$622,208.00&nbsp;&nbsp;&nbsp;</td><td>10,115</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/nftearth_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0x2140ea50bc3b6ac3971f9e9ea93a1442665670e4">NFTEarthOFT (NFTE)</a></h3><p class="d-none d-md-block font-size-1 mb-0">NFTEarth
+ is a protocol focused on becoming the global Omnichain hub for NFTs. 
+The protocol offers a marketplace for NFT trading, tooling for creators 
+and staking rewards. The native token for the protocol is built on the 
+LayerZero OFT standard.</p></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00000139" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000000&nbsp;ETH</span></div></td><td><span class="text-danger text-nowrap"><i class="fa fa-caret-down"></i> -5.10%</span></td><td>$1.00</td><td>--</td><td>$1.00&nbsp;&nbsp;&nbsp;</td><td>231</td></tr><tr><td>&nbsp;&nbsp;-</td><td><div class="media"><img class="u-xs-avatar mr-2" src="Token%20Tracker%20LineaScan_files/linea_32.webp"><div class="media-body"><h3 class="h6 mb-0"><a class="text-primary" href="https://lineascan.build/token/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a">Linea Voyage XP (LXP)</a></h3></div></div></td><td class="text-nowrap"><span data-toggle="tooltip" data-html="true" data-title="$0.00" data-original-title="" title="">$0.00</span><div class="small text-secondary">0.000000&nbsp;BTC<span class="d-block">0.000000&nbsp;ETH</span></div></td><td>--</td><td>$0.00</td><td>--</td><td>$0.00&nbsp;&nbsp;&nbsp;</td><td>505,634</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+                        <form method="post" action="./tokens" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="MsJqCPN059WAtJrleX+kcHHiTF6nUQyXc/CQV3l4KzLZZsKO1cr0+JtDUIVu+P+LHwcIllhqQKoBEvrLBLRUFqQC8yLF3ghu0FYxv7nRRss=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3C86B011">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="og8p9+WA8l4t2xmFSWjmZdwA6HvUAuSoCZQ+fi1W65lPhGtVuQOvgUW/tTTtfNX7Df3pFnzuCQMNa/Nj+OUIYZFDfu8zBmLTqE6J8fUkh5lRKJ8eXRU2lHCr9Gniw/87s6k+57lqcvuLh4PEdG0F7hugB5b0o/gFKeafiRA7vvRC7un96LyBq/EmQmBQ8my8OcpQIUTeI02UghRCXA5I2w==">
+</div>
+                            <div id="ContentPlaceHolder1_divPagination" class="d-md-flex justify-content-between my-3">
+                                <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                    Show
+                                    <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRecordsPerPage\',\'\')', 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option value="25">25</option>
+	<option selected="selected" value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                    Records
+                                </div>
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link">First</span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">1</strong></span></li><li class="page-item disabled"><span class="page-link"><i class="fa fa-chevron-right small"></i></span><span class="sr-only">Previous</span></li><li class="page-item disabled"><span class="page-link">Last</span></li>
+                            </ul></div>
+                        </form>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <!-- End Card Tabs -->
+        
+    </div>    
+
+    <script type="text/javascript">
+        var tokensFlag = false;
+        $(document).ready(function () {
+            if ($('#ContentPlaceHolder1_searchBarDiv').length) {
+                (function ($) {
+                    $.fn.customAutocomplete = function () {
+                        this.autocomplete({
+                            source: function (request, response) {
+                                var searchTerm = request.term;
+                                $.ajax({
+                                    dataType: "json",
+                                    type: 'Get',
+                                    url: '/searchHandler?t=t',
+                                    data: { term: searchTerm, filterby: '2' },
+                                    success: function (data) {
+                                        response($.map(data, function (item) {
+                                            return {
+                                                label: item.split('\t')[0],
+                                                value: item.split('\t')[1],
+                                                desc: item.split('\t')[2],
+                                                typeval: item.split('\t')[3],
+                                                checkMark: item.split('\t')[4],
+                                                logo: item.split('\t')[5]
+                                            }
+                                        }));
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        console.log(textStatus);
+                                    }
+                                });
+                            },
+                            autoFocus: true,
+                            delay: 100,
+                            minLength: 1,
+                            select: function (event, ui) {
+                                event.preventDefault();
+                                var typeval = ui.item.typeval;
+                                if (typeval == "") {
+                                    typeval = 1;
+                                    ui.item.label = $("#hdnSearchText").val();
+                                }
+
+                                //$(this).val(ui.item.label);
+                                if (typeval == 1) {
+                                    window.location.href = '/token/' + ui.item.label;
+                                } else if (typeval == 2) {
+                                    window.location.href = '/token/' + ui.item.value;
+                                } else if (typeval == 4) {
+                                    window.location.href = '/token/' + ui.item.label;
+                                }
+                            }
+                        }).focus(function (event) {
+                            $(".ui-helper-hidden-accessible").hide();
+                            event.preventDefault();
+                        }).addClass("list-unstyled py-3 mb-0").data("ui-autocomplete")._renderItem = function (ul, item) {
+
+                            if (!tokensFlag) {
+                                tokensFlag = true;
+                                ul.addClass("list-unstyled bg-white-content p-2 mb-0");
+                            }
+
+                            ul.addClass('custwidth');
+                            var tickMark = '';
+                            var imglogo = '';
+                            if (item.checkMark === '1') {
+                                tickMark = "<i class='fa fa-badge-check text-info ml-auto'></i>";
+                            }
+                            if (item.logo !== '') {
+                                imglogo = "<img class='u-xs-avatar' style='margin-top: 1px;' src='/token/images/" + item.logo + "'>";
+                            }
+                            else {
+                                imglogo = "<img class='u-xs-avatar' style='margin-top: 1px;' src='/images/main/empty-token.png'>";
+                            }
+                            //return $("<li>")
+                            //    .append("<div>" + imglogo + item.label.substring(0, 28) + tickMark + "<br><font size='1'>" + item.desc + "</font></div>")
+                            //    .appendTo(ul);
+                            if (item.desc == "" && item.typeval == "" && item.checkMark == "" && item.logo == "") {                                
+                                return $("<li class='mb-2 ether-search-heading'>").append("<h5 class='h6 font-weight-bold bg-light px-2 py-1 rounded mb-2'>" + item.label + "</h5>").appendTo(ul);
+                            } else {
+                                if (searchAddress == false) {
+                                    if (item.typeval == 1 || item.typeval == 4) {
+                                        $("#hdnSearchText").val(item.label);
+                                    } else {
+                                        $("#hdnSearchText").val(item.value);
+                                    }                
+                                    searchAddress = true;
+                                }
+
+                                var website = (item.desc.split('~')[1] != undefined ? "<div class='text-secondary font-size-1 text-truncate'>" + item.desc.split('~')[1] + "</div>" : "");
+                                var tokenType = item.desc.split('~')[2];
+                                var price = (tokenType != "2" ? (item.desc.split('~')[3] != undefined ? "<span class='badge bg-soft-secondary mr-2'>" + item.desc.split('~')[3] + "</span>" : "") : "");
+
+                                return $("<li class='mb-2'>")
+                                    .append("<a class='ether-search media rounded p-2' href='javascript:;'><div class='mr-2'>" + imglogo + "</div><div class='media-body text-truncate'><h6 class='d-flex align-items-center text-size-1 mb-0'><div class='text-truncate mr-2'>" + item.label + "</div>" + price + tickMark + "</h6><span class='text-secondary text-truncate font-size-1'>" + item.value + "</span>" + website + "</div></a>")
+                                    .appendTo(ul);
+                            }
+                        };
+                        return this;
+                    };
+                })(jQuery);
+                var urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.has('l') == false) {
+                    $("#searchtoken").customAutocomplete();
+                }
+            }          
+        });
+    </script>
+    
+
+
+        </main>
+        <div id="push"></div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <footer class="bg-dark py-4">
+                <div class="container">
+                    <div class="row justify-content-sm-between align-items-center">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="d-flex align-items-center">
+                                
+                                <img width="25" src="Token%20Tracker%20LineaScan_files/main.svg" alt="Logo">
+                                
+
+                                <span class="h5 text-white mb-0 ml-3">Powered By Linea</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 align-self-bottom">
+                            <!-- Preferences -->
+                            <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                <span>
+                                    <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');">
+                                        <img class="mr-1" width="15" src="Token%20Tracker%20LineaScan_files/metamask.svg" alt="Metamask">
+                                        Add Linea Mainnet Network
+                                    </button>
+                                </span>
+
+                                <a class="btn btn-xss btn-soft-light mr-2" href="https://lineascan.build/settings">
+                                    <i class="fa fa-cogs mr-1"></i>Preferences
+                                </a>
+
+                                <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light" data-original-title="" title="">
+                                    <i id="darkModaBtnIcon" class="fa fa-moon"></i></button>
+
+                            </div>
+                            <!-- End Preferences -->
+                        </div>
+                    </div>
+                    <!-- End Fotoer Content -->
+
+
+
+                    
+                    <hr class="opacity-md">
+                    <div class="row justify-content-between align-items-center font-size-1">
+                        <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                            <p class="mb-0 text-white">
+                                LineaScan © 2024  (Linea-A1)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a>  <span class="mx-1">|</span> <a class="text-white-70" href="https://lineascan.build/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i> 
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://lineascan.build/terms">Terms of Service</a> </li> <li class="list-inline-item"> <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://lineascan.statuspage.io/">Network Status</a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://lineascan.build/contactus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contact Us"> <i class="far fa-envelope btn-icon__inner"></i> </a> </li> <li class="list-inline-item"> <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="https://twitter.com/LineaScan" rel="nofollow noopener" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"> <i class="fab fa-twitter btn-icon__inner"></i> </a> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: block;">
+                <div class="alert alert-light border shadow p-3" role="alert">
+                    <div class="d-md-flex justify-content-center align-items-center">
+                        <span>
+                            <p class="text-dark mr-3 mb-2 mb-md-0">
+                                <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href="https://lineascan.build/terms#cookiestatement" target="_blank">uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href="https://lineascan.build/terms" target="_blank">Terms</a> and <a href="https://lineascan.build/privacyPolicy">Privacy Policy</a>.
+                            </p>
+                        </span>
+                        <div>
+                            <button id="btnCookie" class="btn btn-sm btn-primary text-nowrap py-1" data-dismiss="alert" aria-label="Close">Got It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="js-go-to u-go-to animated" href="#" data-position="{&quot;bottom&quot;: 20, &quot;right&quot;: 15 }" data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown" style="display: inline-block; position: fixed; opacity: 0; bottom: 20px; right: 15px;">
+                <span class="fa fa-arrow-up u-go-to__inner"></span>
+            </a>
+            <script src="Token%20Tracker%20LineaScan_files/jquery-ui.min.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/jquery-migrate.min.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/popper.min.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/bootstrap.min.js"></script>
+
+
+
+            <!-- JS Implementing Plugins -->
+            <script src="Token%20Tracker%20LineaScan_files/hs.megamenu.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/jquery.cubeportfolio.min.js"></script>
+
+
+            <!-- JS Front -->
+            <script src="Token%20Tracker%20LineaScan_files/hs.core.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/hs.header.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/hs.unfold.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/hs.malihu-scrollbar.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/hs.focus-state.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/hs.go-to.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/hs.cubeportfolio.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/combine-js-bottom2.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script>
+                $(window).on('load', function () {
+                    // initialization of HSMegaMenu component
+                    $('.js-mega-menu').HSMegaMenu({
+                        event: 'hover',
+                        pageContainer: $('.container'),
+                        breakpoint: 767.98,
+                        hideTimeOut: 0
+                    });
+                    myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+                });
+
+                $(document).on('ready', function () {
+                    // initialization of header
+                    $.HSCore.components.HSHeader.init($('#header'));
+
+                    // initialization of unfold component
+                    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                        afterOpen: function () {
+                            $(this).find('input[type="search"]').focus();
+                        }
+                    });
+
+                    // initialization of malihu scrollbar
+                    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+                    // initialization of focus state
+                    $.HSCore.components.HSFocusState.init();
+
+                    // initialization of go to
+                    $.HSCore.components.HSGoTo.init('.js-go-to');
+
+                    // initialization of cubeportfolio
+                    //$.HSCore.components.HSCubeportfolio.init('.cbp');
+                });
+            </script>
+            <script type="text/javascript">
+                var sid = '8df3ee04604b3c5bc4d93d3b0c1adb12';
+                var strGlobal = sessionStorage.getItem("ShowAs");
+                var strGlobalFee = sessionStorage.getItem("ShowFee");
+                var siteVar = 'LineaScan';
+                var cookieconsent = getCookie(siteVar + "_cookieconsent");
+                if (cookieconsent !== "True") {
+                    document.getElementById("divcookie").style.display = "block";
+                };
+                function getCookie(cname) {
+                    var name = cname + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(name) === 0) {
+                            return c.substring(name.length, c.length);
+                        }
+                    }
+                    return "";
+                }
+                $("#btnCookie").click(function () {
+                    $("#divcookie").fadeOut("slow", function () {
+                        var d = new Date();
+                        d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = siteVar + "_cookieconsent=True" + ";" + expires + ";path=/";;
+                    });
+                });
+                function handleSearchText(data) {
+                    searchAddress = false;
+                    if ($("txtSearchInput").val() == "") {
+                        $("#hdnSearchText").val("");
+                    }
+                }
+            </script>
+            
+
+            <script src="Token%20Tracker%20LineaScan_files/web3-utils.min.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/web3-eth.min.js"></script>
+            <script src="Token%20Tracker%20LineaScan_files/web3-providers-http.min.js"></script>
+            <script type="text/javascript">
+                var eth;
+                var isTestnet = 'false';
+                var SiteNetID = '59144';
+                var SiteNetChainID = '0xE708';
+                var SiteNetName = 'Linea';
+                var SiteName = 'LineaScan';
+                var SiteErc20 = 'ERC20';
+                var SiteErc721 = 'ERC721';
+                var SiteErc1155 = 'ERC1155';
+                var sv = '24.2.3.0';
+                var slt = 'svg';
+                var allowErc1155 = 'True';
+
+                async function addNetwork(type) {
+
+                    if (type === 'web3') {
+                        if (typeof ethereum !== 'undefined') {
+                            eth = new Web3Eth(ethereum);
+                        } else if (typeof web3 !== 'undefined') {
+                            eth = new Web3Eth(web3.givenProvider);
+                        } else {
+                            eth = new Web3Eth(ethereum);
+                        }
+                    }
+
+                    if (typeof eth !== 'undefined') {
+                        var network = 0;
+                        network = await eth.getChainId();
+                        netID = network.toString();
+                        var params;
+                        if (netID == SiteNetID) {
+                            alert("Linea Mainnet Network has already been added to Metamask.");
+                            return;
+                        } else {
+                            params = [{
+                                chainId: SiteNetChainID,
+                                chainName: 'Linea',
+                                nativeCurrency: {
+                                    name: 'ETH',
+                            symbol: 'ETH',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.linea.build'],
+                                blockExplorerUrls: ['https://lineascan.build']
+                            }]
+                        }
+
+                        window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                            .then(() => console.log('Success'))
+                            .catch((error) => console.log("Error", error.message));
+                    } else {
+                        alert('Unable to locate a compatible web3 browser!');
+                    }
+                }
+            </script>
+
+                
+    <script src="Token%20Tracker%20LineaScan_files/hs.sticky-thead.js"></script>
+    <script>
+        $(document).on('ready', function () {
+           
+            if ($("#tblResult").length > 0){
+                // initialization of sticky thead
+               $('.stickyTableHead').HSStickyThead();
+            }     
+
+            renderDataTable();
+            //$("[data-toggle-second='tooltip']").tooltip();
+        });
+
+        function handleTokenSearch(data) {
+            searchAddress = false;
+            if ($("searchtoken").val() == "") {
+                $("#hdnSearchText").val("");                    
+            }
+        }
+
+        function updateUrl(subCatId) {
+            var queryString = '';
+            queryString += 'subcatid=' + subCatId;
+
+            var length = queryStringDictionary["length_" + subCatId];
+            if (length) {
+                if (length < 0) {
+                    length = 7;
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start_" + subCatId];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var col = queryStringDictionary["col_" + subCatId];
+            if (col !== undefined) {
+                queryString += "&col=" + col;
+            }
+
+            var order = queryStringDictionary["order_" + subCatId];
+            if (order !== undefined) {
+                queryString += "&order=" + order;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        var resetSortAfterClickDictionary = {};
+        var resetSortDictionary = {};
+        var resetPageDictionary = {};
+        var visitedTabDictionary = {};
+        var queryStringDictionary = {};
+        var currentLengthDictionary = {}; 
+        var currentTab = 
+            
+            
+            
+
+            function selectTab(el) {
+                $(".nav-link.active").removeClass("active");
+                el.classList.add("active");
+
+                var id = $('.nav-link.active').attr('val');
+                $("#subcattab-" + currentTab).removeClass("show").removeClass("active");
+
+                $("#subcattab-" + id).addClass("show").addClass("active");
+
+                if (!visitedTabDictionary["subCat_" + id]) {
+                    visitedTabDictionary["subCat_" + id] = true;
+                    $('#table-subcatid-'+ id).DataTable().ajax.reload();
+                }
+
+                updateUrl(id);
+                currentTab = id;
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+
+        function renderDataTable() {
+            visitedTabDictionary["subCat_" + currentTab] = true;
+            resetSortAfterClickDictionary["table-subcatid-" + currentTab] = false;
+
+        var config =    {
+                dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                language: {
+                    paginate: {
+                        next: '<i class="fa fa-chevron-right small"></i>',
+                        previous: '<i class="fa fa-chevron-left small"></i>'
+                    },
+                    lengthMenu: "Show _MENU_ Records",
+                    info: 'A total of \<strong\>_MAX_\</strong\> Token Contracts found'
+                },
+                columnDefs: [
+                    { orderable: true, targets: 2, orderSequence: ["asc", "desc", "reset"] },
+                    { orderable: true, targets: 3, orderSequence: ["desc", "asc"] },
+                    { orderable: true, targets: 4, orderSequence: ["desc", "asc", "reset"] },
+                    { orderable: false, targets: '_all' }
+                ],
+                columns: [
+                    { data: "number" },
+                    { data: "contractAddress" },
+                    { data: "tokenName" },
+                    { data: "marketCap" },
+                    { data: "holders" },
+                    { data: "website" }
+            ],
+                
+                searching: false,
+                pagingType: 'full',
+            drawCallback: function (settings) {
+                    //change sorting icon and position
+                    $("#" + this.attr('id')+" th.sorting_asc").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort-up"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                $("#" + this.attr('id') +" th.sorting_desc").not(".remove-icon").each(function () {
+                        if (!$(this).hasClass('no-login')) {
+                            var text = $(this).text();
+                            text = '<i class="fad fa-sort-down"></i> ' + text;
+                            $(this).html(text);
+                        }
+                    });
+
+                $("#" + this.attr('id') +" th.sorting").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    var api = this.api();
+                    var json = api.ajax.json();
+                if (!json) {
+                    var currentPageDisp = "1";
+
+                    //reload state if querystring is available
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var existLength = urlParams.get('size');
+                    if (existLength) {
+                        api.page.len(existLength);
+                        currentLengthDictionary[this.attr('id')] = parseInt(existLength)
+
+                        var existStart = urlParams.get('start');
+
+                        if (!existStart) {
+                            existStart = 0
+                        }
+                            currentPage = Math.floor(existStart / existLength);
+                            api.page(currentPage);
+                            currentPageDisp = currentPage + 1;
+                    }
+
+                    var existCol = urlParams.get('col');
+                    var existOrder = urlParams.get('order');
+
+                    if (existCol && existOrder) {
+                        this.api().order([parseInt(existCol), existOrder]);
+                    }
+
+                    $('.custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                    var totalPage = 0;
+                    $('#' + this.attr('id') + '_wrapper .paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+                    return;
+
+                } else {
+                    $('#' + this.attr('id') + '_wrapper .paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                    if (refreshToDefaultDictionary[settings.nTable.getAttribute("id")]) {
+                        refreshToDefaultDictionary[settings.nTable.getAttribute("id")] = false;
+                        this.api().page.len(defaultLength);
+                        this.api().order([defaultSort["column"], defaultSort["dir"]]);
+                        $("#" + this.attr('id') + " .default-sort").not("no-login").removeClass("sorting").addClass("sorting_desc")
+                        $("#" + this.attr('id') + " .sorting_desc").not(".default-sort").removeClass("sorting_desc").addClass("sorting").removeAttr("aria-sort");
+                        $("#" + this.attr('id') + " .sorting_asc").not(".default-sort").removeClass("sorting_asc").addClass("sorting").removeAttr("aria-sort");
+                    }
+
+                    //bypass standard datatables sorting selection
+                    if (resetSortDictionary[this.attr('id')] || resetSortAfterClickDictionary[this.attr('id')]) {
+                        this.api().order([3, 'desc']); //the default sorting is column 3
+                        resetSortAfterClickDictionary[this.attr('id')] = false;
+                        $("#" + this.attr('id') + " .default-sort").not("no-login").removeClass("sorting").addClass("sorting_desc")
+                        $("#" + this.attr('id') + " .sorting_desc").not(".default-sort").removeClass("sorting_desc").addClass("sorting").removeAttr("aria-sort");
+                        $("#" + this.attr('id') + " .sorting_asc").not(".default-sort").removeClass("sorting_asc").addClass("sorting").removeAttr("aria-sort");
+                    }
+
+                    if (resetPageDictionary[this.attr('id')]) {
+                        this.api().page(0);
+                        resetPageDictionary[this.attr('id')] = false;
+                    }
+
+                    $("#" + this.attr('id') + " th.sorting_asc").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort-up"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    $("#" + this.attr('id') + " th.sorting_desc").not("").each(function () {
+                        if (!$(this).hasClass('no-login')) {
+                            var text = $(this).text();
+                            text = '<i class="fad fa-sort-down"></i> ' + text;
+                            $(this).html(text);
+                        }
+                    });
+
+                    $("#" + this.attr('id') + " th.sorting").not(".remove-icon").each(function () {
+                        var text = $(this).text();
+                        text = '<i class="fad fa-sort"></i> ' + text;
+                        $(this).html(text);
+                    });
+
+                    //maybe can be removed
+                    if (json.showPopUp) {
+                        showSignInPopUp(this.attr('id'));
+                    }
+                    else {
+                        hideSignInPopUp(this.attr('id'))
+                    }
+                //End - maybe can be removed
+                }
+
+                var subCatId = $('.nav-link.active').attr('val');
+
+                //get page info
+                var pageInfo = this.api().page.info();
+
+                if (pageInfo.length) {
+                    queryStringDictionary["length_" + subCatId] = pageInfo.length;
+                }
+
+                if (pageInfo.start !== undefined) {
+                    queryStringDictionary["start_" + subCatId] = pageInfo.start;
+                }
+
+                //get ordering info
+                var orderInfo = this.api().order();
+                queryStringDictionary["col_" + subCatId] = orderInfo[0][0];
+                queryStringDictionary["order_" + subCatId] = orderInfo[0][1];
+
+
+                updateUrl(subCatId);
+                $('[data-toggle="tooltip"]').tooltip()
+
+                },
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/tokens.aspx/GetTokensBySubLabel",
+                    dataType: 'json',
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+                        return JSON.stringify(morp);
+                    },
+                    data: function (d,settings) {
+                        var labelModel = generateLabelModel();
+
+                        if (refreshToDefaultDictionary[settings.nTable.getAttribute("id")]) {
+                            d.length = defaultLength;
+                            d.order[0] = defaultSort;
+                        }
+
+                        if (currentLengthDictionary[settings.nTable.getAttribute("id")] != d.length) {
+                            if (currentLengthDictionary[settings.nTable.getAttribute("id")] != undefined) {
+                                d.start = 0;
+                                resetPageDictionary[settings.nTable.getAttribute("id")] = true;
+                            }
+                            currentLengthDictionary[settings.nTable.getAttribute("id")] = d.length;
+                        }
+
+                        if ((d.order[0] && d.order[0].dir === "reset") ||
+                            resetSortAfterClickDictionary[settings.nTable.getAttribute("id")]) {
+                            d.order[0] = { column: 3, dir: "desc" }
+                            resetSortDictionary[settings.nTable.getAttribute("id")] = true;
+                        }
+                        else {
+                            resetSortDictionary[settings.nTable.getAttribute("id")] = false;
+                        }
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    }
+            },
+                
+                
+                
+                
+                
+                };
+
+        
+        }
+    </script>    
+
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
