@@ -1,0 +1,854 @@
+
+
+<!doctype html>
+<html lang="en">
+<head><title>
+	BaseScan Txn Batches | Base
+</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content=basescan.org>
+    <meta name="keywords" content="ethereum, explorer, ether, L2, search, blockchain, crypto, currency" /><meta name="format-detection" content="telephone=no" />
+   <meta name="Description" content="Base allows you to explore and search the Base Network for transactions, addresses, tokens, prices and other activities taking place on the Base Network" /> <meta name="author" content="basescan.org" /> <meta name="keywords" content="Base, explorer, search, blockchain, crypto, currency" /> <meta property="og:title" content="BaseScan Txn Batches | Base" /> <meta property="og:description" content="Batches that are included in the Ethereum blockchain. The timestamp, block size and included transaction are shown." /> <meta property="og:type" content="website" /> <meta property="og:site_name" content="Base Explorer" /> <meta property="og:url" content="http://basescan.org/batches" /> <meta property="og:image" content="https://basescan.org/images/brandassets/logo.jpg?v=24.2.1.1" /> <meta property="og:image:alt" content="Visit basescan.org" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:site" content="@BaseScan" /> <meta name="twitter:title" content="BaseScan Txn Batches | Base" /> <meta property="twitter:description" content="Batches that are included in the Ethereum blockchain. The timestamp, block size and included transaction are shown." /> <meta property="twitter:image" content="https://basescan.org/images/brandassets/logo.jpg?v=24.2.1.1" /> 
+
+    <link rel="shortcut icon" href="/images/favicon.ico?v=24.2.1.1">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWEL8GRQ12"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+        gtag('config','G-TWEL8GRQ12', { 'anonymize_ip': true });
+    </script>
+    
+
+    <script>
+        //Search box text ad
+        var availableAd = [];
+        var gotAd = [];
+
+        
+        availableAd = [];
+        gotAd = [ "ShowAds					" ];
+        
+    </script>
+
+    <!-- Google Fonts -->
+    
+    
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/fontawesome-all.min.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/vendor/hs-megamenu/src/hs.megamenu.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css?v=24.2.1.1">
+    
+    <link rel="stylesheet" href="/assets/vendor/select2/dist/css/select2.min.css?v=24.2.1.1">
+    <link rel="stylesheet" href="/assets/css/theme.min.css?v=24.2.1.1"> 
+    <link rel="stylesheet" href="/assets/css/custom.css?v=24.2.1.1">    
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js?v=24.2.1.1"></script>     
+    <script type="text/javascript" src="/jss/blockies.js?v=24.2.1.1"></script>
+
+    <style>
+        .ui-autocomplete {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: default
+        }
+        .ui-state-active {
+            border-color: #e7eaf3;
+            background: #f8fafd;
+        }
+        body.dark-mode .ui-state-active {
+          background-color: #132a47;
+          border-color: #18365b;
+        }
+        .autolink-safari a{
+            pointer-events: none !important;
+            text-decoration:none !important; 
+            color:inherit !important;
+        }
+    </style>
+
+    
+   
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/datatables/datatables.min.css?v=24.2.1.1" />
+    <style>
+        .dataTable > thead > tr > th[class*="sort"]:before,
+        .dataTable > thead > tr > th[class*="sort"]:after {
+            content: "" !important;
+        }
+
+        .dataTables_processing {
+        z-index: 100;
+        }
+
+        .tooltip-inner {
+            max-width: 290px;            
+        }
+    </style>
+<meta name="description" content="Batches that are included in the Ethereum blockchain. The timestamp, block size and included transaction are shown." /></head>
+<body id="body">
+    <div class="wrapper">
+        
+        <header id="header" class="u-header ">
+            <div class="u-header__section  ">
+                <div id="logoAndNav" class="container">
+                    <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+                        <div class="w-lg-auto">
+                            <a class="navbar-brand  pt-md-0" href="/" target="_parent" aria-label="Etherscan">
+                                <img id="logo-header" width="140" src="/images/logo-ether.svg?v=0.0.7" alt="Site Logo">     
+                                 
+                            </a>
+                          
+                            <div id="ethPrice">
+	
+                                <div class="d-none d-md-inline-block u-label u-label--price rounded mt-1 ml-n1 text-nowrap">
+                                    <span class="text-dark">Eth: $3,593.31</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours"><span class='text-success'> (+3.29%)</span></span>
+                                </div>
+                            
+</div>
+
+                        </div>
+                        <div>
+                            
+                            <button type="button" class="navbar-toggler btn u-hamburger"
+                                aria-label="Toggle navigation"
+                                aria-expanded="false"
+                                aria-controls="navBar"
+                                data-toggle="collapse"
+                                data-target="#navBar">
+                                <span id="hamburgerTrigger" class="u-hamburger__box">
+                                    <span class="u-hamburger__inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                                <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                    <li id="LI_default" class="nav-item u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a class="nav-link u-header__nav-link" href="/" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Home</a>
+                                    </li>
+                                    <li id="LI_blockchain" class="nav-item hs-has-sub-menu u-header__nav-item active" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        
+                                            <a id="blockchainMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Blockchain</a>
+                                        
+
+                                        <ul id="blockchainSubMenu" class="hs-sub-menu u-header__sub-menu  u-header__sub-menu--spacer" aria-labelledby="blockchainMegaMenu" style="min-width: 230px;">
+                                            <li id="LI12"><a href="/txs" class="nav-link u-header__sub-menu-nav-link">Transactions</a></li>
+                                            <li id="LI41"><a href="/txsEnqueued" class="nav-link u-header__sub-menu-nav-link">Latest L1→L2 Transactions</a></li>
+                                            <li id="LI66"><a href="/txsExit" class="nav-link u-header__sub-menu-nav-link">Latest L2→L1 Transactions</a></li>
+                                            
+                                            <li id="LI14"><a href="/txsInternal" class="nav-link u-header__sub-menu-nav-link">Contract Internal Transactions</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI_blocks" class=" active">
+                                                <a id="navBlocks" class="nav-link u-header__sub-menu-nav-link" href="/blocks" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View Blocks</a></li>
+                                            <li id="LI_batches">
+                                                <a id="navBatches" class="nav-link u-header__sub-menu-nav-link" href="/batches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View L1 Transaction Batches</a></li>
+                                            <li id="LI_statebatches">
+                                                <a id="navStateBatch" class="nav-link u-header__sub-menu-nav-link" href="/statebatches" aria-haspopup="true" aria-expanded="false" aria-controls="navSubBlocks">View L1 State Batches</a></li>
+                                            
+                                            
+                                            <li class="dropdown-divider"></li>                                            
+                                            <li id="LI_accountall"><a href="/accounts" class="nav-link u-header__sub-menu-nav-link">Top Accounts</a></li>
+                                            <li id="LI_contract_verified"><a href="/contractsVerified" class="nav-link u-header__sub-menu-nav-link">Verified Contracts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="LI_tokens" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="tokensMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="tokensSubMenu">Tokens</a>
+
+                                        <!-- Tokens - Submenu -->
+                                        <ul id="tokensSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="tokensMegaMenu" style="min-width: 230px;">
+                                            <li id="LI21"><a class="nav-link u-header__sub-menu-nav-link" href="/tokens">ERC20 Top Tokens</a></li>
+                                            <li id="LI1"><a class="nav-link u-header__sub-menu-nav-link" href="/tokentxns">View ERC20 Transfers</a></li>
+                                            
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI42"><a class="nav-link u-header__sub-menu-nav-link" href="/tokens-nft">ERC721 Top Tokens</a></li>
+                                            <li id="LI40"><a class="nav-link u-header__sub-menu-nav-link" href="/tokentxns-nft">View ERC721 Transfers</a></li>
+                                            <li class="dropdown-divider"></li>
+                                            <li id="LI30"><a class="nav-link u-header__sub-menu-nav-link" href="/tokens-nft1155">ERC1155 Top Tokens</a></li>
+                                            <li id="LI33"><a class="nav-link u-header__sub-menu-nav-link" href="/tokentxns-nft1155">View ERC1155 Transfers <sup></sup></a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li id="LI_resources" class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="resourcesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+                                        <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" aria-labelledby="resourcesMegaMenu" style="min-width: 230px;">
+                                            <li id="LI_charts2"><a class="nav-link u-header__sub-menu-nav-link" href="/charts">Charts &amp;  Stats</a></li>
+                                            
+                                            
+                                                                                
+                                        </ul>
+                                    </li>
+                                    <li id="LI_services2" class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="right">
+                                        <a id="moreMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">More</a>
+                                         <div class="hs-mega-menu w-80 u-header__sub-menu" aria-labelledby="moreMegaMenu">
+                                            <div class="row u-header__mega-menu-wrapper">
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Developers</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">
+                                                        <li id="LI_BASE_MAINNET_Docs"><a class="nav-link u-header__sub-menu-nav-link" href="https://docs.basescan.org/"><i class="fa fa-angle-right small mr-1"></i>APIs</a></li>
+                                                        <li id="LI17"><a class="nav-link u-header__sub-menu-nav-link" href="/verifyContract"><i class="fa fa-angle-right small mr-1"></i>Verify Contract</a></li>
+                                                        <li id="LI24"><a class="nav-link u-header__sub-menu-nav-link" href="/opcode-tool"><i class="fa fa-angle-right small mr-1"></i>Byte to Opcode</a></li>
+                                                        <li id="LI54"><a class="nav-link u-header__sub-menu-nav-link" href="/contractdiffchecker"><i class="fa fa-angle-right small mr-1"></i>Contract Diff Checker<sup><span class="badge badge-success font-size-default ml-1">New</span></sup></a></li>
+                                                        <li id="LI27"><a class="nav-link u-header__sub-menu-nav-link" href="/vyper"><i class="fa fa-angle-right small mr-1"></i>Vyper Online Compiler</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-lg mb-4 mb-lg-0">
+                                                    <span class="u-header__sub-menu-title">Tools</span>
+                                                    <ul class="u-header__sub-menu-nav-group mb-3">   
+                                                       <li id="LI2"><a class="nav-link u-header__sub-menu-nav-link" href="/labelcloud"><i class="fa fa-angle-right small mr-1"></i>Label Word Cloud</a></li>                       
+                                                       <li id="LI22"><a class="nav-link u-header__sub-menu-nav-link" href="/verifiedSignatures"><i class="fa fa-angle-right small mr-1"></i>Verified Signature</a></li>
+
+                                                        <li id="LI29"><a class="nav-link u-header__sub-menu-nav-link" href="/advanced-filter"><i class="fa fa-angle-right small mr-1"></i>Advanced Filter <sup><span class='badge badge-secondary ml-1'>Beta</span></sup></a></li>
+                                                        <li id="LI5"><a class="nav-link u-header__sub-menu-nav-link" href="/exportDataMain"><i class="fa fa-angle-right small mr-1"></i>Export Data</a></li>
+                                                       <li id="LI9"><a class="nav-link u-header__sub-menu-nav-link" href="/tokenapprovalchecker"><i class="fa fa-angle-right small mr-1"></i>Token Approvals <sup><span class='badge badge-secondary font-size-default ml-1'> Beta</span></sup></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                    <li class="nav-item my-2 my-md-0">
+                                        <a class="u-header__nav-link" href="/login">
+                                            <i class="fa fa-user-circle mr-1"></i>Sign In
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="u-header__nav-separator"></li>
+                                    <li class="nav-item hs-has-sub-menu u-header__nav-item my-md-n1" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut">
+                                        <a id="explorersWithDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle u-header__nav-link-toggle--mobile pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="explorersDropdown">
+                                            
+                                                <span class="btn btn-sm btn-icon btn-soft-primary cursor-pointer d-none d-md-inline-block">
+                                                    <img id ="logo-header-icon" img class="u-xs-avatar btn-icon__inner" src="/images/logo-symbol.svg" alt="Logo">
+                                                </span>
+
+                                            
+                                            <span class="d-inline-block d-md-none">Explorers</span>
+                                        </a>
+                                        <ul id="explorersDropdown" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer dropdown-menu-md-right animated fadeOut" aria-labelledby="explorersWithDropdown" style="min-width: 170px; display: none;">
+                                            <li id="LI_Mainnet_Base"><a class="nav-link u-header__sub-menu-nav-link" href="https://basescan.org/">Base Mainnet</a></li>
+
+                                                <li id="LI_Sepolia_Base"><a class="nav-link u-header__sub-menu-nav-link" href="https://sepolia.basescan.org/">Base Sepolia</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="form1">
+	
+                                <form class="w-100 w-lg-60 order-md-1 ml-md-auto mt-2 mb-2 mb-md-0" action="/search" method="GET" autocomplete="off" spellcheck="false">                                
+                                        <div class="input-group input-group-sm">
+                                            <div class="input-group-prepend d-none d-md-block">
+                                                <!-- Select -->
+                                                 <select name="f" class="custom-select custom-select-sm  custom-arrow-select input-group-text font-size-base filterby text-left">
+                                                    <option selected value="0">All Filters</option>
+                                                    <option value="1">Addresses</option>
+                                                    <option value="2">Tokens</option>
+                                                    
+                                                    <option value="5">Websites</option>
+                                                </select>
+                                                <!-- End Select -->
+                                            </div>
+                                            <input type="text" class="form-control searchautocomplete" autocomplete="off" spellcheck="false" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Batch / Token" aria-label="Search by Address / Txhash / Batch / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" maxlength="68">
+                                            <input type="hidden" value="" id="hdnSearchText" />
+                                            <input type="hidden" value="" id="hdnSearchLabel" />
+                                            <input id="hdnIsTestNet" value="False" type="hidden" />
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit">
+                                                    <span class="fas fa-search"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                </form>
+                            
+</div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="content"  role="main">
+            <input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age" />
+            <input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)" />
+            <input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format" />
+            <input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format" />
+            <input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee" />
+            <input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price" />
+            <input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas) in ETH" />
+            <input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei" />
+            
+
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center py-3">
+            <div class="mb-1 mb-md-0">
+                <h1 class="h4 font-weight-normal mb-0">Blocks&nbsp;<span class="small text-secondary"></span>
+                    <p class="mb-0 text-break small">
+                        <span class="small text-secondary"></span>
+                    </p>
+                </h1>
+            </div>
+            
+        </div>
+                
+    </div>
+    
+    
+    <!-- Ads -->
+    <div class="container">
+        <div class="border-top py-3">
+            <div class="d-flex text-secondary" style="line-height: 2.2;">
+                <span id="ContentPlaceHolder1_lblAdResult"><!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.0.5 --><ins data-revive-zoneid='2' data-revive-id='94930f9d02164723d814eabe9168eb46'></ins><script Async src='//abt-optimistic.etherscan.io/www/d/asyncjses.php?v=0.01'></script></span>&nbsp;
+            </div>
+        </div>
+    </div>
+    
+    <!--<div class="container border-top py-4"> 
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+         <!-- Testnet Banner -->
+         <!--<ins class="adsbygoogle"
+             style="display: block"
+             data-ad-client="ca-pub-9365010058051645"
+             data-ad-slot="4376794054"
+             data-ad-format="horizontal"></ins>
+         <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+
+
+    </div>-->
+    
+
+    <div class="container space-bottom-2">
+
+        
+        
+
+        <div class="card">
+            
+            <div class="card-body">
+                <div id="ContentPlaceHolder1_topPageDiv" class="d-md-flex justify-content-between mb-4">
+                    <p class="mb-2 mb-md-0"><i id="spinwheel" class="fa fa-spin fa-spinner fa-1x fa-pulse mr-1" style="display: none;"></i>
+                        Block  #11398417 to  #11398441 (Total of 11,398,442 blocks)
+                        
+                    </p>                   
+                    
+                    <nav aria-label="page navigation">
+                         <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link" >First</span></li><li class="page-item disabled"><span class="page-link" ><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li Class="page-item disabled"><span Class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">455938</strong></span></li><li class="page-item" data-toggle='tooltip' title="Go to Next"><a class="page-link" href="blocks?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="blocks?p=455938"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                    </nav>
+                </div>
+                 
+                <div class="table-responsive mb-2 mb-md-0">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Block</th>
+                                <th scope="col"><a href="javascript:;" onclick="switchAgeToDateTime(this)" id="lnkAgeDateTime"></a></th>
+                                <th scope="col">Txn</th>
+                                
+                                <th scope="col">Gas Used</th>
+                                <th scope="col">Gas Limit</th>
+                                
+                              
+
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href='/block/11398441'>11398441</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='1 sec ago'>2024-03-04 21:03:49</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:49'>1 sec ago</span></td><td><a href='/txs?block=11398441'>5</a></td><td>458,240 <span class="small text-secondary">(1.53%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:1.53%;' aria-valuenow='1.53' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398440'>11398440</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='3 secs ago'>2024-03-04 21:03:47</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:47'>3 secs ago</span></td><td><a href='/txs?block=11398440'>4</a></td><td>2,185,065 <span class="small text-secondary">(7.28%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:7.28%;' aria-valuenow='7.28' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398439'>11398439</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='5 secs ago'>2024-03-04 21:03:45</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:45'>5 secs ago</span></td><td><a href='/txs?block=11398439'>13</a></td><td>1,258,377 <span class="small text-secondary">(4.19%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:4.19%;' aria-valuenow='4.19' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398438'>11398438</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='7 secs ago'>2024-03-04 21:03:43</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:43'>7 secs ago</span></td><td><a href='/txs?block=11398438'>9</a></td><td>2,590,728 <span class="small text-secondary">(8.64%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:8.64%;' aria-valuenow='8.64' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398437'>11398437</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='9 secs ago'>2024-03-04 21:03:41</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:41'>9 secs ago</span></td><td><a href='/txs?block=11398437'>8</a></td><td>787,793 <span class="small text-secondary">(2.63%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:2.63%;' aria-valuenow='2.63' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398436'>11398436</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='11 secs ago'>2024-03-04 21:03:39</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:39'>11 secs ago</span></td><td><a href='/txs?block=11398436'>13</a></td><td>1,755,336 <span class="small text-secondary">(5.85%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:5.85%;' aria-valuenow='5.85' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398435'>11398435</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='13 secs ago'>2024-03-04 21:03:37</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:37'>13 secs ago</span></td><td><a href='/txs?block=11398435'>6</a></td><td>1,773,669 <span class="small text-secondary">(5.91%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:5.91%;' aria-valuenow='5.91' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398434'>11398434</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='15 secs ago'>2024-03-04 21:03:35</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:35'>15 secs ago</span></td><td><a href='/txs?block=11398434'>11</a></td><td>1,835,069 <span class="small text-secondary">(6.12%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:6.12%;' aria-valuenow='6.12' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398433'>11398433</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='17 secs ago'>2024-03-04 21:03:33</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:33'>17 secs ago</span></td><td><a href='/txs?block=11398433'>15</a></td><td>2,112,284 <span class="small text-secondary">(7.04%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:7.04%;' aria-valuenow='7.04' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398432'>11398432</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='19 secs ago'>2024-03-04 21:03:31</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:31'>19 secs ago</span></td><td><a href='/txs?block=11398432'>13</a></td><td>1,862,505 <span class="small text-secondary">(6.21%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:6.21%;' aria-valuenow='6.21' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398431'>11398431</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='21 secs ago'>2024-03-04 21:03:29</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:29'>21 secs ago</span></td><td><a href='/txs?block=11398431'>14</a></td><td>1,587,480 <span class="small text-secondary">(5.29%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:5.29%;' aria-valuenow='5.29' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398430'>11398430</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='23 secs ago'>2024-03-04 21:03:27</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:27'>23 secs ago</span></td><td><a href='/txs?block=11398430'>7</a></td><td>823,755 <span class="small text-secondary">(2.75%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:2.75%;' aria-valuenow='2.75' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398429'>11398429</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='25 secs ago'>2024-03-04 21:03:25</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:25'>25 secs ago</span></td><td><a href='/txs?block=11398429'>9</a></td><td>1,045,062 <span class="small text-secondary">(3.48%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:3.48%;' aria-valuenow='3.48' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398428'>11398428</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='27 secs ago'>2024-03-04 21:03:23</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:23'>27 secs ago</span></td><td><a href='/txs?block=11398428'>5</a></td><td>501,106 <span class="small text-secondary">(1.67%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:1.67%;' aria-valuenow='1.67' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398427'>11398427</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='29 secs ago'>2024-03-04 21:03:21</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:21'>29 secs ago</span></td><td><a href='/txs?block=11398427'>14</a></td><td>2,207,223 <span class="small text-secondary">(7.36%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:7.36%;' aria-valuenow='7.36' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398426'>11398426</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='31 secs ago'>2024-03-04 21:03:19</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:19'>31 secs ago</span></td><td><a href='/txs?block=11398426'>10</a></td><td>1,587,226 <span class="small text-secondary">(5.29%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:5.29%;' aria-valuenow='5.29' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398425'>11398425</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='33 secs ago'>2024-03-04 21:03:17</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:17'>33 secs ago</span></td><td><a href='/txs?block=11398425'>8</a></td><td>322,909 <span class="small text-secondary">(1.08%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:1.08%;' aria-valuenow='1.08' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398424'>11398424</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='35 secs ago'>2024-03-04 21:03:15</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:15'>35 secs ago</span></td><td><a href='/txs?block=11398424'>9</a></td><td>760,576 <span class="small text-secondary">(2.54%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:2.54%;' aria-valuenow='2.54' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398423'>11398423</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='37 secs ago'>2024-03-04 21:03:13</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:13'>37 secs ago</span></td><td><a href='/txs?block=11398423'>8</a></td><td>606,594 <span class="small text-secondary">(2.02%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:2.02%;' aria-valuenow='2.02' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398422'>11398422</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='39 secs ago'>2024-03-04 21:03:11</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:11'>39 secs ago</span></td><td><a href='/txs?block=11398422'>12</a></td><td>1,123,431 <span class="small text-secondary">(3.74%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:3.74%;' aria-valuenow='3.74' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398421'>11398421</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='41 secs ago'>2024-03-04 21:03:09</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:09'>41 secs ago</span></td><td><a href='/txs?block=11398421'>11</a></td><td>1,119,432 <span class="small text-secondary">(3.73%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:3.73%;' aria-valuenow='3.73' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398420'>11398420</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='43 secs ago'>2024-03-04 21:03:07</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:07'>43 secs ago</span></td><td><a href='/txs?block=11398420'>9</a></td><td>1,588,000 <span class="small text-secondary">(5.29%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:5.29%;' aria-valuenow='5.29' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398419'>11398419</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='45 secs ago'>2024-03-04 21:03:05</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:05'>45 secs ago</span></td><td><a href='/txs?block=11398419'>9</a></td><td>979,635 <span class="small text-secondary">(3.27%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:3.27%;' aria-valuenow='3.27' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398418'>11398418</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='47 secs ago'>2024-03-04 21:03:03</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:03'>47 secs ago</span></td><td><a href='/txs?block=11398418'>9</a></td><td>1,434,100 <span class="small text-secondary">(4.78%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:4.78%;' aria-valuenow='4.78' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr><tr><td><a href='/block/11398417'>11398417</a></td><td class='showDate ' style='display:none !important; '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='49 secs ago'>2024-03-04 21:03:01</span></td><td style='' class='showAge '><span rel='tooltip' data-toggle='tooltip' data-placement='bottom' title='2024-03-04 21:03:01'>49 secs ago</span></td><td><a href='/txs?block=11398417'>7</a></td><td>861,387 <span class="small text-secondary">(2.87%)</span><div class='progress mt-1' style='height:2px;'><div class='progress-bar bg-primary' role='progressbar' style='width:2.87%;' aria-valuenow='2.87' aria-valuemin='0' aria-valuemax='100'></div></div></td><td>30,000,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="ContentPlaceHolder1_pageRecords">
+                    <form method="post" action="./blocks" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="dvXC+J7Dd2ys1mVlsn54V3QRIovlHLBXQ34UfpSiJac7BZYg7p5ez0wBji3clzBVlRf3ayqy2owE0ijVMhYyR1nkBJXwhiHpdv3wseWIGro=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1E110816" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="c7pZPydtT/dPyPU2MZHB2maD+Bq7vicFpNdkIZdF966H3WRGF1iQ9465LCHiaWXDW3uujbkdNa8wr1TwSYMYbZYh/EzFmXD7Nk+mJC1vKrUIYw/CMiUY+2Lj79ZePr40wGC7Jc00sW+CJvxXVmXDgjeLxdevtCANRCkxKB4iVghr/hnRc/ZCASvYtM/8+nV+B8r7KEM0FDb8LBVKhbDKIA==" />
+</div>
+                        <div class="d-md-flex justify-content-between my-3"> 
+                            <div class="d-flex align-items-center text-secondary mb-2 mb-md-0">
+                                Show
+                                <select name="ctl00$ContentPlaceHolder1$ddlRecordsPerPage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlRecordsPerPage\&#39;,\&#39;\&#39;)&#39;, 0)" id="ContentPlaceHolder1_ddlRecordsPerPage" class="custom-select custom-select-xs mx-2">
+	<option value="10">10</option>
+	<option selected="selected" value="25">25</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+
+</select>
+                                Records
+                            </div>
+                            <nav class="mb-4 mb-md-0" aria-label="page navigation">
+                                 <ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><span class="page-link" >First</span></li><li class="page-item disabled"><span class="page-link" ><i class="fa fa-chevron-left small"></i></span><span class="sr-only">Previous</span></li><li Class="page-item disabled"><span Class="page-link text-nowrap">Page  <strong class="font-weight-medium">1</strong> of <strong class="font-weight-medium">455938</strong></span></li><li class="page-item" data-toggle='tooltip' title="Go to Next"><a class="page-link" href="blocks?p=2" aria-label="Next"><span aria-hidden="True"><i class="fa fa-chevron-right small"></i></span> <span class="sr-only">Next</span></a></li><li class="page-item"><a class="page-link" href="blocks?p=455938"><span aria-hidden="True">Last</span> <span class="sr-only">Last</span></a></li>
+                            </nav>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+        </div>
+
+        
+    </div>
+    
+    
+
+
+        </main>
+        <div id="push"></div>
+         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+             <div class="modal-dialog modal-sm" role="document">
+                 <div class="modal-content">
+                     <div class="modal-body">
+                        <button type="button" class="close close-md" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="text-center py-5-alt px-4">
+                            <div id="emailSubscribeModalBoxText"></div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+
+        
+    </div>
+
+            <footer class="bg-dark py-4">
+                 <div class="container">
+                     <div class="row justify-content-sm-between align-items-center">
+                         <div class="col-sm-6 mb-3 mb-sm-0">
+                             <div class="d-flex align-items-center">
+                                 
+                                    <img width="25" src="/images/svg/brands/main.svg?v=24.2.1.1" alt="Logo">
+                                 
+                                 <span class="h5 text-white mb-0 ml-3">Powered By Base</span>
+                             </div>
+                         </div>
+
+                         <div class="col-sm-6 align-self-bottom">
+                             <!-- Preferences -->
+                             <div class="d-flex justify-content-sm-end align-items-center mb-4">
+                                 <span>
+                                     <button type="button" class="btn btn-xss btn-soft-light text-nowrap d-flex align-items-center mr-2" onclick="addNetwork('web3');"><img Class="mr-1" width="15" src="/images/svg/brands/metamask.svg" alt="Metamask">Add Base to Metamask</button>
+                                 </span>
+
+                                 <a class="btn btn-xss btn-soft-light mr-2" href="/settings">
+                                     <i class="fa fa-cogs mr-1"></i>Preferences
+                                 </a>
+
+                                  <button id="darkModaBtn" type="button" data-toggle="tooltip" data-title="Day/Night Mode" class="btn btn-sm btn-icon btn-soft-light">
+                                        <i id="darkModaBtnIcon" Class="fa fa-moon"></i></button>
+
+                             </div>
+                             <!-- End Preferences -->
+                         </div>
+                     </div>
+                     <!-- End Fotoer Content -->
+
+              <hr class="opacity-md">
+             <div class="row justify-content-between align-items-center font-size-1">
+                 <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                     <p class="mb-0 text-white">BaseScan © 2024  (BASE-A1)
+                       <span class="mx-1">|</span> ⛏ Built by the same team behind <a class="text-primary" href="https://etherscan.io/" target="_blank"><b>Etherscan</b></a> <span class="mx-1">|</span> <a class="text-white-70" href="/address/0x71c7656ec7ab88b098defb751b7401b5f6d8976f">Donate</a> <i class="fas fa-heart text-danger"></i>
+                     </p>
+                 </div>
+            <div class="col-md-6 text-md-right">
+                <ul class="list-inline mb-0">
+
+                    
+                    <li class="list-inline-item">
+                    <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="/terms">Terms of Service</a>
+                    </li>
+                    
+                    <li class="list-inline-item">
+                    <a class="unordered-list-text" rel="nofollow noopener" target="_blank" href="https://basescan.statuspage.io/">Network Status</a>
+                    </li>
+                    
+
+                    <li class="list-inline-item">
+                    
+                           <a class="btn btn-sm btn-icon btn-soft-light btn-pill" href="/cdn-cgi/l/email-protection#b3daddd5dcf3d1d2c0d6c0d0d2dd9ddcc1d4" data-toggle="tooltip" data-placement="top" title="Contact Us">
+                           <i class="far fa-envelope btn-icon__inner"></i>
+                    
+                    </a>
+                </li>
+                </ul>
+            </div>
+             </div>
+         </div>
+    </footer>
+
+    <div id="divcookie" class="fixed-bottom w-md-75 w-xl-60 mx-md-auto mx-3" style="display: none;">
+        <div class="alert alert-light border shadow p-3" role="alert">
+            <div class="d-md-flex justify-content-center-alt1 align-items-center">
+                <span>
+                    <p class="text-dark mr-3 mb-2 mb-md-0">
+                        <i class="far fa-cookie-bite text-secondary mr-1"></i>This website <a href='/terms#cookiestatement' target='_blank'>uses cookies to improve your experience</a>. By continuing to use this website, you agree to its <a href='/terms' target='_blank'>Terms</a> and <a href='/privacyPolicy'>Privacy Policy</a>.
+                    </p>
+                </span>
+                <div>
+                    <button id ='btnCookie' class="btn btn-sm btn-primary text-nowrap py-1"  data-dismiss="alert" aria-label="Close">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="js-go-to u-go-to" href="#"
+        data-position='{"bottom": 20, "right": 15 }'
+        data-type="fixed"
+        data-offset-top="400"
+        data-compensation="#header"
+        data-show-effect="slideInUp"
+        data-hide-effect="slideOutDown">
+        <span class="fa fa-arrow-up u-go-to__inner"></span>
+    </a>
+    
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/vendor/jquery-ui/jquery-ui.min.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/popper.js/dist/umd/popper.min.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js?v=24.2.1.1"></script>
+    
+
+    <!-- JS Implementing Plugins -->
+    <script src="/assets/vendor/hs-megamenu/src/hs.megamenu.js?v=24.2.1.1"></script>
+    <script src="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js?v=24.2.1.1"></script> 
+    <script src="/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js?v=24.2.1.1"></script>
+
+
+    <!-- JS Front -->
+    <script src="/assets/js/hs.core.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.header.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.unfold.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.malihu-scrollbar.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.focus-state.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.go-to.js?v=24.2.1.1"></script>
+    <script src="/assets/js/components/hs.cubeportfolio.js?v=24.2.1.1"></script>
+    <script src="/assets/js/custom/combine-js-bottom2.js?v=24.2.1.1"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(window).on('load', function () {
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 767.98,
+                hideTimeOut: 0
+            });
+            myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter","#signupSrEmail")
+        });
+
+        $(document).on('ready', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#header'));
+
+            // initialization of unfold component
+            $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+                afterOpen: function () {
+                    $(this).find('input[type="search"]').focus();
+                }
+            });
+
+            // initialization of malihu scrollbar
+            $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      
+            // initialization of focus state
+            $.HSCore.components.HSFocusState.init();
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of cubeportfolio
+            //$.HSCore.components.HSCubeportfolio.init('.cbp');
+        });
+    </script>
+    <script type="text/javascript">
+        var sid = '1b3df34f99ac32fcbe5aeddaa851e1bf';
+        var strGlobal = getCookie("site_switch_age_datetime");
+        var strGlobalFee = sessionStorage.getItem("ShowFee");
+        var cookieconsent = getCookie("Base" + "_cookieconsent");
+        if (cookieconsent !== "True") {
+            document.getElementById("divcookie").style.display = "block";
+        };
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        $("#btnCookie").click(function () {
+            $("#divcookie").fadeOut("slow", function () {
+                var d = new Date();
+                d.setTime(d.getTime() + (1095 * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = "Base" + "_cookieconsent=True" + ";" + expires + ";path=/";;
+            });
+        });
+        function handleSearchText(data) {
+            searchAddress = false;
+            if ($("txtSearchInput").val() == "") {
+                $("#hdnSearchText").val("");
+                $("#hdnSearchLabel").val("");
+            }
+        }
+    </script>
+    
+
+    <script src="/assets/js/custom/web3.min.js?v=0.5.2.2"></script>
+    <script type="text/javascript">
+        var web3Obj;
+        var isTestnet = 'false';
+        var SiteNetID = '8453';
+        var SiteNetChainID = '0x2105';
+        var SiteNetName = 'Base';
+        var SiteName = 'BaseScan';
+        var SiteErc20 = 'ERC20';
+        var SiteErc721 = 'ERC721';
+        var SiteErc1155 = 'ERC1155';
+        var sv = '24.2.1.1';
+        var allowErc1155 = '';
+
+        async function addNetwork(type) {
+            
+            if (type === 'web3') {
+                if (typeof ethereum !== 'undefined') {
+                    if (window.ethereum.providers?.length) {
+                        if (window.ethereum.isMetaMask) {
+                            ethereum = window.ethereum.providers.find((provider) => provider.isMetaMask);
+                            web3Obj = new Web3(ethereum);
+                        }
+                    } else {
+                        web3Obj = new Web3(ethereum);
+                    }
+                } else if (typeof web3 !== 'undefined') {
+                    web3Obj = new Web3(web3.givenProvider);
+                } else {
+                    web3Obj = new Web3(ethereum);
+                }                
+            }            
+
+            if (typeof web3Obj !== 'undefined') {
+                var network = 0;
+                network = await web3Obj.eth.getChainId();
+                netID = network.toString();
+                var params;
+             if (netID == SiteNetID) {
+                    alert("Base Network has already been added to Metamask.");
+                    return;
+                } else {
+                    params = [{
+                        chainId: SiteNetChainID,
+                        chainName: 'Base',
+                        nativeCurrency: {
+                            name: 'ETH',
+                            symbol: 'ETH',
+                            decimals: 18
+                        },
+                        rpcUrls: ['https://mainnet.base.org/'],
+                        blockExplorerUrls: ['https://basescan.org']
+                    }]
+                }
+            
+                window.ethereum.request({ method: 'wallet_addEthereumChain', params })
+                    .then(() => console.log('Success'))
+                    .catch((error) => console.log("Error", error.message));
+            } else {
+                alert('Unable to locate a compatible web3 browser!');
+            }
+        }
+    </script>
+
+    
+    <script type="text/javascript" src="/assets/vendor/datatables/datatables.min.js?v=24.2.1.1"></script>
+    <script type="text/javascript" src="/assets/js/custom/commonjs.js?v=24.2.1.1"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            onDocumentReady();
+            renderDataTable();
+            $("[data-toggle='tooltip']").tooltip(); 
+        });      
+
+        function renderDataTable() {
+            var table = $("#datatable").DataTable({
+                dom: '<"top d-md-flex justify-content-between mb-3"<"text-secondary d-flex"i><"pagination-sm d-flex"p>>rt<"bottom d-md-flex justify-content-between"<"text-secondary d-flex"l><"pagination-sm d-flex"p>><"clear">',
+                language: {
+                    paginate: {
+                        next: '<i class="fa fa-chevron-right small"></i>',
+                        previous: '<i class="fa fa-chevron-left small"></i>'
+                    },
+                    lengthMenu: "Show _MENU_ Records",
+                    info: "A total of _MAX_ records found"
+                },
+                searching: false,
+                pagingType: 'full',
+                columnDefs: [
+                    { orderable: false, targets: '_all' }
+                ],
+                processing: true,
+                serverSide: true,
+                //pageLength: ,
+                
+                deferLoading: "",
+                ajax: {
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "/blocks.aspx/GetBlocksBySubLabel",
+                    data: function (d) {
+                        var labelModel = generateLabelModel();
+
+                        if (currentLength != d.length) {
+                            d.start = 0;
+                            currentLength = d.length;
+                            resetPage = true;
+                        }
+
+                        return JSON.stringify({ dataTableModel: d, labelModel: labelModel });
+                    },
+                    dataType: "json",
+                    dataFilter: function (res) {
+                        var parsed = JSON.parse(res);
+                        var morp = parsed.d;
+
+                        return JSON.stringify(morp);
+                    }
+                },
+                columns: [
+                    { data: "block" },
+                    { data: "age" },
+                    { data: "txn" },
+                    { data: "uncles" },
+                    { data: "miner" },
+                    { data: "gasUsed" },
+                    { data: "gasLimit" },
+                    { data: "avgGasPrice" },
+                    { data: "reward" }
+                ],
+                drawCallback: function (settings) {
+                    var api = this.api();
+                    var json = api.ajax.json();
+                    if (!json) {
+                        var currentPageDisp = "1";
+
+                        //reload state if querystring is available
+                        var urlParams = new URLSearchParams(window.location.search);
+                        var existLength = urlParams.get('size');
+                        if (existLength) {
+                            api.page.len(existLength);
+                            currentLength = parseInt(existLength)
+
+                            var existStart = urlParams.get('start');
+                            if (!existStart) {
+                                existStart = 0
+                            }
+                                currentPage = Math.floor(existStart / existLength);
+                                api.page(currentPage);
+                                currentPageDisp = currentPage + 1;
+                        }
+
+                        var totalPage = "";
+                        var totalRecord = "";
+
+                        if (totalRecord < 10) {
+                            $(".bottom").remove();
+                        }
+
+                        $('#datatable_length .custom-select.custom-select-sm.form-control.form-control-sm').removeAttr("class").addClass("custom-select custom-select-xs mx-2");
+                        $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + currentPageDisp + "</strong> of <strong class='font-weight-medium'>" + totalPage + "</strong></span></li>");
+                        return;
+                    }
+
+                    $('.paginate_button.previous').after("<li class='page-item disabled'><span class='page-link'>Page <strong class='font-weight-medium'>" + json.currentPage + "</strong> of <strong class='font-weight-medium'>" + json.totalPage + "</strong></span></li>");
+
+                    if (resetPage) {
+                        this.api().page(0);
+                        resetPage = false;
+                    }
+
+                    //get page info
+                    var pageInfo = this.api().page.info();
+                    if (pageInfo.length) {
+                        queryStringDictionary["length"] = pageInfo.length;
+                    }
+
+                    if (pageInfo.start !== undefined) {
+                        queryStringDictionary["start"] = pageInfo.start;
+                    }
+
+                    updateUrl();
+                    $('[data-toggle="tooltip"]').tooltip()
+                }
+
+            });
+        }
+
+        var resetPage = false;
+        var queryStringDictionary = {};
+        var currentLength = 0;
+
+        function updateUrl() {
+            var queryString = '';
+
+            var length = queryStringDictionary["length"];
+            if (length) {
+                if (length < 0) {
+                    length = 7
+                }
+                queryString += "&size=" + length;
+            }
+
+            var start = queryStringDictionary["start"];
+            if (start !== undefined) {
+                queryString += "&start=" + start;
+            }
+
+            var baseUrl = window.location.href.split('?')[0];
+            history.pushState("", document.title, baseUrl + "?" + queryString);
+        }
+
+        function generateLabelModel() {
+            var id = $('#hdnId').val();
+            var label = $('#hdnLabelFilter').val();
+            var subCategoryId = $('.nav-link.active').attr('val');
+
+            return { id: id, label: label, subCategoryId: subCategoryId };
+        }
+    </script>
+
+
+</body>
+</html>
